@@ -54,6 +54,18 @@ npm run render                    # out/cadence-demo.mp4
 WHISPER_MODEL=/path/to/ggml-medium.en.bin npx tsx voice/transcribe.ts
 ```
 
+`npm run voice` also cleans the recording through `voice/enhance.sh`: DeepFilterNet removes the room noise, then EQ, de-essing, compression and a two-pass loudness match to -16 LUFS. It needs [uv](https://docs.astral.sh/uv/) on your `PATH`.
+
+### Say a new line in the narrator's voice
+
+`voice/clone.sh` speaks any text in the recorded voice with Qwen3-TTS on MLX. It runs locally on Apple Silicon and needs uv. The first run downloads the model (about 3 GB).
+
+```sh
+sh voice/clone.sh "Nothing changes until you approve it." out/line.wav
+```
+
+Only clone a voice with that person's consent, and say so when a line in the film is synthesized.
+
 Then edit `voice/lines.ts` so each line's `heard` text matches the new transcript, and run `npm run voice`, `npm run narration` and `npm run sound` before rendering.
 
 ## Working on it

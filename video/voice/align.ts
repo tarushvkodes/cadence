@@ -111,6 +111,6 @@ const lines = VOICE_LINES.map((line) => {
 
 if (cursor !== words.length) throw new Error(`transcript has ${words.length - cursor} words after the last line`);
 
-execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', SOURCE, '-af', 'highpass=f=80,afftdn=nf=-28,acompressor=threshold=-22dB:ratio=2.2:attack=8:release=120:makeup=2,loudnorm=I=-16:TP=-1.5:LRA=8', '-ar', '48000', '-ac', '1', CLEAN]);
+execFileSync('sh', [here('enhance.sh'), SOURCE, CLEAN], { stdio: 'inherit' });
 writeFileSync(OUT, JSON.stringify({ source: 'voice/narration.wav', lines }, null, 1) + '\n');
 console.log(`${lines.length} lines, ${r2(lines.reduce((s, l) => s + l.length, 0))} s of speech -> ${OUT}`);
