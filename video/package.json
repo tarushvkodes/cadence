@@ -1,0 +1,31 @@
+{
+  "name": "cadence-film",
+  "private": true,
+  "type": "module",
+  "description": "The Cadence demo film: real captures of the app, composited in Remotion.",
+  "scripts": {
+    "capture": "tsx capture/capture.ts",
+    "voice": "tsx voice/align.ts",
+    "narration": "tsx scripts/narration.ts",
+    "sound": "tsx audio/build.ts",
+    "studio": "remotion studio src/index.ts",
+    "still": "remotion still src/index.ts CadenceDemo",
+    "render": "remotion render src/index.ts CadenceDemo out/cadence-demo.mp4 --codec=h264 --crf=16 --audio-bitrate=320k --props={\"variant\":\"voiced\"}",
+    "render:silent": "remotion render src/index.ts CadenceDemo out/cadence-demo-silent.mp4 --codec=h264 --crf=16 --muted --props={\"variant\":\"silent\"}",
+    "typecheck": "tsc --noEmit",
+    "render:music": "remotion render src/index.ts CadenceDemo out/cadence-demo-music.mp4 --codec=h264 --crf=16 --audio-bitrate=320k --props={\"variant\":\"music\"}"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.536",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remotion": "4.0.536"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.3",
+    "@types/react": "19.1.0",
+    "playwright": "1.65.0",
+    "tsx": "4.23.15",
+    "typescript": "5.6.3"
+  }
+}
