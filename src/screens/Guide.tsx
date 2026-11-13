@@ -28,22 +28,40 @@ const STARTERS = [
 
 export function Guide() {
   const { state, agent } = useReady();
-  const bottom = useRef<HTMLDivElement | null>(null);
-  const pinned = useRef(true);
+  const thread = useRef<HTMLDivElement | null>(null);
+  const follow = useRef(false);
+  const userTurns = state.chat.filter((m) => m.role === 'user').length;
+
+  // Follow the reply as it grows, until the person scrolls up or taps into the thread to act on something.
+  useEffect(() => {
+    if (userTurns > 0) follow.current = true;
+  }, [userTurns]);
 
   useEffect(() => {
-    const onScroll = () => {
-      pinned.current = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 160;
+    const el = thread.current;
+    if (!el) return;
+    const toBottom = () => {
+      if (follow.current) window.scrollTo({ top: document.documentElement.scrollHeight });
     };
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
+    const stop = () => {
+      follow.current = false;
+    };
+    const onWheel = (e: WheelEvent) => e.deltaY < 0 && stop();
+    const onKey = (e: globalThis.KeyboardEvent) => ['PageUp', 'ArrowUp', 'Home'].includes(e.key) && stop();
+    const ro = new ResizeObserver(toBottom);
+    ro.observe(el);
+    window.addEventListener('wheel', onWheel, { passive: true });
+    window.addEventListener('touchmove', stop, { passive: true });
+    window.addEventListener('keydown', onKey);
+    el.addEventListener('pointerdown', stop);
+    return () => {
+      ro.disconnect();
+      window.removeEventListener('wheel', onWheel);
+      window.removeEventListener('touchmove', stop);
+      window.removeEventListener('keydown', onKey);
+      el.removeEventListener('pointerdown', stop);
+    };
   }, []);
-
-  const last = state.chat.at(-1);
-  const lastSize = last?.role === 'assistant' ? last.parts.length + (last.parts.at(-1)?.type === 'text' ? (last.parts.at(-1) as { text: string }).text.length : 0) : 0;
-  useLayoutEffect(() => {
-    if (pinned.current) bottom.current?.scrollIntoView({ block: 'end', behavior: 'smooth' });
-  }, [state.chat.length, lastSize, state.proposals]);
 
   const starters = agent.nextPrompt ? [agent.nextPrompt] : STARTERS;
   const model = MODELS.find((m) => m.id === state.settings.model);
@@ -60,7 +78,7 @@ export function Guide() {
 
       {state.chat.length === 0 ? <EmptyGuide starters={starters} /> : null}
 
-      <div className="thread" aria-live="polite">
+      <div className="thread" ref={thread} aria-live="polite">
         {state.chat.map((m) =>
           m.role === 'user' ? (
             <motion.div key={m.id} className="msg-user" initial={{ opacity: 0, y: 10, scale: 0.98 }} animate={{ opacity: 1, y: 0, scale: 1 }} transition={{ type: 'spring', bounce: 0.1, duration: 0.4 }}>
@@ -71,7 +89,6 @@ export function Guide() {
           ),
         )}
         {state.chat.length > 0 && !agent.busy && agent.nextPrompt ? <NextPrompt prompt={agent.nextPrompt} /> : null}
-        <div ref={bottom} className="thread-end" />
       </div>
 
       <Composer />

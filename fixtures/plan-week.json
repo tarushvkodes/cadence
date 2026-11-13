@@ -1,0 +1,627 @@
+{
+  "version": 1,
+  "flow": "plan-week",
+  "model": "claude-opus-5-5",
+  "recordedAt": "2026-11-13T18:56:41.120Z",
+  "today": "2026-11-16",
+  "turns": [
+    {
+      "message": "Plan my week around my cycle.",
+      "events": [
+        {
+          "t": 1341,
+          "event": {
+            "type": "tool_started",
+            "callId": "toolu_01KNeW94rNxbregWza8VFxpz",
+            "tool": "get_cycle_status"
+          }
+        },
+        {
+          "t": 1743,
+          "event": {
+            "type": "tool_started",
+            "callId": "toolu_01VX2s5eiqf5axpS8PNLPrSW",
+            "tool": "list_events"
+          }
+        },
+        {
+          "t": 1746,
+          "event": {
+            "type": "tool_finished",
+            "callId": "toolu_01KNeW94rNxbregWza8VFxpz",
+            "tool": "get_cycle_status",
+            "ok": true,
+            "summary": "Checked your cycle: day 25, likely luteal, next period Nov 18 to 22"
+          }
+        },
+        {
+          "t": 2395,
+          "event": {
+            "type": "tool_started",
+            "callId": "toolu_017pdEXERjdW6E98jFV5barK",
+            "tool": "list_habits"
+          }
+        },
+        {
+          "t": 2397,
+          "event": {
+            "type": "tool_finished",
+            "callId": "toolu_01VX2s5eiqf5axpS8PNLPrSW",
+            "tool": "list_events",
+            "ok": true,
+            "summary": "Read your calendar: 25 events, Nov 16 to 22"
+          }
+        },
+        {
+          "t": 2398,
+          "event": {
+            "type": "tool_started",
+            "callId": "toolu_018Esudpcn6JRW6LVSsYQgtK",
+            "tool": "get_check_ins"
+          }
+        },
+        {
+          "t": 2398,
+          "event": {
+            "type": "tool_finished",
+            "callId": "toolu_017pdEXERjdW6E98jFV5barK",
+            "tool": "list_habits",
+            "ok": true,
+            "summary": "Read your habits: 5 habits"
+          }
+        },
+        {
+          "t": 2400,
+          "event": {
+            "type": "tool_finished",
+            "callId": "toolu_018Esudpcn6JRW6LVSsYQgtK",
+            "tool": "get_check_ins",
+            "ok": true,
+            "summary": "Read your check-ins: 40 in the last 60 days"
+          }
+        },
+        {
+          "t": 2995,
+          "event": {
+            "type": "thinking"
+          }
+        },
+        {
+          "t": 17860,
+          "event": {
+            "type": "tool_started",
+            "callId": "toolu_01RFUQJyfxw22NsVXpekAiyu",
+            "tool": "propose_changes"
+          }
+        },
+        {
+          "t": 26025,
+          "event": {
+            "type": "tool_finished",
+            "callId": "toolu_01RFUQJyfxw22NsVXpekAiyu",
+            "tool": "propose_changes",
+            "ok": true,
+            "summary": "Drafted 6 suggestions for you to review"
+          }
+        },
+        {
+          "t": 26025,
+          "event": {
+            "type": "proposal_created",
+            "proposal": {
+              "id": "pr-22128127",
+              "createdAt": "2026-11-13T18:56:37.305Z",
+              "title": "Room to breathe around your midterm and period",
+              "rationale": "Your last two cycles show poor sleep and headaches around days 26 to 28, then cramps and fatigue on the first two days of your period. This week that lines up with Wednesday and Thursday (your midterm) and likely the weekend, so these tweaks protect sleep and comfort without dropping anything you care about.",
+              "items": [
+                {
+                  "id": "ch-d76f464d",
+                  "change": {
+                    "kind": "editEvent",
+                    "eventId": "ev-wed-hiit",
+                    "before": {
+                      "title": "HIIT class",
+                      "load": "demanding"
+                    },
+                    "after": {
+                      "title": "HIIT, or easy yoga/walk if you feel low",
+                      "load": "light"
+                    }
+                  },
+                  "reason": "On day 27 in your last two cycles you logged energy 2/5 with headaches. Keep HIIT if you feel good, but a gentler option is there if not. Your call on the day.",
+                  "status": "pending"
+                },
+                {
+                  "id": "ch-58d99c78",
+                  "change": {
+                    "kind": "addEvent",
+                    "event": {
+                      "id": "ev-721d1901",
+                      "title": "Wind down, phone away",
+                      "start": "2026-11-18T22:30",
+                      "end": "2026-11-18T23:00",
+                      "kind": "personal",
+                      "load": "light",
+                      "flexibility": "movable"
+                    }
+                  },
+                  "reason": "Poor sleep showed up on days 25 to 28 both cycles. A set wind-down the night before your midterm is worth trying to protect sleep.",
+                  "status": "pending"
+                },
+                {
+                  "id": "ch-4813edb7",
+                  "change": {
+                    "kind": "addEvent",
+                    "event": {
+                      "id": "ev-d7c5050f",
+                      "title": "Eat and rest before midterm",
+                      "start": "2026-11-19T17:30",
+                      "end": "2026-11-19T18:30",
+                      "kind": "personal",
+                      "load": "light",
+                      "flexibility": "movable"
+                    }
+                  },
+                  "reason": "A calm buffer between the review session and the 7:00 exam, so you go in fed and comfortable, especially if a headache shows up like it has on day 28 before.",
+                  "status": "pending"
+                },
+                {
+                  "id": "ch-9fb91609",
+                  "change": {
+                    "kind": "addEvent",
+                    "event": {
+                      "id": "ev-536bd49f",
+                      "title": "Lab report: final edits and submit",
+                      "start": "2026-11-20T10:30",
+                      "end": "2026-11-20T12:00",
+                      "kind": "study",
+                      "load": "moderate",
+                      "flexibility": "movable"
+                    }
+                  },
+                  "reason": "Your period is likely to start around now, and your day 1 logs show cramps and fatigue. Finishing before your shift means you aren't racing the 5:30 deadline after four hours on your feet.",
+                  "status": "pending"
+                },
+                {
+                  "id": "ch-d3f54a95",
+                  "change": {
+                    "kind": "editEvent",
+                    "eventId": "ev-sat-run",
+                    "before": {
+                      "title": "Long run with Priya",
+                      "load": "demanding"
+                    },
+                    "after": {
+                      "title": "Easy run or walk with Priya",
+                      "load": "moderate"
+                    }
+                  },
+                  "reason": "Saturday is likely day 1 or 2 of your period, when you've logged cramps and energy 2/5. Keeping the plan with Priya but at an easy pace lets you decide on the day.",
+                  "status": "pending"
+                },
+                {
+                  "id": "ch-03488704",
+                  "change": {
+                    "kind": "moveEvent",
+                    "eventId": "ev-sun-cs-project",
+                    "title": "CS project work block",
+                    "from": {
+                      "start": "2026-11-22T14:00",
+                      "end": "2026-11-22T17:00"
+                    },
+                    "to": {
+                      "start": "2026-11-22T14:00",
+                      "end": "2026-11-22T16:00"
+                    }
+                  },
+                  "reason": "Your early-period days have averaged energy around 2 to 3. A shorter two-hour block may feel more doable, and you can save the long sessions for next week, when you've logged energy 5/5.",
+                  "status": "pending"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "t": 29462,
+          "event": {
+            "type": "text_delta",
+            "text": "I"
+          }
+        },
+        {
+          "t": 29462,
+          "event": {
+            "type": "text_delta",
+            "text": " suggested six"
+          }
+        },
+        {
+          "t": 29462,
+          "event": {
+            "type": "text_delta",
+            "text": " small"
+          }
+        },
+        {
+          "t": 29463,
+          "event": {
+            "type": "text_delta",
+            "text": " changes to your"
+          }
+        },
+        {
+          "t": 29463,
+          "event": {
+            "type": "text_delta",
+            "text": " week. You"
+          }
+        },
+        {
+          "t": 29463,
+          "event": {
+            "type": "text_delta",
+            "text": " can approve or decline each one"
+          }
+        },
+        {
+          "t": 29463,
+          "event": {
+            "type": "text_delta",
+            "text": " in the app.\n\nHere"
+          }
+        },
+        {
+          "t": 29463,
+          "event": {
+            "type": "text_delta",
+            "text": "'s what I based"
+          }
+        },
+        {
+          "t": 29463,
+          "event": {
+            "type": "text_delta",
+            "text": " them"
+          }
+        },
+        {
+          "t": 29463,
+          "event": {
+            "type": "text_delta",
+            "text": " on. Your period is likely"
+          }
+        },
+        {
+          "t": 29463,
+          "event": {
+            "type": "text_delta",
+            "text": " to"
+          }
+        },
+        {
+          "t": 29463,
+          "event": {
+            "type": "text_delta",
+            "text": " start between"
+          }
+        },
+        {
+          "t": 29463,
+          "event": {
+            "type": "text_delta",
+            "text": " Wednesday and S"
+          }
+        },
+        {
+          "t": 29463,
+          "event": {
+            "type": "text_delta",
+            "text": "unday, prob"
+          }
+        },
+        {
+          "t": 29464,
+          "event": {
+            "type": "text_delta",
+            "text": "ably around"
+          }
+        },
+        {
+          "t": 29464,
+          "event": {
+            "type": "text_delta",
+            "text": " Friday."
+          }
+        },
+        {
+          "t": 29464,
+          "event": {
+            "type": "text_delta",
+            "text": " In your last two cycles,"
+          }
+        },
+        {
+          "t": 29465,
+          "event": {
+            "type": "text_delta",
+            "text": " the few days before it"
+          }
+        },
+        {
+          "t": 29466,
+          "event": {
+            "type": "text_delta",
+            "text": " br"
+          }
+        },
+        {
+          "t": 29466,
+          "event": {
+            "type": "text_delta",
+            "text": "ought poor sleep and head"
+          }
+        },
+        {
+          "t": 29466,
+          "event": {
+            "type": "text_delta",
+            "text": "aches, and the first"
+          }
+        },
+        {
+          "t": 29466,
+          "event": {
+            "type": "text_delta",
+            "text": " two days brought cramps and"
+          }
+        },
+        {
+          "t": 29466,
+          "event": {
+            "type": "text_delta",
+            "text": " fatigue. This week those"
+          }
+        },
+        {
+          "t": 29466,
+          "event": {
+            "type": "text_delta",
+            "text": " days land"
+          }
+        },
+        {
+          "t": 29466,
+          "event": {
+            "type": "text_delta",
+            "text": " on your midterm"
+          }
+        },
+        {
+          "t": 29466,
+          "event": {
+            "type": "text_delta",
+            "text": " Thursday and the weekend"
+          }
+        },
+        {
+          "t": 29466,
+          "event": {
+            "type": "text_delta",
+            "text": "."
+          }
+        },
+        {
+          "t": 29466,
+          "event": {
+            "type": "text_delta",
+            "text": "\n\nSo the"
+          }
+        },
+        {
+          "t": 29466,
+          "event": {
+            "type": "text_delta",
+            "text": " suggestions don't dr"
+          }
+        },
+        {
+          "t": 29466,
+          "event": {
+            "type": "text_delta",
+            "text": "op any pl"
+          }
+        },
+        {
+          "t": 29466,
+          "event": {
+            "type": "text_delta",
+            "text": "ans. They prot"
+          }
+        },
+        {
+          "t": 29466,
+          "event": {
+            "type": "text_delta",
+            "text": "ect your"
+          }
+        },
+        {
+          "t": 29466,
+          "event": {
+            "type": "text_delta",
+            "text": " sleep the night before the"
+          }
+        },
+        {
+          "t": 29466,
+          "event": {
+            "type": "text_delta",
+            "text": " exam, fin"
+          }
+        },
+        {
+          "t": 29466,
+          "event": {
+            "type": "text_delta",
+            "text": "ish the"
+          }
+        },
+        {
+          "t": 29466,
+          "event": {
+            "type": "text_delta",
+            "text": " lab report before"
+          }
+        },
+        {
+          "t": 29466,
+          "event": {
+            "type": "text_delta",
+            "text": " your"
+          }
+        },
+        {
+          "t": 29466,
+          "event": {
+            "type": "text_delta",
+            "text": " Friday shift, and give you"
+          }
+        },
+        {
+          "t": 29466,
+          "event": {
+            "type": "text_delta",
+            "text": " an"
+          }
+        },
+        {
+          "t": 29466,
+          "event": {
+            "type": "text_delta",
+            "text": " easier option for W"
+          }
+        },
+        {
+          "t": 29466,
+          "event": {
+            "type": "text_delta",
+            "text": "ednesday's HIIT"
+          }
+        },
+        {
+          "t": 29466,
+          "event": {
+            "type": "text_delta",
+            "text": " and Saturday's run with"
+          }
+        },
+        {
+          "t": 29466,
+          "event": {
+            "type": "text_delta",
+            "text": " Priya. You make"
+          }
+        },
+        {
+          "t": 29466,
+          "event": {
+            "type": "text_delta",
+            "text": " the call"
+          }
+        },
+        {
+          "t": 29466,
+          "event": {
+            "type": "text_delta",
+            "text": " on each day. I"
+          }
+        },
+        {
+          "t": 29466,
+          "event": {
+            "type": "text_delta",
+            "text": " left"
+          }
+        },
+        {
+          "t": 29466,
+          "event": {
+            "type": "text_delta",
+            "text": " Ava's d"
+          }
+        },
+        {
+          "t": 29467,
+          "event": {
+            "type": "text_delta",
+            "text": "inner, game night, and br"
+          }
+        },
+        {
+          "t": 29467,
+          "event": {
+            "type": "text_delta",
+            "text": "unch as they are.\n\nThese"
+          }
+        },
+        {
+          "t": 29467,
+          "event": {
+            "type": "text_delta",
+            "text": " are exper"
+          }
+        },
+        {
+          "t": 29467,
+          "event": {
+            "type": "text_delta",
+            "text": "iments. If you ke"
+          }
+        },
+        {
+          "t": 29467,
+          "event": {
+            "type": "text_delta",
+            "text": "ep chec"
+          }
+        },
+        {
+          "t": 29467,
+          "event": {
+            "type": "text_delta",
+            "text": "king in this"
+          }
+        },
+        {
+          "t": 29467,
+          "event": {
+            "type": "text_delta",
+            "text": " week, your logs will show"
+          }
+        },
+        {
+          "t": 29467,
+          "event": {
+            "type": "text_delta",
+            "text": " whether they"
+          }
+        },
+        {
+          "t": 29467,
+          "event": {
+            "type": "text_delta",
+            "text": " helped."
+          }
+        },
+        {
+          "t": 29476,
+          "event": {
+            "type": "done",
+            "model": "claude-opus-5-5",
+            "durationMs": 29475
+          }
+        }
+      ]
+    }
+  ]
+}

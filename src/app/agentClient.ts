@@ -3,11 +3,16 @@ import { assistantText, type ChatMessage } from '../domain/agent.ts';
 import type { PlannerData } from '../domain/changes.ts';
 import { addDays, compareDates, dateOf, type ISODate } from '../domain/time.ts';
 
-const fixtureModules = import.meta.glob<Fixture>('../../fixtures/*.json', { import: 'default' });
-
+/** Recorded sessions are static files, so replay needs no bridge and always reads the latest recording. */
 export async function loadFixture(flow: string): Promise<Fixture | null> {
-  const load = fixtureModules[`../../fixtures/${flow}.json`];
-  return load ? load() : null;
+  try {
+    const res = await fetch(`${import.meta.env.BASE_URL}fixtures/${flow}.json`, { cache: 'no-store' });
+    if (!res.ok) return null;
+    const body = (await res.json()) as Partial<Fixture>;
+    return body.version === 1 && Array.isArray(body.turns) ? (body as Fixture) : null;
+  } catch {
+    return null;
+  }
 }
 
 export async function checkBridge(signal?: AbortSignal): Promise<boolean> {

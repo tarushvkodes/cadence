@@ -1,0 +1,772 @@
+{
+  "version": 1,
+  "flow": "rough-morning",
+  "model": "claude-opus-5-5",
+  "recordedAt": "2026-11-13T18:59:07.115Z",
+  "today": "2026-11-19",
+  "turns": [
+    {
+      "message": "Today feels rough, what should I change?",
+      "events": [
+        {
+          "t": 766,
+          "event": {
+            "type": "thinking"
+          }
+        },
+        {
+          "t": 1290,
+          "event": {
+            "type": "tool_started",
+            "callId": "toolu_01M6gzR7UuvpJrUCdBZpgqbV",
+            "tool": "get_cycle_status"
+          }
+        },
+        {
+          "t": 1397,
+          "event": {
+            "type": "tool_started",
+            "callId": "toolu_01PLtZoGVgP2SkW8iETMkY67",
+            "tool": "list_events"
+          }
+        },
+        {
+          "t": 1399,
+          "event": {
+            "type": "tool_finished",
+            "callId": "toolu_01M6gzR7UuvpJrUCdBZpgqbV",
+            "tool": "get_cycle_status",
+            "ok": true,
+            "summary": "Checked your cycle: day 1, likely menstrual, next period Dec 15 to 19"
+          }
+        },
+        {
+          "t": 1948,
+          "event": {
+            "type": "tool_started",
+            "callId": "toolu_019Pg3kJb7P6QB61o4hmyjxQ",
+            "tool": "get_check_ins"
+          }
+        },
+        {
+          "t": 1949,
+          "event": {
+            "type": "tool_finished",
+            "callId": "toolu_01PLtZoGVgP2SkW8iETMkY67",
+            "tool": "list_events",
+            "ok": true,
+            "summary": "Read your calendar: 3 events, Nov 19"
+          }
+        },
+        {
+          "t": 2249,
+          "event": {
+            "type": "tool_started",
+            "callId": "toolu_017hhHkBxvaw96vkX5wcNBQd",
+            "tool": "list_habits"
+          }
+        },
+        {
+          "t": 2250,
+          "event": {
+            "type": "tool_finished",
+            "callId": "toolu_019Pg3kJb7P6QB61o4hmyjxQ",
+            "tool": "get_check_ins",
+            "ok": true,
+            "summary": "Read your check-ins: 41 in the last 60 days"
+          }
+        },
+        {
+          "t": 2349,
+          "event": {
+            "type": "tool_finished",
+            "callId": "toolu_017hhHkBxvaw96vkX5wcNBQd",
+            "tool": "list_habits",
+            "ok": true,
+            "summary": "Read your habits: 5 habits"
+          }
+        },
+        {
+          "t": 7724,
+          "event": {
+            "type": "tool_started",
+            "callId": "toolu_01VZtDbSH2BXN3XuxG5f2sng",
+            "tool": "propose_changes"
+          }
+        },
+        {
+          "t": 12081,
+          "event": {
+            "type": "tool_finished",
+            "callId": "toolu_01VZtDbSH2BXN3XuxG5f2sng",
+            "tool": "propose_changes",
+            "ok": true,
+            "summary": "Drafted 3 suggestions for you to review"
+          }
+        },
+        {
+          "t": 12081,
+          "event": {
+            "type": "proposal_created",
+            "proposal": {
+              "id": "pr-28dee23b",
+              "createdAt": "2026-11-13T18:59:01.904Z",
+              "title": "A softer run-up to tonight's midterm",
+              "rationale": "Your check-ins show cramps and low energy on the first two days of your period, and today you logged cramps with energy and mood at 2. The midterm at 7 is fixed, so these suggestions keep your afternoon prep but leave more room for comfort and rest beforehand.",
+              "items": [
+                {
+                  "id": "ch-d2904283",
+                  "change": {
+                    "kind": "moveEvent",
+                    "eventId": "ev-thu-review",
+                    "title": "Exam review session",
+                    "from": {
+                      "start": "2026-11-19T13:00",
+                      "end": "2026-11-19T15:00"
+                    },
+                    "to": {
+                      "start": "2026-11-19T13:00",
+                      "end": "2026-11-19T14:15"
+                    }
+                  },
+                  "reason": "Try a shorter review: cover what you most want to see before tonight, then stop. It frees up afternoon time for rest while you're crampy.",
+                  "status": "pending"
+                },
+                {
+                  "id": "ch-a86d7c38",
+                  "change": {
+                    "kind": "editEvent",
+                    "eventId": "ev-thu-review",
+                    "before": {
+                      "title": "Exam review session",
+                      "load": "demanding"
+                    },
+                    "after": {
+                      "title": "Focused review: top topics only",
+                      "load": "moderate"
+                    }
+                  },
+                  "reason": "Naming it as a short, focused pass can make it feel less heavy on a day you logged energy at 2.",
+                  "status": "pending"
+                },
+                {
+                  "id": "ch-8a4cbb26",
+                  "change": {
+                    "kind": "addEvent",
+                    "event": {
+                      "id": "ev-75ea9de2",
+                      "title": "Rest with heat pad, snack, no screens",
+                      "start": "2026-11-19T15:00",
+                      "end": "2026-11-19T16:30",
+                      "kind": "personal",
+                      "load": "light",
+                      "flexibility": "movable"
+                    }
+                  },
+                  "reason": "Your logs show cramps and fatigue early in your period. A calm break before the exam might help you feel more comfortable walking in.",
+                  "status": "pending"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "t": 16898,
+          "event": {
+            "type": "text_delta",
+            "text": "I'm sorry today"
+          }
+        },
+        {
+          "t": 16898,
+          "event": {
+            "type": "text_delta",
+            "text": "'s r"
+          }
+        },
+        {
+          "t": 16898,
+          "event": {
+            "type": "text_delta",
+            "text": "ough."
+          }
+        },
+        {
+          "t": 16898,
+          "event": {
+            "type": "text_delta",
+            "text": " Your check-in"
+          }
+        },
+        {
+          "t": 16898,
+          "event": {
+            "type": "text_delta",
+            "text": " shows cramps,"
+          }
+        },
+        {
+          "t": 16898,
+          "event": {
+            "type": "text_delta",
+            "text": " with"
+          }
+        },
+        {
+          "t": 16898,
+          "event": {
+            "type": "text_delta",
+            "text": " energy and mood both at "
+          }
+        },
+        {
+          "t": 16898,
+          "event": {
+            "type": "text_delta",
+            "text": "2."
+          }
+        },
+        {
+          "t": 16898,
+          "event": {
+            "type": "text_delta",
+            "text": " That"
+          }
+        },
+        {
+          "t": 16898,
+          "event": {
+            "type": "text_delta",
+            "text": " f"
+          }
+        },
+        {
+          "t": 16898,
+          "event": {
+            "type": "text_delta",
+            "text": "its your"
+          }
+        },
+        {
+          "t": 16898,
+          "event": {
+            "type": "text_delta",
+            "text": " own pattern: the"
+          }
+        },
+        {
+          "t": 16898,
+          "event": {
+            "type": "text_delta",
+            "text": " first cou"
+          }
+        },
+        {
+          "t": 16898,
+          "event": {
+            "type": "text_delta",
+            "text": "ple of days of your period are"
+          }
+        },
+        {
+          "t": 16898,
+          "event": {
+            "type": "text_delta",
+            "text": " usually your"
+          }
+        },
+        {
+          "t": 16898,
+          "event": {
+            "type": "text_delta",
+            "text": " l"
+          }
+        },
+        {
+          "t": 16898,
+          "event": {
+            "type": "text_delta",
+            "text": "owest."
+          }
+        },
+        {
+          "t": 16899,
+          "event": {
+            "type": "text_delta",
+            "text": " Your M"
+          }
+        },
+        {
+          "t": 16899,
+          "event": {
+            "type": "text_delta",
+            "text": "A 261 midterm at"
+          }
+        },
+        {
+          "t": 16899,
+          "event": {
+            "type": "text_delta",
+            "text": " 7 is fixed,"
+          }
+        },
+        {
+          "t": 16899,
+          "event": {
+            "type": "text_delta",
+            "text": " so I kept the chang"
+          }
+        },
+        {
+          "t": 16899,
+          "event": {
+            "type": "text_delta",
+            "text": "es small"
+          }
+        },
+        {
+          "t": 16899,
+          "event": {
+            "type": "text_delta",
+            "text": " and"
+          }
+        },
+        {
+          "t": 16899,
+          "event": {
+            "type": "text_delta",
+            "text": " only"
+          }
+        },
+        {
+          "t": 16899,
+          "event": {
+            "type": "text_delta",
+            "text": " for today.\n\nI suggested"
+          }
+        },
+        {
+          "t": 16899,
+          "event": {
+            "type": "text_delta",
+            "text": " three"
+          }
+        },
+        {
+          "t": 16899,
+          "event": {
+            "type": "text_delta",
+            "text": " things:\n- C"
+          }
+        },
+        {
+          "t": 16899,
+          "event": {
+            "type": "text_delta",
+            "text": "ut the"
+          }
+        },
+        {
+          "t": 16899,
+          "event": {
+            "type": "text_delta",
+            "text": " "
+          }
+        },
+        {
+          "t": 16899,
+          "event": {
+            "type": "text_delta",
+            "text": "1:00 review session down to"
+          }
+        },
+        {
+          "t": 16899,
+          "event": {
+            "type": "text_delta",
+            "text": " a focused h"
+          }
+        },
+        {
+          "t": 16899,
+          "event": {
+            "type": "text_delta",
+            "text": "our or"
+          }
+        },
+        {
+          "t": 16899,
+          "event": {
+            "type": "text_delta",
+            "text": " so on"
+          }
+        },
+        {
+          "t": 16899,
+          "event": {
+            "type": "text_delta",
+            "text": " your top topics\n- Rel"
+          }
+        },
+        {
+          "t": 16899,
+          "event": {
+            "type": "text_delta",
+            "text": "abel it so"
+          }
+        },
+        {
+          "t": 16899,
+          "event": {
+            "type": "text_delta",
+            "text": " it fe"
+          }
+        },
+        {
+          "t": 16899,
+          "event": {
+            "type": "text_delta",
+            "text": "els l"
+          }
+        },
+        {
+          "t": 16899,
+          "event": {
+            "type": "text_delta",
+            "text": "ighter\n- Block"
+          }
+        },
+        {
+          "t": 16899,
+          "event": {
+            "type": "text_delta",
+            "text": " 3"
+          }
+        },
+        {
+          "t": 16899,
+          "event": {
+            "type": "text_delta",
+            "text": ":00 to 4:30"
+          }
+        },
+        {
+          "t": 16900,
+          "event": {
+            "type": "text_delta",
+            "text": " for res"
+          }
+        },
+        {
+          "t": 16900,
+          "event": {
+            "type": "text_delta",
+            "text": "ting with a heat pad and"
+          }
+        },
+        {
+          "t": 16900,
+          "event": {
+            "type": "text_delta",
+            "text": " a snack\n\nYou can approve"
+          }
+        },
+        {
+          "t": 16900,
+          "event": {
+            "type": "text_delta",
+            "text": " or decline each one in"
+          }
+        },
+        {
+          "t": 16900,
+          "event": {
+            "type": "text_delta",
+            "text": " the app.\n\nOne"
+          }
+        },
+        {
+          "t": 16900,
+          "event": {
+            "type": "text_delta",
+            "text": " small idea: eat a"
+          }
+        },
+        {
+          "t": 16900,
+          "event": {
+            "type": "text_delta",
+            "text": " real dinner around"
+          }
+        },
+        {
+          "t": 16900,
+          "event": {
+            "type": "text_delta",
+            "text": " 5:30 "
+          }
+        },
+        {
+          "t": 16900,
+          "event": {
+            "type": "text_delta",
+            "text": "and"
+          }
+        },
+        {
+          "t": 16900,
+          "event": {
+            "type": "text_delta",
+            "text": " get"
+          }
+        },
+        {
+          "t": 16900,
+          "event": {
+            "type": "text_delta",
+            "text": " to the exam room"
+          }
+        },
+        {
+          "t": 16900,
+          "event": {
+            "type": "text_delta",
+            "text": " a few"
+          }
+        },
+        {
+          "t": 16900,
+          "event": {
+            "type": "text_delta",
+            "text": " minutes early so"
+          }
+        },
+        {
+          "t": 16900,
+          "event": {
+            "type": "text_delta",
+            "text": " you're"
+          }
+        },
+        {
+          "t": 16900,
+          "event": {
+            "type": "text_delta",
+            "text": " not rushing."
+          }
+        },
+        {
+          "t": 16901,
+          "event": {
+            "type": "text_delta",
+            "text": " Fe"
+          }
+        },
+        {
+          "t": 16901,
+          "event": {
+            "type": "text_delta",
+            "text": "eling cr"
+          }
+        },
+        {
+          "t": 16901,
+          "event": {
+            "type": "text_delta",
+            "text": "ampy and"
+          }
+        },
+        {
+          "t": 16901,
+          "event": {
+            "type": "text_delta",
+            "text": " tired is"
+          }
+        },
+        {
+          "t": 16901,
+          "event": {
+            "type": "text_delta",
+            "text": " uncomfortable, but"
+          }
+        },
+        {
+          "t": 16901,
+          "event": {
+            "type": "text_delta",
+            "text": " it doesn't change what"
+          }
+        },
+        {
+          "t": 16901,
+          "event": {
+            "type": "text_delta",
+            "text": " you know."
+          }
+        },
+        {
+          "t": 16901,
+          "event": {
+            "type": "text_delta",
+            "text": " People"
+          }
+        },
+        {
+          "t": 16901,
+          "event": {
+            "type": "text_delta",
+            "text": " do great"
+          }
+        },
+        {
+          "t": 16901,
+          "event": {
+            "type": "text_delta",
+            "text": " on ex"
+          }
+        },
+        {
+          "t": 16901,
+          "event": {
+            "type": "text_delta",
+            "text": "ams on day"
+          }
+        },
+        {
+          "t": 16901,
+          "event": {
+            "type": "text_delta",
+            "text": " one all"
+          }
+        },
+        {
+          "t": 16901,
+          "event": {
+            "type": "text_delta",
+            "text": " the time.\n\nIf the p"
+          }
+        },
+        {
+          "t": 16901,
+          "event": {
+            "type": "text_delta",
+            "text": "ain gets b"
+          }
+        },
+        {
+          "t": 16901,
+          "event": {
+            "type": "text_delta",
+            "text": "ad enough that"
+          }
+        },
+        {
+          "t": 16901,
+          "event": {
+            "type": "text_delta",
+            "text": " it's hard to s"
+          }
+        },
+        {
+          "t": 16901,
+          "event": {
+            "type": "text_delta",
+            "text": "it through the"
+          }
+        },
+        {
+          "t": 16901,
+          "event": {
+            "type": "text_delta",
+            "text": " exam, or pain relief"
+          }
+        },
+        {
+          "t": 16901,
+          "event": {
+            "type": "text_delta",
+            "text": " you'"
+          }
+        },
+        {
+          "t": 16901,
+          "event": {
+            "type": "text_delta",
+            "text": "d normally use"
+          }
+        },
+        {
+          "t": 16901,
+          "event": {
+            "type": "text_delta",
+            "text": " is"
+          }
+        },
+        {
+          "t": 16901,
+          "event": {
+            "type": "text_delta",
+            "text": "n't tou"
+          }
+        },
+        {
+          "t": 16901,
+          "event": {
+            "type": "text_delta",
+            "text": "ching it, that's worth b"
+          }
+        },
+        {
+          "t": 16901,
+          "event": {
+            "type": "text_delta",
+            "text": "ringing to"
+          }
+        },
+        {
+          "t": 16901,
+          "event": {
+            "type": "text_delta",
+            "text": " campus health. It's common,"
+          }
+        },
+        {
+          "t": 16901,
+          "event": {
+            "type": "text_delta",
+            "text": " and you"
+          }
+        },
+        {
+          "t": 16901,
+          "event": {
+            "type": "text_delta",
+            "text": " deserve care for"
+          }
+        },
+        {
+          "t": 16901,
+          "event": {
+            "type": "text_delta",
+            "text": " it. Good luck ton"
+          }
+        },
+        {
+          "t": 16902,
+          "event": {
+            "type": "text_delta",
+            "text": "ight."
+          }
+        },
+        {
+          "t": 16917,
+          "event": {
+            "type": "done",
+            "model": "claude-opus-5-5",
+            "durationMs": 16916
+          }
+        }
+      ]
+    }
+  ]
+}

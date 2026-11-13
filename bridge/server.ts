@@ -10,7 +10,7 @@ import { parseTurnRequest } from './protocol.ts';
 const PORT = Number(process.env.CADENCE_BRIDGE_PORT ?? 8741);
 const HOST = '127.0.0.1';
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const FIXTURES = join(ROOT, 'fixtures');
+const FIXTURES = join(ROOT, 'public', 'fixtures');
 const MAX_BODY = 2_000_000;
 
 async function readJson(req: IncomingMessage): Promise<unknown> {
@@ -29,7 +29,7 @@ function sendJson(res: ServerResponse, status: number, body: unknown) {
   res.end(JSON.stringify(body));
 }
 
-/** Append one recorded turn to fixtures/<flow>.json. Turn 0 starts a fresh file. */
+/** Append one recorded turn to public/fixtures/<flow>.json. Turn 0 starts a fresh file. */
 async function saveRecording(request: TurnRequest, events: TimedEvent[]) {
   if (!request.record) return;
   const { flow, turnIndex } = request.record;
@@ -49,7 +49,7 @@ async function saveRecording(request: TurnRequest, events: TimedEvent[]) {
   };
   await mkdir(FIXTURES, { recursive: true });
   await writeFile(file, `${JSON.stringify(fixture, null, 2)}\n`);
-  console.log(`[bridge] recorded ${flow} turn ${turnIndex} (${events.length} events) to fixtures/${flow}.json`);
+  console.log(`[bridge] recorded ${flow} turn ${turnIndex} (${events.length} events) to public/fixtures/${flow}.json`);
 }
 
 async function handleTurn(req: IncomingMessage, res: ServerResponse) {
