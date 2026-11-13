@@ -4,8 +4,12 @@ import { dirname } from 'node:path';
 import { chromium, type Browser, type Page } from 'playwright';
 
 export const FPS = 30;
-export const VIEWPORT = { width: 1440, height: 900 } as const;
-export const SCALE = 2;
+/** The laptop layout at 2x, and the phone layout at 3x with touch, as a phone browser renders it. */
+export const DEVICES = {
+  laptop: { viewport: { width: 1440, height: 900 }, deviceScaleFactor: 2, isMobile: false, hasTouch: false },
+  phone: { viewport: { width: 390, height: 844 }, deviceScaleFactor: 3, isMobile: true, hasTouch: true },
+} as const;
+export type DeviceName = keyof typeof DEVICES;
 
 export type Rect = { x: number; y: number; w: number; h: number; lines?: { x: number; y: number; w: number; h: number }[] };
 
@@ -28,6 +32,7 @@ export type Take = {
   url: string;
   /** Local wall-clock time the page believes it is when it loads. */
   clock: string;
+  device?: DeviceName;
   script: Action[];
   /** Page expressions sampled on every recorded frame; each change is saved with its frame. */
   watch?: Record<string, string>;
@@ -214,7 +219,9 @@ async function rectOf(page: Page, target: Target): Promise<Rect> {
 }
 
 export async function captureTake(browser: Browser, base: string, take: Take, outVideo: string, outData: string) {
-  const context = await browser.newContext({ viewport: VIEWPORT, deviceScaleFactor: SCALE, colorScheme: 'light', reducedMotion: 'no-preference' });
+  const device = DEVICES[take.device ?? 'laptop'];
+  const phone = take.device === 'phone';
+  const context = await browser.newContext({ ...device, viewport: { ...device.viewport }, colorScheme: 'light', reducedMotion: 'no-preference' });
   const page = await context.newPage();
   const errors: string[] = [];
   page.on('pageerror', (e) => errors.push(String(e)));
@@ -222,9 +229,9 @@ export async function captureTake(browser: Browser, base: string, take: Take, ou
   await page.clock.pauseAt(new Date(new Date(take.clock).getTime() + 1000));
   await page.goto(base + take.url, { waitUntil: 'load' });
   await page.evaluate(() => document.fonts.ready);
-  await page.mouse.move(VIEWPORT.width - 4, VIEWPORT.height - 4);
+  if (!phone) await page.mouse.move(device.viewport.width - 4, device.viewport.height - 4);
 
-  const data: TakeData = { id: take.id, fps: FPS, frames: 0, viewport: { ...VIEWPORT }, scale: SCALE, marks: [], clicks: [], scrolls: [], watch: {} };
+  const data: TakeData = { id: take.id, fps: FPS, frames: 0, viewport: { ...device.viewport }, scale: device.deviceScaleFactor, marks: [], clicks: [], scrolls: [], watch: {} };
   const rec = new Recorder(page, outVideo, take.watch, data.watch);
   rec.open();
 
@@ -247,12 +254,19 @@ export async function captureTake(browser: Browser, base: string, take: Take, ou
         const x = step.at === 'left' ? r.x + Math.min(24, r.w / 2) : r.x + r.w / 2;
         const y = r.y + r.h / 2;
         const hover = rec.frame;
-        await page.mouse.move(x, y);
-        await rec.record(step.hoverMs ?? 400);
-        data.clicks.push({ frame: rec.frame, hover, x, y, target: step.target });
-        await page.mouse.down();
-        await rec.record(100);
-        await page.mouse.up();
+        if (phone) {
+          await rec.record(step.hoverMs ?? 400);
+          data.clicks.push({ frame: rec.frame, hover: rec.frame, x, y, target: step.target });
+          await page.touchscreen.tap(x, y);
+          await rec.record(100);
+        } else {
+          await page.mouse.move(x, y);
+          await rec.record(step.hoverMs ?? 400);
+          data.clicks.push({ frame: rec.frame, hover, x, y, target: step.target });
+          await page.mouse.down();
+          await rec.record(100);
+          await page.mouse.up();
+        }
         break;
       }
       case 'type': {

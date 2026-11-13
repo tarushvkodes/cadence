@@ -1,0 +1,384 @@
+{
+ "id": "guide-plan",
+ "fps": 30,
+ "frames": 1224,
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "scale": 2,
+ "marks": [
+  {
+   "name": "empty",
+   "frame": 42,
+   "rects": {
+    "starter": {
+     "x": 350,
+     "y": 235.03125,
+     "w": 365,
+     "h": 64
+    },
+    "starters": {
+     "x": 350,
+     "y": 235.03125,
+     "w": 740,
+     "h": 64
+    },
+    "head": {
+     "x": 350,
+     "y": 112,
+     "w": 740,
+     "h": 95.03125
+    },
+    "see": {
+     "x": 350,
+     "y": 321.03125,
+     "w": 740,
+     "h": 363.28125
+    }
+   }
+  },
+  {
+   "name": "reads",
+   "frame": 141,
+   "rects": {
+    "steps": {
+     "x": 398,
+     "y": 308.21875,
+     "w": 692,
+     "h": 168
+    },
+    "s0": {
+     "x": 407,
+     "y": 317.21875,
+     "w": 674,
+     "h": 36
+    },
+    "s1": {
+     "x": 407,
+     "y": 355.21875,
+     "w": 674,
+     "h": 36
+    },
+    "s2": {
+     "x": 407,
+     "y": 393.21875,
+     "w": 674,
+     "h": 36
+    },
+    "s3": {
+     "x": 407,
+     "y": 431.21875,
+     "w": 674,
+     "h": 36
+    }
+   }
+  },
+  {
+   "name": "drafts",
+   "frame": 531,
+   "rects": {
+    "steps": {
+     "x": 398,
+     "y": 308.21875,
+     "w": 692,
+     "h": 282
+    },
+    "s4": {
+     "x": 407,
+     "y": 469.21875,
+     "w": 674,
+     "h": 36
+    },
+    "s5": {
+     "x": 407,
+     "y": 507.21875,
+     "w": 674,
+     "h": 36
+    },
+    "s6": {
+     "x": 407,
+     "y": 545.21875,
+     "w": 674,
+     "h": 36
+    }
+   }
+  },
+  {
+   "name": "cards",
+   "frame": 759,
+   "rects": {
+    "card": {
+     "x": 398,
+     "y": 96.21875,
+     "w": 692,
+     "h": 1216.765625
+    },
+    "head": {
+     "x": 421,
+     "y": 119.21875,
+     "w": 646,
+     "h": 148.140625
+    },
+    "i0": {
+     "x": 421,
+     "y": 283.359375,
+     "w": 646,
+     "h": 173.71875
+    },
+    "i1": {
+     "x": 421,
+     "y": 465.078125,
+     "w": 646,
+     "h": 173.71875
+    },
+    "i2": {
+     "x": 421,
+     "y": 646.796875,
+     "w": 646,
+     "h": 194.734375
+    },
+    "bar": {
+     "x": 421,
+     "y": 736,
+     "w": 646,
+     "h": 52
+    },
+    "change": {
+     "x": 486,
+     "y": 328.15625,
+     "w": 566,
+     "h": 18.890625
+    },
+    "reason": {
+     "x": 486,
+     "y": 352.046875,
+     "w": 566,
+     "h": 42.03125
+    }
+   }
+  },
+  {
+   "name": "decided",
+   "frame": 933,
+   "rects": {
+    "i0": {
+     "x": 421,
+     "y": -266.640625,
+     "w": 646,
+     "h": 173.71875
+    },
+    "i1": {
+     "x": 421,
+     "y": -84.921875,
+     "w": 646,
+     "h": 173.71875
+    },
+    "i2": {
+     "x": 421,
+     "y": 96.796875,
+     "w": 646,
+     "h": 194.734375
+    },
+    "i3": {
+     "x": 421,
+     "y": 299.53125,
+     "w": 646,
+     "h": 167.71875
+    },
+    "i4": {
+     "x": 421,
+     "y": 475.25,
+     "w": 646,
+     "h": 194.734375
+    }
+   }
+  },
+  {
+   "name": "undone",
+   "frame": 1023,
+   "rects": {
+    "i0": {
+     "x": 421,
+     "y": 38.359375,
+     "w": 646,
+     "h": 173.71875
+    },
+    "i1": {
+     "x": 421,
+     "y": 220.078125,
+     "w": 646,
+     "h": 167.71875
+    },
+    "i2": {
+     "x": 421,
+     "y": 395.796875,
+     "w": 646,
+     "h": 194.734375
+    }
+   }
+  },
+  {
+   "name": "plan",
+   "frame": 1134,
+   "rects": {
+    "week": {
+     "x": 100,
+     "y": -110.578125,
+     "w": 1240,
+     "h": 893
+    },
+    "bar": {
+     "x": 329.828125,
+     "y": 818,
+     "w": 780.328125,
+     "h": 60
+    },
+    "ghost": {
+     "x": 673.140625,
+     "y": 463.421875,
+     "w": 158.703125,
+     "h": 69
+    },
+    "inline": {
+     "x": 682.140625,
+     "y": 469.421875,
+     "w": 140.703125,
+     "h": 12.5
+    },
+    "legend": {
+     "x": 100,
+     "y": 796.421875,
+     "w": 760,
+     "h": 36.375
+    }
+   }
+  }
+ ],
+ "clicks": [
+  {
+   "frame": 60,
+   "hover": 42,
+   "x": 532.5,
+   "y": 267.03125,
+   "target": ".starter:has-text(\"Plan my week\")"
+  },
+  {
+   "frame": 774,
+   "hover": 759,
+   "x": 647.1015625,
+   "y": 424.078125,
+   "target": ".proposal-item >> nth=0 >> button[aria-label^=\"Approve\"]"
+  },
+  {
+   "frame": 822,
+   "hover": 807,
+   "x": 647.1015625,
+   "y": 605.796875,
+   "target": ".proposal-item >> nth=1 >> button[aria-label^=\"Approve\"]"
+  },
+  {
+   "frame": 894,
+   "hover": 879,
+   "x": 536.65625,
+   "y": 440.25,
+   "target": ".proposal-item >> nth=3 >> button[aria-label^=\"Decline\"]"
+  },
+  {
+   "frame": 978,
+   "hover": 963,
+   "x": 635.3515625,
+   "y": 360.796875,
+   "target": ".proposal-item >> nth=1 >> button[aria-label^=\"Undo\"]"
+  },
+  {
+   "frame": 1038,
+   "hover": 1023,
+   "x": 652.625,
+   "y": 44,
+   "target": "a.tab[href=\"#/plan\"]"
+  }
+ ],
+ "scrolls": [
+  {
+   "from": 1550,
+   "to": 508.21875,
+   "frame": 696,
+   "frames": 48
+  },
+  {
+   "from": 508,
+   "to": 1057.53125,
+   "frame": 852,
+   "frames": 27
+  },
+  {
+   "from": 1058,
+   "to": 753.078125,
+   "frame": 933,
+   "frames": 30
+  },
+  {
+   "from": 0,
+   "to": 300,
+   "frame": 1083,
+   "frames": 39
+  }
+ ],
+ "watch": {
+  "steps": [
+   {
+    "frame": 0,
+    "value": ""
+   },
+   {
+    "frame": 94,
+    "value": "is-running kind-read"
+   },
+   {
+    "frame": 106,
+    "value": "is-done kind-read|is-running kind-read"
+   },
+   {
+    "frame": 115,
+    "value": "is-done kind-read|is-done kind-read|is-running kind-read"
+   },
+   {
+    "frame": 124,
+    "value": "is-done kind-read|is-done kind-read|is-done kind-read|is-running kind-read"
+   },
+   {
+    "frame": 125,
+    "value": "is-done kind-read|is-done kind-read|is-done kind-read|is-done kind-read"
+   },
+   {
+    "frame": 246,
+    "value": "is-done kind-read|is-done kind-read|is-done kind-read|is-done kind-read|is-running kind-propose"
+   },
+   {
+    "frame": 321,
+    "value": "is-done kind-read|is-done kind-read|is-done kind-read|is-done kind-read|is-error kind-propose"
+   },
+   {
+    "frame": 349,
+    "value": "is-done kind-read|is-done kind-read|is-done kind-read|is-done kind-read|is-error kind-propose|is-running kind-propose"
+   },
+   {
+    "frame": 424,
+    "value": "is-done kind-read|is-done kind-read|is-done kind-read|is-done kind-read|is-error kind-propose|is-error kind-propose"
+   },
+   {
+    "frame": 457,
+    "value": "is-done kind-read|is-done kind-read|is-done kind-read|is-done kind-read|is-error kind-propose|is-error kind-propose|is-running kind-propose"
+   },
+   {
+    "frame": 532,
+    "value": "is-done kind-read|is-done kind-read|is-done kind-read|is-done kind-read|is-error kind-propose|is-error kind-propose|is-done kind-propose"
+   },
+   {
+    "frame": 1046,
+    "value": ""
+   }
+  ]
+ }
+}

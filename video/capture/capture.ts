@@ -1,6 +1,8 @@
 import { fileURLToPath } from 'node:url';
 import { captureTake, launch, startServer } from './engine.ts';
-import { TAKES } from './takes.ts';
+import { PHONE_TAKES, TAKES as LAPTOP_TAKES } from './takes.ts';
+
+const TAKES = [...LAPTOP_TAKES, ...PHONE_TAKES];
 
 const here = (p: string) => fileURLToPath(new URL(p, import.meta.url));
 const PORT = Number(process.env.CAPTURE_PORT ?? 5199);
@@ -8,7 +10,7 @@ const wanted = process.argv.slice(2);
 const takes = wanted.length ? TAKES.filter((t) => wanted.includes(t.id)) : TAKES;
 if (wanted.length && takes.length !== wanted.length) throw new Error(`unknown take in: ${wanted.join(', ')}`);
 
-const server = await startServer(here('../..'), PORT, here('../.app-build'));
+const server = await startServer(here('../..'), PORT, here(`../.app-build-${PORT}`));
 const browser = await launch();
 try {
   for (const take of takes) {

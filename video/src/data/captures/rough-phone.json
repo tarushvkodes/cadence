@@ -1,0 +1,244 @@
+{
+ "id": "rough-phone",
+ "fps": 30,
+ "frames": 829,
+ "viewport": {
+  "width": 390,
+  "height": 844
+ },
+ "scale": 3,
+ "marks": [
+  {
+   "name": "today",
+   "frame": 78,
+   "rects": {
+    "dial": {
+     "x": 25,
+     "y": 88.78125,
+     "w": 340,
+     "h": 340
+    },
+    "day": {
+     "x": 155.71875,
+     "y": 220.53125,
+     "w": 78.5625,
+     "h": 68.390625
+    },
+    "facts": {
+     "x": 16,
+     "y": 499.28125,
+     "w": 358,
+     "h": 78
+    },
+    "title": {
+     "x": 16,
+     "y": 48.390625,
+     "w": 358,
+     "h": 32.390625
+    }
+   }
+  },
+  {
+   "name": "checkin",
+   "frame": 153,
+   "rects": {
+    "checkin": {
+     "x": 16,
+     "y": 69.78125,
+     "w": 358,
+     "h": 644.75
+    },
+    "energy": {
+     "x": 39,
+     "y": 142.78125,
+     "w": 312,
+     "h": 92.1875
+    },
+    "mood": {
+     "x": 39,
+     "y": 248.96875,
+     "w": 312,
+     "h": 92.1875
+    },
+    "cramps": {
+     "x": 39,
+     "y": 381.34375,
+     "w": 77.25,
+     "h": 36
+    },
+    "save": {
+     "x": 39,
+     "y": 649.53125,
+     "w": 134.46875,
+     "h": 44
+    }
+   }
+  },
+  {
+   "name": "saved",
+   "frame": 311,
+   "rects": {
+    "checkin": {
+     "x": 16,
+     "y": 69.78125,
+     "w": 358,
+     "h": 130
+    },
+    "guide": {
+     "x": 159.59375,
+     "y": 770,
+     "w": 70.796875,
+     "h": 56
+    }
+   }
+  },
+  {
+   "name": "guide",
+   "frame": 364,
+   "rects": {
+    "starter": {
+     "x": 16,
+     "y": 210.390625,
+     "w": 358,
+     "h": 76.5
+    }
+   }
+  },
+  {
+   "name": "reads",
+   "frame": 454,
+   "rects": {
+    "steps": {
+     "x": 16,
+     "y": 306.765625,
+     "w": 358,
+     "h": 182.25
+    }
+   }
+  },
+  {
+   "name": "cards",
+   "frame": 784,
+   "rects": {
+    "card": {
+     "x": 16,
+     "y": 70.015625,
+     "w": 358,
+     "h": 1163.546875
+    },
+    "head": {
+     "x": 39,
+     "y": 93.015625,
+     "w": 312,
+     "h": 246.640625
+    },
+    "i0": {
+     "x": 39,
+     "y": 355.65625,
+     "w": 312,
+     "h": 263.65625
+    },
+    "i2": {
+     "x": 39,
+     "y": 875.828125,
+     "w": 312,
+     "h": 240.546875
+    }
+   }
+  }
+ ],
+ "clicks": [
+  {
+   "frame": 167,
+   "hover": 167,
+   "x": 133.390625,
+   "y": 201.96875,
+   "target": ".level-option:has-text(\"Low\")"
+  },
+  {
+   "frame": 199,
+   "hover": 199,
+   "x": 133.390625,
+   "y": 308.15625,
+   "target": ".level-option:has-text(\"Flat\")"
+  },
+  {
+   "frame": 231,
+   "hover": 231,
+   "x": 77.625,
+   "y": 399.34375,
+   "target": ".symptom:has-text(\"cramps\")"
+  },
+  {
+   "frame": 266,
+   "hover": 266,
+   "x": 106.234375,
+   "y": 671.53125,
+   "target": "button:has-text(\"Save check-in\")"
+  },
+  {
+   "frame": 325,
+   "hover": 325,
+   "x": 194.9921875,
+   "y": 798,
+   "target": ".tabbar-item:has-text(\"Guide\")"
+  },
+  {
+   "frame": 379,
+   "hover": 379,
+   "x": 195,
+   "y": 248.640625,
+   "target": ".starter:has-text(\"Today feels rough\")"
+  }
+ ],
+ "scrolls": [
+  {
+   "from": 0,
+   "to": 988.78125,
+   "frame": 96,
+   "frames": 45
+  },
+  {
+   "from": 1800,
+   "to": 471.015625,
+   "frame": 724,
+   "frames": 42
+  }
+ ],
+ "watch": {
+  "steps": [
+   {
+    "frame": 0,
+    "value": ""
+   },
+   {
+    "frame": 417,
+    "value": "is-running kind-read"
+   },
+   {
+    "frame": 420,
+    "value": "is-done kind-read|is-running kind-read"
+   },
+   {
+    "frame": 437,
+    "value": "is-done kind-read|is-done kind-read|is-running kind-read"
+   },
+   {
+    "frame": 446,
+    "value": "is-done kind-read|is-done kind-read|is-done kind-read|is-running kind-read"
+   },
+   {
+    "frame": 449,
+    "value": "is-done kind-read|is-done kind-read|is-done kind-read|is-done kind-read"
+   },
+   {
+    "frame": 524,
+    "value": "is-done kind-read|is-done kind-read|is-done kind-read|is-done kind-read|is-running kind-propose"
+   },
+   {
+    "frame": 599,
+    "value": "is-done kind-read|is-done kind-read|is-done kind-read|is-done kind-read|is-done kind-propose"
+   }
+  ]
+ }
+}
