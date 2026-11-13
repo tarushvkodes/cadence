@@ -4,6 +4,8 @@ const item = (n: number) => `.proposal-item >> nth=${n}`;
 const approve = (n: number) => `${item(n)} >> button[aria-label^="Approve"]`;
 const decline = (n: number) => `${item(n)} >> button[aria-label^="Decline"]`;
 const undo = (n: number) => `${item(n)} >> button[aria-label^="Undo"]`;
+/** A fixed event on the Plan's week grid (it carries the lock icon), the first one with this title. */
+const FIXED = (title: string) => `.week .event:has(svg.fixed):has-text("${title}") >> nth=0`;
 
 /** The tool steps as the Guide shows them, one class list per step, so the film can follow each call. */
 const STEPS = `[...document.querySelectorAll('.tool-step')].map((e) => e.className.replace('tool-step ', '')).join('|')`;
@@ -64,6 +66,18 @@ export const TAKES: Take[] = [
         name: 'plan',
         targets: { week: '.week', bar: '.plan-bar', ghost: '.ghost >> nth=0', inline: '.suggested-label >> nth=0', legend: '.plan-legend' },
       },
+      {
+        do: 'mark',
+        name: 'locks',
+        targets: {
+          cls: `${FIXED('CS 180 lecture')}`,
+          clsLock: `${FIXED('CS 180 lecture')} >> svg.fixed`,
+          shift: `${FIXED('Shift at Greyhouse')}`,
+          shiftLock: `${FIXED('Shift at Greyhouse')} >> svg.fixed`,
+          exam: `${FIXED('MA 261 midterm')}`,
+          examLock: `${FIXED('MA 261 midterm')} >> svg.fixed`,
+        },
+      },
       { do: 'hold', ms: 3000 },
     ],
   },
@@ -73,7 +87,17 @@ export const TAKES: Take[] = [
     clock: '2026-11-16T12:00:00',
     script: [
       { do: 'hold', ms: 1600 },
-      { do: 'mark', name: 'top', targets: { headline: 'h1', key: '.evidence-key' } },
+      {
+        do: 'mark',
+        name: 'top',
+        targets: {
+          headline: 'h1',
+          key: '.evidence-key',
+          strong: '.evidence-key li >> nth=0 >> .evidence',
+          mixed: '.evidence-key li >> nth=1 >> .evidence',
+          weak: '.evidence-key li >> nth=2 >> .evidence',
+        },
+      },
       { do: 'hold', ms: 1600 },
       { do: 'scroll', to: 'text=Only about 13% of cycles', ms: 2200, offset: 420 },
       { do: 'hold', ms: 600 },
@@ -186,7 +210,7 @@ export const PHONE_TAKES: Take[] = [
       { do: 'hold', ms: 6500 },
       { do: 'scroll', to: '.proposal-card', ms: 1600, offset: 70 },
       { do: 'hold', ms: 500 },
-      { do: 'mark', name: 'cards', targets: { card: '.proposal-card', head: '.proposal-head', i0: item(0), change: `${item(0)} >> .before-after`, reason: `${item(0)} >> .change-reason` } },
+      { do: 'mark', name: 'cards', targets: { card: '.proposal-card', head: '.proposal-head', i0: item(0), change: `${item(0)} >> .before-after`, reason: `${item(0)} >> .change-reason`, day27: 'range=around day 27' } },
       { do: 'hold', ms: 2500 },
     ],
   },
@@ -253,7 +277,9 @@ export const PHONE_TAKES: Take[] = [
       { do: 'mark', name: 'bottom', targets: { next: '.next-prompt', urgent: 'range=go to urgent care or the ER right away' } },
       { do: 'hold', ms: 600 },
       { do: 'click', target: '.next-prompt .starter', hoverMs: 600 },
-      { do: 'hold', ms: 26000 },
+      { do: 'hold', ms: 5367 },
+      { do: 'mark', name: 'cramps', targets: { cramps: 'range=You logged cramps every period', missed: 'range=Missed CS lecture, ibuprofen barely helped' } },
+      { do: 'hold', ms: 20633 },
       { do: 'mark', name: 'notes', targets: { reply: '.msg-assistant >> nth=1' } },
       { do: 'hold', ms: 1000 },
     ],
