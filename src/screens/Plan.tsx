@@ -242,7 +242,7 @@ function GhostBlock({ proposal, item }: Pending) {
   return (
     <motion.div
       layoutId={layoutId}
-      className={`ghost${slot.end - slot.start < 60 ? ' is-short' : ''}`}
+      className={`ghost${slot.end - slot.start <= 75 ? ' is-short' : ''}`}
       style={{ top: top(slot.start), height: height(slot.start, slot.end) }}
       initial={{ opacity: 0, scale: 0.94, y: -6 }}
       animate={{ opacity: 1, scale: 1, y: 0 }}

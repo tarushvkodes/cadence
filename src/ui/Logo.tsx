@@ -4,8 +4,8 @@ import { PHASES } from '../domain/types.ts';
 export function LogoMark({ size = 28 }: { size?: number }) {
   const r = 11;
   const c = 2 * Math.PI * r;
-  const gap = 2.2;
-  const share = [0.2, 0.3, 0.12, 0.38];
+  const gap = 4.5 + 1.4;
+  const share = [0.2, 0.3, 0.15, 0.35];
   const offsets = share.map((_, i) => share.slice(0, i).reduce((sum, v) => sum + v * c, 0));
   return (
     <svg width={size} height={size} viewBox="0 0 32 32" aria-hidden="true">
@@ -20,10 +20,10 @@ export function LogoMark({ size = 28 }: { size?: number }) {
               r={r}
               fill="none"
               stroke={`var(--${phase})`}
-              strokeWidth="5"
+              strokeWidth="4.5"
               strokeLinecap="round"
               strokeDasharray={`${len} ${c - len}`}
-              strokeDashoffset={-(offsets[i] as number)}
+              strokeDashoffset={-((offsets[i] as number) + gap / 2)}
             />
           );
         })}

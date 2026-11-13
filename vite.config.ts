@@ -13,6 +13,8 @@ export default defineConfig({
       '/api': { target: `http://127.0.0.1:${bridgePort}`, changeOrigin: false },
     },
   },
+  // One bundle on purpose: the app runs locally and splitting screens would add loading states mid-demo.
+  build: { chunkSizeWarningLimit: 700 },
   test: {
     include: ['src/**/*.test.ts'],
     environment: 'node',

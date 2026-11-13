@@ -276,10 +276,6 @@ function Composer() {
             <CircleAlert size={15} strokeWidth={2.2} aria-hidden="true" />
             The agent bridge is not running. Start Cadence with <code>npm run dev</code> and it connects on its own.
           </motion.p>
-        ) : replay ? (
-          <motion.p className="composer-note is-replay" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-            Replaying a recorded session with real model output. Live mode runs without <code>?demo</code>.
-          </motion.p>
         ) : null}
       </AnimatePresence>
       <Glass radius={28} className="composer" frost={20}>

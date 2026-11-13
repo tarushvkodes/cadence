@@ -124,5 +124,4 @@
   .msg-assistant { grid-template-columns: 1fr; }
   .msg-avatar { display: none; }
   .next-prompt { padding-left: 0; }
-  .composer-note.is-replay { display: none; }
 }
