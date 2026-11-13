@@ -71,7 +71,7 @@ export function CycleDial({ estimate, size = SIZE }: { estimate: Estimate; size?
 
   const markerX = useTransform(progress, (p) => polar(R, p / L)[0]);
   const markerY = useTransform(progress, (p) => polar(R, p / L)[1]);
-  const elapsedPath = useTransform(progress, (p) => (p > 0.05 ? arcPath(R - STROKE / 2 - 10, 0, Math.max(0.0001, p / L)) : ''));
+  const elapsedPath = useTransform(progress, (p) => (p > 1 ? arcPath(R - STROKE / 2 - 10, 0, Math.max(0.0001, p / L)) : ''));
 
   const segments: { d: string; colour: string }[] = [];
   for (let x = 0; x < L; x += STEP) {

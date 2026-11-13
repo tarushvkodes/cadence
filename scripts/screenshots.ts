@@ -27,7 +27,7 @@ async function replayTurns(page: Page, turns: number) {
   }
 }
 
-type Shot = { name: string; url: string; devices?: Device[]; full?: boolean; setup?: (page: Page) => Promise<void> };
+type Shot = { name: string; url: string; devices?: Device[]; full?: boolean; bridgeOff?: boolean; setup?: (page: Page) => Promise<void> };
 
 const SHOTS: Shot[] = [
   { name: 'onboarding', url: '/#/today', setup: async (page) => void (await page.evaluate(() => localStorage.clear()), await page.reload()) },
@@ -89,6 +89,7 @@ const SHOTS: Shot[] = [
       await page.locator('.msg-user').last().scrollIntoViewIfNeeded();
     },
   },
+  { name: 'guide-bridge-offline', url: '/?demo=plan-week&live=1#/guide', bridgeOff: true },
   { name: 'learn', url: '/?demo=plan-week#/learn' },
   { name: 'learn-ai', url: '/?demo=plan-week#/learn', setup: async (page) => void (await page.locator('#ai-title').scrollIntoViewIfNeeded(), await page.waitForTimeout(800)) },
   { name: 'settings', url: '/?demo=plan-week#/settings' },
@@ -98,6 +99,7 @@ async function capture(browser: Browser, shot: Shot, theme: 'light' | 'dark', de
   const page = await browser.newPage({ viewport: DEVICES[device], deviceScaleFactor: 2, colorScheme: theme, reducedMotion: 'no-preference' });
   const errors: string[] = [];
   page.on('pageerror', (e) => errors.push(e.message));
+  if (shot.bridgeOff) await page.route('**/api/**', (route) => route.abort());
   await page.goto(`${BASE}${shot.url}`, { waitUntil: 'networkidle' });
   await page.waitForTimeout(1200);
   if (shot.setup) await shot.setup(page);

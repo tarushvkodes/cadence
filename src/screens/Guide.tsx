@@ -274,7 +274,9 @@ function Composer() {
         {offline ? (
           <motion.p className="composer-note" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
             <CircleAlert size={15} strokeWidth={2.2} aria-hidden="true" />
-            The agent bridge is not running. Start Cadence with <code>npm run dev</code> and it connects on its own.
+            <span>
+              The agent bridge is not running. Start Cadence with <code>npm run dev</code> and it connects on its own.
+            </span>
           </motion.p>
         ) : null}
       </AnimatePresence>

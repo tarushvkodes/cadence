@@ -51,3 +51,9 @@
 .stepper output { min-width: 82px; text-align: center; font-weight: 650; font-size: 15px; }
 
 .field-date { min-height: 44px; padding: 0 12px; border-radius: 12px; border: 1px solid var(--line-strong); background: var(--elevated); font-size: 15px; font-variant-numeric: tabular-nums; }
+
+/* Compact controls keep a 44px hit area without looking bigger. */
+.btn-small, .symptom, .stepper button, .icon-link { position: relative; }
+.btn-small::after, .symptom::after { content: ''; position: absolute; inset: -4px 0; }
+.stepper button::after { content: ''; position: absolute; inset: -3px -2px; }
+.icon-link::after { content: ''; position: absolute; inset: -2px; }

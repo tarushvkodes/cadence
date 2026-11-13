@@ -116,7 +116,6 @@
   .tabbar-item .tab-badge { position: absolute; top: 4px; right: calc(50% - 22px); min-width: 18px; height: 18px; font-size: 11px; }
 }
 
-/* Notices: a glass capsule that rises from the bottom edge. */
 .notice-wrap { position: fixed; left: 0; right: 0; bottom: 24px; z-index: 60; display: flex; justify-content: center; pointer-events: none; padding: 0 16px; }
 .notice { pointer-events: auto; display: flex; align-items: center; gap: 12px; padding: 8px 8px 8px 18px; min-height: 52px; max-width: 560px; font-size: 15px; font-weight: 500; }
 .notice[data-tone='error'] { color: var(--danger); }

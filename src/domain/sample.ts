@@ -82,7 +82,7 @@ export function sampleHabits(): Habit[] {
 /**
  * Check-ins with one person's pattern, not a textbook one: energy dips on the first two days of a
  * period and in the last few days before it, sleep gets worse late in the cycle, and the middle of
- * the cycle is her strongest stretch. Every third day or so is skipped, like a real log.
+ * the cycle is the strongest stretch. Every third day or so is skipped, like a real log.
  */
 function sampleCheckIns(profile: CycleProfile, from: ISODate, to: ISODate, notes: Record<string, string>): CheckIn[] {
   const out: CheckIn[] = [];

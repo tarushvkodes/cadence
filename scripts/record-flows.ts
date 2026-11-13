@@ -158,7 +158,7 @@ for (const flow of selected) {
     await page.waitForFunction(() => document.querySelector('.status-online'), null, { timeout: 20_000 });
     await RUNNERS[flow](page);
     const fixture = JSON.parse(await readFile(new URL(`../public/fixtures/${flow}.json`, import.meta.url), 'utf8')) as Fixture;
-    check(fixture.turns.length === demoSeed(flow).prompts.length && fixture.turns.every((t) => t.events.at(-1)?.event.type === 'done'), `recorded fixtures/${flow}.json (${fixture.turns.length} turns, ${fixture.model})`);
+    check(fixture.turns.length === demoSeed(flow).prompts.length && fixture.turns.every((t) => t.events.at(-1)?.event.type === 'done'), `recorded public/fixtures/${flow}.json (${fixture.turns.length} turns, ${fixture.model})`);
   }
   await page.close();
 }

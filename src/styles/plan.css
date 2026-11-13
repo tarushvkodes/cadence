@@ -101,7 +101,7 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.14);
   transition: transform 140ms var(--ease-out), background-color 160ms ease;
 }
-.mini::after { content: ''; position: absolute; inset: -6px; }
+.mini::after { content: ''; position: absolute; inset: -7px; }
 .mini:active { transform: scale(0.9); }
 .mini.approve { background: var(--phase); color: var(--phase-on); }
 

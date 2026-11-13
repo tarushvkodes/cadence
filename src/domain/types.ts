@@ -34,7 +34,7 @@ export type Flexibility = 'fixed' | 'movable';
 export const LOADS = ['light', 'moderate', 'demanding'] as const;
 export type Load = (typeof LOADS)[number];
 
-/** `start < end`, both on the same day. Built through `makeEvent` or validated at a boundary. */
+/** `start < end`, both on the same day: `validSlot` holds for every stored event. */
 export type CalendarEvent = {
   readonly id: EventId;
   readonly title: string;

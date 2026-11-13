@@ -112,7 +112,6 @@ img, svg { display: block; }
   .page { padding: 28px 16px 132px; }
 }
 
-/* Buttons */
 .btn {
   --btn-bg: var(--sunken);
   --btn-ink: var(--ink);

@@ -113,7 +113,9 @@
 .send:active:not(:disabled) { transform: scale(0.92); }
 .send:disabled { opacity: 0.35; cursor: not-allowed; box-shadow: none; }
 .send.stop { background: var(--ink); color: var(--bg); }
-.composer-note { display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 13px; font-weight: 550; color: var(--ink-2); text-align: center; padding: 6px 14px; border-radius: 999px; background: color-mix(in oklab, var(--elevated) 82%, transparent); border: 1px solid var(--line); width: auto !important; justify-self: center; }
+.composer-note svg { flex: none; }
+.composer-note code { white-space: nowrap; }
+.composer-note { display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 13px; font-weight: 550; color: var(--ink-2); text-align: center; padding: 6px 14px; border-radius: 999px; background: color-mix(in oklab, var(--elevated) 94%, transparent); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); border: 1px solid var(--line); width: auto !important; justify-self: center; }
 .composer-note code { font-family: var(--font-mono); font-size: 12px; }
 
 @media (max-width: 760px) {
