@@ -22,24 +22,25 @@ const heading = (id: string) => {
 };
 
 const table = TIMELINE.chapters.flatMap((c) => [
-  `| **${tc(c.from)}** | **${heading(c.id)}** | |`,
-  ...c.lines.map((l) => `| ${tc(l.from)} | ${cell(l.beat)} | ${cell(l.caption)} |`),
+  `| **${tc(c.from)}** | | **${heading(c.id)}** | |`,
+  ...c.lines.map((l) => `| ${tc(l.from + Math.round((l.speech[0] ?? 0) * FPS))} | ${l.n} | ${cell(l.does)} | ${cell(l.caption)} |`),
 ]);
 
 const readThrough = TIMELINE.chapters.map((c) => `**${heading(c.id)}**\n\n${c.lines.map((l) => l.caption).join(' ')}`);
 
 const md = `# Cadence demo film: narration
 
-The film is cut to the narration as it was recorded (\`public/voice/narration.m4a\`), so these timings are the
-timings of the voice in \`out/cadence-demo.mp4\`. If you narrate live over \`out/cadence-demo-music.mp4\` or
-\`out/cadence-demo-silent.mp4\`, start each line at its timecode.
+The voice in \`out/cadence-demo.mp4\` is an AI clone of a team member's voice, made with his consent, speaking the
+settled script line for line (\`voice/script.ts\`). Each time below is when that line's words start in the film. If you
+narrate live over \`out/cadence-demo-music.mp4\` or \`out/cadence-demo-silent.mp4\`, start each line at its timecode.
+The # column is the line's number in the script.
 
 Total length ${tc(TOTAL_FRAMES)}. Generated from \`src/timeline.ts\` by \`npm run narration\`; do not edit by hand.
 
 ## Timed script
 
-| Time | On screen | Words |
-| --- | --- | --- |
+| Time | # | On screen | Words |
+| --- | --- | --- | --- |
 ${table.join('\n')}
 
 ## Read-through

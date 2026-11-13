@@ -1,0 +1,2825 @@
+{
+ "voice": "3043bb50af",
+ "lines": {
+  "title.1": {
+   "text": "This is Cadence.",
+   "chosen": 2,
+   "pinned": "The opening line. Seed 2 measured less sibilant than seed 3 (earshot brightness 1407 Hz against 2293 Hz) and carries no \"Speech synthesizer\" AudioSet tag (seed 3: 0.10).",
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 2.21,
+     "heard": "This is cadence.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 3.39,
+     "heard": "This is Cadence.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 3.15,
+     "heard": "This is Cadence.",
+     "problems": []
+    }
+   ]
+  },
+  "title.2": {
+   "text": "We built it to help you plan your week around how you actually feel.",
+   "chosen": 3,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": false,
+     "rate": 4.36,
+     "heard": "We built it to help you plan your week around how you actually feel.",
+     "problems": [
+      "fast: 4.36 words/s"
+     ]
+    },
+    {
+     "seed": 2,
+     "ok": false,
+     "rate": 4.29,
+     "heard": "We built it to help you plan your week around how you actually feel.",
+     "problems": [
+      "fast: 4.29 words/s"
+     ]
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 3.65,
+     "heard": "We built it to help you plan your week around how you actually feel.",
+     "problems": []
+    },
+    {
+     "seed": 4,
+     "ok": false,
+     "rate": 4.52,
+     "heard": "We built it to help you plan your week around how you actually feel.",
+     "problems": [
+      "fast: 4.52 words/s"
+     ]
+    },
+    {
+     "seed": 5,
+     "ok": false,
+     "rate": 3.91,
+     "heard": "We built it to help you plan your week around how you actually feel.",
+     "problems": [
+      "fast: 3.91 words/s"
+     ]
+    },
+    {
+     "seed": 6,
+     "ok": false,
+     "rate": 3.98,
+     "heard": "We built it to help you plan your week around how you actually feel.",
+     "problems": [
+      "fast: 3.98 words/s"
+     ]
+    },
+    {
+     "seed": 7,
+     "ok": false,
+     "rate": 4.48,
+     "heard": "We built it to help you plan your week around how you actually feel.",
+     "problems": [
+      "fast: 4.48 words/s"
+     ]
+    },
+    {
+     "seed": 8,
+     "ok": false,
+     "rate": 3.91,
+     "heard": "We built it to help you plan your week around how you actually feel.",
+     "problems": [
+      "fast: 3.91 words/s"
+     ]
+    },
+    {
+     "seed": 9,
+     "ok": false,
+     "rate": 3.92,
+     "heard": "We built it to help you plan your week around how you actually feel.",
+     "problems": [
+      "fast: 3.92 words/s"
+     ]
+    },
+    {
+     "seed": 10,
+     "ok": false,
+     "rate": 4.35,
+     "heard": "We've built it to help you plan your week around how you actually feel.",
+     "problems": [
+      "\"weve\" for \"we\"",
+      "fast: 4.35 words/s"
+     ]
+    },
+    {
+     "seed": 11,
+     "ok": false,
+     "rate": 3.98,
+     "heard": "We built it to help you plan your week around how you actually feel.",
+     "problems": [
+      "fast: 3.98 words/s"
+     ]
+    },
+    {
+     "seed": 12,
+     "ok": false,
+     "rate": 4.39,
+     "heard": "We built it to help you plan your week around how you actually feel.",
+     "problems": [
+      "fast: 4.39 words/s"
+     ]
+    },
+    {
+     "seed": 13,
+     "ok": false,
+     "rate": 4.11,
+     "heard": "We built it to help you plan your week around how you actually feel.",
+     "problems": [
+      "fast: 4.11 words/s"
+     ]
+    },
+    {
+     "seed": 14,
+     "ok": false,
+     "rate": 4.67,
+     "heard": "We built it to help you plan your week around how you actually feel.",
+     "problems": [
+      "fast: 4.67 words/s"
+     ]
+    },
+    {
+     "seed": 15,
+     "ok": false,
+     "rate": 4.21,
+     "heard": "We built it to help you plan your week around how you actually feel.",
+     "problems": [
+      "fast: 4.21 words/s"
+     ]
+    },
+    {
+     "seed": 16,
+     "ok": false,
+     "rate": 3.98,
+     "heard": "We built it to help you plan your week around how you actually feel.",
+     "problems": [
+      "fast: 3.98 words/s"
+     ]
+    }
+   ]
+  },
+  "title.3": {
+   "text": "It's for women around seventeen to twenty-five, and it runs in the browser.",
+   "chosen": 4,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": false,
+     "rate": 3.34,
+     "heard": "It's for women around 17-25 and it runs in the browser.",
+     "problems": [
+      "missing \"to\""
+     ]
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 3.72,
+     "heard": "It's for women around 17 to 25, and it runs in the browser.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 2.82,
+     "heard": "It's for women around 17 to 25 and it runs in the browser.",
+     "problems": []
+    },
+    {
+     "seed": 4,
+     "ok": true,
+     "rate": 3.3,
+     "heard": "It's for women around 17 to 25 and it runs in the browser.",
+     "problems": []
+    }
+   ]
+  },
+  "idea.1": {
+   "text": "When we started, we assumed the cycle changes how well people think.",
+   "chosen": 2,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 3.35,
+     "heard": "When we started, we assumed the cycle changes how well people think.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 3.25,
+     "heard": "When we started, we assumed the cycle changes how well people think.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 2.81,
+     "heard": "When we started, we assumed the cycle changes how well people think.",
+     "problems": []
+    }
+   ]
+  },
+  "idea.2": {
+   "text": "Then we read the research, and it doesn't back that up.",
+   "chosen": 12,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": false,
+     "rate": 4.58,
+     "heard": "Then we read the research and it doesn't back that up.",
+     "problems": [
+      "fast: 4.58 words/s"
+     ]
+    },
+    {
+     "seed": 2,
+     "ok": false,
+     "rate": 4.34,
+     "heard": "Then we read the research and it doesn't back that up.",
+     "problems": [
+      "fast: 4.34 words/s"
+     ]
+    },
+    {
+     "seed": 3,
+     "ok": false,
+     "rate": 4.2,
+     "heard": "Then we read the research and it doesn't back that up.",
+     "problems": [
+      "fast: 4.20 words/s"
+     ]
+    },
+    {
+     "seed": 4,
+     "ok": false,
+     "rate": 4.71,
+     "heard": "then we read the research and it doesn't back that up.",
+     "problems": [
+      "fast: 4.71 words/s"
+     ]
+    },
+    {
+     "seed": 5,
+     "ok": false,
+     "rate": 4.3,
+     "heard": "Then we read the research and it doesn't back that up.",
+     "problems": [
+      "fast: 4.30 words/s"
+     ]
+    },
+    {
+     "seed": 6,
+     "ok": false,
+     "rate": 4.8,
+     "heard": "then we read the research and it doesn't back that up.",
+     "problems": [
+      "fast: 4.80 words/s"
+     ]
+    },
+    {
+     "seed": 7,
+     "ok": false,
+     "rate": 3.93,
+     "heard": "Then we read the research and it doesn't back that up.",
+     "problems": [
+      "fast: 3.93 words/s"
+     ]
+    },
+    {
+     "seed": 8,
+     "ok": false,
+     "rate": 4.81,
+     "heard": "then we read the research and it doesn't back that up.",
+     "problems": [
+      "fast: 4.81 words/s"
+     ]
+    },
+    {
+     "seed": 9,
+     "ok": false,
+     "rate": 3.83,
+     "heard": "then we read the research and it doesn't back that up.",
+     "problems": [
+      "fast: 3.83 words/s"
+     ]
+    },
+    {
+     "seed": 10,
+     "ok": false,
+     "rate": 4.26,
+     "heard": "then we read the research and it doesn't back that up.",
+     "problems": [
+      "fast: 4.26 words/s"
+     ]
+    },
+    {
+     "seed": 11,
+     "ok": false,
+     "rate": 4.55,
+     "heard": "then we read the research and it doesn't back that up.",
+     "problems": [
+      "fast: 4.55 words/s"
+     ]
+    },
+    {
+     "seed": 12,
+     "ok": true,
+     "rate": 3.65,
+     "heard": "Then we read the research and it doesn't back that up.",
+     "problems": []
+    },
+    {
+     "seed": 13,
+     "ok": false,
+     "rate": 4.59,
+     "heard": "then we read the research and it doesn't back that up.",
+     "problems": [
+      "fast: 4.59 words/s"
+     ]
+    },
+    {
+     "seed": 14,
+     "ok": false,
+     "rate": 4.02,
+     "heard": "then we read the research and it doesn't back that up.",
+     "problems": [
+      "fast: 4.02 words/s"
+     ]
+    },
+    {
+     "seed": 15,
+     "ok": false,
+     "rate": 4.28,
+     "heard": "then we read the research and it doesn't back that up.",
+     "problems": [
+      "fast: 4.28 words/s"
+     ]
+    },
+    {
+     "seed": 16,
+     "ok": false,
+     "rate": 3.91,
+     "heard": "Then we read the research and it doesn't back that up.",
+     "problems": [
+      "fast: 3.91 words/s"
+     ]
+    }
+   ]
+  },
+  "idea.3": {
+   "text": "A review of a hundred and two studies found no robust change in cognitive performance across the cycle.",
+   "chosen": 3,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 2.86,
+     "heard": "A review of 102 studies found no robust change in cognitive performance across the cycle.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": false,
+     "rate": 2.66,
+     "heard": "A review of 102 studies found no robust change in cognitive performance across the cycle.",
+     "problems": [
+      "slow: 2.66 words/s"
+     ]
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 3.02,
+     "heard": "A review of 102 studies found no robust change in cognitive performance across the cycle.",
+     "problems": []
+    },
+    {
+     "seed": 4,
+     "ok": true,
+     "rate": 2.85,
+     "heard": "A review of 102 studies found no robust change in cognitive performance across the cycle.",
+     "problems": []
+    }
+   ]
+  },
+  "idea.4": {
+   "text": "What can change is how you feel, and that differs from person to person.",
+   "chosen": 4,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": false,
+     "rate": 3.81,
+     "heard": "What can change is how you feel, and that differs from person to person.",
+     "problems": [
+      "fast: 3.81 words/s"
+     ]
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 3.61,
+     "heard": "What can change is how you feel, and that differs from person to person.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 3.58,
+     "heard": "What can change is how you feel, and that differs from person to person.",
+     "problems": []
+    },
+    {
+     "seed": 4,
+     "ok": true,
+     "rate": 3.57,
+     "heard": "What can change is how you feel, and that differs from person to person.",
+     "problems": []
+    }
+   ]
+  },
+  "idea.5": {
+   "text": "So Cadence plans around what you log, and treats your phase as a hint.",
+   "chosen": 3,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 3.43,
+     "heard": "So Cadence plans around what you log and treats your phase as a hint.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 3.46,
+     "heard": "So Cadence plans around what you log and treats your phase as a hint.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 3.36,
+     "heard": "So Cadence plans around what you log and treats your phase as a hint.",
+     "problems": []
+    }
+   ]
+  },
+  "setup.1": {
+   "text": "Step one is setup.",
+   "chosen": 3,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 3.88,
+     "heard": "Step one is set up.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 2.71,
+     "heard": "Step one is setup.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 3.32,
+     "heard": "Step one is set up.",
+     "problems": []
+    }
+   ]
+  },
+  "setup.2": {
+   "text": "You tell it when your last period started, how long your cycle usually is, and how regular it is.",
+   "chosen": 2,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": false,
+     "rate": 3.94,
+     "heard": "You tell it when your last period started how long your cycle usually is and how regular it is.",
+     "problems": [
+      "fast: 3.94 words/s"
+     ]
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 3.3,
+     "heard": "You tell it when your last period started how long your cycle usually is and how regular it is.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 3.66,
+     "heard": "You tell it when your last period started, how long your cycle usually is, and how regular it is.",
+     "problems": []
+    },
+    {
+     "seed": 4,
+     "ok": false,
+     "rate": 3.83,
+     "heard": "You tell it when your last period started how long your cycle usually is and how regular it is.",
+     "problems": [
+      "fast: 3.83 words/s"
+     ]
+    },
+    {
+     "seed": 5,
+     "ok": true,
+     "rate": 3.36,
+     "heard": "You tell it when your last period started, how long your cycle usually is, and how regular it is.",
+     "problems": []
+    }
+   ]
+  },
+  "setup.3": {
+   "text": "Then it makes four promises.",
+   "chosen": 2,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 3.02,
+     "heard": "Then it makes four promises.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 3.24,
+     "heard": "then it makes four promises.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 3.35,
+     "heard": "Then it makes four promises.",
+     "problems": []
+    }
+   ]
+  },
+  "setup.4": {
+   "text": "Your data stays on your computer, the AI only suggests, and it's not medical advice.",
+   "chosen": 2,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 2.93,
+     "heard": "your data stays on your computer, the AI only suggests and it's not medical advice.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 3.01,
+     "heard": "Your data stays on your computer. The AI only suggests and it's not medical advice.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 2.88,
+     "heard": "Your data stays on your computer, the AI only suggests, and it's not medical advice.",
+     "problems": []
+    }
+   ]
+  },
+  "setup.5": {
+   "text": "And the dates are estimates, so don't use them for birth control.",
+   "chosen": 4,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": false,
+     "rate": 4.19,
+     "heard": "and the dates are estimates so don't use them for birth control.",
+     "problems": [
+      "fast: 4.19 words/s"
+     ]
+    },
+    {
+     "seed": 2,
+     "ok": false,
+     "rate": 4.19,
+     "heard": "and the dates are estimates so don't use them for birth control.",
+     "problems": [
+      "fast: 4.19 words/s"
+     ]
+    },
+    {
+     "seed": 3,
+     "ok": false,
+     "rate": 4.29,
+     "heard": "and the dates are estimates, so don't use them for birth control.",
+     "problems": [
+      "fast: 4.29 words/s"
+     ]
+    },
+    {
+     "seed": 4,
+     "ok": true,
+     "rate": 3.59,
+     "heard": "And the dates are estimates, so don't use them for birth control.",
+     "problems": []
+    },
+    {
+     "seed": 5,
+     "ok": true,
+     "rate": 3.78,
+     "heard": "and the dates are estimates, so don't use them for birth control.",
+     "problems": []
+    },
+    {
+     "seed": 6,
+     "ok": true,
+     "rate": 3.76,
+     "heard": "and the dates are estimates so don't use them for birth control.",
+     "problems": []
+    }
+   ]
+  },
+  "setup.6": {
+   "text": "Then we tap Start with a sample week, which is a busy student week with a midterm on Thursday.",
+   "chosen": 3,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 3.7,
+     "heard": "Then we tap \"Start with a sample week\" which is a busy student week with a midterm on Thursday.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": false,
+     "rate": 4.1,
+     "heard": "Then we tap \"Start with a sample week\" which is a busy student week with a midterm on Thursday.",
+     "problems": [
+      "fast: 4.10 words/s"
+     ]
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 3.54,
+     "heard": "Then we tap \"Start with a sample week\" which is a busy student week with a midterm on Thursday.",
+     "problems": []
+    },
+    {
+     "seed": 4,
+     "ok": true,
+     "rate": 3.58,
+     "heard": "Then we tap start with a sample week which is a busy student week with a midterm on Thursday.",
+     "problems": []
+    }
+   ]
+  },
+  "today.1": {
+   "text": "Step two is reading your day, on the Today screen.",
+   "chosen": 1,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 3.13,
+     "heard": "Step two is reading your day on the today screen.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 2.82,
+     "heard": "Step 2 is reading your day on the today screen.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 2.93,
+     "heard": "Step two is reading your day on the today screen.",
+     "problems": []
+    }
+   ]
+  },
+  "today.2": {
+   "text": "The dial says day twenty-five of about twenty-eight.",
+   "chosen": 2,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 3.38,
+     "heard": "The dial says day 25 of about 28.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 3.38,
+     "heard": "The dial says day 25 of about 28.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 3.68,
+     "heard": "The dial says Day 25 of about 28.",
+     "problems": []
+    }
+   ]
+  },
+  "today.3": {
+   "text": "Your next period is probably November eighteenth to the twenty-second.",
+   "chosen": 1,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 3,
+     "heard": "Your next period is probably November 18th to the 22nd.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 2.87,
+     "heard": "Your next period is probably November 18th to the 22nd.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 2.72,
+     "heard": "Your next period is probably November 18th to the 22nd.",
+     "problems": []
+    }
+   ]
+  },
+  "today.4": {
+   "text": "It gives you a range instead of a date, because only thirteen percent of cycles are exactly twenty-eight days.",
+   "chosen": 1,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 3.22,
+     "heard": "It gives you a range instead of a date because only 13 percent of cycles are exactly 28 days.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 3.52,
+     "heard": "It gives you a range instead of a date because only 13% of cycles are exactly 28 days.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 3.64,
+     "heard": "it gives you a range instead of a date because only 13% of cycles are exactly 28 days.",
+     "problems": []
+    }
+   ]
+  },
+  "today.5": {
+   "text": "It also says how sure it is, and you can tap that to see why.",
+   "chosen": 16,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": false,
+     "rate": 3.93,
+     "heard": "It also says how sure it is and you can tap that to see why.",
+     "problems": [
+      "fast: 3.93 words/s"
+     ]
+    },
+    {
+     "seed": 2,
+     "ok": false,
+     "rate": 4.06,
+     "heard": "It also says how sure it is and you can tap that to see why.",
+     "problems": [
+      "fast: 4.06 words/s"
+     ]
+    },
+    {
+     "seed": 3,
+     "ok": false,
+     "rate": 4.71,
+     "heard": "It also says how sure it is and you can tap that to see why.",
+     "problems": [
+      "fast: 4.71 words/s"
+     ]
+    },
+    {
+     "seed": 4,
+     "ok": false,
+     "rate": 3.85,
+     "heard": "It also says how sure it is and you can tap that to see why.",
+     "problems": [
+      "fast: 3.85 words/s"
+     ]
+    },
+    {
+     "seed": 5,
+     "ok": false,
+     "rate": 3.97,
+     "heard": "It also says how sure it is and you can tap that to see why.",
+     "problems": [
+      "fast: 3.97 words/s"
+     ]
+    },
+    {
+     "seed": 6,
+     "ok": true,
+     "rate": 3.8,
+     "heard": "It also says how sure it is and you can tap that to see why.",
+     "problems": []
+    },
+    {
+     "seed": 7,
+     "ok": false,
+     "rate": 4.14,
+     "heard": "It also says how sure it is, and you can tap that to see why.",
+     "problems": [
+      "fast: 4.14 words/s"
+     ]
+    },
+    {
+     "seed": 8,
+     "ok": false,
+     "rate": 3.91,
+     "heard": "It also says how sure it is and you can tap that to see why.",
+     "problems": [
+      "fast: 3.91 words/s"
+     ]
+    },
+    {
+     "seed": 9,
+     "ok": false,
+     "rate": 4.23,
+     "heard": "It also says how sure it is and you can tap that to see why.",
+     "problems": [
+      "fast: 4.23 words/s"
+     ]
+    },
+    {
+     "seed": 10,
+     "ok": false,
+     "rate": 4.47,
+     "heard": "It also says how sure it is and you can tap that to see why.",
+     "problems": [
+      "fast: 4.47 words/s"
+     ]
+    },
+    {
+     "seed": 11,
+     "ok": false,
+     "rate": 3.84,
+     "heard": "It also says how sure it is and you can tap that to see why.",
+     "problems": [
+      "fast: 3.84 words/s"
+     ]
+    },
+    {
+     "seed": 12,
+     "ok": false,
+     "rate": 4.2,
+     "heard": "It also says how sure it is and you can tap that to see why.",
+     "problems": [
+      "fast: 4.20 words/s"
+     ]
+    },
+    {
+     "seed": 13,
+     "ok": false,
+     "rate": 3.98,
+     "heard": "It also says how sure it is and you can tap that to see why.",
+     "problems": [
+      "fast: 3.98 words/s"
+     ]
+    },
+    {
+     "seed": 14,
+     "ok": false,
+     "rate": 3.95,
+     "heard": "It also says how sure it is and you can tap that to see why.",
+     "problems": [
+      "fast: 3.95 words/s"
+     ]
+    },
+    {
+     "seed": 15,
+     "ok": false,
+     "rate": 4.54,
+     "heard": "It also says how sure it is and you can tap that to see why.",
+     "problems": [
+      "fast: 4.54 words/s"
+     ]
+    },
+    {
+     "seed": 16,
+     "ok": true,
+     "rate": 3.68,
+     "heard": "It also says how sure it is and you can tap that to see why.",
+     "problems": []
+    }
+   ]
+  },
+  "today.6": {
+   "text": "Below that is the ten-second check-in, for energy, mood, and symptoms.",
+   "chosen": 1,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 2.85,
+     "heard": "Below that is the 10-second check-in for energy, mood, and symptoms.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 2.7,
+     "heard": "Below that is the 10-second check-in for energy, mood, and symptoms.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 2.78,
+     "heard": "Below that is the 10-second check-in for energy, mood, and symptoms.",
+     "problems": []
+    }
+   ]
+  },
+  "today.7": {
+   "text": "That's what our app plans around.",
+   "chosen": 3,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 4.17,
+     "heard": "That's what our app plans around.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 3.95,
+     "heard": "That's what our app plans around.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 3.74,
+     "heard": "That's what our app plans around.",
+     "problems": []
+    }
+   ]
+  },
+  "guide.1": {
+   "text": "Step three is asking the Guide.",
+   "chosen": 3,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 2.72,
+     "heard": "Step three is asking the guide.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 2.28,
+     "heard": "Step three is asking the guide.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 2.99,
+     "heard": "Step 3 is asking the guide.",
+     "problems": []
+    }
+   ]
+  },
+  "guide.2": {
+   "text": "We tap Plan my week around my cycle.",
+   "chosen": 2,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 2.92,
+     "heard": "We tap \"Plan my week\" around my cycle.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 3.36,
+     "heard": "We tap \"Plan My Week\" around my cycle.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 3.51,
+     "heard": "we tap plan my week around my cycle.",
+     "problems": []
+    }
+   ]
+  },
+  "guide.3": {
+   "text": "The Guide is an agent that runs on Clawd, which is a large language model.",
+   "chosen": 5,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": false,
+     "rate": 3.9,
+     "heard": "The guide is an agent that runs on Clod, which is a large language model.",
+     "problems": [
+      "\"clod\" for \"claude\"",
+      "fast: 3.90 words/s"
+     ]
+    },
+    {
+     "seed": 2,
+     "ok": false,
+     "rate": 3.41,
+     "heard": "The guide is an agent that runs on Clod, which is a large language model.",
+     "problems": [
+      "\"clod\" for \"claude\""
+     ]
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 3.68,
+     "heard": "The guide is an agent that runs on Claude, which is a large language model.",
+     "problems": []
+    },
+    {
+     "seed": 4,
+     "ok": true,
+     "rate": 3.71,
+     "heard": "The guide is an agent that runs on Claude, which is a large language model.",
+     "problems": []
+    },
+    {
+     "seed": 5,
+     "ok": true,
+     "rate": 3.5,
+     "heard": "The guide is an agent that runs on Claude, which is a large language model.",
+     "problems": []
+    }
+   ]
+  },
+  "guide.4": {
+   "text": "A plain chatbot only sees what you type into it.",
+   "chosen": 3,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 3.61,
+     "heard": "A plain chatbot only sees what you type into it.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 3.65,
+     "heard": "A plain chatbot only sees what you type into it.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 3.29,
+     "heard": "A plain chatbot only sees what you type into it.",
+     "problems": []
+    }
+   ]
+  },
+  "guide.5": {
+   "text": "An agent also has tools.",
+   "chosen": 1,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 2.85,
+     "heard": "An agent also has tools",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 2.84,
+     "heard": "An agent also has tools.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 2.84,
+     "heard": "An agent also has tools",
+     "problems": []
+    }
+   ]
+  },
+  "guide.6": {
+   "text": "A tool is basically a small piece of code we wrote that the model can use.",
+   "chosen": 6,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": false,
+     "rate": 4.48,
+     "heard": "A tool is basically a small piece of code we wrote that the model can use.",
+     "problems": [
+      "fast: 4.48 words/s"
+     ]
+    },
+    {
+     "seed": 2,
+     "ok": false,
+     "rate": 3.93,
+     "heard": "A tool is basically a small piece of code we wrote that the model can use.",
+     "problems": [
+      "fast: 3.93 words/s"
+     ]
+    },
+    {
+     "seed": 3,
+     "ok": false,
+     "rate": 4.35,
+     "heard": "A tool is basically a small piece of code we wrote that the model can use.",
+     "problems": [
+      "fast: 4.35 words/s"
+     ]
+    },
+    {
+     "seed": 4,
+     "ok": false,
+     "rate": 3.96,
+     "heard": "A tool is basically a small piece of code we wrote that the model can use.",
+     "problems": [
+      "fast: 3.96 words/s"
+     ]
+    },
+    {
+     "seed": 5,
+     "ok": true,
+     "rate": 3.64,
+     "heard": "A tool is basically a small piece of code we wrote that the model can use.",
+     "problems": []
+    },
+    {
+     "seed": 6,
+     "ok": true,
+     "rate": 3.58,
+     "heard": "a tool is basically a small piece of code we wrote that the model can use.",
+     "problems": []
+    },
+    {
+     "seed": 7,
+     "ok": false,
+     "rate": 4.22,
+     "heard": "A tool is basically a small piece of code we wrote that the model can use.",
+     "problems": [
+      "fast: 4.22 words/s"
+     ]
+    },
+    {
+     "seed": 8,
+     "ok": false,
+     "rate": 4.18,
+     "heard": "A tool is basically a small piece of code we wrote that the model can use.",
+     "problems": [
+      "fast: 4.18 words/s"
+     ]
+    },
+    {
+     "seed": 9,
+     "ok": false,
+     "rate": 3.93,
+     "heard": "A tool is basically a small piece of code we wrote that the model can use.",
+     "problems": [
+      "fast: 3.93 words/s"
+     ]
+    },
+    {
+     "seed": 10,
+     "ok": false,
+     "rate": 3.83,
+     "heard": "A tool is basically a small piece of code we wrote that the model can use.",
+     "problems": [
+      "fast: 3.83 words/s"
+     ]
+    },
+    {
+     "seed": 11,
+     "ok": true,
+     "rate": 3.77,
+     "heard": "A tool is basically a small piece of code we wrote that the model can use.",
+     "problems": []
+    }
+   ]
+  },
+  "guide.7": {
+   "text": "For instance, one of them reads your calendar.",
+   "chosen": 1,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 3.13,
+     "heard": "For instance, one of them reads your calendar.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 3.52,
+     "heard": "For instance, one of them reads your calendar.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 3.08,
+     "heard": "For instance, one of them reads your calendar.",
+     "problems": []
+    }
+   ]
+  },
+  "guide.8": {
+   "text": "So the agent decides what it needs, calls a tool, reads the result, and repeats until it can propose changes.",
+   "chosen": 4,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 3.29,
+     "heard": "So the agent decides what it needs, calls a tool, reads the result, and repeats until it can propose changes.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 3.05,
+     "heard": "So, the agent decides what it needs, calls a tool, reads the result, and repeats until it can propose changes.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": false,
+     "rate": 3.47,
+     "heard": "So the agent decides what it needs, calls the tool, reads the result, and repeats until it can propose changes.",
+     "problems": [
+      "\"the\" for \"a\""
+     ]
+    },
+    {
+     "seed": 4,
+     "ok": true,
+     "rate": 3.25,
+     "heard": "So the agent decides what it needs, calls a tool, reads the result, and repeats until it can propose changes.",
+     "problems": []
+    }
+   ]
+  },
+  "guide.9": {
+   "text": "Here it uses four tools. It checks your cycle, it reads your calendar, your habits, and your check-ins.",
+   "chosen": 2,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 3.05,
+     "heard": "Here it uses four tools, it checks your cycle, it reads your calendar, your habits, and your check-ins.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 3.33,
+     "heard": "Here it uses four tools. It checks your cycle. It reads your calendar, your habits, and your check-ins.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": false,
+     "rate": 3.87,
+     "heard": "Here it uses four tools, it checks your cycle, it reads your calendar, your habits, and your check-ins.",
+     "problems": [
+      "fast: 3.87 words/s"
+     ]
+    },
+    {
+     "seed": 4,
+     "ok": true,
+     "rate": 3.53,
+     "heard": "Here it uses four tools, it checks your cycle, it reads your calendar, your habits, and your check-ins.",
+     "problems": []
+    }
+   ]
+  },
+  "guide.10": {
+   "text": "All of that goes to Clawd only when you ask it something.",
+   "chosen": 1,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 3.79,
+     "heard": "All of that goes to Claude only when you ask it something.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": false,
+     "rate": 4.32,
+     "heard": "All of that goes to Claude only when you ask it something.",
+     "problems": [
+      "fast: 4.32 words/s"
+     ]
+    },
+    {
+     "seed": 3,
+     "ok": false,
+     "rate": 3.85,
+     "heard": "All of that goes to Claude only when you ask it something.",
+     "problems": [
+      "fast: 3.85 words/s"
+     ]
+    },
+    {
+     "seed": 4,
+     "ok": false,
+     "rate": 3.84,
+     "heard": "All of that goes to Claude, only when you ask it something.",
+     "problems": [
+      "fast: 3.84 words/s"
+     ]
+    },
+    {
+     "seed": 5,
+     "ok": false,
+     "rate": 4.15,
+     "heard": "all of that goes to Claude only when you ask it something.",
+     "problems": [
+      "fast: 4.15 words/s"
+     ]
+    },
+    {
+     "seed": 6,
+     "ok": false,
+     "rate": 4.11,
+     "heard": "All of that goes to Claude only when you ask it something.",
+     "problems": [
+      "fast: 4.11 words/s"
+     ]
+    },
+    {
+     "seed": 7,
+     "ok": false,
+     "rate": 4.41,
+     "heard": "All of that goes to Claude only when you ask it something.",
+     "problems": [
+      "fast: 4.41 words/s"
+     ]
+    },
+    {
+     "seed": 8,
+     "ok": false,
+     "rate": 3.93,
+     "heard": "All of that goes to Claude, only when you ask at something.",
+     "problems": [
+      "\"at\" for \"it\"",
+      "fast: 3.93 words/s"
+     ]
+    },
+    {
+     "seed": 9,
+     "ok": false,
+     "rate": 3.82,
+     "heard": "All of that goes to Claude only when you ask it something.",
+     "problems": [
+      "fast: 3.82 words/s"
+     ]
+    },
+    {
+     "seed": 10,
+     "ok": false,
+     "rate": 3.95,
+     "heard": "All of that goes to Claude. Only when you ask it's something.",
+     "problems": [
+      "\"its\" for \"it\"",
+      "fast: 3.95 words/s"
+     ]
+    },
+    {
+     "seed": 11,
+     "ok": false,
+     "rate": 4.19,
+     "heard": "All of that goes to Claude only when you ask it something.",
+     "problems": [
+      "fast: 4.19 words/s"
+     ]
+    },
+    {
+     "seed": 12,
+     "ok": false,
+     "rate": 4.03,
+     "heard": "All of that goes to Claude only when you ask it something.",
+     "problems": [
+      "fast: 4.03 words/s"
+     ]
+    },
+    {
+     "seed": 13,
+     "ok": false,
+     "rate": 4.67,
+     "heard": "all of that goes to Claude only when you ask it something.",
+     "problems": [
+      "fast: 4.67 words/s"
+     ]
+    },
+    {
+     "seed": 14,
+     "ok": false,
+     "rate": 4.41,
+     "heard": "all of that goes to Claude only when you ask it something.",
+     "problems": [
+      "fast: 4.41 words/s"
+     ]
+    },
+    {
+     "seed": 15,
+     "ok": false,
+     "rate": 4.05,
+     "heard": "All of that goes to Claude only when you ask it something.",
+     "problems": [
+      "fast: 4.05 words/s"
+     ]
+    },
+    {
+     "seed": 16,
+     "ok": false,
+     "rate": 3.99,
+     "heard": "All of that goes to Claude only when you ask it something.",
+     "problems": [
+      "fast: 3.99 words/s"
+     ]
+    }
+   ]
+  },
+  "guide.11": {
+   "text": "Then it drafts changes, and a tool catches two that don't fit your calendar, so the model fixes them.",
+   "chosen": 1,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 3.57,
+     "heard": "Then it drafts changes and a tool catches two that don't fit your calendar, so the model fixes them.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 3.59,
+     "heard": "Then it drafts changes and a tool catches two that don't fit your calendar, so the model fixes them.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": false,
+     "rate": 3.54,
+     "heard": "Then a draft changes and a tool catches two that don't fit your calendar, so the model fixes them.",
+     "problems": [
+      "\"a\" for \"it\"",
+      "\"draft\" for \"drafts\""
+     ]
+    },
+    {
+     "seed": 4,
+     "ok": true,
+     "rate": 3.65,
+     "heard": "then it drafts changes and a tool catches two that don't fit your calendar. So the model fixes them.",
+     "problems": []
+    }
+   ]
+  },
+  "guide.12": {
+   "text": "And it ends with five suggestions, each one explained with your own check-ins.",
+   "chosen": 3,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 3.67,
+     "heard": "And it ends with five suggestions, each one explained with your own check-ins.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 3.79,
+     "heard": "and it ends with five suggestions, each one explained with your own check-ins.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 3.46,
+     "heard": "And it ends with five suggestions, each one explained with your own check-ins.",
+     "problems": []
+    }
+   ]
+  },
+  "guide.13": {
+   "text": "For instance, it lightens Wednesday's hard workout, because that's probably around day twenty-seven, when you've logged low energy and headaches.",
+   "chosen": 4,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 2.72,
+     "heard": "For instance, it lightens Wednesday's hard workout because that's probably around day 27 when you've logged low energy and headaches.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": false,
+     "rate": 2.62,
+     "heard": "For instance, it lightens Wednesday's hard workout because that's probably around day 27 when you've logged low energy and headaches.",
+     "problems": [
+      "slow: 2.62 words/s"
+     ]
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 3.07,
+     "heard": "For instance, it lightens Wednesday's hard workout because that's probably around day 27 when you've logged low energy and headaches.",
+     "problems": []
+    },
+    {
+     "seed": 4,
+     "ok": true,
+     "rate": 3.1,
+     "heard": "For instance, it lightens Wednesday's hard workout because that's probably around day 27 when you've logged low energy and headaches.",
+     "problems": []
+    }
+   ]
+  },
+  "decide.1": {
+   "text": "Step four is where you decide.",
+   "chosen": 1,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 3.11,
+     "heard": "Step 4 is where you decide.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 2.83,
+     "heard": "Step four is where you decide.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 2.77,
+     "heard": "Step four is where you decide.",
+     "problems": []
+    }
+   ]
+  },
+  "decide.2": {
+   "text": "Each suggestion shows what changes and why.",
+   "chosen": 1,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 2.85,
+     "heard": "Each suggestion shows what changes and why.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 2.78,
+     "heard": "Each suggestion shows what changes and why.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 2.72,
+     "heard": "Each suggestion shows what changes and why.",
+     "problems": []
+    }
+   ]
+  },
+  "decide.3": {
+   "text": "We approve two, decline one, and then undo one of the approvals.",
+   "chosen": 2,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": false,
+     "rate": 2.36,
+     "heard": "We approve two, decline one, and then undo one of the approvals.",
+     "problems": [
+      "slow: 2.36 words/s"
+     ]
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 3.21,
+     "heard": "We approve 2, decline 1, and then undo one of the approvals.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 3.26,
+     "heard": "We approve two, decline one, and then undo one of the approvals.",
+     "problems": []
+    },
+    {
+     "seed": 4,
+     "ok": true,
+     "rate": 3.1,
+     "heard": "We approve 2, decline 1, and then undo one of the approvals.",
+     "problems": []
+    }
+   ]
+  },
+  "decide.4": {
+   "text": "On the Plan, anything still waiting shows up as a dashed block.",
+   "chosen": 3,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 3.29,
+     "heard": "On the plan, anything still waiting shows up as a dashed block.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": false,
+     "rate": 3.41,
+     "heard": "On the plan, anything still waiting shows up as a dash block.",
+     "problems": [
+      "\"dash\" for \"dashed\""
+     ]
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 3.19,
+     "heard": "On the plan, anything still waiting shows up as a dashed block.",
+     "problems": []
+    },
+    {
+     "seed": 4,
+     "ok": true,
+     "rate": 2.94,
+     "heard": "On the plan, anything still waiting shows up as a dashed block.",
+     "problems": []
+    }
+   ]
+  },
+  "decide.5": {
+   "text": "Classes, exams, and shifts are locked, so the Guide can't move them.",
+   "chosen": 2,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 3.08,
+     "heard": "Classes, exams, and shifts are locked so the guide can't move them.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 3.23,
+     "heard": "Classes, exams, and shifts are locked so the guide can't move them.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 2.9,
+     "heard": "Classes, exams, and shifts are locked, so the guide can't move them.",
+     "problems": []
+    }
+   ]
+  },
+  "decide.6": {
+   "text": "And the AI can't change your calendar on its own, so nothing changes until you approve it.",
+   "chosen": 3,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": false,
+     "rate": 3.9,
+     "heard": "And the AI can't change your calendar on its own, so nothing changes until you approve it.",
+     "problems": [
+      "fast: 3.90 words/s"
+     ]
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 3.57,
+     "heard": "and the AI can't change your calendar on its own, so nothing changes until you approve it.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 3.32,
+     "heard": "and the AI can't change your calendar on its own so nothing changes until you approve it.",
+     "problems": []
+    },
+    {
+     "seed": 4,
+     "ok": true,
+     "rate": 3.48,
+     "heard": "and the AI can't change your calendar on its own so nothing changes until you approve it.",
+     "problems": []
+    }
+   ]
+  },
+  "rough.1": {
+   "text": "Step five is a rough morning.",
+   "chosen": 2,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 3.75,
+     "heard": "Step five is a rough morning.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 3.33,
+     "heard": "Step five is a rough morning",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 3.68,
+     "heard": "Step 5 is a rough morning.",
+     "problems": []
+    }
+   ]
+  },
+  "rough.2": {
+   "text": "It's Thursday, day one of your period, and your midterm is tonight.",
+   "chosen": 2,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 3.39,
+     "heard": "It's Thursday day one of your period and your midterm is tonight.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 3.06,
+     "heard": "It's Thursday day one of your period and your midterm is tonight.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 3.06,
+     "heard": "It's Thursday, day one of your period, and your midterm is tonight.",
+     "problems": []
+    }
+   ]
+  },
+  "rough.3": {
+   "text": "You log it in ten seconds, low energy, flat mood, cramps.",
+   "chosen": 2,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 2.7,
+     "heard": "You log it in 10 seconds, low energy, flat mood, cramps.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 3.02,
+     "heard": "you log it in 10 seconds, low energy, flat mood cramps.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 2.97,
+     "heard": "You log it in 10 seconds, low energy, flat mood, cramps.",
+     "problems": []
+    }
+   ]
+  },
+  "rough.4": {
+   "text": "Then you ask the Guide what to change.",
+   "chosen": 7,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": false,
+     "rate": 3.97,
+     "heard": "Then you ask the guide what to change.",
+     "problems": [
+      "fast: 3.97 words/s"
+     ]
+    },
+    {
+     "seed": 2,
+     "ok": false,
+     "rate": 4.49,
+     "heard": "then you ask the guide what to change.",
+     "problems": [
+      "fast: 4.49 words/s"
+     ]
+    },
+    {
+     "seed": 3,
+     "ok": false,
+     "rate": 4.05,
+     "heard": "Then you ask the guide what to change.",
+     "problems": [
+      "fast: 4.05 words/s"
+     ]
+    },
+    {
+     "seed": 4,
+     "ok": false,
+     "rate": 3.91,
+     "heard": "Then you ask the guide what to change.",
+     "problems": [
+      "fast: 3.91 words/s"
+     ]
+    },
+    {
+     "seed": 5,
+     "ok": true,
+     "rate": 3.65,
+     "heard": "Then you ask the guide what to change.",
+     "problems": []
+    },
+    {
+     "seed": 6,
+     "ok": true,
+     "rate": 3.57,
+     "heard": "Then you ask the guide what to change.",
+     "problems": []
+    },
+    {
+     "seed": 7,
+     "ok": true,
+     "rate": 3.55,
+     "heard": "Then, you ask the guide what to change.",
+     "problems": []
+    }
+   ]
+  },
+  "rough.5": {
+   "text": "It only touches today, with three small changes, and the midterm stays put.",
+   "chosen": 3,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 3.56,
+     "heard": "It only touches today with three small changes and the midterm stays put.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 2.95,
+     "heard": "It only touches today with 3 small changes and the midterm stays put.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 3.33,
+     "heard": "It only touches today with three small changes and the midterm stays put.",
+     "problems": []
+    }
+   ]
+  },
+  "safety.1": {
+   "text": "Step six is knowing its limits.",
+   "chosen": 3,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 2.34,
+     "heard": "Step six is knowing its limits.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 2.21,
+     "heard": "Step 6 is knowing its limits.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 2.87,
+     "heard": "Step 6 is knowing its limits.",
+     "problems": []
+    }
+   ]
+  },
+  "safety.2": {
+   "text": "You tell it, your cramps are bad enough to miss class.",
+   "chosen": 4,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": false,
+     "rate": 4.44,
+     "heard": "You tell it, your cramps are bad enough to miss class.",
+     "problems": [
+      "fast: 4.44 words/s"
+     ]
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 3.58,
+     "heard": "you tell it your cramps are bad enough to miss class.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": false,
+     "rate": 3.84,
+     "heard": "You tell it, your cramps are bad enough to miss class.",
+     "problems": [
+      "fast: 3.84 words/s"
+     ]
+    },
+    {
+     "seed": 4,
+     "ok": true,
+     "rate": 3.14,
+     "heard": "You tell it your cramps are bad enough to miss class.",
+     "problems": []
+    },
+    {
+     "seed": 5,
+     "ok": false,
+     "rate": 3.97,
+     "heard": "You tell it your cramps are bad enough to miss class.",
+     "problems": [
+      "fast: 3.97 words/s"
+     ]
+    },
+    {
+     "seed": 6,
+     "ok": false,
+     "rate": 3.94,
+     "heard": "You tell it. Your cramps are bad enough to miss class.",
+     "problems": [
+      "fast: 3.94 words/s"
+     ]
+    },
+    {
+     "seed": 7,
+     "ok": false,
+     "rate": 3.9,
+     "heard": "You tell it your cramps are bad enough to misclass.",
+     "problems": [
+      "missing \"miss\"",
+      "\"misclass\" for \"class\"",
+      "fast: 3.90 words/s"
+     ]
+    },
+    {
+     "seed": 8,
+     "ok": true,
+     "rate": 3.55,
+     "heard": "You tell it, your cramps are bad enough to miss class.",
+     "problems": []
+    }
+   ]
+  },
+  "safety.3": {
+   "text": "It doesn't diagnose, because it's not a doctor.",
+   "chosen": 4,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": false,
+     "rate": 2.62,
+     "heard": "It doesn't diagnose because it's not a doctor.",
+     "problems": [
+      "slow: 2.62 words/s"
+     ]
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 3.54,
+     "heard": "It doesn't diagnose because it's not a doctor.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 3.33,
+     "heard": "It doesn't diagnose because it's not a doctor.",
+     "problems": []
+    },
+    {
+     "seed": 4,
+     "ok": true,
+     "rate": 3.3,
+     "heard": "It doesn't diagnose because it's not a doctor.",
+     "problems": []
+    }
+   ]
+  },
+  "safety.4": {
+   "text": "It tells you to get this checked by a doctor, and it explains when to go to urgent care.",
+   "chosen": 13,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": false,
+     "rate": 4.28,
+     "heard": "It tells you to get this checked by a doctor and it explains when to go to urgent care.",
+     "problems": [
+      "fast: 4.28 words/s"
+     ]
+    },
+    {
+     "seed": 2,
+     "ok": false,
+     "rate": 3.98,
+     "heard": "It tells you to get this checked by a doctor and it explains when to go to urgent care.",
+     "problems": [
+      "fast: 3.98 words/s"
+     ]
+    },
+    {
+     "seed": 3,
+     "ok": false,
+     "rate": 4.17,
+     "heard": "It tells you to get this checked by a doctor and it explains when to go to urgent care.",
+     "problems": [
+      "fast: 4.17 words/s"
+     ]
+    },
+    {
+     "seed": 4,
+     "ok": false,
+     "rate": 4.32,
+     "heard": "It tells you to get this checked by a doctor and it explains when to go to urgent care.",
+     "problems": [
+      "fast: 4.32 words/s"
+     ]
+    },
+    {
+     "seed": 5,
+     "ok": false,
+     "rate": 4.04,
+     "heard": "It tells you to get this checked by a doctor and it explains when to go to urgent care.",
+     "problems": [
+      "fast: 4.04 words/s"
+     ]
+    },
+    {
+     "seed": 6,
+     "ok": false,
+     "rate": 3.81,
+     "heard": "It tells you to get this checked by a doctor, and it explains when to go to urgent care.",
+     "problems": [
+      "fast: 3.81 words/s"
+     ]
+    },
+    {
+     "seed": 7,
+     "ok": false,
+     "rate": 4.41,
+     "heard": "It tells you to get this checked by a doctor and it explains when to go to urgent care.",
+     "problems": [
+      "fast: 4.41 words/s"
+     ]
+    },
+    {
+     "seed": 8,
+     "ok": false,
+     "rate": 4.03,
+     "heard": "It tells you to get this checked by a doctor and it explains when to go to urgent care.",
+     "problems": [
+      "fast: 4.03 words/s"
+     ]
+    },
+    {
+     "seed": 9,
+     "ok": false,
+     "rate": 4.78,
+     "heard": "It tells you to get this checked by a doctor and it explains when to go to urgent care.",
+     "problems": [
+      "fast: 4.78 words/s"
+     ]
+    },
+    {
+     "seed": 10,
+     "ok": false,
+     "rate": 4.32,
+     "heard": "It tells you to get this checked by a doctor and it explains when to go to urgent care.",
+     "problems": [
+      "fast: 4.32 words/s"
+     ]
+    },
+    {
+     "seed": 11,
+     "ok": false,
+     "rate": 4.44,
+     "heard": "It tells you to get this checked by a doctor and it explains when to go to urgent care.",
+     "problems": [
+      "fast: 4.44 words/s"
+     ]
+    },
+    {
+     "seed": 12,
+     "ok": false,
+     "rate": 4.4,
+     "heard": "It tells you to get this checked by a doctor and it explains when to go to urgent care.",
+     "problems": [
+      "fast: 4.40 words/s"
+     ]
+    },
+    {
+     "seed": 13,
+     "ok": true,
+     "rate": 3.74,
+     "heard": "It tells you to get this checked by a doctor and it explains when to go to urgent care.",
+     "problems": []
+    },
+    {
+     "seed": 14,
+     "ok": false,
+     "rate": 4.03,
+     "heard": "It tells you to get this checked by a doctor and it explains when to go to urgent care.",
+     "problems": [
+      "fast: 4.03 words/s"
+     ]
+    },
+    {
+     "seed": 15,
+     "ok": false,
+     "rate": 4.24,
+     "heard": "It tells you to get this checked by a doctor and it explains when to go to urgent care.",
+     "problems": [
+      "fast: 4.24 words/s"
+     ]
+    },
+    {
+     "seed": 16,
+     "ok": false,
+     "rate": 4.71,
+     "heard": "It tells you to get this checked by a doctor and it explains when to go to urgent care.",
+     "problems": [
+      "fast: 4.71 words/s"
+     ]
+    }
+   ]
+  },
+  "safety.5": {
+   "text": "Then it offers to turn your check-ins into notes for the appointment, and it does.",
+   "chosen": 4,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 3.64,
+     "heard": "Then it offers to turn your check-ins into notes for the appointment, and it does.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": false,
+     "rate": 4.14,
+     "heard": "Then it offers to turn your check-ins into notes for the appointment and it does.",
+     "problems": [
+      "fast: 4.14 words/s"
+     ]
+    },
+    {
+     "seed": 3,
+     "ok": false,
+     "rate": 3.82,
+     "heard": "Then it offers to turn your check-ins into notes for the appointment, and it does.",
+     "problems": [
+      "fast: 3.82 words/s"
+     ]
+    },
+    {
+     "seed": 4,
+     "ok": true,
+     "rate": 3.57,
+     "heard": "then it offers to turn your check-ins into notes for the appointment and it does.",
+     "problems": []
+    },
+    {
+     "seed": 5,
+     "ok": true,
+     "rate": 3.64,
+     "heard": "Then it offers to turn your check-ins into notes for the appointment, and it does.",
+     "problems": []
+    }
+   ]
+  },
+  "inside.1": {
+   "text": "Step seven is seeing inside.",
+   "chosen": 2,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 2.34,
+     "heard": "Step seven is seeing inside.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 2.81,
+     "heard": "Step 7 is seeing inside.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 2.78,
+     "heard": "Step 7 is seeing inside.",
+     "problems": []
+    }
+   ]
+  },
+  "inside.2": {
+   "text": "Our Learn page labels every claim as well supported, mixed, or weak, with its source.",
+   "chosen": 4,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 3.02,
+     "heard": "Our Learn page labels every claim as well supported, mixed, or weak with its source.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 2.99,
+     "heard": "Our Learn page labels every claim as well supported, mixed, or weak with its source.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": false,
+     "rate": 2.98,
+     "heard": "our learn page labels every claim is well supported mixed or weak with its source",
+     "problems": [
+      "\"is\" for \"as\""
+     ]
+    },
+    {
+     "seed": 4,
+     "ok": true,
+     "rate": 3.13,
+     "heard": "Our Learn page labels every claim as well supported, mixed, or weak with its source.",
+     "problems": []
+    }
+   ]
+  },
+  "inside.3": {
+   "text": "And Settings shows the instructions the AI follows, word for word.",
+   "chosen": 4,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 3.17,
+     "heard": "And Settings shows the instructions the AI follows word for word.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": false,
+     "rate": 2.93,
+     "heard": "And \"Settings\" shows the instructions that AI follows word for word.",
+     "problems": [
+      "\"that\" for \"the\""
+     ]
+    },
+    {
+     "seed": 3,
+     "ok": false,
+     "rate": 3.21,
+     "heard": "And \"Settings\" shows the instructions that AI follows word for word.",
+     "problems": [
+      "\"that\" for \"the\""
+     ]
+    },
+    {
+     "seed": 4,
+     "ok": true,
+     "rate": 3.18,
+     "heard": "And Settings shows the instructions the AI follows word for word.",
+     "problems": []
+    },
+    {
+     "seed": 5,
+     "ok": true,
+     "rate": 2.99,
+     "heard": "And settings shows the instructions the AI follows word for word.",
+     "problems": []
+    }
+   ]
+  },
+  "end.1": {
+   "text": "So there's three things to remember.",
+   "chosen": 2,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 3.57,
+     "heard": "So there's three things to remember.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 3.4,
+     "heard": "So there's three things to remember.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 3.4,
+     "heard": "So there's three things to remember.",
+     "problems": []
+    }
+   ]
+  },
+  "end.2": {
+   "text": "Cadence plans around how you feel, instead of your phase.",
+   "chosen": 13,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": false,
+     "rate": 2.72,
+     "heard": "cadence plans around how you feel instead of your face.",
+     "problems": [
+      "\"face\" for \"phase\""
+     ]
+    },
+    {
+     "seed": 2,
+     "ok": false,
+     "rate": 2.83,
+     "heard": "cadence plans around how you feel instead of your face.",
+     "problems": [
+      "\"face\" for \"phase\"",
+      "cut off: the last 30 ms are still at -40 dB"
+     ]
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 2.91,
+     "heard": "cadence plans around how you feel instead of your phase.",
+     "problems": []
+    },
+    {
+     "seed": 4,
+     "ok": false,
+     "rate": 3.06,
+     "heard": "cadence plans around how you feel instead of your face.",
+     "problems": [
+      "\"face\" for \"phase\""
+     ]
+    },
+    {
+     "seed": 5,
+     "ok": false,
+     "rate": 2.91,
+     "heard": "cadence plans around how you feel instead of your face.",
+     "problems": [
+      "\"face\" for \"phase\""
+     ]
+    },
+    {
+     "seed": 6,
+     "ok": false,
+     "rate": 3.11,
+     "heard": "Cadence plans around how you feel instead of your face",
+     "problems": [
+      "\"face\" for \"phase\""
+     ]
+    },
+    {
+     "seed": 7,
+     "ok": false,
+     "rate": 2.6,
+     "heard": "cadence plans around how you feel instead of your phase.",
+     "problems": [
+      "slow: 2.60 words/s"
+     ]
+    },
+    {
+     "seed": 8,
+     "ok": false,
+     "rate": 3.33,
+     "heard": "cadence plans around how you feel instead of your face.",
+     "problems": [
+      "\"face\" for \"phase\""
+     ]
+    },
+    {
+     "seed": 9,
+     "ok": false,
+     "rate": 2.62,
+     "heard": "Cadence plans around how you feel instead of your phase.",
+     "problems": [
+      "slow: 2.62 words/s"
+     ]
+    },
+    {
+     "seed": 10,
+     "ok": false,
+     "rate": 2.97,
+     "heard": "cadence plans around how you feel instead of your face.",
+     "problems": [
+      "\"face\" for \"phase\""
+     ]
+    },
+    {
+     "seed": 11,
+     "ok": false,
+     "rate": 3.03,
+     "heard": "Cadence plans around how you feel, instead of your face.",
+     "problems": [
+      "\"face\" for \"phase\""
+     ]
+    },
+    {
+     "seed": 12,
+     "ok": false,
+     "rate": 3.22,
+     "heard": "cadence plans around how you feel instead of your face.",
+     "problems": [
+      "\"face\" for \"phase\""
+     ]
+    },
+    {
+     "seed": 13,
+     "ok": true,
+     "rate": 3.19,
+     "heard": "cadence plans around how you feel instead of your phase.",
+     "problems": []
+    },
+    {
+     "seed": 14,
+     "ok": false,
+     "rate": 3.39,
+     "heard": "Cadence plans around how you feel instead of your face.",
+     "problems": [
+      "\"face\" for \"phase\""
+     ]
+    },
+    {
+     "seed": 15,
+     "ok": true,
+     "rate": 3.19,
+     "heard": "Cadence plans around how you feel instead of your phase.",
+     "problems": []
+    }
+   ]
+  },
+  "end.3": {
+   "text": "The AI suggests, and you decide.",
+   "chosen": 2,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 2.79,
+     "heard": "The AI suggests and you decide.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 3.12,
+     "heard": "the AI suggests and you decide.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 3.09,
+     "heard": "The AI suggests and you decide.",
+     "problems": []
+    }
+   ]
+  },
+  "end.4": {
+   "text": "And it knows when to send you to a real clinician.",
+   "chosen": 12,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": false,
+     "rate": 4.23,
+     "heard": "and it knows when to send you to a real clinician.",
+     "problems": [
+      "fast: 4.23 words/s"
+     ]
+    },
+    {
+     "seed": 2,
+     "ok": false,
+     "rate": 3.93,
+     "heard": "and it knows when to send you to a real clinician.",
+     "problems": [
+      "fast: 3.93 words/s"
+     ]
+    },
+    {
+     "seed": 3,
+     "ok": false,
+     "rate": 4.44,
+     "heard": "and it knows when to send you to a real clinician.",
+     "problems": [
+      "fast: 4.44 words/s"
+     ]
+    },
+    {
+     "seed": 4,
+     "ok": false,
+     "rate": 4.75,
+     "heard": "and it knows when to send you to a real clinician.",
+     "problems": [
+      "fast: 4.75 words/s"
+     ]
+    },
+    {
+     "seed": 5,
+     "ok": false,
+     "rate": 4.48,
+     "heard": "and it knows when to send you to a real clinician.",
+     "problems": [
+      "fast: 4.48 words/s"
+     ]
+    },
+    {
+     "seed": 6,
+     "ok": false,
+     "rate": 4.15,
+     "heard": "and it knows when to send you to a real clinician.",
+     "problems": [
+      "fast: 4.15 words/s"
+     ]
+    },
+    {
+     "seed": 7,
+     "ok": false,
+     "rate": 3.85,
+     "heard": "and it knows when to send you to a real clinician.",
+     "problems": [
+      "fast: 3.85 words/s"
+     ]
+    },
+    {
+     "seed": 8,
+     "ok": false,
+     "rate": 3.93,
+     "heard": "and it knows when to send you to a real clinician.",
+     "problems": [
+      "fast: 3.93 words/s"
+     ]
+    },
+    {
+     "seed": 9,
+     "ok": false,
+     "rate": 4.01,
+     "heard": "and it knows when to send you to a real clinician.",
+     "problems": [
+      "fast: 4.01 words/s"
+     ]
+    },
+    {
+     "seed": 10,
+     "ok": false,
+     "rate": 3.86,
+     "heard": "and it knows when to send you to a real clinician.",
+     "problems": [
+      "fast: 3.86 words/s"
+     ]
+    },
+    {
+     "seed": 11,
+     "ok": false,
+     "rate": 4.03,
+     "heard": "and it knows when to send you to a real clinician.",
+     "problems": [
+      "fast: 4.03 words/s"
+     ]
+    },
+    {
+     "seed": 12,
+     "ok": true,
+     "rate": 3.62,
+     "heard": "and it knows when to send you to a real clinician.",
+     "problems": []
+    },
+    {
+     "seed": 13,
+     "ok": false,
+     "rate": 4.34,
+     "heard": "and it knows when to send you to a real clinician.",
+     "problems": [
+      "fast: 4.34 words/s"
+     ]
+    },
+    {
+     "seed": 14,
+     "ok": true,
+     "rate": 3.64,
+     "heard": "and it knows when to send you to a real clinician.",
+     "problems": []
+    },
+    {
+     "seed": 15,
+     "ok": false,
+     "rate": 4.08,
+     "heard": "and it knows when to send you to a real clinician.",
+     "problems": [
+      "fast: 4.08 words/s"
+     ]
+    },
+    {
+     "seed": 16,
+     "ok": false,
+     "rate": 4.74,
+     "heard": "and it knows when to send you to a real clinician.",
+     "problems": [
+      "fast: 4.74 words/s",
+      "cut off: the last 30 ms are still at -27 dB"
+     ]
+    }
+   ]
+  },
+  "end.5": {
+   "text": "Our code is on GitHub, at the link on screen.",
+   "chosen": 1,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 3.04,
+     "heard": "Our code is on github at the link on screen.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": false,
+     "rate": 3.88,
+     "heard": "Our code is on GitHub at the link on screen.",
+     "problems": [
+      "fast: 3.88 words/s"
+     ]
+    },
+    {
+     "seed": 3,
+     "ok": true,
+     "rate": 2.95,
+     "heard": "Our code is on GitHub at the link on screen.",
+     "problems": []
+    },
+    {
+     "seed": 4,
+     "ok": true,
+     "rate": 3.74,
+     "heard": "our code is on GitHub at the link on screen.",
+     "problems": []
+    }
+   ]
+  },
+  "end.6": {
+   "text": "Next, we'll get into the ethics behind it.",
+   "chosen": 1,
+   "attempts": [
+    {
+     "seed": 1,
+     "ok": true,
+     "rate": 3.33,
+     "heard": "Next we'll get into the ethics behind it.",
+     "problems": []
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rate": 3.6,
+     "heard": "Next, we'll get into the ethics behind it.",
+     "problems": []
+    },
+    {
+     "seed": 3,
+     "ok": false,
+     "rate": 3.91,
+     "heard": "Next, we'll get into the ethics behind it.",
+     "problems": [
+      "fast: 3.91 words/s"
+     ]
+    },
+    {
+     "seed": 4,
+     "ok": true,
+     "rate": 3.61,
+     "heard": "Next, we'll get into the ethics behind it.",
+     "problems": []
+    }
+   ]
+  }
+ }
+}

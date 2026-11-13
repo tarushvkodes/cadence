@@ -48,9 +48,11 @@ export const AppShot: React.FC<{
   cam: readonly CamKey[];
   start?: Cam;
   phone?: { time: string };
+  /** The take frame the fingertip follows, when it must run on past a frozen picture. */
+  touch?: (frame: number) => number;
   opacity?: (frame: number) => number;
   overlay?: (s: ShotState) => React.ReactNode;
-}> = ({ take: id, time, cam: keys, start, phone, opacity, overlay }) => {
+}> = ({ take: id, time, cam: keys, start, phone, touch, opacity, overlay }) => {
   const frame = useCurrentFrame();
   const device = phone ? PHONE : LAPTOP;
   const cam = sampleCam(keys, frame, start ?? (phone ? PHONE_REST : REST));
@@ -76,7 +78,7 @@ export const AppShot: React.FC<{
               <Freeze frame={tf}>
                 <OffthreadVideo src={staticFile(`captures/${id}.mp4`)} muted style={{ width: device.appW, height: device.appH, display: 'block' }} />
               </Freeze>
-              <Touch take={id} tf={tf} />
+              <Touch take={id} tf={touch ? Math.round(touch(frame)) : tf} />
             </Phone>
           ) : (
             <Window>

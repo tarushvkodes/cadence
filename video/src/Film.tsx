@@ -18,6 +18,10 @@ import { Title } from './scenes/Title.tsx';
 import { Today } from './scenes/Today.tsx';
 import { FPS, TIMELINE, TOTAL_FRAMES } from './timeline.ts';
 
+/** Gains measured on the assembled mix with earshot: the voice lands near -16 LUFS integrated. */
+const VOICE_GAIN = 1;
+const MASTER = 1;
+
 export type FilmProps = { variant: Variant };
 
 const SCENES: Record<string, React.FC> = {
@@ -35,25 +39,14 @@ const SCENES: Record<string, React.FC> = {
 
 if (typeof document !== 'undefined') document.documentElement.dataset.theme = 'light';
 
-/** The whole mix sits 1.6 dB above unity so the voiced cut lands near -16 LUFS (measured with earshot). */
-const MASTER = 1.2;
-
-/** Each recorded line, cut from the narration file at its pauses and placed on the film's timeline. */
+/** Each verified line of the narration, played from its own take at the film's timing. */
 const Voice: React.FC = () => (
   <>
-    {TIMELINE.lines.flatMap((l) => {
-      let at = l.from;
-      return l.segments.map(([s = 0, e = 0], i) => {
-        const from = at;
-        const dur = Math.round((e - s) * FPS);
-        at += dur;
-        return (
-          <Sequence key={`${l.id}-${i}`} from={from} durationInFrames={dur + 1} layout="none">
-            <Audio src={staticFile('voice/narration.wav')} startFrom={Math.round(s * FPS)} endAt={Math.round(s * FPS) + dur + 1} volume={(f) => MASTER * Math.min(1, (f + 1) / 2, (dur + 1 - f) / 2)} />
-          </Sequence>
-        );
-      });
-    })}
+    {TIMELINE.lines.map((l) => (
+      <Sequence key={l.id} from={l.from} durationInFrames={Math.ceil(l.length * FPS) + 2} layout="none">
+        <Audio src={staticFile(l.file)} volume={VOICE_GAIN} />
+      </Sequence>
+    ))}
   </>
 );
 
@@ -65,7 +58,7 @@ const Bed: React.FC<{ ducked: boolean }> = ({ ducked }) => {
   const base = ducked ? 0.34 : 0.3;
   const under = 0.2;
   const level = (f: number) => {
-    const fadeIn = Math.min(1, f / 10);
+    const fadeIn = Math.min(1, (f + 2) / 4);
     const fadeOut = Math.min(1, (TOTAL_FRAMES - f) / 60);
     if (!ducked) return MASTER * base * fadeIn * fadeOut;
     let duck = 0;

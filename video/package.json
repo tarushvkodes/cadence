@@ -5,7 +5,7 @@
   "description": "The Cadence demo film: real captures of the app, composited in Remotion.",
   "scripts": {
     "capture": "tsx capture/capture.ts",
-    "voice": "tsx voice/align.ts",
+    "voice": "tsx voice/build.ts",
     "narration": "tsx scripts/narration.ts",
     "sound": "tsx audio/build.ts",
     "studio": "remotion studio src/index.ts",

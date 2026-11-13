@@ -3,9 +3,14 @@ import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from 'remo
 import { Ring } from '../kit/Ring.tsx';
 import { Sfx } from '../kit/Sounds.tsx';
 import { C, CLAMP, ease, FONT, rise, tween } from '../kit/theme.ts';
-import { chapter, line } from '../timeline.ts';
+import { chapter, line, word } from '../timeline.ts';
 
-/** Cold open: the ring draws itself, the ink dot lands where the cycle starts, the wordmark joins it. */
+/** One quiet fact under the tagline: who it is for, or where it runs. */
+const Fact: React.FC<{ show: number; children: React.ReactNode }> = ({ show, children }) => (
+  <span style={{ opacity: show, transform: `translateY(${(1 - show) * 14}px)`, display: 'inline-block' }}>{children}</span>
+);
+
+/** Cold open: the ring draws itself from the first frame, the ink dot lands, the wordmark joins it. */
 export const Title: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -14,16 +19,19 @@ export const Title: React.FC = () => {
   const t1 = line('title.1');
   const t2 = line('title.2');
 
-  const drawn = tween(frame, 4, 50, ease.inOut);
-  const dot = rise(frame, 50, fps);
+  const drawn = tween(frame, 0, 40, ease.inOut);
+  const dot = rise(frame, 36, fps);
   const lock = tween(frame, t1.local - 4, 34, ease.inOut);
-  const word = rise(frame, t1.local + 6, fps);
+  const wordmark = rise(frame, t1.local + 6, fps);
   const tag = rise(frame, t2.local + 4, fps);
+  const who = rise(frame, word('title.3', 'women') - 2, fps);
+  const where = rise(frame, word('title.3', 'runs') - 2, fps);
   const exit = tween(frame, len - 14, 14, ease.in);
 
   const ringSize = interpolate(lock, [0, 1], [340, 190]);
   const ringX = interpolate(lock, [0, 1], [960 - 170, 960 - 330 - 190 / 2 - 20]);
   const ringY = interpolate(lock, [0, 1], [540 - 170, 470 - 95]);
+  const dotSep = interpolate(where, [0, 1], [0, 1], CLAMP);
 
   return (
     <AbsoluteFill style={{ opacity: 1 - exit, transform: `translateY(${-24 * exit}px)` }}>
@@ -35,8 +43,8 @@ export const Title: React.FC = () => {
           position: 'absolute',
           left: 960 - 330 + 190 / 2 + 24,
           top: 470,
-          transform: `translateY(-50%) translateX(${(1 - word) * 24}px)`,
-          opacity: word,
+          transform: `translateY(-50%) translateX(${(1 - wordmark) * 24}px)`,
+          opacity: wordmark,
           font: `500 168px/1 ${FONT.serif}`,
           letterSpacing: '-0.03em',
           color: C.ink,
@@ -60,23 +68,13 @@ export const Title: React.FC = () => {
       >
         Your week, in step with your cycle.
       </div>
-      <div
-        style={{
-          position: 'absolute',
-          left: 0,
-          right: 0,
-          top: 742,
-          textAlign: 'center',
-          opacity: interpolate(tag, [0.4, 1], [0, 1], CLAMP) * 0.9,
-          font: `600 20px/1 ${FONT.sans}`,
-          letterSpacing: '0.14em',
-          textTransform: 'uppercase',
-          color: C.ink3,
-        }}
-      >
-        Runs in the browser, on a phone or laptop
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 744, textAlign: 'center', font: `500 28px/1 ${FONT.sans}`, letterSpacing: '-0.01em', color: C.ink2 }}>
+        <Fact show={who}>For women around 17 to 25</Fact>
+        <span style={{ display: 'inline-block', width: 7, height: 7, borderRadius: 99, background: C.ink3, margin: '0 22px', verticalAlign: 'middle', opacity: dotSep }} />
+        <Fact show={where}>Runs in the browser, on a phone or a laptop</Fact>
       </div>
-      <Sfx at={48} name="chime" />
+      <Sfx at={0} name="whoosh" gain={0.7} />
+      <Sfx at={36} name="chime" />
     </AbsoluteFill>
   );
 };

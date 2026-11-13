@@ -1,117 +1,124 @@
 # Cadence demo film: narration
 
-The film is cut to the narration as it was recorded (`public/voice/narration.m4a`), so these timings are the
-timings of the voice in `out/cadence-demo.mp4`. If you narrate live over `out/cadence-demo-music.mp4` or
-`out/cadence-demo-silent.mp4`, start each line at its timecode.
+The voice in `out/cadence-demo.mp4` is an AI clone of a team member's voice, made with his consent, speaking the
+settled script line for line (`voice/script.ts`). Each time below is when that line's words start in the film. If you
+narrate live over `out/cadence-demo-music.mp4` or `out/cadence-demo-silent.mp4`, start each line at its timecode.
+The # column is the line's number in the script.
 
-Total length 3:36.5. Generated from `src/timeline.ts` by `npm run narration`; do not edit by hand.
+Total length 4:40.0. Generated from `src/timeline.ts` by `npm run narration`; do not edit by hand.
 
 ## Timed script
 
-| Time | On screen | Words |
-| --- | --- | --- |
-| **0:00.0** | **Cadence** | |
-| 0:01.6 | The cycle ring draws itself and becomes the Cadence wordmark. | This is Cadence. |
-| 0:03.5 | Tagline: "Your week, in step with your cycle." | We built it to help you plan your week around how you actually feel. |
-| **0:08.2** | **The idea** | |
-| 0:08.2 | Eyebrow: "The idea". | Here's the idea. |
-| 0:09.3 | Two statements: phase does not change what you can do; how you feel can change. The meta-analysis behind it. | Your phase doesn't change what you're capable of, but how you feel can change, and that's different for everyone. |
-| 0:16.3 | "So Cadence plans around what you log." | So, Cadence plans around what you log, instead of a guess from the calendar. |
-| **0:21.4** | **Step 1: Set up** | |
-| 0:21.8 | Step 1 title, which shrinks into the step chip. The phone swings in, on onboarding. | Step one is setup. |
-| 0:23.7 | Onboarding: the last period date is typed in; cycle length and regularity are pointed out. | You tell it when your last period started, how long your cycle usually is, and how regular it is. |
-| 0:28.7 | Continue. The Four promises card slides in. | Then, it makes four promises. |
-| 0:30.9 | The camera walks down the promises as each is named. | Your data stays on your computer, the AI is only suggesting, it's not medical advice, and the dates are estimates. |
-| 0:37.9 | The fourth promise: estimates, never for birth control. | So, don't use it for birth control. |
-| 0:40.4 | I understand. The start choices. | We'll start with the sample week here. |
-| 0:42.3 | Start with a sample week. | It's a busy student week with the midterm on Thursday. |
-| **0:45.7** | **Step 2: Read your day** | |
-| 0:46.1 | Step 2, on the phone. Today: the dial sweeps to day 25. | Step two is Today. |
-| 0:47.4 | Push in on the dial. "Day 25 of about 28." | The dial shows you where you probably are, day 25 of 28. |
-| 0:52.6 | Callout on the range. | It gives a range instead of a date. |
-| 0:54.8 | "Nov 18 to 22", then the confidence; its reasons open. | Your next period is probably November 18th to the 22nd, and it says how sure it is. |
-| 1:00.6 | Push to the check-in card. | On the right is the 10-second check-in. |
-| 1:02.8 | Energy, mood, symptoms are pointed out in turn. | Energy, mood, and anything else you notice. |
-| 1:05.6 | Hold on the check-in. | That's what our app plans around. |
-| **1:08.1** | **Step 3: Ask the Guide** | |
-| 1:08.5 | Step 3, on the phone. The Guide. | Step three is the AI. |
-| 1:10.0 | The starter "Plan my week around my cycle." is tapped. | We open the Guide and ask it, "Plan my week around my cycle." |
-| 1:14.2 | Diagram: you ask, the model. | The Guide is an agent. |
-| 1:16.2 | Diagram: decide, call a tool, read the result, repeat. The bead goes round the loop. | That means the model, instead of just answering in one shot, it decides what it needs, calls tools, reads the results, and it repeats. |
-| 1:24.1 | Diagram: a proposal leaves the loop. | And then, finally, it proposes. |
-| 1:27.4 | Back on the phone: the four read steps tick in, each one a tool call; a small loop in the corner shows which station the agent is at. | Here, it checks your cycle, it reads your calendar, habits, and check-ins, and it drafts changes. |
-| 1:33.5 | Drafts come back "adjusted" twice; the third passes. | A tool checks every draft against your calendar, and when one doesn't fit, the model fixes it. |
-| 1:40.0 | The suggestions arrive. Then the phone moves aside for the laptop: "Same app, phone or laptop." | And it ends with five suggestions, each explained with your own check-ins. |
-| **1:47.5** | **Step 4: You decide** | |
-| 1:47.9 | Step 4, on the laptop. The first suggestion: before, after, and why. | Step four, you decide. |
-| 1:50.2 | Push in on the before and after and the reason. | Each suggestion shows what changes and why. |
-| 1:53.3 | Approve, approve, decline. | We approve the ones we like and decline the ones we don't. |
-| 1:57.4 | The cursor goes back up. | Change your mind? |
-| 1:58.5 | Undo. | Undo puts it right back. |
-| 2:00.8 | The laptop Plan: the week, with a dashed ghost block for what is still waiting. "Nothing changes until you approve it." | On the Plan, anything still waiting shows up as a dashed ghost block, and nothing changes until you approve it. |
-| **2:08.8** | **Step 5: A rough morning** | |
-| 2:09.2 | Step 5, on the phone. Thursday, day 1 of a period, midterm tonight. | Step five, a rough morning. Thursday, period day one, midterm tonight. |
-| 2:14.8 | The check-in card. | We log it in ten seconds. |
-| 2:16.9 | Low, Flat, cramps, Save check-in, each a tap. | Low energy, flat mood, cramps. |
-| 2:20.6 | The Guide suggests three changes for today only; the midterm is fixed. | We ask the Guide what to change, and it only touches today, and the midterm stays put. |
-| **2:28.1** | **Step 6: Know the limits** | |
-| 2:28.5 | Step 6, on the phone. The Guide. | Step six is knowing its limits. |
-| 2:30.4 | The question about bad cramps is sent. | We say our cramps are bad enough to miss class. |
-| 2:33.7 | The reply, with "worth getting checked by a doctor" and the urgent care line highlighted. | It doesn't diagnose, it says clearly this is worth seeing a clinician and when to go to urgent care. |
-| 2:40.2 | Yes please. The appointment notes are drafted. | And then it offers to turn our check-ins into notes for the appointment. |
-| **2:45.7** | **Step 7: See inside** | |
-| 2:46.1 | Step 7, on the laptop. Learn. | Step seven, you can see inside. |
-| 2:48.2 | The evidence labels, then a claim with its source. | Our Learn page labels every claim by how strong the evidence is, with its source. |
-| 2:55.1 | Settings: the whole system prompt, word for word. | And Settings shows the exact instructions the AI follows, word for word. |
-| **3:01.3** | **Remember** | |
-| 3:01.7 | The ring returns. | So in closing, there's three things to remember. |
-| 3:04.4 | One: plans around how you feel. | Cadence plans around how you feel, not your phase. |
-| 3:08.5 | Two: the AI suggests, you decide. Three: it knows when to send you to a clinician. | The AI suggests and you decide, and it knows when to send you to a real clinician. |
-| 3:14.9 | github.com/tarushvkodes/cadence | Our code is fully open source. |
-| 3:18.0 | The rest of the presentation. | And in the rest of our presentation, there's more detail about the different resources we're using for our platform. |
-| 3:25.4 | Every claim links to its source. | And you can always check the provenance of our claims. |
-| 3:29.1 | Thank you. | So thank you for listening. |
-| 3:32.8 | The ring closes. | And that's our solution. |
-| 3:34.6 | The Cadence wordmark. | Cadence. |
+| Time | # | On screen | Words |
+| --- | --- | --- | --- |
+| **0:00.0** | | **Cadence** | |
+| 0:01.0 | 1 | The cycle ring draws itself and becomes the Cadence wordmark. | This is Cadence. |
+| 0:02.3 | 2 | Tagline: "Your week, in step with your cycle." | We built it to help you plan your week around how you actually feel. |
+| 0:06.8 | 3 | Two quiet facts under the tagline: for women around 17 to 25, and it runs in the browser. | It's for women around 17 to 25, and it runs in the browser. |
+| **0:13.0** | | **The idea** | |
+| 0:13.5 | 4 | What we assumed, set as a quotation: "The cycle changes how well you think." | When we started, we assumed the cycle changes how well people think. |
+| 0:17.6 | 5 | A pen line strikes the assumption out; it shrinks away, marked "Not what the research says". | Then we read the research, and it doesn't back that up. |
+| 0:22.0 | 6 | "102 studies": no robust change in cognitive performance. Source: Jang et al., PLOS ONE, 2025. | A review of 102 studies found no robust change in cognitive performance across the cycle. |
+| 0:29.4 | 7 | What can change: how you feel, and it differs from person to person. | What can change is how you feel, and that differs from person to person. |
+| 0:33.8 | 8 | "So Cadence plans around what you log." Your phase is a hint. | So Cadence plans around what you log, and treats your phase as a hint. |
+| **0:40.2** | | **Step 1: Set up** | |
+| 0:40.6 | 9 | Step 1 title, which shrinks into the step chip. The phone, on onboarding. | Step 1 is setup. |
+| 0:42.2 | 10 | Onboarding: the last period date is typed; cycle length and regularity are pointed out. | You tell it when your last period started, how long your cycle usually is, and how regular it is. |
+| 0:49.2 | 11 | Continue. The four promises. | Then it makes four promises. |
+| 0:51.1 | 12 | The camera walks down the promises as each is named. | Your data stays on your computer, the AI only suggests, and it's not medical advice. |
+| 0:56.8 | 13 | The fourth promise: estimates, never for birth control. | And the dates are estimates, so don't use them for birth control. |
+| 1:01.4 | 14 | I understand. The start choices; "Start with a sample week" is tapped. | Then we tap Start with a sample week, which is a busy student week with a midterm on Thursday. |
+| **1:08.5** | | **Step 2: Read your day** | |
+| 1:08.9 | 15 | Step 2, on the phone. Today: the dial sweeps to day 25. | Step 2 is reading your day, on the Today screen. |
+| 1:12.5 | 16 | Push in on the dial: day 25 of about 28. | The dial says day 25 of about 28. |
+| 1:15.9 | 17 | The predicted range, Nov 18 to 22. | Your next period is probably Nov 18 to 22. |
+| 1:19.9 | 18 | "A range, not a date", and a source line: Bull et al., npj Digital Medicine, 2019. | It gives you a range instead of a date, because only 13% of cycles are exactly 28 days. |
+| 1:27.2 | 19 | How sure it is; the label is tapped and its reasons open. | It also says how sure it is, and you can tap that to see why. |
+| 1:33.0 | 20 | The check-in: energy, mood and symptoms pointed out in turn. | Below that is the 10-second check-in, for energy, mood, and symptoms. |
+| 1:38.0 | 21 | Hold on the check-in. | That's what our app plans around. |
+| **1:41.2** | | **Step 3: Ask the Guide** | |
+| 1:41.6 | 22 | Step 3, on the phone. The Guide. | Step 3 is asking the Guide. |
+| 1:44.0 | 23 | The starter "Plan my week around my cycle" is tapped. | We tap "Plan my week around my cycle." |
+| 1:47.9 | 24 | Diagram: the model, Claude, a large language model. | The Guide is an agent that runs on Claude, which is a large language model. |
+| 1:52.6 | 25 | A plain chatbot: your message in, an answer out. It sees only what you type. | A plain chatbot only sees what you type into it. |
+| 1:56.4 | 26 | An agent: the same model, now with tools around it. | An agent also has tools. |
+| 1:58.5 | 27 | A tool opens into a few lines of real code. | A tool is basically a small piece of code we wrote that the model can use. |
+| 2:03.6 | 28 | The calendar tool: list_events, and what it returns. | For instance, one of them reads your calendar. |
+| 2:06.9 | 29 | The loop: decide, call a tool, read the result, repeat, then propose. | So the agent decides what it needs, calls a tool, reads the result, and repeats until it can propose changes. |
+| 2:15.1 | 30 | Back on the phone: four tool calls tick in, each named beside the phone as it lands. | Here it uses four tools. It checks your cycle, it reads your calendar, your habits, and your check-ins. |
+| 2:21.5 | 31 | What goes to Claude: the four results travel to Claude, only because you asked. | All of that goes to Claude only when you ask it something. |
+| 2:26.3 | 32 | Two drafts come back "adjusted"; the tool caught them and the model fixed them. | Then it drafts changes, and a tool catches two that don't fit your calendar, so the model fixes them. |
+| 2:32.7 | 33 | Five suggestions arrive. | And it ends with five suggestions, each one explained with your own check-ins. |
+| 2:37.2 | 34 | The first suggestion's reason, "around day 27", highlighted. Then the phone hands over to the laptop. | For instance, it lightens Wednesday's hard workout, because that's probably around day 27, when you've logged low energy and headaches. |
+| **2:46.0** | | **Step 4: You decide** | |
+| 2:46.5 | 35 | Step 4, on the laptop. The suggestions. | Step 4 is where you decide. |
+| 2:48.9 | 36 | Push in on what changes and why. | Each suggestion shows what changes and why. |
+| 2:52.7 | 37 | Approve, approve, decline, then undo one approval, each labelled as it happens. | We approve two, decline one, and then undo one of the approvals. |
+| 2:59.4 | 38 | The Plan: a dashed block for what is still waiting. | On the Plan, anything still waiting shows up as a dashed block. |
+| 3:03.9 | 39 | The lock icons on a class, a shift and the midterm. | Classes, exams, and shifts are locked, so the Guide can't move them. |
+| 3:08.6 | 40 | The bar: nothing changes until you approve. | And the AI can't change your calendar on its own, so nothing changes until you approve it. |
+| **3:15.7** | | **Step 5: A rough morning** | |
+| 3:16.1 | 41 | Step 5, on the phone. | Step 5 is a rough morning. |
+| 3:18.3 | 42 | Thursday, day 1 of a period, midterm tonight. | It's Thursday, day 1 of your period, and your midterm is tonight. |
+| 3:22.8 | 43 | Low, Flat, cramps, Save check-in, each a tap. | You log it in 10 seconds: low energy, flat mood, cramps. |
+| 3:27.5 | 44 | The Guide; "Today feels rough" is asked. | Then you ask the Guide what to change. |
+| 3:30.5 | 45 | Three changes for today only; the midterm stays put. | It only touches today, with three small changes, and the midterm stays put. |
+| **3:36.4** | | **Step 6: Know the limits** | |
+| 3:36.8 | 46 | Step 6, on the phone. The Guide. | Step 6 is knowing its limits. |
+| 3:39.4 | 47 | The question about bad cramps is sent. | You tell it your cramps are bad enough to miss class. |
+| 3:43.8 | 48 | The reply arrives: no diagnosis. | It doesn't diagnose, because it's not a doctor. |
+| 3:46.9 | 49 | "Worth getting checked by a doctor" and the urgent care line, highlighted. | It tells you to get this checked by a doctor, and it explains when to go to urgent care. |
+| 3:54.0 | 50 | Yes please. The appointment notes, drafted from the check-ins. | Then it offers to turn your check-ins into notes for the appointment, and it does. |
+| **4:01.3** | | **Step 7: See inside** | |
+| 4:01.7 | 51 | Step 7, on the laptop. Learn. | Step 7 is seeing inside. |
+| 4:03.9 | 52 | The three evidence labels, named in turn, then a claim with its source. | Our Learn page labels every claim as well supported, mixed, or weak, with its source. |
+| 4:10.8 | 53 | Settings: the whole system prompt, word for word. | And Settings shows the instructions the AI follows, word for word. |
+| **4:16.5** | | **Remember** | |
+| 4:17.0 | 54 | The ring returns. "Three things to remember." | So there's three things to remember. |
+| 4:19.2 | 55 | One: it plans around how you feel, not your phase. | Cadence plans around how you feel, instead of your phase. |
+| 4:22.7 | 56 | Two: the AI suggests, you decide. | The AI suggests, and you decide. |
+| 4:25.1 | 57 | Three: it knows when to send you to a clinician. | And it knows when to send you to a real clinician. |
+| 4:29.6 | 58 | github.com/tarushvkodes/cadence | Our code is on GitHub, at the link on screen. |
+| 4:34.4 | 59 | Up next: the ethics behind it. The narration credit. | Next, we'll get into the ethics behind it. |
 
 ## Read-through
 
 **Cadence**
 
-This is Cadence. We built it to help you plan your week around how you actually feel.
+This is Cadence. We built it to help you plan your week around how you actually feel. It's for women around 17 to 25, and it runs in the browser.
 
 **The idea**
 
-Here's the idea. Your phase doesn't change what you're capable of, but how you feel can change, and that's different for everyone. So, Cadence plans around what you log, instead of a guess from the calendar.
+When we started, we assumed the cycle changes how well people think. Then we read the research, and it doesn't back that up. A review of 102 studies found no robust change in cognitive performance across the cycle. What can change is how you feel, and that differs from person to person. So Cadence plans around what you log, and treats your phase as a hint.
 
 **Step 1: Set up**
 
-Step one is setup. You tell it when your last period started, how long your cycle usually is, and how regular it is. Then, it makes four promises. Your data stays on your computer, the AI is only suggesting, it's not medical advice, and the dates are estimates. So, don't use it for birth control. We'll start with the sample week here. It's a busy student week with the midterm on Thursday.
+Step 1 is setup. You tell it when your last period started, how long your cycle usually is, and how regular it is. Then it makes four promises. Your data stays on your computer, the AI only suggests, and it's not medical advice. And the dates are estimates, so don't use them for birth control. Then we tap Start with a sample week, which is a busy student week with a midterm on Thursday.
 
 **Step 2: Read your day**
 
-Step two is Today. The dial shows you where you probably are, day 25 of 28. It gives a range instead of a date. Your next period is probably November 18th to the 22nd, and it says how sure it is. On the right is the 10-second check-in. Energy, mood, and anything else you notice. That's what our app plans around.
+Step 2 is reading your day, on the Today screen. The dial says day 25 of about 28. Your next period is probably Nov 18 to 22. It gives you a range instead of a date, because only 13% of cycles are exactly 28 days. It also says how sure it is, and you can tap that to see why. Below that is the 10-second check-in, for energy, mood, and symptoms. That's what our app plans around.
 
 **Step 3: Ask the Guide**
 
-Step three is the AI. We open the Guide and ask it, "Plan my week around my cycle." The Guide is an agent. That means the model, instead of just answering in one shot, it decides what it needs, calls tools, reads the results, and it repeats. And then, finally, it proposes. Here, it checks your cycle, it reads your calendar, habits, and check-ins, and it drafts changes. A tool checks every draft against your calendar, and when one doesn't fit, the model fixes it. And it ends with five suggestions, each explained with your own check-ins.
+Step 3 is asking the Guide. We tap "Plan my week around my cycle." The Guide is an agent that runs on Claude, which is a large language model. A plain chatbot only sees what you type into it. An agent also has tools. A tool is basically a small piece of code we wrote that the model can use. For instance, one of them reads your calendar. So the agent decides what it needs, calls a tool, reads the result, and repeats until it can propose changes. Here it uses four tools. It checks your cycle, it reads your calendar, your habits, and your check-ins. All of that goes to Claude only when you ask it something. Then it drafts changes, and a tool catches two that don't fit your calendar, so the model fixes them. And it ends with five suggestions, each one explained with your own check-ins. For instance, it lightens Wednesday's hard workout, because that's probably around day 27, when you've logged low energy and headaches.
 
 **Step 4: You decide**
 
-Step four, you decide. Each suggestion shows what changes and why. We approve the ones we like and decline the ones we don't. Change your mind? Undo puts it right back. On the Plan, anything still waiting shows up as a dashed ghost block, and nothing changes until you approve it.
+Step 4 is where you decide. Each suggestion shows what changes and why. We approve two, decline one, and then undo one of the approvals. On the Plan, anything still waiting shows up as a dashed block. Classes, exams, and shifts are locked, so the Guide can't move them. And the AI can't change your calendar on its own, so nothing changes until you approve it.
 
 **Step 5: A rough morning**
 
-Step five, a rough morning. Thursday, period day one, midterm tonight. We log it in ten seconds. Low energy, flat mood, cramps. We ask the Guide what to change, and it only touches today, and the midterm stays put.
+Step 5 is a rough morning. It's Thursday, day 1 of your period, and your midterm is tonight. You log it in 10 seconds: low energy, flat mood, cramps. Then you ask the Guide what to change. It only touches today, with three small changes, and the midterm stays put.
 
 **Step 6: Know the limits**
 
-Step six is knowing its limits. We say our cramps are bad enough to miss class. It doesn't diagnose, it says clearly this is worth seeing a clinician and when to go to urgent care. And then it offers to turn our check-ins into notes for the appointment.
+Step 6 is knowing its limits. You tell it your cramps are bad enough to miss class. It doesn't diagnose, because it's not a doctor. It tells you to get this checked by a doctor, and it explains when to go to urgent care. Then it offers to turn your check-ins into notes for the appointment, and it does.
 
 **Step 7: See inside**
 
-Step seven, you can see inside. Our Learn page labels every claim by how strong the evidence is, with its source. And Settings shows the exact instructions the AI follows, word for word.
+Step 7 is seeing inside. Our Learn page labels every claim as well supported, mixed, or weak, with its source. And Settings shows the instructions the AI follows, word for word.
 
 **Remember**
 
-So in closing, there's three things to remember. Cadence plans around how you feel, not your phase. The AI suggests and you decide, and it knows when to send you to a real clinician. Our code is fully open source. And in the rest of our presentation, there's more detail about the different resources we're using for our platform. And you can always check the provenance of our claims. So thank you for listening. And that's our solution. Cadence.
+So there's three things to remember. Cadence plans around how you feel, instead of your phase. The AI suggests, and you decide. And it knows when to send you to a real clinician. Our code is on GitHub, at the link on screen. Next, we'll get into the ethics behind it.
