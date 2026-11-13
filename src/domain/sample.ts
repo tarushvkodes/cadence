@@ -205,17 +205,24 @@ export function demoSeed(flow: DemoFlow): DemoSeed {
   }
 }
 
-/** "Start with a sample week": the same week, moved to the current week, with history that ends today. */
-export function liveSample(today: ISODate): PlannerData {
+/**
+ * "Start with a sample week": the same week moved to the current week, with sample check-ins that end
+ * yesterday. When the user gave their own cycle details, the sample history follows their cycle.
+ */
+export function liveSample(today: ISODate, own?: CycleProfile): PlannerData {
   const monday = startOfWeek(today);
   const lastStart = addDays(today, -24);
-  const profile: CycleProfile = {
-    periodStarts: [-3, -2, -1, 0].map((k) => addDays(lastStart, k * 28 + (k === -2 ? 1 : 0))).sort(),
-    typicalCycleLength: 28,
-    typicalPeriodLength: 5,
-    regularity: 'regular',
-  };
-  const checkIns = sampleCheckIns(profile, addDays(profile.periodStarts[0] as ISODate, 1), addDays(today, -1), {});
+  const profile: CycleProfile =
+    own && own.periodStarts.length
+      ? own
+      : {
+          periodStarts: [-3, -2, -1, 0].map((k) => addDays(lastStart, k * 28 + (k === -2 ? 1 : 0))).sort(),
+          typicalCycleLength: 28,
+          typicalPeriodLength: 5,
+          regularity: 'regular',
+        };
+  const historyStart = addDays(profile.periodStarts.at(-1) as ISODate, -3 * profile.typicalCycleLength + 1);
+  const checkIns = sampleCheckIns(profile, historyStart, addDays(today, -1), {});
   return {
     profile,
     events: sampleEvents(monday),

@@ -1,0 +1,46 @@
+.settings { width: min(820px, 100%); }
+.settings-head { margin-bottom: 28px; }
+.group { margin-bottom: 30px; }
+.group-title { padding: 0 6px 8px; }
+.group-card { padding: 4px 20px; }
+.row { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 14px 0; border-top: 1px solid var(--line); min-height: 64px; flex-wrap: wrap; }
+.group-card > .row:first-child { border-top: 0; }
+.row-text { display: grid; gap: 2px; flex: 1 1 260px; min-width: 0; }
+.row-label { font-weight: 600; }
+.row-control { flex: none; }
+.group-note { font-size: 14px; color: var(--ink-2); padding: 12px 0; border-top: 1px solid var(--line); }
+.group-card > .group-note:first-child { border-top: 0; }
+.group-note code, .prompt { font-family: var(--font-mono); }
+.group-note code { font-size: 13px; }
+
+.bridge-state { display: inline-flex; align-items: center; gap: 8px; font-weight: 650; font-size: 15px; }
+.bridge-state .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--ink-3); }
+.bridge-state.is-online .dot { background: #2f9e5b; box-shadow: 0 0 0 3px color-mix(in oklab, #2f9e5b 22%, transparent); }
+.bridge-state.is-offline { color: var(--danger); }
+.bridge-state.is-offline .dot { background: var(--danger); }
+.bridge-state.is-replay .dot { background: var(--phase); }
+
+.date-add { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.start-list { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 0 14px; }
+.start-list .chip { padding-right: 4px; }
+.start-list button { display: grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; border: 0; background: none; color: var(--ink-2); position: relative; }
+.start-list button::after { content: ''; position: absolute; inset: -10px; }
+.start-list button:hover { background: color-mix(in oklab, var(--ink) 8%, transparent); }
+
+.prompt {
+  white-space: pre-wrap;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0 0 16px;
+  padding: 16px 18px;
+  border-radius: 14px;
+  background: var(--sunken);
+  color: var(--ink);
+  max-height: 460px;
+  overflow: auto;
+}
+.settings-foot { padding: 0 6px; }
+
+.sheet-scrim { position: fixed; inset: 0; z-index: 80; display: grid; place-items: center; padding: 16px; background: color-mix(in oklab, #000 28%, transparent); }
+.confirm-sheet { width: min(460px, 100%); padding: 26px; display: grid; gap: 12px; --glass-fill: color-mix(in oklab, var(--elevated) 86%, transparent); }
+.confirm-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 8px; flex-wrap: wrap; }

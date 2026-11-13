@@ -105,7 +105,7 @@
 
 .composer-dock { position: fixed; left: 0; right: 0; bottom: 22px; z-index: 30; display: grid; justify-items: center; gap: 8px; padding: 0 16px; pointer-events: none; }
 .composer-dock > * { pointer-events: auto; width: min(780px, 100%); }
-.composer { display: flex; align-items: flex-end; gap: 8px; padding: 8px 8px 8px 20px; min-height: 60px; }
+.composer { --glass-fill: color-mix(in oklab, var(--elevated) 76%, transparent); display: flex; align-items: flex-end; gap: 8px; padding: 8px 8px 8px 20px; min-height: 60px; }
 .composer textarea { flex: 1; resize: none; border: 0; background: none; outline: none; padding: 10px 0; font-size: 16px; line-height: 1.45; max-height: 160px; color: var(--ink); }
 .composer textarea::placeholder { color: var(--ink-3); }
 .composer textarea[readonly] { cursor: default; }

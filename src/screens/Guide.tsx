@@ -265,7 +265,7 @@ function Composer() {
           </motion.p>
         ) : null}
       </AnimatePresence>
-      <Glass radius={28} className="composer" frost={14}>
+      <Glass radius={28} className="composer" frost={20}>
         <label className="visually-hidden" htmlFor="composer-input">
           Message Cadence
         </label>

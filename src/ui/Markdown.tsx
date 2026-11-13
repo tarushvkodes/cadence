@@ -17,48 +17,59 @@ function inline(text: string, keyBase: string): ReactNode[] {
   return out;
 }
 
+type Block = { kind: 'p' | 'ul' | 'ol'; lines: string[] };
+
+const BULLET = /^\s*[-*•]\s+/;
+const NUMBERED = /^\s*\d+[.)]\s+/;
+
+/** Group lines into paragraphs and lists. A blank line or a switch between kinds starts a new block. */
+function toBlocks(text: string): Block[] {
+  const blocks: Block[] = [];
+  for (const raw of text.replace(/\r/g, '').split('\n')) {
+    if (!raw.trim()) {
+      blocks.push({ kind: 'p', lines: [] });
+      continue;
+    }
+    const kind: Block['kind'] = BULLET.test(raw) ? 'ul' : NUMBERED.test(raw) ? 'ol' : 'p';
+    const line = raw.replace(kind === 'ul' ? BULLET : kind === 'ol' ? NUMBERED : /^/, '');
+    const prev = blocks.at(-1);
+    if (prev && prev.kind === kind && prev.lines.length) prev.lines.push(line);
+    else blocks.push({ kind, lines: [line] });
+  }
+  return blocks.filter((b) => b.lines.length);
+}
+
 export function Markdown({ text, caret = false }: { text: string; caret?: boolean }) {
-  const blocks = text.replace(/\r/g, '').split(/\n{2,}/).filter((b) => b.trim());
+  const blocks = toBlocks(text);
+  const tailFor = (bi: number, li: number, count: number) =>
+    caret && bi === blocks.length - 1 && li === count - 1 ? <span className="caret" aria-hidden="true" /> : null;
+
   return (
     <div className="markdown">
       {blocks.map((block, bi) => {
-        const lines = block.split('\n').filter((l) => l.trim());
-        const isLast = bi === blocks.length - 1;
-        const tail = caret && isLast ? <span className="caret" aria-hidden="true" /> : null;
-        if (lines.every((l) => /^\s*[-*•]\s+/.test(l))) {
+        if (block.kind === 'p') {
           return (
-            <ul key={bi}>
-              {lines.map((l, li) => (
-                <li key={li}>
-                  {inline(l.replace(/^\s*[-*•]\s+/, ''), `${bi}-${li}`)}
-                  {li === lines.length - 1 ? tail : null}
-                </li>
+            <p key={bi}>
+              {block.lines.map((l, li) => (
+                <Fragment key={li}>
+                  {li > 0 ? <br /> : null}
+                  {inline(l, `${bi}-${li}`)}
+                  {tailFor(bi, li, block.lines.length)}
+                </Fragment>
               ))}
-            </ul>
+            </p>
           );
         }
-        if (lines.every((l) => /^\s*\d+[.)]\s+/.test(l))) {
-          return (
-            <ol key={bi}>
-              {lines.map((l, li) => (
-                <li key={li}>
-                  {inline(l.replace(/^\s*\d+[.)]\s+/, ''), `${bi}-${li}`)}
-                  {li === lines.length - 1 ? tail : null}
-                </li>
-              ))}
-            </ol>
-          );
-        }
+        const List = block.kind;
         return (
-          <p key={bi}>
-            {lines.map((l, li) => (
-              <Fragment key={li}>
-                {li > 0 ? <br /> : null}
+          <List key={bi}>
+            {block.lines.map((l, li) => (
+              <li key={li}>
                 {inline(l, `${bi}-${li}`)}
-              </Fragment>
+                {tailFor(bi, li, block.lines.length)}
+              </li>
             ))}
-            {tail}
-          </p>
+          </List>
         );
       })}
       {blocks.length === 0 && caret ? (
