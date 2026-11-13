@@ -182,6 +182,7 @@ export type ChangeDescription = {
 
 const slotLabel = (slot: Slot) => `${shortDayName(dateOf(slot.start))} ${formatClock(slot.start)} to ${formatClock(slot.end)}`;
 const loadLabel: Record<Load, string> = { light: 'Light', moderate: 'Moderate', demanding: 'Demanding' };
+const LOAD_ORDER: Record<Load, number> = { light: 0, moderate: 1, demanding: 2 };
 
 function checkInLabel(c: CheckIn | null): string | null {
   if (!c) return null;
@@ -204,7 +205,8 @@ export function describeChange(change: Change): ChangeDescription {
     case 'moveEvent':
       return { title: `Move ${change.title}`, before: slotLabel(change.from), after: slotLabel(change.to) };
     case 'editEvent': {
-      const title = change.before.title === change.after.title ? `Adjust ${change.before.title}` : `Change ${change.before.title}`;
+      const lighter = LOAD_ORDER[change.after.load] < LOAD_ORDER[change.before.load];
+      const title = lighter ? `Lighten ${change.before.title}` : change.before.load === change.after.load ? `Rename ${change.before.title}` : `Adjust ${change.before.title}`;
       return {
         title,
         before: `${change.before.title}, ${loadLabel[change.before.load].toLowerCase()}`,

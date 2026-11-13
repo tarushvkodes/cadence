@@ -1,0 +1,128 @@
+.guide { width: min(820px, 100%); padding-bottom: 220px; }
+.guide-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; margin-bottom: 28px; }
+.guide-sub { margin-top: 6px; max-width: 520px; }
+.model-chip { background: var(--phase-tint); color: var(--phase-ink); }
+
+.guide-empty { display: grid; gap: 22px; }
+.starters { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.starter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  text-align: left;
+  min-height: 64px;
+  padding: 14px 16px 14px 18px;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  background: var(--elevated);
+  box-shadow: var(--shadow-card);
+  font-size: 15.5px;
+  font-weight: 550;
+  color: var(--ink);
+  transition: transform 160ms var(--ease-out), box-shadow 220ms ease, border-color 220ms ease;
+}
+.starter svg { flex: none; color: var(--phase-ink); background: var(--phase-tint); border-radius: 50%; width: 30px; height: 30px; padding: 6px; }
+.starter:hover:not(:disabled) { box-shadow: var(--shadow-lift); border-color: color-mix(in oklab, var(--phase) 30%, transparent); }
+.starter:active:not(:disabled) { transform: scale(0.98); }
+.starter:disabled { opacity: 0.55; cursor: not-allowed; }
+
+.can-see h2 { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+.can-see ul { display: grid; gap: 2px; margin-bottom: 12px; }
+.can-see li { display: grid; grid-template-columns: 22px 1fr auto; align-items: center; gap: 10px; padding: 8px 0; border-top: 1px solid var(--line); font-size: 15px; }
+.can-see li:first-child { border-top: 0; }
+.can-see li svg { color: var(--ink-2); }
+.tool-kind { font-size: 12px; font-weight: 700; padding: 3px 9px; border-radius: 999px; background: var(--sunken); color: var(--ink-2); }
+.tool-kind.kind-propose { background: var(--phase-tint); color: var(--phase-ink); }
+
+.thread { display: grid; gap: 22px; }
+.thread-end { height: 1px; scroll-margin-bottom: 200px; }
+
+.msg-user { justify-self: end; max-width: min(560px, 86%); padding: 12px 18px; border-radius: 22px 22px 6px 22px; background: var(--phase); color: var(--phase-on); font-size: 16px; line-height: 1.45; box-shadow: 0 8px 20px -12px color-mix(in oklab, var(--phase) 80%, transparent); }
+
+.msg-assistant { display: grid; grid-template-columns: 34px 1fr; gap: 14px; align-items: start; }
+.msg-avatar { width: 34px; height: 34px; border-radius: 50%; background: var(--elevated); border: 1px solid var(--line); box-shadow: var(--shadow-card); display: grid; place-items: center; }
+.msg-avatar span { width: 14px; height: 14px; border-radius: 50%; border: 3px solid var(--phase); }
+.msg-body { display: grid; gap: 14px; min-width: 0; padding-top: 4px; font-size: 16.5px; line-height: 1.6; }
+.msg-error { display: flex; align-items: center; gap: 8px; color: var(--danger); font-size: 15px; font-weight: 550; }
+
+.caret { display: inline-block; width: 8px; height: 1.05em; margin-left: 2px; vertical-align: -0.15em; border-radius: 2px; background: var(--phase); animation: caret-blink 1s steps(2, start) infinite; }
+@keyframes caret-blink { to { visibility: hidden; } }
+
+.thinking { font-size: 15px; font-weight: 600; color: var(--ink-2); }
+.shimmer {
+  background: linear-gradient(90deg, var(--ink-2) 0%, var(--ink-2) 40%, var(--ink) 50%, var(--ink-2) 60%, var(--ink-2) 100%);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 1.6s linear infinite;
+}
+@keyframes shimmer { from { background-position: 100% 0; } to { background-position: 0% 0; } }
+
+.tool-steps { display: grid; gap: 2px; padding: 8px; border-radius: 16px; background: color-mix(in oklab, var(--sunken) 70%, transparent); border: 1px solid var(--line); }
+.tool-step { display: grid; grid-template-columns: 26px 1fr auto; align-items: center; gap: 10px; min-height: 36px; padding: 2px 8px; font-size: 14.5px; line-height: 1.35; color: var(--ink); }
+.tool-icon { display: grid; place-items: center; width: 26px; height: 26px; border-radius: 8px; background: var(--elevated); color: var(--ink-2); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06); }
+.tool-step.kind-propose .tool-icon { background: var(--phase-tint); color: var(--phase-ink); }
+.tool-step.is-error { color: var(--ink-2); }
+.tool-done { color: var(--phase-ink); }
+
+.proposal-card { padding: 22px 22px 18px; display: grid; gap: 16px; border-color: color-mix(in oklab, var(--phase) 22%, var(--line)); }
+.proposal-head { display: grid; gap: 6px; }
+.proposal-head .eyebrow { display: flex; align-items: center; gap: 8px; }
+.proposal-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--phase); }
+.proposal-dot.status-pending { box-shadow: 0 0 0 4px color-mix(in oklab, var(--phase) 22%, transparent); }
+.proposal-dot.status-declined { background: var(--ink-3); }
+.proposal-title { font-size: 25px; line-height: 1.15; letter-spacing: -0.02em; }
+.proposal-rationale { font-size: 15.5px; line-height: 1.5; color: var(--ink-2); }
+
+.proposal-items { display: grid; gap: 8px; }
+.proposal-item {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 4px 14px;
+  padding: 14px;
+  border-radius: 16px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  transition: background-color 300ms ease, border-color 300ms ease, opacity 300ms ease;
+}
+.change-icon { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 11px; background: var(--elevated); color: var(--ink-2); border: 1px solid var(--line); transition: background-color 300ms ease, color 300ms ease; }
+.change-body { display: grid; gap: 5px; min-width: 0; }
+.change-title { font-weight: 650; font-size: 15.5px; }
+.change-reason { font-size: 14.5px; line-height: 1.45; color: var(--ink-2); }
+.change-note { font-size: 13.5px; color: var(--danger); }
+.change-actions { grid-column: 2; margin-top: 8px; }
+.proposal-item.is-approved { background: color-mix(in oklab, var(--phase-tint) 70%, var(--bg)); border-color: color-mix(in oklab, var(--phase) 30%, transparent); }
+.proposal-item.is-approved .change-icon { background: var(--phase); color: var(--phase-on); border-color: transparent; }
+.proposal-item.is-declined, .proposal-item.is-undone, .proposal-item.is-stale { opacity: 0.62; }
+.proposal-item.is-declined .change-title, .proposal-item.is-undone .change-title { text-decoration: line-through; text-decoration-color: var(--ink-3); }
+
+.proposal-bar { position: sticky; bottom: 112px; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 8px 8px 16px; flex-wrap: wrap; z-index: 5; }
+.proposal-bar-actions { display: flex; gap: 6px; }
+
+.next-prompt { display: grid; padding-left: 48px; }
+
+.composer-dock { position: fixed; left: 0; right: 0; bottom: 22px; z-index: 30; display: grid; justify-items: center; gap: 8px; padding: 0 16px; pointer-events: none; }
+.composer-dock > * { pointer-events: auto; width: min(780px, 100%); }
+.composer { display: flex; align-items: flex-end; gap: 8px; padding: 8px 8px 8px 20px; min-height: 60px; }
+.composer textarea { flex: 1; resize: none; border: 0; background: none; outline: none; padding: 10px 0; font-size: 16px; line-height: 1.45; max-height: 160px; color: var(--ink); }
+.composer textarea::placeholder { color: var(--ink-3); }
+.composer textarea[readonly] { cursor: default; }
+.send { flex: none; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; border: 0; background: var(--phase); color: var(--phase-on); transition: transform 160ms var(--ease-out), opacity 200ms ease; box-shadow: 0 6px 14px -6px color-mix(in oklab, var(--phase) 80%, transparent); }
+.send:active:not(:disabled) { transform: scale(0.92); }
+.send:disabled { opacity: 0.35; cursor: not-allowed; box-shadow: none; }
+.send.stop { background: var(--ink); color: var(--bg); }
+.composer-note { display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 13px; font-weight: 550; color: var(--ink-2); text-align: center; padding: 6px 14px; border-radius: 999px; background: color-mix(in oklab, var(--elevated) 82%, transparent); border: 1px solid var(--line); width: auto !important; justify-self: center; }
+.composer-note code { font-family: var(--font-mono); font-size: 12px; }
+
+@media (max-width: 760px) {
+  .starters { grid-template-columns: 1fr; }
+  .guide-head { flex-direction: column; align-items: flex-start; }
+  .composer-dock { bottom: 92px; }
+  .proposal-bar { bottom: 176px; }
+  .msg-assistant { grid-template-columns: 1fr; }
+  .msg-avatar { display: none; }
+  .next-prompt { padding-left: 0; }
+  .composer-note.is-replay { display: none; }
+}

@@ -1,0 +1,93 @@
+.today-head { margin-bottom: 28px; display: grid; gap: 6px; }
+
+.today-grid {
+  display: grid;
+  grid-template-columns: minmax(380px, 5fr) 6fr;
+  gap: clamp(24px, 4vw, 56px);
+  align-items: start;
+}
+.today-hero { position: sticky; top: calc(var(--nav-h) + 40px); }
+.today-cards { display: grid; gap: 18px; }
+
+.dial-hero { display: grid; justify-items: center; gap: 22px; }
+.dial-wrap { position: relative; width: min(100%, 460px); aspect-ratio: 1; }
+.dial { width: 100%; height: 100%; overflow: visible; }
+.dial-label { font: 700 10.5px var(--font-sans); letter-spacing: 0.16em; }
+.dial-center { position: absolute; inset: 0; display: grid; place-content: center; text-align: center; gap: 2px; pointer-events: none; }
+.dial-day { font-size: clamp(76px, 9vw, 104px); line-height: 0.9; letter-spacing: -0.04em; font-weight: 400; }
+.dial-of { color: var(--ink-2); font-size: 15px; }
+
+.dial-caption { display: grid; gap: 14px; justify-items: center; text-align: center; width: min(100%, 420px); }
+.phase-line { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; justify-content: center; }
+.phase-line .phase-pill { font-size: 15px; padding: 6px 14px 6px 10px; }
+.could-be { font-size: 14px; color: var(--ink-2); }
+.dial-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; width: 100%; margin: 0; border-radius: 16px; overflow: hidden; background: var(--line); border: 1px solid var(--line); }
+.dial-facts > div { background: var(--elevated); padding: 12px 14px; display: grid; gap: 2px; }
+.dial-facts dt { font-size: 12px; color: var(--ink-2); font-weight: 600; letter-spacing: 0.02em; }
+.dial-facts dd { margin: 0; font-weight: 650; font-size: 16px; display: flex; justify-content: center; }
+.why { overflow: hidden; width: 100%; }
+.why ul { text-align: left; display: grid; gap: 6px; font-size: 14px; color: var(--ink-2); padding: 12px 16px; background: var(--sunken); border-radius: 14px; list-style: disc inside; }
+.log-period { --btn-bg: var(--menstrual-tint); --btn-ink: var(--menstrual-ink); }
+
+.empty-cycle { display: grid; gap: 12px; justify-items: start; }
+
+.notice-card .own-logs { font-size: 15px; line-height: 1.5; padding: 12px 14px; border-radius: 14px; background: var(--hue-tint); color: var(--ink); margin-bottom: 14px; }
+.own-label { display: block; font-size: 12px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--hue-ink); margin-bottom: 2px; }
+.might-notice { display: grid; gap: 8px; margin-bottom: 14px; }
+.might-notice li { position: relative; padding-left: 18px; font-size: 15px; color: var(--ink); }
+.might-notice li::before { content: ''; position: absolute; left: 3px; top: 0.62em; width: 6px; height: 6px; border-radius: 50%; background: var(--hue); }
+.stance { font-size: 14px; color: var(--ink-2); padding-top: 12px; border-top: 1px solid var(--line); }
+
+.level-picker { border: 0; padding: 0; margin: 0 0 14px; }
+.level-picker legend { margin-bottom: 8px; padding: 0; font-weight: 600; }
+.level-options { display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; padding: 4px; background: var(--sunken); border-radius: 16px; }
+.level-option { position: relative; display: grid; justify-items: center; gap: 4px; min-height: 58px; padding: 8px 2px; border: 0; background: none; border-radius: 12px; color: var(--ink-2); font-size: 13px; font-weight: 600; transition: color 160ms ease, transform 160ms var(--ease-out); }
+.level-option:active { transform: scale(0.96); }
+.level-option[aria-checked='true'] { color: var(--phase-on); }
+.level-lens { position: absolute; inset: 0; border-radius: inherit; background: var(--phase); box-shadow: 0 6px 14px -8px color-mix(in oklab, var(--phase) 80%, transparent); }
+.level-dots, .level-text { position: relative; z-index: 1; }
+.level-dots { display: flex; gap: 3px; height: 8px; align-items: center; }
+.level-dots i { width: 6px; height: 6px; border-radius: 50%; background: currentColor; opacity: 0.8; }
+
+.symptoms { border: 0; padding: 0; margin: 4px 0 14px; }
+.symptoms legend { margin-bottom: 8px; padding: 0; font-weight: 600; }
+.symptom-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.symptom { display: inline-flex; align-items: center; gap: 5px; min-height: 36px; padding: 0 13px; border-radius: 999px; border: 1px solid var(--line-strong); background: var(--elevated); font-size: 14px; font-weight: 550; color: var(--ink); transition: background-color 160ms ease, border-color 160ms ease, transform 160ms var(--ease-out); }
+.symptom:active { transform: scale(0.96); }
+.symptom[aria-pressed='true'] { background: var(--phase-tint); border-color: color-mix(in oklab, var(--phase) 45%, transparent); color: var(--phase-ink); }
+.symptom.more { color: var(--ink-2); border-style: dashed; }
+.note-field input { width: 100%; min-height: 44px; padding: 0 14px; border-radius: 12px; border: 1px solid var(--line-strong); background: var(--bg); font-size: 15px; }
+.note-field input::placeholder { color: var(--ink-3); }
+.checkin-summary { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+
+.schedule { display: grid; }
+.schedule-item { display: grid; grid-template-columns: 64px 32px 1fr auto; align-items: center; gap: 4px 10px; padding: 12px 0; border-top: 1px solid var(--line); }
+.schedule-item:first-child { border-top: 0; padding-top: 2px; }
+.schedule-item .time { font-size: 14px; font-weight: 650; color: var(--ink-2); }
+.kind-icon { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 10px; background: var(--sunken); color: var(--ink-2); }
+.schedule-item .title { font-weight: 600; display: flex; align-items: center; gap: 6px; }
+.schedule-item .fixed { color: var(--ink-3); }
+.inline-suggestion { grid-column: 2 / -1; display: grid; gap: 8px; margin-top: 8px; padding: 12px 14px; border-radius: 14px; border: 1.5px dashed color-mix(in oklab, var(--phase) 55%, transparent); background: color-mix(in oklab, var(--phase-tint) 55%, transparent); }
+.schedule-item.ghost { grid-template-columns: 1fr; }
+.schedule-item.ghost .inline-suggestion { grid-column: 1; }
+
+.habits { display: grid; gap: 4px; }
+.habit { width: 100%; display: flex; align-items: center; gap: 14px; text-align: left; border: 0; background: none; padding: 10px 6px; border-radius: 14px; min-height: 52px; transition: background-color 160ms ease; }
+.habit:hover { background: color-mix(in oklab, var(--ink) 4%, transparent); }
+.habit-check { flex: none; display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; border: 2px solid var(--line-strong); color: var(--phase-on); transition: background-color 200ms ease, border-color 200ms ease; }
+.habit.is-done .habit-check { background: var(--phase); border-color: var(--phase); }
+.habit-text { display: grid; gap: 2px; }
+.habit-name { font-weight: 600; }
+.habit.is-done .habit-name { color: var(--ink-2); text-decoration: line-through; text-decoration-color: var(--ink-3); }
+.habit-variant { font-size: 13px; font-weight: 600; color: var(--hue-ink); }
+
+@media (max-width: 980px) {
+  .today-grid { grid-template-columns: 1fr; }
+  .today-hero { position: static; }
+}
+@media (max-width: 760px) {
+  .today-head { margin-bottom: 8px; }
+  .dial-wrap { width: min(100%, 340px); }
+  .schedule-item { grid-template-columns: 54px 28px 1fr auto; }
+  .kind-icon { width: 28px; height: 28px; }
+}

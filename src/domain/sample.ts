@@ -92,8 +92,8 @@ function sampleCheckIns(profile: CycleProfile, from: ISODate, to: ISODate, notes
     if (e.kind !== 'estimate') continue;
     const dayNo = e.cycleDay;
     const toEnd = e.cycleLength - dayNo;
-    let energy: Level = 3;
-    let mood: Level = 3;
+    let energy: Level;
+    let mood: Level;
     const symptoms: Symptom[] = [];
     if (dayNo <= 2) {
       energy = 2;

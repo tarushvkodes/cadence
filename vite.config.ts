@@ -2,7 +2,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-const bridgePort = Number(process.env.CADENCE_BRIDGE_PORT ?? 8787);
+const bridgePort = Number(process.env.CADENCE_BRIDGE_PORT ?? 8741);
 
 export default defineConfig({
   plugins: [react()],
