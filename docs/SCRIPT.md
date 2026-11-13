@@ -56,7 +56,7 @@ But how people feel is real. Up to about 75 percent report at least one symptom 
 
 ### Slide 8. Who it's for, and what they need
 
-**Ingrid:** So who is it for? Women aged 17 to 25, mostly students with busy weeks. They've used chatbots, but most don't know how AI systems work. They need six things. A plan built on how they actually feel. Help with their real calendar. Privacy. Honesty about the science. A way to see what the AI did. And low cost and effort. Paetyn will use those six needs to compare our options.
+**Ingrid:** So who is it for? Women aged 17 to 25, mostly students with busy weeks. They've used chatbots, but most don't know how AI systems work. They need six things. A plan built on how they actually feel. Help with their actual schedule. Privacy. Honesty about the science. A way to see what the AI did. And low cost and effort. Paetyn will use those six needs to compare our options.
 
 ## 2. The options
 
@@ -76,7 +76,7 @@ Paetyn. Target 2:30. This script runs about 1:56.
 
 ### Slide 12. How we decided
 
-**Paetyn:** Here's how we actually decided. We asked three questions, in order. First, can it work on your real calendar? That ruled out trackers and chatbots. Second, does it know your cycle and how you feel? That ruled out calendar assistants, including Morgen. Third, can it stay private, honest, and under your control? Nothing we found did all of that. So we built our own agent, and we made those rules part of the design. Vincent will show you what we built.
+**Paetyn:** Here's how we actually decided. We asked three questions, in order. First, can it act on your weekly schedule? That ruled out trackers and chatbots. Second, does it know your cycle and how you feel? That ruled out calendar assistants, including Morgen. Third, can it stay private, honest, and under your control? Nothing we found did all of that. So we built our own agent, and we made those rules part of the design. Vincent will show you what we built.
 
 ## 3. Our solution
 
@@ -116,7 +116,7 @@ Tarushv. Target 5:00. This script runs about 5:30.
 
 **Tarushv:** Here's the whole flow on a sample week, with a midterm on Thursday and a lab report due Friday. Watch the tool steps, and watch the approve buttons. Nothing changes until you tap one.
 
-> **Film plays here, about 4 minutes.** Film narration: see `video/NARRATION.md`.
+> **Film plays here, 3:37.** Film narration: see `video/NARRATION.md`.
 
 That's the whole flow. Here are the same steps as slides, so you can try it yourself.
 

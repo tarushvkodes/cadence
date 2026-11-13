@@ -155,7 +155,7 @@ const NEEDS = [
 const audience = {
 	layout: 'content',
 	title: 'Who it’s for, and what they need',
-	notes: `So who is it for? Women aged 17 to 25, mostly students with busy weeks. They've used chatbots, but most don't know how AI systems work. They need six things. A plan built on how they actually feel. Help with their real calendar. Privacy. Honesty about the science. A way to see what the AI did. And low cost and effort. Paetyn will use those six needs to compare our options.`,
+	notes: `So who is it for? Women aged 17 to 25, mostly students with busy weeks. They've used chatbots, but most don't know how AI systems work. They need six things. A plan built on how they actually feel. Help with their actual schedule. Privacy. Honesty about the science. A way to see what the AI did. And low cost and effort. Paetyn will use those six needs to compare our options.`,
 	draw(s, k) {
 		k.card(s, { x: MX, y: 2.0, w: 4.25, h: 4.3 });
 		k.eyebrow(s, 'The audience', 'garnet', { x: MX + 0.4, y: 2.38, w: 3.4 });

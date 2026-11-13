@@ -33,7 +33,7 @@ const kinds = {
 	},
 };
 
-const CRITERIA = ['Knows you and how you feel', 'Works on your real calendar', 'Keeps your data private', 'Honest about the evidence', 'Shows its work', 'Low cost and effort'];
+const CRITERIA = ['Knows you and how you feel', 'Can act on your weekly schedule', 'Keeps your data private', 'Honest about the evidence', 'Shows its work', 'Low cost and effort'];
 const COLUMNS = [
 	{ name: 'Period\ntrackers', marks: ['yes', 'no', 'partly', 'partly', 'partly', 'yes'] },
 	{ name: 'General\nchatbot', marks: ['no', 'no', 'partly', 'partly', 'partly', 'partly'] },
@@ -79,7 +79,7 @@ const compare = {
 };
 
 const QUESTIONS = [
-	{ q: 'Can it work on your real calendar?', out: 'Period trackers and general chatbots' },
+	{ q: 'Can it act on your weekly schedule?', out: 'Period trackers and general chatbots' },
 	{ q: 'Does it know your cycle and how you feel?', out: 'Calendar assistants, including Morgen, our first idea' },
 	{ q: 'Can it stay private, honest, and under your control?', out: 'Nothing we found did all of that' },
 ];
@@ -87,7 +87,7 @@ const QUESTIONS = [
 const decide = {
 	layout: 'content',
 	title: 'How we decided',
-	notes: `Here's how we actually decided. We asked three questions, in order. First, can it work on your real calendar? That ruled out trackers and chatbots. Second, does it know your cycle and how you feel? That ruled out calendar assistants, including Morgen. Third, can it stay private, honest, and under your control? Nothing we found did all of that. So we built our own agent, and we made those rules part of the design. Vincent will show you what we built.`,
+	notes: `Here's how we actually decided. We asked three questions, in order. First, can it act on your weekly schedule? That ruled out trackers and chatbots. Second, does it know your cycle and how you feel? That ruled out calendar assistants, including Morgen. Third, can it stay private, honest, and under your control? Nothing we found did all of that. So we built our own agent, and we made those rules part of the design. Vincent will show you what we built.`,
 	draw(s, k) {
 		const gap = 0.55;
 		const w = (CW - 3 * gap) / 4;
@@ -109,7 +109,7 @@ const decide = {
 		k.eyebrow(s, 'Our choice', 'sage', { x: x + 0.3, y: y + 0.3, w: w - 0.6, fontSize: 10 });
 		k.serif(s, 'Build our own agent', { x: x + 0.3, y: y + 0.65, w: w - 0.6, h: 1.2, fontSize: 34, color: sage.ink });
 		k.text(s, 'Claude with six tools we wrote, and the rules built in from day one.', { x: x + 0.3, y: y + 2.1, w: w - 0.6, h: 1.0, fontSize: 14, color: C.ink });
-		k.text(s, 'Two of the six needs were deal-breakers: working on your real calendar, and knowing how you feel.', { x: MX, y: 5.9, w: CW, h: 0.4, fontSize: 15, color: C.ink2 });
+		k.text(s, 'Two of the six needs were deal-breakers: acting on your weekly schedule, and knowing how you feel.', { x: MX, y: 5.9, w: CW, h: 0.4, fontSize: 15, color: C.ink2 });
 	},
 };
 

@@ -19,7 +19,7 @@ const film = {
 		k.disc(s, { cx, cy, d: 0.95, fill: C.ink });
 		s.addShape(k.SH.ISOSCELES_TRIANGLE, { x: cx - 0.17, y: cy - 0.2, w: 0.4, h: 0.36, rotate: 90, fill: { color: C.card }, line: { type: 'none' } });
 		k.serif(s, 'Demo film plays here', { x: MX, y: cy + 0.68, w, h: 0.55, fontSize: 32, align: 'center' });
-		k.text(s, 'Replace this box with video/out/cadence-demo.mp4 (16:9, about 4 minutes).', { x: MX + 0.5, y: cy + 1.3, w: w - 1, h: 0.3, fontSize: 13, color: C.ink2, align: 'center' });
+		k.text(s, 'Replace this box with video/out/cadence-demo.mp4 (16:9, 3:37).', { x: MX + 0.5, y: cy + 1.3, w: w - 1, h: 0.3, fontSize: 13, color: C.ink2, align: 'center' });
 
 		const rx = MX + w + 0.55;
 		const rw = MX + CW - rx;

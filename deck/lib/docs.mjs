@@ -19,7 +19,7 @@ function notesToMarkdown(p) {
 	return p.notes
 		.split('\n\n')
 		.map((block) => {
-			if (block.startsWith('[')) return '> **Film plays here, about 4 minutes.** Film narration: see `video/NARRATION.md`.';
+			if (block.startsWith('[')) return '> **Film plays here, 3:37.** Film narration: see `video/NARRATION.md`.';
 			const label = labelled ? '' : `**${p.speaker}:** `;
 			labelled = true;
 			return label + block;
