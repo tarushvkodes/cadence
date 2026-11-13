@@ -18,7 +18,7 @@ Total length 3:36.5. Generated from `src/timeline.ts` by `npm run narration`; do
 | 0:09.3 | Two statements: phase does not change what you can do; how you feel can change. The meta-analysis behind it. | Your phase doesn't change what you're capable of, but how you feel can change, and that's different for everyone. |
 | 0:16.3 | "So Cadence plans around what you log." | So, Cadence plans around what you log, instead of a guess from the calendar. |
 | **0:21.4** | **Step 1: Set up** | |
-| 0:21.8 | Step 1 title, which shrinks into the step chip. The app window swings in. | Step one is setup. |
+| 0:21.8 | Step 1 title, which shrinks into the step chip. The phone swings in, on onboarding. | Step one is setup. |
 | 0:23.7 | Onboarding: the last period date is typed in; cycle length and regularity are pointed out. | You tell it when your last period started, how long your cycle usually is, and how regular it is. |
 | 0:28.7 | Continue. The Four promises card slides in. | Then, it makes four promises. |
 | 0:30.9 | The camera walks down the promises as each is named. | Your data stays on your computer, the AI is only suggesting, it's not medical advice, and the dates are estimates. |
@@ -26,7 +26,7 @@ Total length 3:36.5. Generated from `src/timeline.ts` by `npm run narration`; do
 | 0:40.4 | I understand. The start choices. | We'll start with the sample week here. |
 | 0:42.3 | Start with a sample week. | It's a busy student week with the midterm on Thursday. |
 | **0:45.7** | **Step 2: Read your day** | |
-| 0:46.1 | Step 2. Today: the dial sweeps to day 25. | Step two is Today. |
+| 0:46.1 | Step 2, on the phone. Today: the dial sweeps to day 25. | Step two is Today. |
 | 0:47.4 | Push in on the dial. "Day 25 of about 28." | The dial shows you where you probably are, day 25 of 28. |
 | 0:52.6 | Callout on the range. | It gives a range instead of a date. |
 | 0:54.8 | "Nov 18 to 22", then the confidence; its reasons open. | Your next period is probably November 18th to the 22nd, and it says how sure it is. |
@@ -34,33 +34,33 @@ Total length 3:36.5. Generated from `src/timeline.ts` by `npm run narration`; do
 | 1:02.8 | Energy, mood, symptoms are pointed out in turn. | Energy, mood, and anything else you notice. |
 | 1:05.6 | Hold on the check-in. | That's what our app plans around. |
 | **1:08.1** | **Step 3: Ask the Guide** | |
-| 1:08.5 | Step 3. The Guide. | Step three is the AI. |
-| 1:10.0 | The starter "Plan my week around my cycle." is clicked. | We open the Guide and ask it, "Plan my week around my cycle." |
+| 1:08.5 | Step 3, on the phone. The Guide. | Step three is the AI. |
+| 1:10.0 | The starter "Plan my week around my cycle." is tapped. | We open the Guide and ask it, "Plan my week around my cycle." |
 | 1:14.2 | Diagram: you ask, the model. | The Guide is an agent. |
 | 1:16.2 | Diagram: decide, call a tool, read the result, repeat. The bead goes round the loop. | That means the model, instead of just answering in one shot, it decides what it needs, calls tools, reads the results, and it repeats. |
 | 1:24.1 | Diagram: a proposal leaves the loop. | And then, finally, it proposes. |
-| 1:27.4 | The app: the four read steps tick in, each one a tool call. | Here, it checks your cycle, it reads your calendar, habits, and check-ins, and it drafts changes. |
+| 1:27.4 | Back on the phone: the four read steps tick in, each one a tool call; a small loop in the corner shows which station the agent is at. | Here, it checks your cycle, it reads your calendar, habits, and check-ins, and it drafts changes. |
 | 1:33.5 | Drafts come back "adjusted" twice; the third passes. | A tool checks every draft against your calendar, and when one doesn't fit, the model fixes it. |
 | 1:40.0 | The suggestions arrive. Then the phone moves aside for the laptop: "Same app, phone or laptop." | And it ends with five suggestions, each explained with your own check-ins. |
 | **1:47.5** | **Step 4: You decide** | |
-| 1:47.9 | Step 4. The first suggestion: before, after, and why. | Step four, you decide. |
+| 1:47.9 | Step 4, on the laptop. The first suggestion: before, after, and why. | Step four, you decide. |
 | 1:50.2 | Push in on the before and after and the reason. | Each suggestion shows what changes and why. |
 | 1:53.3 | Approve, approve, decline. | We approve the ones we like and decline the ones we don't. |
 | 1:57.4 | The cursor goes back up. | Change your mind? |
 | 1:58.5 | Undo. | Undo puts it right back. |
-| 2:00.8 | Plan: the week, with a dashed ghost block for what is still waiting. "Nothing changes until you approve it." | On the Plan, anything still waiting shows up as a dashed ghost block, and nothing changes until you approve it. |
+| 2:00.8 | The laptop Plan: the week, with a dashed ghost block for what is still waiting. "Nothing changes until you approve it." | On the Plan, anything still waiting shows up as a dashed ghost block, and nothing changes until you approve it. |
 | **2:08.8** | **Step 5: A rough morning** | |
-| 2:09.2 | Step 5. Thursday, day 1 of a period, midterm tonight. | Step five, a rough morning. Thursday, period day one, midterm tonight. |
+| 2:09.2 | Step 5, on the phone. Thursday, day 1 of a period, midterm tonight. | Step five, a rough morning. Thursday, period day one, midterm tonight. |
 | 2:14.8 | The check-in card. | We log it in ten seconds. |
-| 2:16.9 | Low, Flat, cramps, Save check-in. | Low energy, flat mood, cramps. |
+| 2:16.9 | Low, Flat, cramps, Save check-in, each a tap. | Low energy, flat mood, cramps. |
 | 2:20.6 | The Guide suggests three changes for today only; the midterm is fixed. | We ask the Guide what to change, and it only touches today, and the midterm stays put. |
 | **2:28.1** | **Step 6: Know the limits** | |
-| 2:28.5 | Step 6. The Guide. | Step six is knowing its limits. |
+| 2:28.5 | Step 6, on the phone. The Guide. | Step six is knowing its limits. |
 | 2:30.4 | The question about bad cramps is sent. | We say our cramps are bad enough to miss class. |
 | 2:33.7 | The reply, with "worth getting checked by a doctor" and the urgent care line highlighted. | It doesn't diagnose, it says clearly this is worth seeing a clinician and when to go to urgent care. |
 | 2:40.2 | Yes please. The appointment notes are drafted. | And then it offers to turn our check-ins into notes for the appointment. |
 | **2:45.7** | **Step 7: See inside** | |
-| 2:46.1 | Step 7. Learn. | Step seven, you can see inside. |
+| 2:46.1 | Step 7, on the laptop. Learn. | Step seven, you can see inside. |
 | 2:48.2 | The evidence labels, then a claim with its source. | Our Learn page labels every claim by how strong the evidence is, with its source. |
 | 2:55.1 | Settings: the whole system prompt, word for word. | And Settings shows the exact instructions the AI follows, word for word. |
 | **3:01.3** | **Remember** | |
