@@ -5,7 +5,7 @@ import { Callout } from '../kit/Callout.tsx';
 import { ASIDE, focus, FULL, REST, type CamKey } from '../kit/camera.ts';
 import { StepHeader } from '../kit/StepHeader.tsx';
 import { beatMap, mark, pad, rects, take, union } from '../kit/takes.ts';
-import { CLAMP, PHASE } from '../kit/theme.ts';
+import { CLAMP, ease, PHASE, tween } from '../kit/theme.ts';
 import { chapter, line, word } from '../timeline.ts';
 
 /** Step 7: the three evidence labels on Learn, each named as it is said, then the system prompt in Settings. */
@@ -51,7 +51,7 @@ export const Inside: React.FC = () => {
         time={learnTime}
         start={ASIDE}
         cam={cam}
-        opacity={(f) => 1 - interpolate(f, [swap + 6, swap + 14], [0, 1], CLAMP)}
+        opacity={(f) => tween(f, 0, 12, ease.out) * (1 - interpolate(f, [swap + 2, swap + 10], [0, 1], CLAMP))}
         overlay={({ cam: k, frame }) => (
           <>
             <Callout cam={k} frame={frame} rect={top.strong} from={word('inside.2', 'well') - 2} until={source - 8} inset={6} radius={10} color={PHASE.follicular.solid} />
@@ -66,7 +66,7 @@ export const Inside: React.FC = () => {
         time={settingsTime}
         start={ASIDE}
         cam={cam}
-        opacity={(f) => interpolate(f, [swap + 4, swap + 14], [0, 1], CLAMP)}
+        opacity={(f) => interpolate(f, [swap + 7, swap + 15], [0, 1], CLAMP) * (1 - tween(f, len - 14, 14, ease.in))}
         overlay={({ cam: k, frame }) => (
           <Callout cam={k} frame={frame} rect={prompt.note} from={word('inside.3', 'instructions') + 6} until={len - 34} inset={6} />
         )}

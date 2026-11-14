@@ -174,7 +174,7 @@ export const Guide: React.FC = () => {
   const phoneOpacity = (f: number) => {
     const out = tween(f, loopFrom, 16, ease.in);
     const back = tween(f, loopTo - 6, 18, ease.out);
-    const leave = tween(f, len - 24, 20, ease.in);
+    const leave = tween(f, len - 12, 12, ease.in);
     return Math.max(0, 1 - out + back) * (1 - leave);
   };
 
@@ -208,7 +208,7 @@ export const Guide: React.FC = () => {
             <Callout cam={cam} frame={f} rect={drafts.s5} from={word('guide.11', 'fixes') + 4} until={g12.local - 4} inset={4} color={PHASE.ovulatory.solid} label="Fixed by the model" sub="Then checked again" side="left" gap={48} />
             <Callout cam={cam} frame={f} rect={cards.head} from={five + 34} until={g13.local - 2} inset={8} label="5 suggestions" sub="Waiting for you" side="left" gap={48} />
             <Marker cam={cam} frame={f} rect={cards.day27} from={word('guide.13', 'around') - 2} until={len - 24} />
-            <Callout cam={cam} frame={f} rect={{ x: -13, y: cards.reason.y, w: 1, h: cards.reason.h }} from={word('guide.13', 'logged') - 4} until={len - 26} ring={false} label="From your own check-ins" sub="Low energy, headaches" side="left" gap={48} />
+            <Callout cam={cam} frame={f} rect={{ x: 402, y: cards.reason.y, w: 1, h: cards.reason.h }} from={word('guide.13', 'logged') - 4} until={len - 26} ring={false} label="From your own check-ins" sub="Low energy, headaches" side="right" gap={48} />
             <ToolHud frame={f} tf={tf} from={loopTo + 6} until={g12.local + 6} send={g10.local + 4} />
           </>
         )}

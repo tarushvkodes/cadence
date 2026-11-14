@@ -6,7 +6,7 @@ import { focusPhone, PHONE_ASIDE, type Box } from '../kit/camera.ts';
 import { ClickSounds } from '../kit/Sounds.tsx';
 import { StepHeader } from '../kit/StepHeader.tsx';
 import { beatMap, click, countSteps, mark, pad, rects, union, when } from '../kit/takes.ts';
-import { PHASE } from '../kit/theme.ts';
+import { ease, PHASE, tween } from '../kit/theme.ts';
 import { chapter, line, word } from '../timeline.ts';
 
 const MIDDLE: Box = { x: 560, y: 120, w: 800, h: 760 };
@@ -53,6 +53,7 @@ export const Rough: React.FC = () => {
         phone={{ time: '8:10' }}
         time={time}
         start={PHONE_ASIDE}
+        opacity={(f) => tween(f, 0, 12, ease.out)}
         cam={[
           { at: morph, to: focusPhone(pad(union(today.title, today.dial), 16, 30), MIDDLE, 1.6), dur: 34 },
           { at: r3.local - 14, to: focusPhone(pad(check.checkin, 10, 16), MIDDLE, 1.3), dur: 36 },

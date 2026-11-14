@@ -6,7 +6,7 @@ import { focusPhone, PHONE_ASIDE, PHONE_REST, type Box } from '../kit/camera.ts'
 import { ClickSounds } from '../kit/Sounds.tsx';
 import { StepHeader } from '../kit/StepHeader.tsx';
 import { beatMap, click, mark, pad, rects, union, watched, type Rect } from '../kit/takes.ts';
-import { PHASE } from '../kit/theme.ts';
+import { ease, PHASE, tween } from '../kit/theme.ts';
 import { chapter, line, word } from '../timeline.ts';
 
 const ID = 'safety-phone';
@@ -72,6 +72,7 @@ export const Safety: React.FC = () => {
         phone={{ time: '10:00' }}
         time={time}
         start={PHONE_ASIDE}
+        opacity={(f) => 1 - tween(f, len - 12, 12, ease.in)}
         cam={[
           { at: morph, to: focusPhone(pad(empty.starter, 20, 160), MIDDLE, 1.7), dur: 34 },
           { at: cramps + 10, to: { ...PHONE_REST }, dur: 34 },

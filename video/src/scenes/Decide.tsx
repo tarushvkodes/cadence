@@ -6,7 +6,7 @@ import { ASIDE, focus, FULL, REST } from '../kit/camera.ts';
 import { ClickSounds, Sfx } from '../kit/Sounds.tsx';
 import { StepHeader } from '../kit/StepHeader.tsx';
 import { beatMap, click, mark, pad, rects, union } from '../kit/takes.ts';
-import { ease, PHASE } from '../kit/theme.ts';
+import { ease, PHASE, tween } from '../kit/theme.ts';
 import { chapter, line, word } from '../timeline.ts';
 
 /**
@@ -54,7 +54,8 @@ export const Decide: React.FC = () => {
       <AppShot
         take={id}
         time={time}
-        start={{ ...ASIDE, sx: 2500 }}
+        start={{ ...ASIDE, sx: 2160 }}
+        opacity={(f) => 1 - tween(f, len - 12, 12, ease.in)}
         cam={[
           { at: 0, to: ASIDE, dur: 30, curve: ease.out },
           { at: morph, to: focus(pad(union(cards.head, cards.i0), 40, 30), FULL, 1.5), dur: 34 },
