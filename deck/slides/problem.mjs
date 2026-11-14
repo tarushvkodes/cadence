@@ -20,14 +20,14 @@ const cover = {
 const agenda = {
 	layout: 'content',
 	eyebrow: 'The plan',
-	title: 'Six parts, about 17 minutes',
+	title: 'Six parts, about 18 minutes',
 	notes: `Here's the plan. Six parts, one speaker each, and the demo includes a short film.`,
 	draw(s, k, { sections }) {
 		const top = 2.05;
 		const rowH = 0.64;
 		const axisX = 6.85;
 		const axisW = MX + CW - axisX;
-		const perMin = axisW / 17;
+		const perMin = axisW / 18;
 		const minutes = (t) => {
 			const [m, sec] = t.split(':').map(Number);
 			return m + sec / 60;
@@ -50,7 +50,7 @@ const agenda = {
 			s.addShape(k.SH.ROUNDED_RECTANGLE, { x: axisX + start * perMin + 0.03, y: y + 0.24, w: len * perMin - 0.06, h: 0.2, rectRadius: 0.1, fill: { color: hue.solid }, line: { type: 'none' } });
 			start += len;
 		});
-		k.text(s, 'The demo includes a 4-minute film.', { x: axisX, y: top + rowH * sections.length + 0.45, w: axisW, h: 0.3, fontSize: 11, color: C.ink3, align: 'right' });
+		k.text(s, 'The demo includes a 4:40 film.', { x: axisX, y: top + rowH * sections.length + 0.45, w: axisW, h: 0.3, fontSize: 11, color: C.ink3, align: 'right' });
 	},
 };
 

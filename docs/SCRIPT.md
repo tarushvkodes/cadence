@@ -1,6 +1,6 @@
 # Cadence: speaking script
 
-Purdue CS 110 AI Solutions Showcase. The talk runs about 17 minutes, including the 4-minute demo film.
+Purdue CS 110 AI Solutions Showcase. The talk runs about 18 minutes, including the 4:40 demo film.
 
 The speaker notes in `deck/Cadence-Capstone.pptx` hold the same words as this script. Slide numbers match the deck. Times assume about 140 words a minute, an easy speaking pace.
 
@@ -15,10 +15,10 @@ This split is a suggestion. Swap parts if it suits the team better.
 | 1. The problem | 1 to 8 | Ingrid | 2:30 | 2:41 |
 | 2. The options | 9 to 12 | Paetyn | 2:30 | 1:56 |
 | 3. Our solution | 13 to 17 | Vincent | 2:00 | 2:13 |
-| 4. The demo | 18 to 26 | Tarushv | 5:00 | 5:30 |
+| 4. The demo | 18 to 26 | Tarushv | 6:00 | 6:10 |
 | 5. Ethics | 27 to 33 | Zykira | 2:30 | 2:41 |
 | 6. Reflection | 34 to 41 | All five, one slide each | 2:30 | 2:34 |
-| Total | 1 to 41 | | 17:00 | 17:35 |
+| Total | 1 to 41 | | 18:00 | 18:15 |
 
 ## 1. The problem
 
@@ -28,7 +28,7 @@ Ingrid. Target 2:30. This script runs about 2:41.
 
 **Ingrid:** Hi everyone. We're Ingrid, Paetyn, Tarushv, Vincent, and Zykira, and this is Cadence. It's a week planner with an AI agent inside. It helps you plan your week around how you actually feel across your menstrual cycle. The agent suggests changes to your calendar, but it never makes them by itself. You decide.
 
-### Slide 2. Six parts, about 17 minutes
+### Slide 2. Six parts, about 18 minutes
 
 **Ingrid:** Here's the plan. Six parts, one speaker each, and the demo includes a short film.
 
@@ -104,7 +104,7 @@ Vincent. Target 2:00. This script runs about 2:13.
 
 ## 4. The demo
 
-Tarushv. Target 5:00. This script runs about 5:30.
+Tarushv. Target 6:00. This script runs about 6:10.
 
 > Steps 1 to 6 repeat what the film shows, so they are a reference people can follow later. If the recording runs long, leave each of those slides up for a few seconds without narrating it.
 
@@ -116,7 +116,7 @@ Tarushv. Target 5:00. This script runs about 5:30.
 
 **Tarushv:** Here's the whole flow on a sample week, with a midterm on Thursday and a lab report due Friday. Watch the tool steps, and watch the approve buttons. Nothing changes until you tap one.
 
-> **Film plays here, 3:37.** Film narration: see `video/NARRATION.md`.
+> **Film plays here, 4:40.** Film narration: see `video/NARRATION.md`.
 
 That's the whole flow. Here are the same steps as slides, so you can try it yourself.
 
