@@ -106,7 +106,7 @@ const PICTURE: Record<string, Picture> = {
   'end.3': { does: 'Two: the AI suggests, you decide.' },
   'end.4': { does: 'Three: it knows when to send you to a clinician.', hold: 0.4 },
   'end.5': { does: 'github.com/tarushvkodes/cadence', beat: true, hold: 0.5 },
-  'end.6': { does: 'Up next: the ethics behind it. The narration credit.', beat: true, hold: 3.2 },
+  'end.6': { does: 'Up next: the ethics behind it.', beat: true, hold: 3.2 },
 };
 
 export type TimedLine = VoiceLine & {

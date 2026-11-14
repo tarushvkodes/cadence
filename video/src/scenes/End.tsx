@@ -16,7 +16,7 @@ const RING = { x: 1330, y: 300, size: 440 };
 
 /**
  * The film hands back to the talk: three ideas to remember, where the code lives, and the ring
- * closing around what comes next. The narration credit stays on the card to the last frame.
+ * closing around what comes next.
  */
 export const End: React.FC = () => {
   const frame = useCurrentFrame();
@@ -29,7 +29,6 @@ export const End: React.FC = () => {
   const shows = IDEAS.map((i) => rise(frame, line(i.id).local + 2, fps));
   const dim = interpolate(frame, [e5.local - 6, e5.local + 12], [1, 0.5], CLAMP);
   const repo = rise(frame, e5.local + 4, fps);
-  const credit = rise(frame, e5.local + 20, fps);
 
   const ringIn = rise(frame, 2, fps);
   const turn = interpolate(tween(frame, e1.local, 60, ease.inOut), [0, 1], [stepTurn(7), 1]);
@@ -73,10 +72,6 @@ export const End: React.FC = () => {
             <div style={{ font: `500 36px/1 ${FONT.mono}`, color: C.ink, letterSpacing: '-0.01em' }}>github.com/tarushvkodes/cadence</div>
           </div>
         </div>
-      </div>
-
-      <div style={{ position: 'absolute', left: 150, top: 884, opacity: credit * 0.95, transform: `translateY(${(1 - credit) * 10}px)`, font: `500 21px/1.3 ${FONT.sans}`, color: C.ink3 }}>
-        Narration: an AI clone of a team member's voice, made with his consent.
       </div>
 
       <Sfx at={e1.local + 56} name="tick" />

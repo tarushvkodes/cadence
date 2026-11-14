@@ -79,7 +79,7 @@ Total length 4:40.1. Generated from `src/timeline.ts` by `npm run narration`; do
 | 4:22.8 | 56 | Two: the AI suggests, you decide. | The AI suggests, and you decide. |
 | 4:25.1 | 57 | Three: it knows when to send you to a clinician. | And it knows when to send you to a real clinician. |
 | 4:29.6 | 58 | github.com/tarushvkodes/cadence | Our code is on GitHub, at the link on screen. |
-| 4:34.5 | 59 | Up next: the ethics behind it. The narration credit. | Next, we'll get into the ethics behind it. |
+| 4:34.5 | 59 | Up next: the ethics behind it. | Next, we'll get into the ethics behind it. |
 
 ## Read-through
 
