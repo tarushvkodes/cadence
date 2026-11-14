@@ -89,7 +89,7 @@ export const StepHeader: React.FC<{ step: number; name: string; morphAt: number;
         </Glass>
       ) : null}
       <Sfx at={4} name="tick" />
-      <Sfx at={morphAt - 4} name="whoosh" gain={0.8} />
+      <Sfx at={morphAt + 9} name="whoosh" gain={0.8} />
     </div>
   );
 };

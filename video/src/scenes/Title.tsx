@@ -19,8 +19,8 @@ export const Title: React.FC = () => {
   const t1 = line('title.1');
   const t2 = line('title.2');
 
-  const drawn = tween(frame, 0, 40, ease.inOut);
-  const dot = rise(frame, 36, fps);
+  const drawn = tween(frame, 0, 28, ease.inOut);
+  const dot = rise(frame, 22, fps);
   const lock = tween(frame, t1.local - 4, 34, ease.inOut);
   const wordmark = rise(frame, t1.local + 6, fps);
   const tag = rise(frame, t2.local + 4, fps);
@@ -74,7 +74,7 @@ export const Title: React.FC = () => {
         <Fact show={where}>Runs in the browser, on a phone or a laptop</Fact>
       </div>
       <Sfx at={0} name="whoosh" gain={0.7} />
-      <Sfx at={36} name="chime" />
+      <Sfx at={22} name="chime" />
     </AbsoluteFill>
   );
 };

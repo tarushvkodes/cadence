@@ -13,7 +13,9 @@
     "render": "remotion render src/index.ts CadenceDemo out/cadence-demo.mp4 --codec=h264 --crf=16 --audio-bitrate=320k --props='{\"variant\":\"voiced\"}'",
     "render:silent": "remotion render src/index.ts CadenceDemo out/cadence-demo-silent.mp4 --codec=h264 --crf=16 --muted --props='{\"variant\":\"silent\"}'",
     "typecheck": "tsc --noEmit",
-    "render:music": "remotion render src/index.ts CadenceDemo out/cadence-demo-music.mp4 --codec=h264 --crf=16 --audio-bitrate=320k --props='{\"variant\":\"music\"}'"
+    "render:music": "remotion render src/index.ts CadenceDemo out/cadence-demo-music.mp4 --codec=h264 --crf=16 --audio-bitrate=320k --props='{\"variant\":\"music\"}'",
+    "check:voice": "tsx scripts/check-voice.ts",
+    "render:voice": "remotion render src/index.ts CadenceDemo out/cadence-demo-voice.wav --codec=wav --props='{\"variant\":\"voice\"}'"
   },
   "dependencies": {
     "@remotion/cli": "4.0.536",

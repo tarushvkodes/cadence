@@ -463,7 +463,8 @@
   },
   "idea.5": {
    "text": "So Cadence plans around what you log, and treats your phase as a hint.",
-   "chosen": 3,
+   "chosen": 1,
+   "pinned": "In the full mix, whisper heard seed 3 as \"treats your face as a hint\". Of 16 seeds, only 1 and 2 were heard as \"phase\" alone, under the music bed, and after line 7.",
    "attempts": [
     {
      "seed": 1,

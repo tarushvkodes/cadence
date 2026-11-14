@@ -48,7 +48,7 @@ const BREATH = 1.05;
  */
 type Picture = { readonly does: string; readonly lead?: number; readonly hold?: number; readonly beat?: boolean };
 const PICTURE: Record<string, Picture> = {
-  'title.1': { does: 'The cycle ring draws itself and becomes the Cadence wordmark.', lead: 1.0 },
+  'title.1': { does: 'The cycle ring draws itself and becomes the Cadence wordmark.', lead: 1.3 },
   'title.2': { does: 'Tagline: "Your week, in step with your cycle."', hold: 0.2 },
   'title.3': { does: 'Two quiet facts under the tagline: for women around 17 to 25, and it runs in the browser.', hold: 0.9 },
   'idea.1': { does: 'What we assumed, set as a quotation: "The cycle changes how well you think."', lead: 0.5 },

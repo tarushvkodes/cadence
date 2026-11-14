@@ -18,9 +18,12 @@ import { Title } from './scenes/Title.tsx';
 import { Today } from './scenes/Today.tsx';
 import { FPS, TIMELINE, TOTAL_FRAMES } from './timeline.ts';
 
-/** Gains measured on the assembled mix with earshot: the voice lands near -16 LUFS integrated. */
-const VOICE_GAIN = 1;
-const MASTER = 1;
+/**
+ * The voice track alone (`npm run render:voice`) measured -16.8 LUFS at unity, so the voice and the
+ * music under it both rise 0.8 dB to put the narration at -16 LUFS integrated.
+ */
+const VOICE_GAIN = 1.1;
+const MASTER = 1.1;
 
 export type FilmProps = { variant: Variant };
 

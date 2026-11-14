@@ -37,6 +37,7 @@ export function normalize(text: string): string[] {
     .replace(/(\d+)(st|nd|rd|th)\b/g, (_, d: string) => ordinal(spell(Number(d))))
     .replace(/\d+/g, (d) => spell(Number(d)))
     .replace(/\bnov\b/g, 'november')
+    .replace(/\ba\.i\.?/g, 'ai')
     .replace(/\ba hundred\b/g, 'one hundred')
     .replace(/\bhundred and\b/g, 'hundred')
     .replace(/[-‐-―/]/g, ' ')

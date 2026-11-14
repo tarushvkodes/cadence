@@ -514,82 +514,82 @@
    "n": 8,
    "caption": "So Cadence plans around what you log, and treats your phase as a hint.",
    "file": "voice/lines/idea.5.wav",
-   "length": 4.2,
+   "length": 4.08,
    "speech": [
-    0.04,
-    4.2
+    0,
+    4.08
    ],
-   "rate": 3.36,
+   "rate": 3.43,
    "words": [
     {
      "w": "So",
-     "at": 0.04,
-     "end": 0.22
+     "at": 0,
+     "end": 0.26
     },
     {
      "w": "Cadence",
-     "at": 0.22,
-     "end": 0.58
+     "at": 0.26,
+     "end": 0.62
     },
     {
      "w": "plans",
-     "at": 0.58,
+     "at": 0.62,
      "end": 0.92
     },
     {
      "w": "around",
      "at": 0.92,
-     "end": 1.28
+     "end": 1.32
     },
     {
      "w": "what",
-     "at": 1.28,
-     "end": 1.44
+     "at": 1.32,
+     "end": 1.52
     },
     {
      "w": "you",
-     "at": 1.44,
-     "end": 1.66
+     "at": 1.52,
+     "end": 1.74
     },
     {
      "w": "log,",
-     "at": 1.66,
-     "end": 1.96
+     "at": 1.74,
+     "end": 2
     },
     {
      "w": "and",
-     "at": 1.96,
-     "end": 2.42
+     "at": 2,
+     "end": 2.24
     },
     {
      "w": "treats",
-     "at": 2.42,
-     "end": 2.66
+     "at": 2.24,
+     "end": 2.5
     },
     {
      "w": "your",
-     "at": 2.66,
-     "end": 2.86
+     "at": 2.5,
+     "end": 2.76
     },
     {
      "w": "phase",
-     "at": 2.86,
-     "end": 3.06
+     "at": 2.76,
+     "end": 2.96
     },
     {
      "w": "as",
-     "at": 3.06,
-     "end": 3.28
+     "at": 2.96,
+     "end": 3.16
     },
     {
      "w": "a",
-     "at": 3.28,
-     "end": 3.46
+     "at": 3.16,
+     "end": 3.34
     },
     {
      "w": "hint.",
-     "at": 3.46,
-     "end": 3.76
+     "at": 3.34,
+     "end": 3.58
     }
    ]
   },
