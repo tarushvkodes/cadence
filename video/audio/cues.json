@@ -1,7 +1,7 @@
 {
   "note": "Generated from src/timeline.ts by npm run narration. audio/build.ts reads it.",
   "fps": 30,
-  "durationSec": 279.97,
+  "durationSec": 280.17,
   "sections": [
     {
       "id": "title",
@@ -9,39 +9,39 @@
     },
     {
       "id": "idea",
-      "start": 13
+      "start": 13.3
     },
     {
       "id": "setup",
-      "start": 40.1
+      "start": 40.4
     },
     {
       "id": "today",
-      "start": 68.4
+      "start": 68.7
     },
     {
       "id": "guide",
-      "start": 101.17
+      "start": 101.63
     },
     {
       "id": "decide",
-      "start": 165.97
+      "start": 166.17
     },
     {
       "id": "rough",
-      "start": 195.6
+      "start": 195.8
     },
     {
       "id": "safety",
-      "start": 216.37
+      "start": 216.57
     },
     {
       "id": "inside",
-      "start": 241.23
+      "start": 241.43
     },
     {
       "id": "end",
-      "start": 256.4
+      "start": 256.6
     }
   ]
 }

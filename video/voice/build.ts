@@ -5,7 +5,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { SCRIPT, ttsText, type ScriptLine } from './script.ts';
-import { alignTokens, check, normalize, speechSpan, transcribe, type Check, type Heard } from './verify.ts';
+import { alignTokens, check, diff, normalize, speechSpan, transcribe, type Check, type Heard } from './verify.ts';
 
 /**
  * `npm run voice`: speaks every line of `voice/script.ts` in the narrator's cloned voice, checks each
@@ -78,13 +78,27 @@ function speak(batch: { line: ScriptLine; seed: number }[]) {
   for (const j of jobs) if (!existsSync(j.out)) throw new Error(`the voice model wrote no audio for "${j.text}"`);
 }
 
+/**
+ * The take with a quiet pink-noise floor under it, 20 dB below the speech, the way the music sits
+ * under the voice in the film. A take whose words only survive in silence is too fragile to use.
+ */
+function underNoise(file: string): string {
+  const out = join(mkdtempSync(join(tmpdir(), 'cadence-noise-')), 'noisy.wav');
+  execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', file, '-f', 'lavfi', '-i', 'anoisesrc=color=pink:seed=7:amplitude=1', '-filter_complex', '[0:a]loudnorm=I=-16:TP=-2,aresample=24000[v];[1:a]aresample=24000,volume=-21.4dB[n];[v][n]amix=inputs=2:duration=first:normalize=0', out]);
+  return out;
+}
+
 function judge(batch: { line: ScriptLine; seed: number }[]): Take[] {
   const files = batch.map((b) => takePath(b.line, b.seed));
-  const heard = transcribe(files);
+  const noisy = files.map(underNoise);
+  const heard = transcribe([...files, ...noisy]);
   return batch.map((b, i) => {
     const file = files[i] as string;
     const h = heard.get(file) as Heard;
-    return { line: b.line, seed: b.seed, file, heard: h, check: check(b.line.say, h, speechSpan(file), PACE) };
+    const c = check(b.line.say, h, speechSpan(file), PACE);
+    const underMusic = diff(normalize(b.line.say), normalize(heard.get(noisy[i] as string)?.text ?? ''));
+    const problems = [...c.problems, ...underMusic.map((e) => `under a noise floor: ${e}`)];
+    return { line: b.line, seed: b.seed, file, heard: h, check: { ...c, ok: problems.length === 0, problems } };
   });
 }
 

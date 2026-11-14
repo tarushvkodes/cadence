@@ -761,7 +761,8 @@
   },
   "today.3": {
    "text": "Your next period is probably November eighteenth to the twenty-second.",
-   "chosen": 1,
+   "chosen": 2,
+   "pinned": "In the film, after line 16, whisper heard seed 1 as \"November 18th through the 22nd\". Seeds 2 and 3 were heard word for word alone, under the music bed and in context.",
    "attempts": [
     {
      "seed": 1,
@@ -1069,7 +1070,8 @@
   },
   "guide.3": {
    "text": "The Guide is an agent that runs on Clawd, which is a large language model.",
-   "chosen": 5,
+   "chosen": 3,
+   "pinned": "In the film, under the music, whisper heard seed 5 as \"The God is an agent\". Seeds 3 and 4 were both heard word for word in the full mix; seed 3 is the calmer.",
    "attempts": [
     {
      "seed": 1,
@@ -1169,7 +1171,7 @@
   },
   "guide.6": {
    "text": "A tool is basically a small piece of code we wrote that the model can use.",
-   "chosen": 6,
+   "chosen": 5,
    "attempts": [
     {
      "seed": 1,
@@ -1216,10 +1218,12 @@
     },
     {
      "seed": 6,
-     "ok": true,
+     "ok": false,
      "rate": 3.58,
      "heard": "a tool is basically a small piece of code we wrote that the model can use.",
-     "problems": []
+     "problems": [
+      "under a noise floor: missing \"a\""
+     ]
     },
     {
      "seed": 7,
@@ -1263,6 +1267,51 @@
      "rate": 3.77,
      "heard": "A tool is basically a small piece of code we wrote that the model can use.",
      "problems": []
+    },
+    {
+     "seed": 12,
+     "ok": false,
+     "rate": 3.96,
+     "heard": "A tool is basically a small piece of code we wrote that the model can use.",
+     "problems": [
+      "fast: 3.96 words/s"
+     ]
+    },
+    {
+     "seed": 13,
+     "ok": false,
+     "rate": 4.25,
+     "heard": "A tool is basically a small piece of code we wrote that the model can use.",
+     "problems": [
+      "fast: 4.25 words/s"
+     ]
+    },
+    {
+     "seed": 14,
+     "ok": false,
+     "rate": 4.08,
+     "heard": "A tool is basically a small piece of code we wrote that the model can use.",
+     "problems": [
+      "fast: 4.08 words/s"
+     ]
+    },
+    {
+     "seed": 15,
+     "ok": false,
+     "rate": 4.22,
+     "heard": "A tool is basically a small piece of code we wrote that the model can use.",
+     "problems": [
+      "fast: 4.22 words/s"
+     ]
+    },
+    {
+     "seed": 16,
+     "ok": false,
+     "rate": 4,
+     "heard": "A tool is basically a small piece of code we wrote that the model can use.",
+     "problems": [
+      "fast: 4.00 words/s"
+     ]
     }
    ]
   },

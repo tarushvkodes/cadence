@@ -59,7 +59,7 @@ const Voice: React.FC = () => (
  */
 const Bed: React.FC<{ ducked: boolean }> = ({ ducked }) => {
   const base = ducked ? 0.34 : 0.3;
-  const under = 0.2;
+  const under = 0.15;
   const level = (f: number) => {
     const fadeIn = Math.min(1, (f + 2) / 4);
     const fadeOut = Math.min(1, (TOTAL_FRAMES - f) / 60);
