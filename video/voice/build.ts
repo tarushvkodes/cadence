@@ -1,6 +1,6 @@
 import { createHash } from 'node:crypto';
 import { execFileSync } from 'node:child_process';
-import { existsSync, mkdirSync, mkdtempSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -46,6 +46,11 @@ const MAX_SEEDS = 16;
 const LUFS = -16;
 
 const hash = (s: string) => createHash('sha256').update(s).digest('hex').slice(0, 10);
+
+/** Scratch files for one run, removed when it exits. */
+const WORK = mkdtempSync(join(tmpdir(), 'cadence-voice-'));
+process.on('exit', () => rmSync(WORK, { recursive: true, force: true }));
+const scratch = (name: string) => join(mkdtempSync(join(WORK, 'x-')), name);
 const voiceKey = hash(JSON.stringify(VOICE));
 const r2 = (n: number) => Math.round(n * 100) / 100;
 
@@ -72,7 +77,7 @@ const takePath = (l: ScriptLine, seed: number) => join(TAKES, `${l.id}-${hash(vo
 function speak(batch: { line: ScriptLine; seed: number }[]) {
   const jobs = batch.filter((b) => !existsSync(takePath(b.line, b.seed))).map((b) => ({ text: ttsText(b.line), out: takePath(b.line, b.seed), seed: b.seed }));
   if (!jobs.length) return;
-  const spec = join(mkdtempSync(join(tmpdir(), 'cadence-tts-')), 'jobs.json');
+  const spec = scratch('jobs.json');
   writeFileSync(spec, JSON.stringify({ model: VOICE.model, ref: REF, ref_text: VOICE.refText, temperature: VOICE.temperature, jobs }));
   execFileSync('uvx', ['-q', '--python', '3.12', '--from', VOICE.package, '--with', 'soundfile', 'python', here('tts.py'), spec], { stdio: ['ignore', 'ignore', 'inherit'] });
   for (const j of jobs) if (!existsSync(j.out)) throw new Error(`the voice model wrote no audio for "${j.text}"`);
@@ -83,7 +88,7 @@ function speak(batch: { line: ScriptLine; seed: number }[]) {
  * under the voice in the film. A take whose words only survive in silence is too fragile to use.
  */
 function underNoise(file: string): string {
-  const out = join(mkdtempSync(join(tmpdir(), 'cadence-noise-')), 'noisy.wav');
+  const out = scratch('noisy.wav');
   execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', file, '-f', 'lavfi', '-i', 'anoisesrc=color=pink:seed=7:amplitude=1', '-filter_complex', '[0:a]loudnorm=I=-16:TP=-2,aresample=24000[v];[1:a]aresample=24000,volume=-21.4dB[n];[v][n]amix=inputs=2:duration=first:normalize=0', out]);
   return out;
 }
@@ -168,7 +173,7 @@ function finish(t: Take): { file: string; offset: number; length: number } {
   const length = to - from;
   const out = join(LINES, `${t.line.id}.wav`);
   const shape = `atrim=${from}:${to},asetpts=N/SR/TB,aresample=48000:filter_size=64:cutoff=0.97,highpass=f=70,afade=t=in:d=0.02,afade=t=out:st=${Math.max(0, length - 0.12)}:d=0.12`;
-  const tmp = join(mkdtempSync(join(tmpdir(), 'cadence-line-')), 'shaped.wav');
+  const tmp = scratch('shaped.wav');
   execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', t.file, '-af', shape, '-c:a', 'pcm_s24le', tmp]);
   const gain = LUFS - loudness(tmp);
   execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', tmp, '-af', `volume=${gain.toFixed(2)}dB,alimiter=limit=0.78:attack=2:release=60:level=false`, '-ar', '48000', '-c:a', 'pcm_s24le', out]);

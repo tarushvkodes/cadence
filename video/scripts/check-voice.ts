@@ -1,5 +1,5 @@
 import { execFileSync } from 'node:child_process';
-import { mkdtempSync } from 'node:fs';
+import { mkdtempSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -17,6 +17,7 @@ import { diff, normalize, transcribe } from '../voice/verify.ts';
 const here = (p: string) => fileURLToPath(new URL(p, import.meta.url));
 const file = process.argv[2] ?? here('../out/cadence-demo.mp4');
 const dir = mkdtempSync(join(tmpdir(), 'cadence-check-'));
+process.on('exit', () => rmSync(dir, { recursive: true, force: true }));
 
 const pieces = TIMELINE.lines.map((l) => {
   const out = join(dir, `${l.id}.wav`);

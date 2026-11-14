@@ -1,5 +1,5 @@
 import { execFileSync } from 'node:child_process';
-import { mkdtempSync, readFileSync } from 'node:fs';
+import { mkdtempSync, readFileSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { basename, join } from 'node:path';
 
@@ -110,35 +110,39 @@ export type Heard = { text: string; words: { w: string; t: number }[] };
 /** Transcribes several WAVs in one whisper.cpp run. Word times are DTW token ends (seconds). */
 export function transcribe(files: string[]): Map<string, Heard> {
   const dir = mkdtempSync(join(tmpdir(), 'cadence-heard-'));
-  const inputs = files.map((f, i) => {
-    const w = join(dir, `${i}-${basename(f)}`);
-    execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', f, '-ar', '16000', '-ac', '1', '-c:a', 'pcm_s16le', w]);
-    return w;
-  });
-  const out = new Map<string, Heard>();
-  const BATCH = 24;
-  for (let b = 0; b < inputs.length; b += BATCH) {
-    const chunk = inputs.slice(b, b + BATCH);
-    execFileSync('whisper-cli', ['-m', WHISPER_MODEL, ...chunk.flatMap((f) => ['-f', f]), '-ojf', '-t', '8', '--dtw', 'medium.en', '-nfa', '-np'], { stdio: 'ignore' });
-    chunk.forEach((w, k) => {
-      type Token = { text: string; t_dtw?: number };
-      const raw = JSON.parse(readFileSync(`${w}.json`, 'utf8')) as { transcription: { text: string; tokens: Token[] }[] };
-      const words: { w: string; t: number }[] = [];
-      for (const seg of raw.transcription)
-        for (const tok of seg.tokens) {
-          if (tok.text.startsWith('[_')) continue;
-          const t = Math.round(tok.t_dtw ?? -1) / 100;
-          const last = words.at(-1);
-          if (tok.text.startsWith(' ') || !last) words.push({ w: tok.text.trim(), t });
-          else {
-            last.w += tok.text;
-            if (/[A-Za-z0-9]/.test(tok.text)) last.t = t;
-          }
-        }
-      out.set(files[b + k] as string, { text: raw.transcription.map((s) => s.text).join('').trim(), words });
+  try {
+    const inputs = files.map((f, i) => {
+      const w = join(dir, `${i}-${basename(f)}`);
+      execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', f, '-ar', '16000', '-ac', '1', '-c:a', 'pcm_s16le', w]);
+      return w;
     });
+    const out = new Map<string, Heard>();
+    const BATCH = 24;
+    for (let b = 0; b < inputs.length; b += BATCH) {
+      const chunk = inputs.slice(b, b + BATCH);
+      execFileSync('whisper-cli', ['-m', WHISPER_MODEL, ...chunk.flatMap((f) => ['-f', f]), '-ojf', '-t', '8', '--dtw', 'medium.en', '-nfa', '-np'], { stdio: 'ignore' });
+      chunk.forEach((w, k) => {
+        type Token = { text: string; t_dtw?: number };
+        const raw = JSON.parse(readFileSync(`${w}.json`, 'utf8')) as { transcription: { text: string; tokens: Token[] }[] };
+        const words: { w: string; t: number }[] = [];
+        for (const seg of raw.transcription)
+          for (const tok of seg.tokens) {
+            if (tok.text.startsWith('[_')) continue;
+            const t = Math.round(tok.t_dtw ?? -1) / 100;
+            const last = words.at(-1);
+            if (tok.text.startsWith(' ') || !last) words.push({ w: tok.text.trim(), t });
+            else {
+              last.w += tok.text;
+              if (/[A-Za-z0-9]/.test(tok.text)) last.t = t;
+            }
+          }
+        out.set(files[b + k] as string, { text: raw.transcription.map((s) => s.text).join('').trim(), words });
+      });
+    }
+    return out;
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
   }
-  return out;
 }
 
 export type Span = { start: number; end: number; length: number; pauses: { s: number; e: number }[]; tailDb: number };
