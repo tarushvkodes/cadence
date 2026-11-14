@@ -37,7 +37,7 @@ export const Inside: React.FC = () => {
   ]);
 
   const cam: CamKey[] = [
-    { at: morph, to: focus(pad(union(top.headline, top.key), 40, 40), FULL, 1.7), dur: 34 },
+    { at: morph, to: focus(pad(union(top.headline, top.key), 40, 40), FULL, 1.5), dur: 34 },
     { at: source - 6, to: focus(pad(claims.claim, 60, 70), FULL, 1.3), dur: 44 },
     { at: swap - 4, to: { ...REST }, dur: 26 },
     { at: word('inside.3', 'instructions') - 8, to: focus({ x: prompt.prompt.x - 30, y: prompt.note.y - 20, w: prompt.prompt.w + 60, h: 560 }, FULL, 1.4), dur: 36 },

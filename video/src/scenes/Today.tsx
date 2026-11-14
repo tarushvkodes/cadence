@@ -75,12 +75,12 @@ export const Today: React.FC = () => {
         ]}
         overlay={({ cam, frame }) => (
           <>
-            <Callout cam={cam} frame={frame} rect={facts.next} from={t3.local + 4} until={tapAt - 24} label="A range, not a date" side="left" color={PHASE.menstrual.solid} />
-            <Callout cam={cam} frame={frame} rect={facts.estimate} from={word('today.5', 'sure') - 4} until={tapAt + 12} label="How sure it is" side="right" />
-            <Callout cam={cam} frame={frame} rect={why.why} from={tapAt + 30} until={t6.local - 14} label="Why, in plain words" side="right" inset={6} />
-            <Callout cam={cam} frame={frame} rect={check.energy} from={word('today.6', 'energy')} until={word('today.6', 'mood')} label="Energy" side="left" />
-            <Callout cam={cam} frame={frame} rect={check.mood} from={word('today.6', 'mood')} until={word('today.6', 'symptoms')} label="Mood" side="left" />
-            <Callout cam={cam} frame={frame} rect={check.symptoms} from={word('today.6', 'symptoms')} until={len - 34} label="Symptoms" sub="Tap all that fit" side="left" />
+            <Callout cam={cam} frame={frame} rect={facts.next} from={t3.local + 4} until={tapAt - 24} label="A range, not a date" side="left" color={PHASE.menstrual.solid} gap={48} />
+            <Callout cam={cam} frame={frame} rect={facts.estimate} from={word('today.5', 'sure') - 4} until={tapAt + 12} label="How sure it is" side="right" gap={48} />
+            <Callout cam={cam} frame={frame} rect={why.why} from={tapAt + 30} until={t6.local - 14} label="Why, in plain words" side="right" inset={6} gap={48} />
+            <Callout cam={cam} frame={frame} rect={check.energy} from={word('today.6', 'energy')} until={word('today.6', 'mood')} label="Energy" side="left" gap={48} />
+            <Callout cam={cam} frame={frame} rect={check.mood} from={word('today.6', 'mood')} until={word('today.6', 'symptoms')} label="Mood" side="left" gap={48} />
+            <Callout cam={cam} frame={frame} rect={check.symptoms} from={word('today.6', 'symptoms')} until={len - 34} label="Symptoms" sub="Tap all that fit" side="left" gap={48} />
           </>
         )}
       />

@@ -62,10 +62,10 @@ export const Rough: React.FC = () => {
         ]}
         overlay={({ cam, frame }) => (
           <>
-            <Callout cam={cam} frame={frame} rect={today.dial} from={word('rough.2', '1') - 2} until={r3.local - 16} label="Day 1" sub="Period started today" side="left" ring={false} />
+            <Callout cam={cam} frame={frame} rect={today.dial} from={word('rough.2', '1') - 2} until={r3.local - 16} label="Day 1" sub="Period started today" side="left" ring={false} gap={48} />
             <Callout cam={cam} frame={frame} rect={check.save} from={word('rough.3', 'cramps') + 8} until={r3.localEnd + 12} inset={6} color={PHASE.menstrual.solid} />
-            <Callout cam={cam} frame={frame} rect={saved.checkin} from={r3.localEnd + 22} until={r4.local + 2} inset={6} label="Logged in seconds" side="right" />
-            <Callout cam={cam} frame={frame} rect={cards.head} from={word('rough.5', 'midterm')} until={len - 32} inset={8} label="Three changes, today only" sub="The midterm stays put" side="right" />
+            <Callout cam={cam} frame={frame} rect={saved.checkin} from={r3.localEnd + 22} until={r4.local + 2} inset={6} label="Logged in seconds" side="right" gap={48} />
+            <Callout cam={cam} frame={frame} rect={cards.head} from={word('rough.5', 'midterm')} until={len - 32} inset={8} label="Three changes, today only" sub="The midterm stays put" side="right" gap={48} />
           </>
         )}
       />

@@ -65,7 +65,7 @@ export const Decide: React.FC = () => {
           { at: d4.local - 6, to: { ...REST }, dur: 30 },
           { at: word('decide.4', 'dashed') - 14, to: focus(pad(plan.ghost, 360, 230), FULL, 1.6), dur: 34 },
           { at: d5.local - 12, to: focus(pad(union(locks.cls, locks.shift, locks.exam), 70, 80), FULL, 1.45), dur: 36 },
-          { at: d6.local + 2, to: focus({ x: 100, y: plan.bar.y - 330, w: 1240, h: plan.bar.h + 350 }, FULL, 1.4), dur: 36 },
+          { at: d6.local + 2, to: focus({ x: 100, y: plan.bar.y - 440, w: 1240, h: plan.bar.h + 480 }, FULL, 1.4), dur: 36 },
           { at: len - 30, to: ASIDE, dur: 30 },
         ]}
         overlay={({ cam, frame }) => (

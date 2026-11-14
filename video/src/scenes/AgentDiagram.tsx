@@ -24,8 +24,8 @@ export type DiagramCues = {
   exit: number;
 };
 
-const MODEL = { x: 760, y: 410, r: 118 };
-const CHIP_Y = 690;
+const MODEL = { x: 760, y: 460, r: 118 };
+const CHIP_Y = 742;
 /** The tools Cadence gives the model (src/agent/schemas.ts), in the order the Guide calls them. */
 const TOOLS = [
   { id: 'get_cycle_status', x: 310 },
@@ -56,7 +56,7 @@ const modelFoot: Pt = { x: MODEL.x, y: MODEL.y + MODEL.r };
 
 /** Swaps one short title for the next as the explanation moves on. */
 const Eyebrow: React.FC<{ frame: number; steps: readonly (readonly [number, string])[] }> = ({ frame, steps }) => (
-  <div style={{ position: 'absolute', left: 150, top: 110, height: 40 }}>
+  <div style={{ position: 'absolute', left: 150, top: 168, height: 40 }}>
     {steps.map(([at, text], i) => {
       const next = steps[i + 1]?.[0];
       const inP = tween(frame, at, 14, ease.out);
@@ -215,7 +215,7 @@ export const AgentDiagram: React.FC<{ cues: DiagramCues }> = ({ cues: q }) => {
         );
       })}
 
-      <div style={{ position: 'absolute', left: 1000, top: 210, width: 820, opacity: codeIn * (1 - codeOut), transform: `translateY(${(1 - codeIn) * 22 - codeOut * 12}px)` }}>
+      <div style={{ position: 'absolute', left: 1000, top: 262, width: 820, opacity: codeIn * (1 - codeOut), transform: `translateY(${(1 - codeIn) * 22 - codeOut * 12}px)` }}>
         <div style={{ font: `600 18px/1 ${FONT.sans}`, letterSpacing: '0.12em', textTransform: 'uppercase', color: C.ink3, marginBottom: 12 }}>The calendar tool, in our code</div>
         <div style={{ background: C.elevated, border: `1px solid ${C.line}`, borderRadius: 20, padding: '20px 24px', boxShadow: SHADOW.lift }}>
           <div style={{ font: `500 17px/1.6 ${FONT.mono}`, color: C.ink3 }}>{"// list_events: Read the user's calendar for a date range."}</div>

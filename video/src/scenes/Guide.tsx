@@ -29,6 +29,11 @@ const CALLS = [
 const appears = (k: number) => when(PHONE_TAKE, 'steps', (v) => v.split('|').filter(Boolean).length > k);
 
 const HUD = { left: 1340, top: 150, row: 70 };
+/** Inside the panel: where the rows start, the status icons' centre line, and the Claude node. */
+const ROWS_TOP = 77;
+const ICON_X = 15;
+const NODE = { x: 240, y: 556 };
+const rowY = (k: number) => ROWS_TOP + k * HUD.row + HUD.row / 2;
 
 /**
  * The real agent's tool calls, named beside the phone as each step lands: the same tools as the
@@ -53,7 +58,6 @@ const ToolHud: React.FC<{ frame: number; tf: number; from: number; until: number
         const running = state.includes('is-running');
         const adjusted = state.includes('is-error');
         const done = state.includes('is-done');
-        const dot = k < 4 ? interpolate(sending, [k * 0.18, k * 0.18 + 0.46], [0, 1], CLAMP) : 0;
         return (
           <div key={k} style={{ position: 'relative', height: HUD.row, display: 'flex', alignItems: 'center', gap: 14, opacity: show, transform: `translateY(${(1 - show) * 10}px)` }}>
             <span
@@ -80,25 +84,31 @@ const ToolHud: React.FC<{ frame: number; tf: number; from: number; until: number
                 {done && k >= 4 ? <span style={{ color: PHASE.follicular.solid, fontWeight: 600 }}> · fits</span> : null}
               </div>
             </div>
-            {dot > 0 && dot < 1 ? (
-              <span
-                style={{
-                  position: 'absolute',
-                  left: 13 + dot * 300,
-                  top: HUD.row / 2 + dot * (560 - (k * HUD.row + 110)) - 7,
-                  width: 14,
-                  height: 14,
-                  borderRadius: 99,
-                  background: PHASE.luteal.solid,
-                  opacity: Math.sin(Math.PI * dot),
-                }}
-              />
-            ) : null}
           </div>
         );
       })}
       {claude > 0.001 ? (
-        <div style={{ position: 'absolute', left: 250, top: 520, opacity: claude, transform: `translateY(${(1 - claude) * 14}px)` }}>
+        <svg width={500} height={640} style={{ position: 'absolute', left: 0, top: 0, overflow: 'visible', opacity: claude }}>
+          <path
+            d={`M ${ICON_X} ${rowY(3) + 22} L ${ICON_X} ${NODE.y} L ${NODE.x} ${NODE.y}`}
+            fill="none"
+            stroke={C.ink3}
+            strokeWidth={2.5}
+            strokeDasharray="2 9"
+            strokeLinecap="round"
+          />
+          {[0, 1, 2, 3].map((k) => {
+            const t = interpolate(sending, [k * 0.16, k * 0.16 + 0.52], [0, 1], CLAMP);
+            if (t <= 0 || t >= 1) return null;
+            const down = NODE.y - rowY(k);
+            const d = ease.inOut(t) * (down + NODE.x - ICON_X);
+            const [x, y] = d < down ? [ICON_X, rowY(k) + d] : [ICON_X + d - down, NODE.y];
+            return <circle key={k} cx={x} cy={y} r={7} fill={PHASE.luteal.solid} opacity={Math.min(1, Math.sin(Math.PI * t) * 2)} />;
+          })}
+        </svg>
+      ) : null}
+      {claude > 0.001 ? (
+        <div style={{ position: 'absolute', left: NODE.x + 10, top: NODE.y - 36, opacity: claude, transform: `translateY(${(1 - claude) * 14}px)` }}>
           <Glass radius={24} frost={16} style={{ padding: '16px 24px', boxShadow: SHADOW.lift }}>
             <div style={{ font: `500 40px/1 ${FONT.serif}`, color: C.ink }}>Claude</div>
           </Glass>
@@ -189,16 +199,16 @@ export const Guide: React.FC = () => {
         ]}
         overlay={({ cam, frame: f, tf }) => (
           <>
-            <Callout cam={cam} frame={f} rect={empty.starter} from={morph + 30} until={clickAt - 2} label="One tap to ask" side="right" />
+            <Callout cam={cam} frame={f} rect={empty.starter} from={morph + 30} until={clickAt - 2} label="One tap to ask" side="right" gap={48} />
             <Callout cam={cam} frame={f} rect={reads.s0} from={word('guide.9', 'checks')} until={word('guide.9', 'calendar')} inset={4} />
             <Callout cam={cam} frame={f} rect={reads.s1} from={word('guide.9', 'calendar')} until={word('guide.9', 'habits')} inset={4} />
             <Callout cam={cam} frame={f} rect={reads.s2} from={word('guide.9', 'habits')} until={word('guide.9', 'check-ins')} inset={4} />
             <Callout cam={cam} frame={f} rect={reads.s3} from={word('guide.9', 'check-ins')} until={g10.local - 6} inset={4} />
-            <Callout cam={cam} frame={f} rect={drafts.s4} from={word('guide.11', 'catches') + 6} until={word('guide.11', 'fixes') + 2} inset={4} color={PHASE.ovulatory.solid} label="Didn't fit your calendar" sub="Caught by a tool" side="left" />
-            <Callout cam={cam} frame={f} rect={drafts.s5} from={word('guide.11', 'fixes') + 4} until={g12.local - 4} inset={4} color={PHASE.ovulatory.solid} label="Fixed by the model" sub="Then checked again" side="left" />
-            <Callout cam={cam} frame={f} rect={cards.head} from={five + 34} until={g13.local - 2} inset={8} label="5 suggestions" sub="Waiting for you" side="left" />
+            <Callout cam={cam} frame={f} rect={drafts.s4} from={word('guide.11', 'catches') + 6} until={word('guide.11', 'fixes') + 2} inset={4} color={PHASE.ovulatory.solid} label="Didn't fit your calendar" sub="Caught by a tool" side="left" gap={48} />
+            <Callout cam={cam} frame={f} rect={drafts.s5} from={word('guide.11', 'fixes') + 4} until={g12.local - 4} inset={4} color={PHASE.ovulatory.solid} label="Fixed by the model" sub="Then checked again" side="left" gap={48} />
+            <Callout cam={cam} frame={f} rect={cards.head} from={five + 34} until={g13.local - 2} inset={8} label="5 suggestions" sub="Waiting for you" side="left" gap={48} />
             <Marker cam={cam} frame={f} rect={cards.day27} from={word('guide.13', 'around') - 2} until={len - 24} />
-            <Callout cam={cam} frame={f} rect={cards.reason} from={word('guide.13', 'logged') - 4} until={len - 26} ring={false} label="From your own check-ins" sub="Low energy, headaches" side="left" />
+            <Callout cam={cam} frame={f} rect={{ x: -13, y: cards.reason.y, w: 1, h: cards.reason.h }} from={word('guide.13', 'logged') - 4} until={len - 26} ring={false} label="From your own check-ins" sub="Low energy, headaches" side="left" gap={48} />
             <ToolHud frame={f} tf={tf} from={loopTo + 6} until={g12.local + 6} send={g10.local + 4} />
           </>
         )}
@@ -227,7 +237,7 @@ export const Guide: React.FC = () => {
         />
       </Sequence>
       <ClickSounds take={PHONE_TAKE} time={time} length={len} />
-      <Sfx at={loopFrom} name="whoosh" />
+      <Sfx at={loopFrom - 10} name="whoosh" />
       <Sfx at={loopTo - 8} name="whoosh" />
       <Sfx at={len - 24} name="whoosh" gain={0.8} />
       <StepHeader step={3} name="Ask the Guide" morphAt={morph} until={len - 6} />

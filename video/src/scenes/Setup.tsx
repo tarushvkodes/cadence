@@ -72,14 +72,14 @@ export const Setup: React.FC = () => {
         ]}
         overlay={({ cam, frame }) => (
           <>
-            <Callout cam={cam} frame={frame} rect={form.date} from={word('setup.2', 'last')} until={word('setup.2', 'long')} label="Last period start" />
-            <Callout cam={cam} frame={frame} rect={form.cycle} from={word('setup.2', 'long')} until={word('setup.2', 'regular')} label="Usual cycle length" />
-            <Callout cam={cam} frame={frame} rect={form.regular} from={word('setup.2', 'regular')} until={s3.local - 10} label="How regular" />
-            <Callout cam={cam} frame={frame} rect={promises.p1} from={word('setup.4', 'data')} until={word('setup.4', 'AI')} label="Stays on your device" />
-            <Callout cam={cam} frame={frame} rect={promises.p2} from={word('setup.4', 'AI')} until={word('setup.4', "it's")} label="The AI only suggests" />
-            <Callout cam={cam} frame={frame} rect={promises.p3} from={word('setup.4', "it's")} until={line('setup.5').local - 2} label="Not medical advice" />
-            <Callout cam={cam} frame={frame} rect={promises.p4} from={line('setup.5').local} until={toUnderstand - 42} label="Estimates, not facts" sub="Never for birth control" />
-            <Callout cam={cam} frame={frame} rect={start.sample} from={word('setup.6', 'busy') + 4} until={len - 30} label="A busy week" sub="Midterm on Thursday" />
+            <Callout cam={cam} frame={frame} rect={form.date} from={word('setup.2', 'last')} until={word('setup.2', 'long')} label="Last period start" gap={48} />
+            <Callout cam={cam} frame={frame} rect={form.cycle} from={word('setup.2', 'long')} until={word('setup.2', 'regular')} label="Usual cycle length" gap={48} />
+            <Callout cam={cam} frame={frame} rect={form.regular} from={word('setup.2', 'regular')} until={s3.local - 10} label="How regular" gap={48} />
+            <Callout cam={cam} frame={frame} rect={promises.p1} from={word('setup.4', 'data')} until={word('setup.4', 'AI')} label="Stays on your device" gap={48} />
+            <Callout cam={cam} frame={frame} rect={promises.p2} from={word('setup.4', 'AI')} until={word('setup.4', "it's")} label="The AI only suggests" gap={48} />
+            <Callout cam={cam} frame={frame} rect={promises.p3} from={word('setup.4', "it's")} until={line('setup.5').local - 2} label="Not medical advice" gap={48} />
+            <Callout cam={cam} frame={frame} rect={promises.p4} from={line('setup.5').local} until={toUnderstand - 42} label="Estimates, not facts" sub="Never for birth control" gap={48} />
+            <Callout cam={cam} frame={frame} rect={start.sample} from={word('setup.6', 'busy') + 4} until={len - 30} label="A busy week" sub="Midterm on Thursday" gap={48} />
           </>
         )}
       />

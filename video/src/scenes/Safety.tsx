@@ -89,11 +89,11 @@ export const Safety: React.FC = () => {
             <>
               {onScreen(doctor) ? <Marker cam={cam} frame={frame} rect={doctor} from={word('safety.4', 'checked') - 4} until={s5.local - 6} /> : null}
               {onScreen(urgent) ? <Marker cam={cam} frame={frame} rect={urgent} from={word('safety.4', 'urgent') - 2} until={s5.local - 6} color={PHASE.menstrual.tint} /> : null}
-              {onScreen(doctor) ? <Callout cam={cam} frame={frame} rect={doctor} from={word('safety.4', 'checked') - 2} until={s5.local - 6} ring={false} label="See a doctor" side="left" /> : null}
-              {onScreen(urgent) ? <Callout cam={cam} frame={frame} rect={urgent} from={word('safety.4', 'urgent')} until={s5.local - 6} ring={false} label="When to go to urgent care" side="right" /> : null}
+              {onScreen(doctor) ? <Callout cam={cam} frame={frame} rect={doctor} from={word('safety.4', 'checked') - 2} until={s5.local - 6} ring={false} label="See a doctor" side="left" gap={48} /> : null}
+              {onScreen(urgent) ? <Callout cam={cam} frame={frame} rect={urgent} from={word('safety.4', 'urgent')} until={s5.local - 6} ring={false} label="When to go to urgent care" side="right" gap={48} /> : null}
               <Callout cam={cam} frame={frame} rect={scrolled(bottom.next, bottomAt, tf)} from={offers - 14} until={offers + 6} inset={6} />
               {tf >= notesAt - 2 ? <Marker cam={cam} frame={frame} rect={streamed(notes.missed, notesAt, tf)} from={s5.localEnd + 4} until={len - 30} /> : null}
-              <Callout cam={cam} frame={frame} rect={{ x: -13, y: streamed(notes.cramps, notesAt, tf).y - 6, w: 1, h: 30 }} from={s5.localEnd} until={len - 30} ring={false} label="Notes for the appointment" sub="From your own check-ins" side="left" />
+              <Callout cam={cam} frame={frame} rect={{ x: -13, y: streamed(notes.missed, notesAt, tf).y, w: 1, h: notes.missed.h }} from={s5.localEnd} until={len - 30} ring={false} label="Notes for the appointment" sub="From your own check-ins" side="left" gap={48} />
             </>
           );
         }}
