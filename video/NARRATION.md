@@ -5,7 +5,7 @@ settled script line for line (`voice/script.ts`). Each time below is when that l
 narrate live over `out/cadence-demo-music.mp4` or `out/cadence-demo-silent.mp4`, start each line at its timecode.
 The # column is the line's number in the script.
 
-Total length 4:40.2. Generated from `src/timeline.ts` by `npm run narration`; do not edit by hand.
+Total length 4:40.1. Generated from `src/timeline.ts` by `npm run narration`; do not edit by hand.
 
 ## Timed script
 
@@ -76,10 +76,10 @@ Total length 4:40.2. Generated from `src/timeline.ts` by `npm run narration`; do
 | **4:16.6** | | **Remember** | |
 | 4:17.1 | 54 | The ring returns. "Three things to remember." | So there's three things to remember. |
 | 4:19.3 | 55 | One: it plans around how you feel, not your phase. | Cadence plans around how you feel, instead of your phase. |
-| 4:22.9 | 56 | Two: the AI suggests, you decide. | The AI suggests, and you decide. |
-| 4:25.2 | 57 | Three: it knows when to send you to a clinician. | And it knows when to send you to a real clinician. |
-| 4:29.7 | 58 | github.com/tarushvkodes/cadence | Our code is on GitHub, at the link on screen. |
-| 4:34.6 | 59 | Up next: the ethics behind it. The narration credit. | Next, we'll get into the ethics behind it. |
+| 4:22.8 | 56 | Two: the AI suggests, you decide. | The AI suggests, and you decide. |
+| 4:25.1 | 57 | Three: it knows when to send you to a clinician. | And it knows when to send you to a real clinician. |
+| 4:29.6 | 58 | github.com/tarushvkodes/cadence | Our code is on GitHub, at the link on screen. |
+| 4:34.5 | 59 | Up next: the ethics behind it. The narration credit. | Next, we'll get into the ethics behind it. |
 
 ## Read-through
 

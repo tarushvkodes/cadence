@@ -2490,8 +2490,9 @@
    ]
   },
   "end.2": {
-   "text": "Cadence plans around how you feel, instead of your phase.",
-   "chosen": 13,
+   "text": "Cadence plans around how you feel, instead of your faze.",
+   "chosen": 44,
+   "pinned": "Spelled \"phase\" for the model, every take (31) was heard as \"face\" under the film's music. Spelled \"faze\" (a homophone), 64 seeds were tried; rebuilt into the exact film mix (the voiced render minus the voice-only render, plus the take at its place and gain) and transcribed through 10 windows each, seeds 41, 44 and 49 were heard as \"phase\" in all 10. Seed 44 is nearest the 3.2 words a second target (3.29).",
    "attempts": [
     {
      "seed": 1,

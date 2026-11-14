@@ -5,7 +5,15 @@
  * paces the voice model (the build refuses one whose words differ). `n` is the line's number in the script. Everything about the voice
  * (the takes, their timings, the captions, NARRATION.md) derives from this file.
  */
-export type ScriptLine = { readonly id: string; readonly n: number; readonly say: string; readonly caption?: string; readonly phrasing?: string };
+export type ScriptLine = {
+  readonly id: string;
+  readonly n: number;
+  readonly say: string;
+  readonly caption?: string;
+  readonly phrasing?: string;
+  /** Respellings for this line only, on top of `RESPELL`. */
+  readonly respell?: Readonly<Record<string, string>>;
+};
 
 export const SCRIPT: readonly ScriptLine[] = [
   { id: 'title.1', n: 1, say: 'This is Cadence.' },
@@ -71,7 +79,7 @@ export const SCRIPT: readonly ScriptLine[] = [
   { id: 'inside.3', n: 53, say: 'And Settings shows the instructions the AI follows, word for word.' },
 
   { id: 'end.1', n: 54, say: "So there's three things to remember." },
-  { id: 'end.2', n: 55, say: 'Cadence plans around how you feel, instead of your phase.' },
+  { id: 'end.2', n: 55, say: 'Cadence plans around how you feel, instead of your phase.', respell: { phase: 'faze' } },
   { id: 'end.3', n: 56, say: 'The AI suggests, and you decide.' },
   { id: 'end.4', n: 57, say: 'And it knows when to send you to a real clinician.' },
   { id: 'end.5', n: 58, say: 'Our code is on GitHub, at the link on screen.' },
@@ -80,8 +88,12 @@ export const SCRIPT: readonly ScriptLine[] = [
 
 /**
  * How a word is spelled for the voice model when its own spelling is misread. The words heard back
- * are still checked against `say`, so a respelling only passes if the right word comes out.
+ * are still checked against `say`, so a respelling only passes if the right word comes out. Line 55
+ * respells "phase" as its homophone "faze": spelled "phase", the clone ends the word on an unvoiced
+ * "s", and whisper heard "face" in every take under the film's music (31 takes); spelled "faze",
+ * some takes are heard as "phase" in the film mix every time (see voice/takes.json).
  */
 export const RESPELL: Readonly<Record<string, string>> = { Claude: 'Clawd' };
 
-export const ttsText = (l: ScriptLine) => Object.entries(RESPELL).reduce((t, [w, r]) => t.replace(new RegExp(`\\b${w}\\b`, 'g'), r), l.phrasing ?? l.say);
+export const ttsText = (l: ScriptLine) =>
+  Object.entries({ ...RESPELL, ...l.respell }).reduce((t, [w, r]) => t.replace(new RegExp(`\\b${w}\\b`, 'g'), r), l.phrasing ?? l.say);

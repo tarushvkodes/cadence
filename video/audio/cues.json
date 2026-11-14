@@ -1,7 +1,7 @@
 {
   "note": "Generated from src/timeline.ts by npm run narration. audio/build.ts reads it.",
   "fps": 30,
-  "durationSec": 280.17,
+  "durationSec": 280.07,
   "sections": [
     {
       "id": "title",
