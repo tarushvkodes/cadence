@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 
 const WPM = 140;
-const FILM_SECONDS = 280;
+const FILM_SECONDS = 265;
 const pad = (n) => String(n).padStart(2, '0');
 export const clock = (secs) => `${Math.floor(secs / 60)}:${pad(Math.round(secs % 60))}`;
 const spoken = (notes) => notes.split('\n').filter((l) => !l.startsWith('['));
@@ -19,7 +19,7 @@ function notesToMarkdown(p) {
 	return p.notes
 		.split('\n\n')
 		.map((block) => {
-			if (block.startsWith('[')) return '> **Film plays here, 4:40.** Film narration: see `video/NARRATION.md`.';
+			if (block.startsWith('[')) return '> **Film plays here, 4:25.** Film narration: see `video/NARRATION.md`.';
 			const label = labelled ? '' : `**${p.speaker}:** `;
 			labelled = true;
 			return label + block;
@@ -47,7 +47,7 @@ export function writeScript(plan, sections, path) {
 	const md = [
 		'# Cadence: speaking script',
 		'',
-		'Purdue CS 110 AI Solutions Showcase. The talk runs about 18 minutes, including the 4:40 demo film.',
+		'Purdue CS 110 AI Solutions Showcase. The talk runs about 18 minutes, including the 4:25 demo film.',
 		'',
 		'The speaker notes in `deck/Cadence-Capstone.pptx` hold the same words as this script. Slide numbers match the deck. Times assume about 140 words a minute, an easy speaking pace.',
 		'',

@@ -11,6 +11,8 @@ export type ScriptLine = {
   readonly say: string;
   readonly caption?: string;
   readonly phrasing?: string;
+  /** The line as the recorded narrator read it, where the words differ from `say` (`npm run voice:recorded`). */
+  readonly read?: { readonly say: string; readonly caption?: string };
   /** Respellings for this line only, on top of `RESPELL`. */
   readonly respell?: Readonly<Record<string, string>>;
 };
@@ -18,7 +20,7 @@ export type ScriptLine = {
 export const SCRIPT: readonly ScriptLine[] = [
   { id: 'title.1', n: 1, say: 'This is Cadence.' },
   { id: 'title.2', n: 2, say: 'We built it to help you plan your week around how you actually feel.' },
-  { id: 'title.3', n: 3, say: "It's for women around seventeen to twenty-five, and it runs in the browser.", caption: "It's for women around 17 to 25, and it runs in the browser." },
+  { id: 'title.3', n: 3, say: "It's for women around seventeen to twenty-five, and it runs in the browser.", caption: "It's for women around 17 to 25, and it runs in the browser.", read: { say: "It's for women seventeen to twenty-five, and it runs in the browser.", caption: "It's for women 17 to 25, and it runs in the browser." } },
 
   { id: 'idea.1', n: 4, say: 'When we started, we assumed the cycle changes how well people think.' },
   { id: 'idea.2', n: 5, say: "Then we read the research, and it doesn't back that up." },
@@ -38,7 +40,7 @@ export const SCRIPT: readonly ScriptLine[] = [
   { id: 'today.3', n: 17, say: 'Your next period is probably November eighteenth to the twenty-second.', caption: 'Your next period is probably Nov 18 to 22.' },
   { id: 'today.4', n: 18, say: 'It gives you a range instead of a date, because only thirteen percent of cycles are exactly twenty-eight days.', caption: 'It gives you a range instead of a date, because only 13% of cycles are exactly 28 days.' },
   { id: 'today.5', n: 19, say: 'It also says how sure it is, and you can tap that to see why.' },
-  { id: 'today.6', n: 20, say: 'Below that is the ten-second check-in, for energy, mood, and symptoms.', caption: 'Below that is the 10-second check-in, for energy, mood, and symptoms.' },
+  { id: 'today.6', n: 20, say: 'Below that is the ten-second check-in, for energy, mood, and symptoms.', caption: 'Below that is the 10-second check-in, for energy, mood, and symptoms.', read: { say: 'Below is the ten-second check-in, for energy, mood, and symptoms.', caption: 'Below is the 10-second check-in, for energy, mood, and symptoms.' } },
   { id: 'today.7', n: 21, say: "That's what our app plans around." },
 
   { id: 'guide.1', n: 22, say: 'Step three is asking the Guide.', caption: 'Step 3 is asking the Guide.' },
@@ -51,9 +53,9 @@ export const SCRIPT: readonly ScriptLine[] = [
   { id: 'guide.8', n: 29, say: 'So the agent decides what it needs, calls a tool, reads the result, and repeats until it can propose changes.' },
   { id: 'guide.9', n: 30, say: 'Here it uses four tools. It checks your cycle, it reads your calendar, your habits, and your check-ins.' },
   { id: 'guide.10', n: 31, say: 'All of that goes to Claude only when you ask it something.' },
-  { id: 'guide.11', n: 32, say: "Then it drafts changes, and a tool catches two that don't fit your calendar, so the model fixes them." },
+  { id: 'guide.11', n: 32, say: "Then it drafts changes, and a tool catches two that don't fit your calendar, so the model fixes them.", read: { say: "Then it drafts changes, and a tool catches two that don't fit into your calendar, so the model fixes them." } },
   { id: 'guide.12', n: 33, say: 'And it ends with five suggestions, each one explained with your own check-ins.' },
-  { id: 'guide.13', n: 34, say: "For instance, it lightens Wednesday's hard workout, because that's probably around day twenty-seven, when you've logged low energy and headaches.", caption: "For instance, it lightens Wednesday's hard workout, because that's probably around day 27, when you've logged low energy and headaches." },
+  { id: 'guide.13', n: 34, say: "For instance, it lightens Wednesday's hard workout, because that's probably around day twenty-seven, when you've logged low energy and headaches.", caption: "For instance, it lightens Wednesday's hard workout, because that's probably around day 27, when you've logged low energy and headaches.", read: { say: "For instance, it lightens Wednesday's hard workout, because that's probably around day twenty-seven, when you logged low energy and headaches.", caption: "For instance, it lightens Wednesday's hard workout, because that's probably around day 27, when you logged low energy and headaches." } },
 
   { id: 'decide.1', n: 35, say: 'Step four is where you decide.', caption: 'Step 4 is where you decide.' },
   { id: 'decide.2', n: 36, say: 'Each suggestion shows what changes and why.' },
@@ -82,7 +84,7 @@ export const SCRIPT: readonly ScriptLine[] = [
   { id: 'end.2', n: 55, say: 'Cadence plans around how you feel, instead of your phase.', respell: { phase: 'faze' } },
   { id: 'end.3', n: 56, say: 'The AI suggests, and you decide.' },
   { id: 'end.4', n: 57, say: 'And it knows when to send you to a real clinician.' },
-  { id: 'end.5', n: 58, say: 'Our code is on GitHub, at the link on screen.' },
+  { id: 'end.5', n: 58, say: 'Our code is on GitHub, at the link on screen.', read: { say: 'Our code is on GitHub, at the link on the screen.' } },
   { id: 'end.6', n: 59, say: "Next, we'll get into the ethics behind it." },
 ];
 

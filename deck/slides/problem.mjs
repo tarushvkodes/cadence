@@ -50,7 +50,7 @@ const agenda = {
 			s.addShape(k.SH.ROUNDED_RECTANGLE, { x: axisX + start * perMin + 0.03, y: y + 0.24, w: len * perMin - 0.06, h: 0.2, rectRadius: 0.1, fill: { color: hue.solid }, line: { type: 'none' } });
 			start += len;
 		});
-		k.text(s, 'The demo includes a 4:40 film.', { x: axisX, y: top + rowH * sections.length + 0.45, w: axisW, h: 0.3, fontSize: 11, color: C.ink3, align: 'right' });
+		k.text(s, 'The demo includes a 4:25 film.', { x: axisX, y: top + rowH * sections.length + 0.45, w: axisW, h: 0.3, fontSize: 11, color: C.ink3, align: 'right' });
 	},
 };
 

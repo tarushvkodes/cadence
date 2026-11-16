@@ -1,32 +1,32 @@
 {
- "voice": "3043bb50af",
+ "voice": "recorded",
  "lines": [
   {
    "id": "title.1",
    "n": 1,
    "caption": "This is Cadence.",
    "file": "voice/lines/title.1.wav",
-   "length": 1.15,
+   "length": 1.2,
    "speech": [
-    0.04,
-    0.93
+    0.05,
+    1.13
    ],
-   "rate": 3.39,
+   "rate": 2.78,
    "words": [
     {
      "w": "This",
-     "at": 0.04,
+     "at": 0.05,
      "end": 0.23
     },
     {
      "w": "is",
      "at": 0.23,
-     "end": 0.51
+     "end": 0.59
     },
     {
      "w": "Cadence.",
-     "at": 0.51,
-     "end": 0.87
+     "at": 0.59,
+     "end": 1.03
     }
    ]
   },
@@ -35,161 +35,156 @@
    "n": 2,
    "caption": "We built it to help you plan your week around how you actually feel.",
    "file": "voice/lines/title.2.wav",
-   "length": 3.84,
+   "length": 3.38,
    "speech": [
-    0,
-    3.84
+    0.05,
+    3.13
    ],
-   "rate": 3.65,
+   "rate": 4.55,
    "words": [
     {
      "w": "We",
-     "at": 0,
-     "end": 0.18
+     "at": 0.05,
+     "end": 0.17
     },
     {
      "w": "built",
-     "at": 0.18,
-     "end": 0.46
+     "at": 0.17,
+     "end": 0.35
     },
     {
      "w": "it",
-     "at": 0.46,
-     "end": 0.68
+     "at": 0.35,
+     "end": 0.47
     },
     {
      "w": "to",
-     "at": 0.68,
-     "end": 0.8
+     "at": 0.47,
+     "end": 0.57
     },
     {
      "w": "help",
-     "at": 0.8,
-     "end": 0.98
+     "at": 0.57,
+     "end": 0.73
     },
     {
      "w": "you",
-     "at": 0.98,
-     "end": 1.16
+     "at": 0.73,
+     "end": 0.91
     },
     {
      "w": "plan",
-     "at": 1.16,
-     "end": 1.4
+     "at": 0.91,
+     "end": 1.15
     },
     {
      "w": "your",
-     "at": 1.4,
-     "end": 1.64
+     "at": 1.15,
+     "end": 1.35
     },
     {
      "w": "week",
-     "at": 1.64,
-     "end": 1.8
+     "at": 1.35,
+     "end": 1.59
     },
     {
      "w": "around",
-     "at": 1.8,
-     "end": 2.08
+     "at": 1.59,
+     "end": 1.99
     },
     {
      "w": "how",
-     "at": 2.08,
-     "end": 2.38
+     "at": 1.99,
+     "end": 2.21
     },
     {
      "w": "you",
-     "at": 2.38,
-     "end": 2.56
+     "at": 2.21,
+     "end": 2.39
     },
     {
      "w": "actually",
-     "at": 2.56,
-     "end": 3
+     "at": 2.39,
+     "end": 2.81
     },
     {
      "w": "feel.",
-     "at": 3,
-     "end": 3.38
+     "at": 2.81,
+     "end": 3.07
     }
    ]
   },
   {
    "id": "title.3",
    "n": 3,
-   "caption": "It's for women around 17 to 25, and it runs in the browser.",
+   "caption": "It's for women 17 to 25, and it runs in the browser.",
    "file": "voice/lines/title.3.wav",
-   "length": 4.24,
+   "length": 3.43,
    "speech": [
-    0,
-    4.24
+    0.05,
+    3.18
    ],
-   "rate": 3.3,
+   "rate": 4.15,
    "words": [
     {
      "w": "It's",
-     "at": 0,
-     "end": 0.24
+     "at": 0.05,
+     "end": 0.27
     },
     {
      "w": "for",
-     "at": 0.24,
-     "end": 0.44
+     "at": 0.27,
+     "end": 0.43
     },
     {
      "w": "women",
-     "at": 0.44,
-     "end": 0.68
-    },
-    {
-     "w": "around",
-     "at": 0.68,
-     "end": 1.08
+     "at": 0.43,
+     "end": 0.73
     },
     {
      "w": "17",
-     "at": 1.08,
-     "end": 1.6
+     "at": 0.73,
+     "end": 1.33
     },
     {
      "w": "to",
-     "at": 1.6,
-     "end": 1.8
+     "at": 1.33,
+     "end": 1.49
     },
     {
      "w": "25,",
-     "at": 1.8,
-     "end": 2.32
+     "at": 1.49,
+     "end": 1.91
     },
     {
      "w": "and",
-     "at": 2.32,
-     "end": 2.62
+     "at": 1.91,
+     "end": 2.15
     },
     {
      "w": "it",
-     "at": 2.62,
-     "end": 2.8
+     "at": 2.15,
+     "end": 2.29
     },
     {
      "w": "runs",
-     "at": 2.8,
-     "end": 3.04
+     "at": 2.29,
+     "end": 2.49
     },
     {
      "w": "in",
-     "at": 3.04,
-     "end": 3.26
+     "at": 2.49,
+     "end": 2.65
     },
     {
      "w": "the",
-     "at": 3.26,
-     "end": 3.42
+     "at": 2.65,
+     "end": 2.81
     },
     {
      "w": "browser.",
-     "at": 3.42,
-     "end": 3.74
+     "at": 2.81,
+     "end": 3.09
     }
    ]
   },
@@ -198,72 +193,72 @@
    "n": 4,
    "caption": "When we started, we assumed the cycle changes how well people think.",
    "file": "voice/lines/idea.1.wav",
-   "length": 3.91,
+   "length": 3.24,
    "speech": [
-    0,
-    3.69
+    0.05,
+    3.08
    ],
-   "rate": 3.25,
+   "rate": 3.96,
    "words": [
     {
      "w": "When",
-     "at": 0,
-     "end": 0.44
+     "at": 0.05,
+     "end": 0.16
     },
     {
      "w": "we",
-     "at": 0.44,
-     "end": 0.64
+     "at": 0.16,
+     "end": 0.34
     },
     {
      "w": "started,",
-     "at": 0.64,
-     "end": 1
+     "at": 0.34,
+     "end": 0.82
     },
     {
      "w": "we",
-     "at": 1,
-     "end": 1.36
+     "at": 0.82,
+     "end": 0.96
     },
     {
      "w": "assumed",
-     "at": 1.36,
-     "end": 1.66
+     "at": 0.96,
+     "end": 1.22
     },
     {
      "w": "the",
-     "at": 1.66,
-     "end": 1.9
+     "at": 1.22,
+     "end": 1.44
     },
     {
      "w": "cycle",
-     "at": 1.9,
-     "end": 2.14
+     "at": 1.44,
+     "end": 1.62
     },
     {
      "w": "changes",
-     "at": 2.14,
-     "end": 2.52
+     "at": 1.62,
+     "end": 2.02
     },
     {
      "w": "how",
-     "at": 2.52,
-     "end": 2.8
+     "at": 2.02,
+     "end": 2.26
     },
     {
      "w": "well",
-     "at": 2.8,
-     "end": 2.96
+     "at": 2.26,
+     "end": 2.44
     },
     {
      "w": "people",
-     "at": 2.96,
-     "end": 3.26
+     "at": 2.44,
+     "end": 2.7
     },
     {
      "w": "think.",
-     "at": 3.26,
-     "end": 3.66
+     "at": 2.7,
+     "end": 3.08
     }
    ]
   },
@@ -272,67 +267,67 @@
    "n": 5,
    "caption": "Then we read the research, and it doesn't back that up.",
    "file": "voice/lines/idea.2.wav",
-   "length": 3.24,
+   "length": 2.46,
    "speech": [
-    0,
-    3.02
+    0.05,
+    2.3
    ],
-   "rate": 3.65,
+   "rate": 4.89,
    "words": [
     {
      "w": "Then",
-     "at": 0,
-     "end": 0.36
+     "at": 0.05,
+     "end": 0.35
     },
     {
      "w": "we",
-     "at": 0.36,
-     "end": 0.54
+     "at": 0.35,
+     "end": 0.49
     },
     {
      "w": "read",
-     "at": 0.54,
-     "end": 0.76
+     "at": 0.49,
+     "end": 0.61
     },
     {
      "w": "the",
-     "at": 0.76,
-     "end": 0.94
+     "at": 0.61,
+     "end": 0.77
     },
     {
      "w": "research,",
-     "at": 0.94,
-     "end": 1.34
+     "at": 0.77,
+     "end": 1.11
     },
     {
      "w": "and",
-     "at": 1.34,
-     "end": 1.6
+     "at": 1.11,
+     "end": 1.33
     },
     {
      "w": "it",
-     "at": 1.6,
-     "end": 1.82
+     "at": 1.33,
+     "end": 1.49
     },
     {
      "w": "doesn't",
-     "at": 1.82,
-     "end": 2.16
+     "at": 1.49,
+     "end": 1.73
     },
     {
      "w": "back",
-     "at": 2.16,
-     "end": 2.44
+     "at": 1.73,
+     "end": 1.93
     },
     {
      "w": "that",
-     "at": 2.44,
-     "end": 2.7
+     "at": 1.93,
+     "end": 2.11
     },
     {
      "w": "up.",
-     "at": 2.7,
-     "end": 3.06
+     "at": 2.11,
+     "end": 2.45
     }
    ]
   },
@@ -341,87 +336,87 @@
    "n": 6,
    "caption": "A review of 102 studies found no robust change in cognitive performance across the cycle.",
    "file": "voice/lines/idea.3.wav",
-   "length": 5.76,
+   "length": 5.81,
    "speech": [
-    0,
-    5.63
+    0.05,
+    5.65
    ],
-   "rate": 3.02,
+   "rate": 3.04,
    "words": [
     {
      "w": "A",
-     "at": 0,
-     "end": 0.52
+     "at": 0.05,
+     "end": 0.4
     },
     {
      "w": "review",
-     "at": 0.52,
-     "end": 0.8
+     "at": 0.4,
+     "end": 0.72
     },
     {
      "w": "of",
-     "at": 0.8,
-     "end": 1
+     "at": 0.72,
+     "end": 0.94
     },
     {
      "w": "102",
-     "at": 1,
-     "end": 1.58
+     "at": 0.94,
+     "end": 1.66
     },
     {
      "w": "studies",
-     "at": 1.58,
-     "end": 2
+     "at": 1.66,
+     "end": 2.54
     },
     {
      "w": "found",
-     "at": 2,
-     "end": 2.28
+     "at": 2.54,
+     "end": 2.8
     },
     {
      "w": "no",
-     "at": 2.28,
-     "end": 2.6
+     "at": 2.8,
+     "end": 3.04
     },
     {
      "w": "robust",
-     "at": 2.6,
-     "end": 3.02
+     "at": 3.04,
+     "end": 3.32
     },
     {
      "w": "change",
-     "at": 3.02,
-     "end": 3.3
+     "at": 3.32,
+     "end": 3.62
     },
     {
      "w": "in",
-     "at": 3.3,
-     "end": 3.54
+     "at": 3.62,
+     "end": 3.84
     },
     {
      "w": "cognitive",
-     "at": 3.54,
-     "end": 3.88
+     "at": 3.84,
+     "end": 4.18
     },
     {
      "w": "performance",
-     "at": 3.88,
-     "end": 4.4
-    },
-    {
-     "w": "across",
-     "at": 4.4,
+     "at": 4.18,
      "end": 4.76
     },
     {
-     "w": "the",
+     "w": "across",
      "at": 4.76,
-     "end": 4.98
+     "end": 5.1
+    },
+    {
+     "w": "the",
+     "at": 5.1,
+     "end": 5.3
     },
     {
      "w": "cycle.",
-     "at": 4.98,
-     "end": 5.3
+     "at": 5.3,
+     "end": 5.64
     }
    ]
   },
@@ -430,82 +425,82 @@
    "n": 7,
    "caption": "What can change is how you feel, and that differs from person to person.",
    "file": "voice/lines/idea.4.wav",
-   "length": 3.92,
+   "length": 4.39,
    "speech": [
-    0,
-    3.92
+    0.05,
+    4.16
    ],
-   "rate": 3.57,
+   "rate": 3.41,
    "words": [
     {
      "w": "What",
-     "at": 0,
-     "end": 0.18
+     "at": 0.05,
+     "end": 0.37
     },
     {
      "w": "can",
-     "at": 0.18,
-     "end": 0.42
+     "at": 0.37,
+     "end": 0.57
     },
     {
      "w": "change",
-     "at": 0.42,
-     "end": 0.74
+     "at": 0.57,
+     "end": 1.13
     },
     {
      "w": "is",
-     "at": 0.74,
-     "end": 0.9
+     "at": 1.13,
+     "end": 1.65
     },
     {
      "w": "how",
-     "at": 0.9,
-     "end": 1.08
+     "at": 1.65,
+     "end": 1.81
     },
     {
      "w": "you",
-     "at": 1.08,
-     "end": 1.3
+     "at": 1.81,
+     "end": 1.99
     },
     {
      "w": "feel,",
-     "at": 1.3,
-     "end": 1.62
+     "at": 1.99,
+     "end": 2.35
     },
     {
      "w": "and",
-     "at": 1.62,
-     "end": 1.86
+     "at": 2.35,
+     "end": 2.65
     },
     {
      "w": "that",
-     "at": 1.86,
-     "end": 2.08
+     "at": 2.65,
+     "end": 2.85
     },
     {
      "w": "differs",
-     "at": 2.08,
-     "end": 2.38
+     "at": 2.85,
+     "end": 3.13
     },
     {
      "w": "from",
-     "at": 2.38,
-     "end": 2.62
+     "at": 3.13,
+     "end": 3.33
     },
     {
      "w": "person",
-     "at": 2.62,
-     "end": 2.96
+     "at": 3.33,
+     "end": 3.59
     },
     {
      "w": "to",
-     "at": 2.96,
-     "end": 3.14
+     "at": 3.59,
+     "end": 3.75
     },
     {
      "w": "person.",
-     "at": 3.14,
-     "end": 3.52
+     "at": 3.75,
+     "end": 4.11
     }
    ]
   },
@@ -514,82 +509,82 @@
    "n": 8,
    "caption": "So Cadence plans around what you log, and treats your phase as a hint.",
    "file": "voice/lines/idea.5.wav",
-   "length": 4.08,
+   "length": 3.65,
    "speech": [
-    0,
-    4.08
+    0.05,
+    3.51
    ],
-   "rate": 3.43,
+   "rate": 4.05,
    "words": [
     {
      "w": "So",
-     "at": 0,
-     "end": 0.26
+     "at": 0.05,
+     "end": 0.21
     },
     {
      "w": "Cadence",
-     "at": 0.26,
-     "end": 0.62
+     "at": 0.21,
+     "end": 0.51
     },
     {
      "w": "plans",
-     "at": 0.62,
-     "end": 0.92
+     "at": 0.51,
+     "end": 0.83
     },
     {
      "w": "around",
-     "at": 0.92,
-     "end": 1.32
+     "at": 0.83,
+     "end": 1.13
     },
     {
      "w": "what",
-     "at": 1.32,
-     "end": 1.52
+     "at": 1.13,
+     "end": 1.31
     },
     {
      "w": "you",
-     "at": 1.52,
-     "end": 1.74
+     "at": 1.31,
+     "end": 1.47
     },
     {
      "w": "log,",
-     "at": 1.74,
-     "end": 2
+     "at": 1.47,
+     "end": 1.81
     },
     {
      "w": "and",
-     "at": 2,
-     "end": 2.24
+     "at": 1.81,
+     "end": 2.11
     },
     {
      "w": "treats",
-     "at": 2.24,
-     "end": 2.5
+     "at": 2.11,
+     "end": 2.35
     },
     {
      "w": "your",
-     "at": 2.5,
-     "end": 2.76
+     "at": 2.35,
+     "end": 2.55
     },
     {
      "w": "phase",
-     "at": 2.76,
-     "end": 2.96
+     "at": 2.55,
+     "end": 2.81
     },
     {
      "w": "as",
-     "at": 2.96,
-     "end": 3.16
+     "at": 2.81,
+     "end": 3.07
     },
     {
      "w": "a",
-     "at": 3.16,
-     "end": 3.34
+     "at": 3.07,
+     "end": 3.27
     },
     {
      "w": "hint.",
-     "at": 3.34,
-     "end": 3.58
+     "at": 3.27,
+     "end": 3.31
     }
    ]
   },
@@ -598,32 +593,32 @@
    "n": 9,
    "caption": "Step 1 is setup.",
    "file": "voice/lines/setup.1.wav",
-   "length": 1.47,
+   "length": 1.38,
    "speech": [
-    0.04,
-    1.25
+    0.05,
+    1.13
    ],
-   "rate": 3.32,
+   "rate": 3.7,
    "words": [
     {
      "w": "Step",
-     "at": 0.04,
-     "end": 0.34
+     "at": 0.05,
+     "end": 0.45
     },
     {
      "w": "1",
-     "at": 0.34,
-     "end": 0.62
+     "at": 0.45,
+     "end": 0.65
     },
     {
      "w": "is",
-     "at": 0.62,
-     "end": 0.9
+     "at": 0.65,
+     "end": 0.87
     },
     {
      "w": "setup.",
-     "at": 0.9,
-     "end": 1.46
+     "at": 0.87,
+     "end": 1.13
     }
    ]
   },
@@ -632,107 +627,107 @@
    "n": 10,
    "caption": "You tell it when your last period started, how long your cycle usually is, and how regular it is.",
    "file": "voice/lines/setup.2.wav",
-   "length": 5.79,
+   "length": 4.57,
    "speech": [
-    0.04,
-    5.79
+    0.05,
+    4.45
    ],
-   "rate": 3.3,
+   "rate": 4.32,
    "words": [
     {
      "w": "You",
-     "at": 0.04,
-     "end": 0.13
+     "at": 0.05,
+     "end": 0.16
     },
     {
      "w": "tell",
-     "at": 0.13,
-     "end": 0.41
+     "at": 0.16,
+     "end": 0.36
     },
     {
      "w": "it",
-     "at": 0.41,
-     "end": 0.59
+     "at": 0.36,
+     "end": 0.48
     },
     {
      "w": "when",
-     "at": 0.59,
-     "end": 0.73
+     "at": 0.48,
+     "end": 0.58
     },
     {
      "w": "your",
-     "at": 0.73,
-     "end": 0.89
+     "at": 0.58,
+     "end": 0.7
     },
     {
      "w": "last",
-     "at": 0.89,
-     "end": 1.19
+     "at": 0.7,
+     "end": 0.94
     },
     {
      "w": "period",
-     "at": 1.19,
-     "end": 1.49
+     "at": 0.94,
+     "end": 1.16
     },
     {
      "w": "started,",
-     "at": 1.49,
-     "end": 1.95
+     "at": 1.16,
+     "end": 1.6
     },
     {
      "w": "how",
-     "at": 1.95,
-     "end": 2.57
+     "at": 1.6,
+     "end": 1.9
     },
     {
      "w": "long",
-     "at": 2.57,
-     "end": 2.79
+     "at": 1.9,
+     "end": 2.14
     },
     {
      "w": "your",
-     "at": 2.79,
-     "end": 3.03
+     "at": 2.14,
+     "end": 2.28
     },
     {
      "w": "cycle",
-     "at": 3.03,
-     "end": 3.29
+     "at": 2.28,
+     "end": 2.52
     },
     {
      "w": "usually",
-     "at": 3.29,
-     "end": 3.71
+     "at": 2.52,
+     "end": 2.86
     },
     {
      "w": "is,",
-     "at": 3.71,
-     "end": 4.07
+     "at": 2.86,
+     "end": 3.2
     },
     {
      "w": "and",
-     "at": 4.07,
-     "end": 4.29
+     "at": 3.2,
+     "end": 3.38
     },
     {
      "w": "how",
-     "at": 4.29,
-     "end": 4.59
+     "at": 3.38,
+     "end": 3.54
     },
     {
      "w": "regular",
-     "at": 4.59,
-     "end": 4.99
+     "at": 3.54,
+     "end": 3.88
     },
     {
      "w": "it",
-     "at": 4.99,
-     "end": 5.29
+     "at": 3.88,
+     "end": 4.06
     },
     {
      "w": "is.",
-     "at": 5.29,
-     "end": 5.61
+     "at": 4.06,
+     "end": 4.36
     }
    ]
   },
@@ -741,37 +736,37 @@
    "n": 11,
    "caption": "Then it makes four promises.",
    "file": "voice/lines/setup.3.wav",
-   "length": 1.8,
+   "length": 1.54,
    "speech": [
-    0.04,
-    1.58
+    0.05,
+    1.32
    ],
-   "rate": 3.24,
+   "rate": 3.94,
    "words": [
     {
      "w": "Then",
-     "at": 0.04,
-     "end": 0.18
+     "at": 0.05,
+     "end": 0.16
     },
     {
      "w": "it",
-     "at": 0.18,
-     "end": 0.3
+     "at": 0.16,
+     "end": 0.28
     },
     {
      "w": "makes",
-     "at": 0.3,
-     "end": 0.54
+     "at": 0.28,
+     "end": 0.48
     },
     {
      "w": "four",
-     "at": 0.54,
-     "end": 0.82
+     "at": 0.48,
+     "end": 0.66
     },
     {
      "w": "promises.",
-     "at": 0.82,
-     "end": 1.38
+     "at": 0.66,
+     "end": 1.18
     }
    ]
   },
@@ -780,87 +775,87 @@
    "n": 12,
    "caption": "Your data stays on your computer, the AI only suggests, and it's not medical advice.",
    "file": "voice/lines/setup.4.wav",
-   "length": 5.21,
+   "length": 4.65,
    "speech": [
-    0.04,
-    5.02
+    0.05,
+    4.51
    ],
-   "rate": 3.01,
+   "rate": 3.36,
    "words": [
     {
      "w": "Your",
-     "at": 0.04,
-     "end": 0.21
+     "at": 0.05,
+     "end": 0.17
     },
     {
      "w": "data",
-     "at": 0.21,
-     "end": 0.51
+     "at": 0.17,
+     "end": 0.33
     },
     {
      "w": "stays",
-     "at": 0.51,
-     "end": 0.85
+     "at": 0.33,
+     "end": 0.71
     },
     {
      "w": "on",
-     "at": 0.85,
-     "end": 1.07
+     "at": 0.71,
+     "end": 0.91
     },
     {
      "w": "your",
-     "at": 1.07,
-     "end": 1.23
+     "at": 0.91,
+     "end": 1.05
     },
     {
      "w": "computer,",
-     "at": 1.23,
-     "end": 1.65
+     "at": 1.05,
+     "end": 1.45
     },
     {
      "w": "the",
-     "at": 1.65,
-     "end": 2.05
+     "at": 1.45,
+     "end": 1.85
     },
     {
      "w": "AI",
-     "at": 2.05,
-     "end": 2.29
+     "at": 1.85,
+     "end": 2.05
     },
     {
      "w": "only",
-     "at": 2.29,
-     "end": 2.63
+     "at": 2.05,
+     "end": 2.35
     },
     {
      "w": "suggests,",
-     "at": 2.63,
-     "end": 3.07
+     "at": 2.35,
+     "end": 2.79
     },
     {
      "w": "and",
-     "at": 3.07,
+     "at": 2.79,
      "end": 3.33
     },
     {
      "w": "it's",
      "at": 3.33,
-     "end": 3.61
+     "end": 3.51
     },
     {
      "w": "not",
-     "at": 3.61,
-     "end": 3.87
+     "at": 3.51,
+     "end": 3.67
     },
     {
      "w": "medical",
-     "at": 3.87,
-     "end": 4.21
+     "at": 3.67,
+     "end": 4.01
     },
     {
      "w": "advice.",
-     "at": 4.21,
-     "end": 4.71
+     "at": 4.01,
+     "end": 4.43
     }
    ]
   },
@@ -869,72 +864,72 @@
    "n": 13,
    "caption": "And the dates are estimates, so don't use them for birth control.",
    "file": "voice/lines/setup.5.wav",
-   "length": 3.56,
+   "length": 2.88,
    "speech": [
-    0,
-    3.34
+    0.05,
+    2.63
    ],
-   "rate": 3.59,
+   "rate": 4.65,
    "words": [
     {
      "w": "And",
-     "at": 0,
-     "end": 0.2
+     "at": 0.05,
+     "end": 0.31
     },
     {
      "w": "the",
-     "at": 0.2,
-     "end": 0.4
+     "at": 0.31,
+     "end": 0.43
     },
     {
      "w": "dates",
-     "at": 0.4,
-     "end": 0.62
+     "at": 0.43,
+     "end": 0.61
     },
     {
      "w": "are",
-     "at": 0.62,
-     "end": 0.86
+     "at": 0.61,
+     "end": 0.77
     },
     {
      "w": "estimates,",
-     "at": 0.86,
-     "end": 1.3
+     "at": 0.77,
+     "end": 1.15
     },
     {
      "w": "so",
-     "at": 1.3,
-     "end": 1.74
+     "at": 1.15,
+     "end": 1.39
     },
     {
      "w": "don't",
-     "at": 1.74,
-     "end": 2.02
+     "at": 1.39,
+     "end": 1.65
     },
     {
      "w": "use",
-     "at": 2.02,
-     "end": 2.26
+     "at": 1.65,
+     "end": 1.79
     },
     {
      "w": "them",
-     "at": 2.26,
-     "end": 2.42
+     "at": 1.79,
+     "end": 1.95
     },
     {
      "w": "for",
-     "at": 2.42,
-     "end": 2.66
+     "at": 1.95,
+     "end": 2.13
     },
     {
      "w": "birth",
-     "at": 2.66,
-     "end": 2.86
+     "at": 2.13,
+     "end": 2.29
     },
     {
      "w": "control.",
-     "at": 2.86,
-     "end": 3.26
+     "at": 2.29,
+     "end": 2.61
     }
    ]
   },
@@ -943,107 +938,107 @@
    "n": 14,
    "caption": "Then we tap Start with a sample week, which is a busy student week with a midterm on Thursday.",
    "file": "voice/lines/setup.6.wav",
-   "length": 5.41,
+   "length": 4.78,
    "speech": [
-    0.04,
-    5.41
+    0.05,
+    4.53
    ],
-   "rate": 3.54,
+   "rate": 4.24,
    "words": [
     {
      "w": "Then",
-     "at": 0.04,
-     "end": 0.17
+     "at": 0.05,
+     "end": 0.19
     },
     {
      "w": "we",
-     "at": 0.17,
-     "end": 0.39
+     "at": 0.19,
+     "end": 0.33
     },
     {
      "w": "tap",
-     "at": 0.39,
-     "end": 0.67
+     "at": 0.33,
+     "end": 0.51
     },
     {
      "w": "Start",
-     "at": 0.67,
-     "end": 0.97
+     "at": 0.51,
+     "end": 0.77
     },
     {
      "w": "with",
-     "at": 0.97,
-     "end": 1.19
+     "at": 0.77,
+     "end": 0.95
     },
     {
      "w": "a",
-     "at": 1.19,
-     "end": 1.41
+     "at": 0.95,
+     "end": 1.09
     },
     {
      "w": "sample",
-     "at": 1.41,
-     "end": 1.61
+     "at": 1.09,
+     "end": 1.33
     },
     {
      "w": "week,",
-     "at": 1.61,
-     "end": 1.89
+     "at": 1.33,
+     "end": 1.61
     },
     {
      "w": "which",
-     "at": 1.89,
-     "end": 2.11
+     "at": 1.61,
+     "end": 1.97
     },
     {
      "w": "is",
-     "at": 2.11,
-     "end": 2.25
+     "at": 1.97,
+     "end": 2.07
     },
     {
      "w": "a",
-     "at": 2.25,
-     "end": 2.45
+     "at": 2.07,
+     "end": 2.23
     },
     {
      "w": "busy",
-     "at": 2.45,
-     "end": 2.67
+     "at": 2.23,
+     "end": 2.39
     },
     {
      "w": "student",
-     "at": 2.67,
-     "end": 2.99
+     "at": 2.39,
+     "end": 2.77
     },
     {
      "w": "week",
-     "at": 2.99,
-     "end": 3.33
+     "at": 2.77,
+     "end": 3.07
     },
     {
      "w": "with",
-     "at": 3.33,
-     "end": 3.69
+     "at": 3.07,
+     "end": 3.37
     },
     {
      "w": "a",
-     "at": 3.69,
-     "end": 3.87
+     "at": 3.37,
+     "end": 3.57
     },
     {
      "w": "midterm",
-     "at": 3.87,
-     "end": 4.19
+     "at": 3.57,
+     "end": 3.91
     },
     {
      "w": "on",
-     "at": 4.19,
-     "end": 4.53
+     "at": 3.91,
+     "end": 4.17
     },
     {
      "w": "Thursday.",
-     "at": 4.53,
-     "end": 4.91
+     "at": 4.17,
+     "end": 4.51
     }
    ]
   },
@@ -1052,62 +1047,62 @@
    "n": 15,
    "caption": "Step 2 is reading your day, on the Today screen.",
    "file": "voice/lines/today.1.wav",
-   "length": 3.41,
+   "length": 2.47,
    "speech": [
-    0,
-    3.19
+    0.05,
+    2.37
    ],
-   "rate": 3.13,
+   "rate": 4.31,
    "words": [
     {
      "w": "Step",
-     "at": 0,
-     "end": 0.3
+     "at": 0.05,
+     "end": 0.27
     },
     {
      "w": "2",
-     "at": 0.3,
-     "end": 0.6
+     "at": 0.27,
+     "end": 0.47
     },
     {
      "w": "is",
-     "at": 0.6,
-     "end": 0.82
+     "at": 0.47,
+     "end": 0.63
     },
     {
      "w": "reading",
-     "at": 0.82,
-     "end": 1.12
+     "at": 0.63,
+     "end": 0.85
     },
     {
      "w": "your",
-     "at": 1.12,
-     "end": 1.4
+     "at": 0.85,
+     "end": 1.05
     },
     {
      "w": "day,",
-     "at": 1.4,
-     "end": 1.68
+     "at": 1.05,
+     "end": 1.31
     },
     {
      "w": "on",
-     "at": 1.68,
-     "end": 2.36
+     "at": 1.31,
+     "end": 1.65
     },
     {
      "w": "the",
-     "at": 2.36,
-     "end": 2.54
+     "at": 1.65,
+     "end": 1.81
     },
     {
      "w": "Today",
-     "at": 2.54,
-     "end": 2.72
+     "at": 1.81,
+     "end": 1.93
     },
     {
      "w": "screen.",
-     "at": 2.72,
-     "end": 3.16
+     "at": 1.93,
+     "end": 2.33
     }
    ]
   },
@@ -1116,52 +1111,52 @@
    "n": 16,
    "caption": "The dial says day 25 of about 28.",
    "file": "voice/lines/today.2.wav",
-   "length": 2.96,
+   "length": 3.54,
    "speech": [
-    0,
-    2.96
+    0.05,
+    3.39
    ],
-   "rate": 3.38,
+   "rate": 2.99,
    "words": [
     {
      "w": "The",
-     "at": 0,
-     "end": 0.22
+     "at": 0.05,
+     "end": 0.51
     },
     {
      "w": "dial",
-     "at": 0.22,
-     "end": 0.44
+     "at": 0.51,
+     "end": 0.71
     },
     {
      "w": "says",
-     "at": 0.44,
-     "end": 0.78
+     "at": 0.71,
+     "end": 1.11
     },
     {
      "w": "day",
-     "at": 0.78,
-     "end": 1.02
+     "at": 1.11,
+     "end": 1.37
     },
     {
      "w": "25",
-     "at": 1.02,
-     "end": 1.58
+     "at": 1.37,
+     "end": 2.03
     },
     {
      "w": "of",
-     "at": 1.58,
-     "end": 1.86
+     "at": 2.03,
+     "end": 2.43
     },
     {
      "w": "about",
-     "at": 1.86,
-     "end": 2.18
+     "at": 2.43,
+     "end": 2.73
     },
     {
      "w": "28.",
-     "at": 2.18,
-     "end": 2.74
+     "at": 2.73,
+     "end": 3.33
     }
    ]
   },
@@ -1170,57 +1165,57 @@
    "n": 17,
    "caption": "Your next period is probably Nov 18 to 22.",
    "file": "voice/lines/today.3.wav",
-   "length": 4.01,
+   "length": 3.98,
    "speech": [
-    0.04,
-    3.87
+    0.05,
+    3.8
    ],
-   "rate": 2.87,
+   "rate": 2.93,
    "words": [
     {
      "w": "Your",
-     "at": 0.04,
-     "end": 0.21
+     "at": 0.05,
+     "end": 0.39
     },
     {
      "w": "next",
-     "at": 0.21,
-     "end": 0.47
+     "at": 0.39,
+     "end": 0.61
     },
     {
      "w": "period",
-     "at": 0.47,
-     "end": 0.85
+     "at": 0.61,
+     "end": 0.89
     },
     {
      "w": "is",
-     "at": 0.85,
-     "end": 1.13
+     "at": 0.89,
+     "end": 1.11
     },
     {
      "w": "probably",
-     "at": 1.13,
-     "end": 1.61
+     "at": 1.11,
+     "end": 1.41
     },
     {
      "w": "Nov",
-     "at": 1.61,
-     "end": 2.07
+     "at": 1.41,
+     "end": 1.79
     },
     {
      "w": "18",
-     "at": 2.07,
-     "end": 2.81
+     "at": 1.79,
+     "end": 2.53
     },
     {
      "w": "to",
-     "at": 2.81,
-     "end": 2.87
+     "at": 2.53,
+     "end": 2.59
     },
     {
      "w": "22.",
-     "at": 2.87,
-     "end": 3.75
+     "at": 2.59,
+     "end": 3.53
     }
    ]
   },
@@ -1229,102 +1224,102 @@
    "n": 18,
    "caption": "It gives you a range instead of a date, because only 13% of cycles are exactly 28 days.",
    "file": "voice/lines/today.4.wav",
-   "length": 6.25,
+   "length": 5.43,
    "speech": [
-    0.04,
-    6.25
+    0.05,
+    5.24
    ],
-   "rate": 3.22,
+   "rate": 3.85,
    "words": [
     {
      "w": "It",
-     "at": 0.04,
-     "end": 0.15
+     "at": 0.05,
+     "end": 0.17
     },
     {
      "w": "gives",
-     "at": 0.15,
-     "end": 0.35
+     "at": 0.17,
+     "end": 0.37
     },
     {
      "w": "you",
-     "at": 0.35,
+     "at": 0.37,
      "end": 0.51
     },
     {
      "w": "a",
      "at": 0.51,
-     "end": 0.73
+     "end": 0.71
     },
     {
      "w": "range",
-     "at": 0.73,
-     "end": 0.95
+     "at": 0.71,
+     "end": 0.97
     },
     {
      "w": "instead",
-     "at": 0.95,
-     "end": 1.27
+     "at": 0.97,
+     "end": 1.37
     },
     {
      "w": "of",
-     "at": 1.27,
-     "end": 1.45
+     "at": 1.37,
+     "end": 1.51
     },
     {
      "w": "a",
-     "at": 1.45,
-     "end": 1.61
+     "at": 1.51,
+     "end": 1.69
     },
     {
      "w": "date,",
-     "at": 1.61,
-     "end": 1.83
+     "at": 1.69,
+     "end": 1.89
     },
     {
      "w": "because",
-     "at": 1.83,
-     "end": 2.53
+     "at": 1.89,
+     "end": 2.19
     },
     {
      "w": "only",
-     "at": 2.53,
-     "end": 2.89
+     "at": 2.19,
+     "end": 2.49
     },
     {
      "w": "13%",
-     "at": 2.89,
-     "end": 3.57
+     "at": 2.49,
+     "end": 2.83
     },
     {
      "w": "of",
-     "at": 3.57,
-     "end": 3.81
+     "at": 2.83,
+     "end": 3.29
     },
     {
      "w": "cycles",
-     "at": 3.81,
-     "end": 4.11
+     "at": 3.29,
+     "end": 3.59
     },
     {
      "w": "are",
-     "at": 4.11,
-     "end": 4.35
+     "at": 3.59,
+     "end": 3.81
     },
     {
      "w": "exactly",
-     "at": 4.35,
-     "end": 4.83
+     "at": 3.81,
+     "end": 4.19
     },
     {
      "w": "28",
-     "at": 4.83,
-     "end": 5.33
+     "at": 4.19,
+     "end": 4.63
     },
     {
      "w": "days.",
-     "at": 5.33,
-     "end": 5.79
+     "at": 4.63,
+     "end": 5.05
     }
    ]
   },
@@ -1333,156 +1328,151 @@
    "n": 19,
    "caption": "It also says how sure it is, and you can tap that to see why.",
    "file": "voice/lines/today.5.wav",
-   "length": 4.08,
+   "length": 3.27,
    "speech": [
-    0,
-    4.08
+    0.05,
+    3.09
    ],
-   "rate": 3.68,
+   "rate": 4.93,
    "words": [
     {
      "w": "It",
-     "at": 0,
-     "end": 0.18
+     "at": 0.05,
+     "end": 0.16
     },
     {
      "w": "also",
-     "at": 0.18,
-     "end": 0.5
+     "at": 0.16,
+     "end": 0.42
     },
     {
      "w": "says",
-     "at": 0.5,
-     "end": 0.8
+     "at": 0.42,
+     "end": 0.76
     },
     {
      "w": "how",
-     "at": 0.8,
-     "end": 1.04
+     "at": 0.76,
+     "end": 0.94
     },
     {
      "w": "sure",
-     "at": 1.04,
-     "end": 1.36
+     "at": 0.94,
+     "end": 1.2
     },
     {
      "w": "it",
-     "at": 1.36,
-     "end": 1.54
+     "at": 1.2,
+     "end": 1.34
     },
     {
      "w": "is,",
-     "at": 1.54,
-     "end": 1.74
+     "at": 1.34,
+     "end": 1.54
     },
     {
      "w": "and",
-     "at": 1.74,
-     "end": 1.9
+     "at": 1.54,
+     "end": 1.68
     },
     {
      "w": "you",
-     "at": 1.9,
-     "end": 2.02
+     "at": 1.68,
+     "end": 1.82
     },
     {
      "w": "can",
-     "at": 2.02,
-     "end": 2.2
+     "at": 1.82,
+     "end": 2
     },
     {
      "w": "tap",
-     "at": 2.2,
-     "end": 2.44
+     "at": 2,
+     "end": 2.2
     },
     {
      "w": "that",
-     "at": 2.44,
-     "end": 2.68
+     "at": 2.2,
+     "end": 2.42
     },
     {
      "w": "to",
-     "at": 2.68,
-     "end": 2.86
+     "at": 2.42,
+     "end": 2.58
     },
     {
      "w": "see",
-     "at": 2.86,
-     "end": 3.12
+     "at": 2.58,
+     "end": 2.76
     },
     {
      "w": "why.",
-     "at": 3.12,
-     "end": 3.54
+     "at": 2.76,
+     "end": 3.14
     }
    ]
   },
   {
    "id": "today.6",
    "n": 20,
-   "caption": "Below that is the 10-second check-in, for energy, mood, and symptoms.",
+   "caption": "Below is the 10-second check-in, for energy, mood, and symptoms.",
    "file": "voice/lines/today.6.wav",
-   "length": 4.79,
+   "length": 4.09,
    "speech": [
-    0,
-    4.57
+    0.05,
+    3.98
    ],
-   "rate": 2.85,
+   "rate": 3.05,
    "words": [
     {
      "w": "Below",
-     "at": 0,
-     "end": 0.3
-    },
-    {
-     "w": "that",
-     "at": 0.3,
-     "end": 0.6
+     "at": 0.05,
+     "end": 0.51
     },
     {
      "w": "is",
-     "at": 0.6,
-     "end": 0.8
+     "at": 0.51,
+     "end": 0.75
     },
     {
      "w": "the",
-     "at": 0.8,
-     "end": 0.98
+     "at": 0.75,
+     "end": 0.93
     },
     {
      "w": "10-second",
-     "at": 0.98,
-     "end": 1.54
+     "at": 0.93,
+     "end": 1.41
     },
     {
      "w": "check-in,",
-     "at": 1.54,
-     "end": 2.12
+     "at": 1.41,
+     "end": 1.89
     },
     {
      "w": "for",
-     "at": 2.12,
-     "end": 2.72
+     "at": 1.89,
+     "end": 2.21
     },
     {
      "w": "energy,",
-     "at": 2.72,
-     "end": 3.12
+     "at": 2.21,
+     "end": 2.59
     },
     {
      "w": "mood,",
-     "at": 3.12,
-     "end": 3.5
+     "at": 2.59,
+     "end": 3.11
     },
     {
      "w": "and",
-     "at": 3.5,
-     "end": 3.9
+     "at": 3.11,
+     "end": 3.45
     },
     {
      "w": "symptoms.",
-     "at": 3.9,
-     "end": 4.38
+     "at": 3.45,
+     "end": 3.89
     }
    ]
   },
@@ -1491,42 +1481,42 @@
    "n": 21,
    "caption": "That's what our app plans around.",
    "file": "voice/lines/today.7.wav",
-   "length": 1.86,
+   "length": 1.94,
    "speech": [
-    0.04,
-    1.64
+    0.05,
+    1.69
    ],
-   "rate": 3.74,
+   "rate": 3.66,
    "words": [
     {
      "w": "That's",
-     "at": 0.04,
-     "end": 0.33
+     "at": 0.05,
+     "end": 0.4
     },
     {
      "w": "what",
-     "at": 0.33,
-     "end": 0.45
+     "at": 0.4,
+     "end": 0.54
     },
     {
      "w": "our",
-     "at": 0.45,
-     "end": 0.61
+     "at": 0.54,
+     "end": 0.7
     },
     {
      "w": "app",
-     "at": 0.61,
-     "end": 0.83
+     "at": 0.7,
+     "end": 0.84
     },
     {
      "w": "plans",
-     "at": 0.83,
-     "end": 1.19
+     "at": 0.84,
+     "end": 1.1
     },
     {
      "w": "around.",
-     "at": 1.19,
-     "end": 1.59
+     "at": 1.1,
+     "end": 1.38
     }
    ]
   },
@@ -1535,42 +1525,42 @@
    "n": 22,
    "caption": "Step 3 is asking the Guide.",
    "file": "voice/lines/guide.1.wav",
-   "length": 2.04,
+   "length": 1.87,
    "speech": [
-    0.04,
-    2.04
+    0.05,
+    1.63
    ],
-   "rate": 2.99,
+   "rate": 3.8,
    "words": [
     {
      "w": "Step",
-     "at": 0.04,
-     "end": 0.3
+     "at": 0.05,
+     "end": 0.34
     },
     {
      "w": "3",
-     "at": 0.3,
-     "end": 0.64
+     "at": 0.34,
+     "end": 0.6
     },
     {
      "w": "is",
-     "at": 0.64,
-     "end": 0.9
+     "at": 0.6,
+     "end": 0.86
     },
     {
      "w": "asking",
-     "at": 0.9,
-     "end": 1.26
+     "at": 0.86,
+     "end": 1.2
     },
     {
      "w": "the",
-     "at": 1.26,
-     "end": 1.54
+     "at": 1.2,
+     "end": 1.42
     },
     {
      "w": "Guide.",
-     "at": 1.54,
-     "end": 1.86
+     "at": 1.42,
+     "end": 1.66
     }
    ]
   },
@@ -1579,52 +1569,52 @@
    "n": 23,
    "caption": "We tap \"Plan my week around my cycle.\"",
    "file": "voice/lines/guide.2.wav",
-   "length": 2.64,
+   "length": 1.98,
    "speech": [
-    0.04,
-    2.42
+    0.05,
+    1.73
    ],
-   "rate": 3.36,
+   "rate": 4.76,
    "words": [
     {
      "w": "We",
-     "at": 0.04,
-     "end": 0.23
+     "at": 0.05,
+     "end": 0.16
     },
     {
      "w": "tap",
-     "at": 0.23,
-     "end": 0.61
+     "at": 0.16,
+     "end": 0.34
     },
     {
      "w": "\"Plan",
-     "at": 0.61,
-     "end": 0.93
+     "at": 0.34,
+     "end": 0.56
     },
     {
      "w": "my",
-     "at": 0.93,
-     "end": 1.21
+     "at": 0.56,
+     "end": 0.78
     },
     {
      "w": "week",
-     "at": 1.21,
-     "end": 1.37
+     "at": 0.78,
+     "end": 0.98
     },
     {
      "w": "around",
-     "at": 1.37,
-     "end": 1.73
+     "at": 0.98,
+     "end": 1.28
     },
     {
      "w": "my",
-     "at": 1.73,
-     "end": 2.01
+     "at": 1.28,
+     "end": 1.52
     },
     {
      "w": "cycle.\"",
-     "at": 2.01,
-     "end": 2.35
+     "at": 1.52,
+     "end": 1.82
     }
    ]
   },
@@ -1633,87 +1623,87 @@
    "n": 24,
    "caption": "The Guide is an agent that runs on Claude, which is a large language model.",
    "file": "voice/lines/guide.3.wav",
-   "length": 4.08,
+   "length": 3.82,
    "speech": [
-    0,
-    4.08
+    0.05,
+    3.67
    ],
-   "rate": 3.68,
+   "rate": 4.14,
    "words": [
     {
      "w": "The",
-     "at": 0,
-     "end": 0.2
+     "at": 0.05,
+     "end": 0.16
     },
     {
      "w": "Guide",
-     "at": 0.2,
-     "end": 0.44
+     "at": 0.16,
+     "end": 0.36
     },
     {
      "w": "is",
-     "at": 0.44,
-     "end": 0.66
+     "at": 0.36,
+     "end": 0.54
     },
     {
      "w": "an",
-     "at": 0.66,
-     "end": 0.86
+     "at": 0.54,
+     "end": 0.72
     },
     {
      "w": "agent",
-     "at": 0.86,
-     "end": 1.1
+     "at": 0.72,
+     "end": 0.96
     },
     {
      "w": "that",
-     "at": 1.1,
-     "end": 1.38
+     "at": 0.96,
+     "end": 1.16
     },
     {
      "w": "runs",
-     "at": 1.38,
-     "end": 1.62
+     "at": 1.16,
+     "end": 1.4
     },
     {
      "w": "on",
-     "at": 1.62,
-     "end": 2
+     "at": 1.4,
+     "end": 1.7
     },
     {
      "w": "Claude,",
-     "at": 2,
-     "end": 2.16
+     "at": 1.7,
+     "end": 1.86
     },
     {
      "w": "which",
-     "at": 2.16,
-     "end": 2.46
+     "at": 1.86,
+     "end": 2.12
     },
     {
      "w": "is",
-     "at": 2.46,
-     "end": 2.6
+     "at": 2.12,
+     "end": 2.24
     },
     {
      "w": "a",
-     "at": 2.6,
-     "end": 2.82
+     "at": 2.24,
+     "end": 2.46
     },
     {
      "w": "large",
-     "at": 2.82,
-     "end": 3
+     "at": 2.46,
+     "end": 2.7
     },
     {
      "w": "language",
-     "at": 3,
-     "end": 3.36
+     "at": 2.7,
+     "end": 3.06
     },
     {
      "w": "model.",
-     "at": 3.36,
-     "end": 3.78
+     "at": 3.06,
+     "end": 3.46
     }
    ]
   },
@@ -1722,62 +1712,62 @@
    "n": 25,
    "caption": "A plain chatbot only sees what you type into it.",
    "file": "voice/lines/guide.4.wav",
-   "length": 3.04,
+   "length": 2.51,
    "speech": [
-    0,
-    3.04
+    0.05,
+    2.31
    ],
-   "rate": 3.29,
+   "rate": 4.42,
    "words": [
     {
      "w": "A",
-     "at": 0,
-     "end": 0.34
+     "at": 0.05,
+     "end": 0.16
     },
     {
      "w": "plain",
-     "at": 0.34,
-     "end": 0.52
+     "at": 0.16,
+     "end": 0.38
     },
     {
      "w": "chatbot",
-     "at": 0.52,
-     "end": 0.98
+     "at": 0.38,
+     "end": 0.8
     },
     {
      "w": "only",
-     "at": 0.98,
-     "end": 1.3
+     "at": 0.8,
+     "end": 1.06
     },
     {
      "w": "sees",
-     "at": 1.3,
-     "end": 1.56
+     "at": 1.06,
+     "end": 1.3
     },
     {
      "w": "what",
-     "at": 1.56,
-     "end": 1.74
+     "at": 1.3,
+     "end": 1.46
     },
     {
      "w": "you",
-     "at": 1.74,
-     "end": 1.92
+     "at": 1.46,
+     "end": 1.58
     },
     {
      "w": "type",
-     "at": 1.92,
-     "end": 2.2
+     "at": 1.58,
+     "end": 1.82
     },
     {
      "w": "into",
-     "at": 2.2,
-     "end": 2.46
+     "at": 1.82,
+     "end": 2.12
     },
     {
      "w": "it.",
-     "at": 2.46,
-     "end": 2.7
+     "at": 2.12,
+     "end": 2.38
     }
    ]
   },
@@ -1786,37 +1776,37 @@
    "n": 26,
    "caption": "An agent also has tools.",
    "file": "voice/lines/guide.5.wav",
-   "length": 2.02,
+   "length": 1.74,
    "speech": [
-    0.04,
-    1.8
+    0.05,
+    1.57
    ],
-   "rate": 2.85,
+   "rate": 3.29,
    "words": [
     {
      "w": "An",
-     "at": 0.04,
-     "end": 0.2
+     "at": 0.05,
+     "end": 0.22
     },
     {
      "w": "agent",
-     "at": 0.2,
-     "end": 0.42
+     "at": 0.22,
+     "end": 0.44
     },
     {
      "w": "also",
-     "at": 0.42,
+     "at": 0.44,
      "end": 0.84
     },
     {
      "w": "has",
      "at": 0.84,
-     "end": 1.08
+     "end": 1.14
     },
     {
      "w": "tools.",
-     "at": 1.08,
-     "end": 1.56
+     "at": 1.14,
+     "end": 1.5
     }
    ]
   },
@@ -1825,92 +1815,92 @@
    "n": 27,
    "caption": "A tool is basically a small piece of code we wrote that the model can use.",
    "file": "voice/lines/guide.6.wav",
-   "length": 4.4,
+   "length": 3.88,
    "speech": [
-    0,
-    4.4
+    0.05,
+    3.64
    ],
-   "rate": 3.64,
+   "rate": 4.46,
    "words": [
     {
      "w": "A",
-     "at": 0,
-     "end": 0.22
+     "at": 0.05,
+     "end": 0.17
     },
     {
      "w": "tool",
-     "at": 0.22,
-     "end": 0.46
+     "at": 0.17,
+     "end": 0.35
     },
     {
      "w": "is",
-     "at": 0.46,
-     "end": 0.7
+     "at": 0.35,
+     "end": 0.51
     },
     {
      "w": "basically",
-     "at": 0.7,
-     "end": 1.1
+     "at": 0.51,
+     "end": 0.87
     },
     {
      "w": "a",
-     "at": 1.1,
-     "end": 1.32
+     "at": 0.87,
+     "end": 1.05
     },
     {
      "w": "small",
-     "at": 1.32,
-     "end": 1.56
+     "at": 1.05,
+     "end": 1.27
     },
     {
      "w": "piece",
-     "at": 1.56,
-     "end": 1.74
+     "at": 1.27,
+     "end": 1.43
     },
     {
      "w": "of",
-     "at": 1.74,
-     "end": 1.98
+     "at": 1.43,
+     "end": 1.63
     },
     {
      "w": "code",
-     "at": 1.98,
-     "end": 2.16
+     "at": 1.63,
+     "end": 1.89
     },
     {
      "w": "we",
-     "at": 2.16,
-     "end": 2.34
+     "at": 1.89,
+     "end": 2.09
     },
     {
      "w": "wrote",
-     "at": 2.34,
-     "end": 2.62
+     "at": 2.09,
+     "end": 2.35
     },
     {
      "w": "that",
-     "at": 2.62,
-     "end": 2.9
+     "at": 2.35,
+     "end": 2.67
     },
     {
      "w": "the",
-     "at": 2.9,
-     "end": 3.14
+     "at": 2.67,
+     "end": 2.91
     },
     {
      "w": "model",
-     "at": 3.14,
-     "end": 3.36
+     "at": 2.91,
+     "end": 3.07
     },
     {
      "w": "can",
-     "at": 3.36,
-     "end": 3.62
+     "at": 3.07,
+     "end": 3.29
     },
     {
      "w": "use.",
-     "at": 3.62,
-     "end": 4
+     "at": 3.29,
+     "end": 3.61
     }
    ]
   },
@@ -1919,52 +1909,52 @@
    "n": 28,
    "caption": "For instance, one of them reads your calendar.",
    "file": "voice/lines/guide.7.wav",
-   "length": 2.56,
+   "length": 2.15,
    "speech": [
-    0,
-    2.56
+    0.05,
+    1.94
    ],
-   "rate": 3.13,
+   "rate": 4.23,
    "words": [
     {
      "w": "For",
-     "at": 0,
-     "end": 0.24
+     "at": 0.05,
+     "end": 0.16
     },
     {
      "w": "instance,",
-     "at": 0.24,
-     "end": 0.58
+     "at": 0.16,
+     "end": 0.54
     },
     {
      "w": "one",
-     "at": 0.58,
-     "end": 0.88
+     "at": 0.54,
+     "end": 0.92
     },
     {
      "w": "of",
-     "at": 0.88,
+     "at": 0.92,
      "end": 1
     },
     {
      "w": "them",
      "at": 1,
-     "end": 1.18
+     "end": 1.16
     },
     {
      "w": "reads",
-     "at": 1.18,
-     "end": 1.42
+     "at": 1.16,
+     "end": 1.34
     },
     {
      "w": "your",
-     "at": 1.42,
-     "end": 1.64
+     "at": 1.34,
+     "end": 1.5
     },
     {
      "w": "calendar.",
-     "at": 1.64,
-     "end": 2.06
+     "at": 1.5,
+     "end": 1.84
     }
    ]
   },
@@ -1973,112 +1963,112 @@
    "n": 29,
    "caption": "So the agent decides what it needs, calls a tool, reads the result, and repeats until it can propose changes.",
    "file": "voice/lines/guide.8.wav",
-   "length": 6.16,
+   "length": 6,
    "speech": [
-    0,
-    6.16
+    0.05,
+    5.75
    ],
-   "rate": 3.25,
+   "rate": 3.51,
    "words": [
     {
      "w": "So",
-     "at": 0,
-     "end": 0.2
+     "at": 0.05,
+     "end": 0.19
     },
     {
      "w": "the",
-     "at": 0.2,
-     "end": 0.4
+     "at": 0.19,
+     "end": 0.35
     },
     {
      "w": "agent",
-     "at": 0.4,
-     "end": 0.6
+     "at": 0.35,
+     "end": 0.55
     },
     {
      "w": "decides",
-     "at": 0.6,
-     "end": 1.04
+     "at": 0.55,
+     "end": 0.97
     },
     {
      "w": "what",
-     "at": 1.04,
-     "end": 1.28
+     "at": 0.97,
+     "end": 1.17
     },
     {
      "w": "it",
-     "at": 1.28,
-     "end": 1.42
+     "at": 1.17,
+     "end": 1.33
     },
     {
      "w": "needs,",
-     "at": 1.42,
-     "end": 1.7
+     "at": 1.33,
+     "end": 1.61
     },
     {
      "w": "calls",
-     "at": 1.7,
-     "end": 2
+     "at": 1.61,
+     "end": 1.89
     },
     {
      "w": "a",
-     "at": 2,
-     "end": 2.18
+     "at": 1.89,
+     "end": 2.09
     },
     {
      "w": "tool,",
-     "at": 2.18,
-     "end": 2.44
+     "at": 2.09,
+     "end": 2.35
     },
     {
      "w": "reads",
-     "at": 2.44,
-     "end": 2.8
+     "at": 2.35,
+     "end": 2.85
     },
     {
      "w": "the",
-     "at": 2.8,
-     "end": 2.98
+     "at": 2.85,
+     "end": 3.03
     },
     {
      "w": "result,",
-     "at": 2.98,
-     "end": 3.3
+     "at": 3.03,
+     "end": 3.33
     },
     {
      "w": "and",
-     "at": 3.3,
-     "end": 3.56
+     "at": 3.33,
+     "end": 3.71
     },
     {
      "w": "repeats",
-     "at": 3.56,
-     "end": 4.02
+     "at": 3.71,
+     "end": 4.03
     },
     {
      "w": "until",
-     "at": 4.02,
-     "end": 4.4
+     "at": 4.03,
+     "end": 4.35
     },
     {
      "w": "it",
-     "at": 4.4,
-     "end": 4.54
+     "at": 4.35,
+     "end": 4.53
     },
     {
      "w": "can",
-     "at": 4.54,
-     "end": 4.68
+     "at": 4.53,
+     "end": 4.75
     },
     {
      "w": "propose",
-     "at": 4.68,
-     "end": 5.08
+     "at": 4.75,
+     "end": 5.09
     },
     {
      "w": "changes.",
-     "at": 5.08,
-     "end": 5.62
+     "at": 5.09,
+     "end": 5.63
     }
    ]
   },
@@ -2087,102 +2077,102 @@
    "n": 30,
    "caption": "Here it uses four tools. It checks your cycle, it reads your calendar, your habits, and your check-ins.",
    "file": "voice/lines/guide.9.wav",
-   "length": 5.74,
+   "length": 5.75,
    "speech": [
-    0.04,
-    5.74
+    0.05,
+    5.66
    ],
-   "rate": 3.33,
+   "rate": 3.39,
    "words": [
     {
      "w": "Here",
-     "at": 0.04,
-     "end": 0.3
+     "at": 0.05,
+     "end": 0.41
     },
     {
      "w": "it",
-     "at": 0.3,
-     "end": 0.48
+     "at": 0.41,
+     "end": 0.67
     },
     {
      "w": "uses",
-     "at": 0.48,
-     "end": 0.74
+     "at": 0.67,
+     "end": 0.91
     },
     {
      "w": "four",
-     "at": 0.74,
-     "end": 1.02
+     "at": 0.91,
+     "end": 1.17
     },
     {
      "w": "tools.",
-     "at": 1.02,
-     "end": 1.56
+     "at": 1.17,
+     "end": 1.55
     },
     {
      "w": "It",
-     "at": 1.56,
-     "end": 1.94
+     "at": 1.55,
+     "end": 1.93
     },
     {
      "w": "checks",
-     "at": 1.94,
-     "end": 2.18
+     "at": 1.93,
+     "end": 2.15
     },
     {
      "w": "your",
-     "at": 2.18,
-     "end": 2.38
+     "at": 2.15,
+     "end": 2.31
     },
     {
      "w": "cycle,",
-     "at": 2.38,
-     "end": 2.72
+     "at": 2.31,
+     "end": 2.67
     },
     {
      "w": "it",
-     "at": 2.72,
-     "end": 2.96
+     "at": 2.67,
+     "end": 2.93
     },
     {
      "w": "reads",
-     "at": 2.96,
-     "end": 3.14
+     "at": 2.93,
+     "end": 3.15
     },
     {
      "w": "your",
-     "at": 3.14,
-     "end": 3.36
+     "at": 3.15,
+     "end": 3.31
     },
     {
      "w": "calendar,",
-     "at": 3.36,
-     "end": 3.68
+     "at": 3.31,
+     "end": 3.69
     },
     {
      "w": "your",
-     "at": 3.68,
-     "end": 4.08
+     "at": 3.69,
+     "end": 4.17
     },
     {
      "w": "habits,",
-     "at": 4.08,
-     "end": 4.32
+     "at": 4.17,
+     "end": 4.49
     },
     {
      "w": "and",
-     "at": 4.32,
-     "end": 4.56
+     "at": 4.49,
+     "end": 4.91
     },
     {
      "w": "your",
-     "at": 4.56,
-     "end": 4.74
+     "at": 4.91,
+     "end": 5.07
     },
     {
      "w": "check-ins.",
-     "at": 4.74,
-     "end": 5.22
+     "at": 5.07,
+     "end": 5.51
     }
    ]
   },
@@ -2193,179 +2183,184 @@
    "file": "voice/lines/guide.10.wav",
    "length": 3.21,
    "speech": [
-    0.04,
-    3.21
+    0.05,
+    2.98
    ],
-   "rate": 3.79,
+   "rate": 4.1,
    "words": [
     {
      "w": "All",
-     "at": 0.04,
-     "end": 0.21
-    },
-    {
-     "w": "of",
-     "at": 0.21,
+     "at": 0.05,
      "end": 0.43
     },
     {
-     "w": "that",
+     "w": "of",
      "at": 0.43,
-     "end": 0.59
+     "end": 0.57
+    },
+    {
+     "w": "that",
+     "at": 0.57,
+     "end": 0.69
     },
     {
      "w": "goes",
-     "at": 0.59,
-     "end": 0.83
+     "at": 0.69,
+     "end": 0.93
     },
     {
      "w": "to",
-     "at": 0.83,
-     "end": 1.09
+     "at": 0.93,
+     "end": 1.17
     },
     {
      "w": "Claude",
-     "at": 1.09,
-     "end": 1.29
+     "at": 1.17,
+     "end": 1.37
     },
     {
      "w": "only",
-     "at": 1.29,
-     "end": 1.63
+     "at": 1.37,
+     "end": 1.79
     },
     {
      "w": "when",
-     "at": 1.63,
-     "end": 1.83
-    },
-    {
-     "w": "you",
-     "at": 1.83,
+     "at": 1.79,
      "end": 1.99
     },
     {
-     "w": "ask",
+     "w": "you",
      "at": 1.99,
-     "end": 2.19
+     "end": 2.13
+    },
+    {
+     "w": "ask",
+     "at": 2.13,
+     "end": 2.35
     },
     {
      "w": "it",
-     "at": 2.19,
-     "end": 2.33
+     "at": 2.35,
+     "end": 2.53
     },
     {
      "w": "something.",
-     "at": 2.33,
-     "end": 2.71
+     "at": 2.53,
+     "end": 2.95
     }
    ]
   },
   {
    "id": "guide.11",
    "n": 32,
-   "caption": "Then it drafts changes, and a tool catches two that don't fit your calendar, so the model fixes them.",
+   "caption": "Then it drafts changes, and a tool catches two that don't fit into your calendar, so the model fixes them.",
    "file": "voice/lines/guide.11.wav",
-   "length": 5.54,
+   "length": 6.68,
    "speech": [
-    0,
-    5.32
+    0.05,
+    6.43
    ],
-   "rate": 3.57,
+   "rate": 3.13,
    "words": [
     {
      "w": "Then",
-     "at": 0,
-     "end": 0.22
+     "at": 0.05,
+     "end": 0.35
     },
     {
      "w": "it",
-     "at": 0.22,
-     "end": 0.36
+     "at": 0.35,
+     "end": 0.73
     },
     {
      "w": "drafts",
-     "at": 0.36,
-     "end": 0.7
+     "at": 0.73,
+     "end": 1.03
     },
     {
      "w": "changes,",
-     "at": 0.7,
-     "end": 1.18
+     "at": 1.03,
+     "end": 1.49
     },
     {
      "w": "and",
-     "at": 1.18,
-     "end": 1.48
+     "at": 1.49,
+     "end": 1.83
     },
     {
      "w": "a",
-     "at": 1.48,
-     "end": 1.64
+     "at": 1.83,
+     "end": 1.95
     },
     {
      "w": "tool",
-     "at": 1.64,
-     "end": 1.8
+     "at": 1.95,
+     "end": 2.19
     },
     {
      "w": "catches",
-     "at": 1.8,
-     "end": 2.16
+     "at": 2.19,
+     "end": 2.61
     },
     {
      "w": "two",
-     "at": 2.16,
-     "end": 2.46
+     "at": 2.61,
+     "end": 3.03
     },
     {
      "w": "that",
-     "at": 2.46,
-     "end": 2.62
+     "at": 3.03,
+     "end": 3.27
     },
     {
      "w": "don't",
-     "at": 2.62,
-     "end": 2.84
+     "at": 3.27,
+     "end": 3.73
     },
     {
      "w": "fit",
-     "at": 2.84,
-     "end": 3.04
+     "at": 3.73,
+     "end": 3.97
+    },
+    {
+     "w": "into",
+     "at": 3.97,
+     "end": 4.21
     },
     {
      "w": "your",
-     "at": 3.04,
-     "end": 3.26
+     "at": 4.21,
+     "end": 4.41
     },
     {
      "w": "calendar,",
-     "at": 3.26,
-     "end": 3.62
+     "at": 4.41,
+     "end": 4.81
     },
     {
      "w": "so",
-     "at": 3.62,
-     "end": 4.26
+     "at": 4.81,
+     "end": 5.41
     },
     {
      "w": "the",
-     "at": 4.26,
-     "end": 4.44
+     "at": 5.41,
+     "end": 5.57
     },
     {
      "w": "model",
-     "at": 4.44,
-     "end": 4.62
+     "at": 5.57,
+     "end": 5.75
     },
     {
      "w": "fixes",
-     "at": 4.62,
-     "end": 4.98
+     "at": 5.75,
+     "end": 6.11
     },
     {
      "w": "them.",
-     "at": 4.98,
-     "end": 5.26
+     "at": 6.11,
+     "end": 6.51
     }
    ]
   },
@@ -2374,191 +2369,191 @@
    "n": 33,
    "caption": "And it ends with five suggestions, each one explained with your own check-ins.",
    "file": "voice/lines/guide.12.wav",
-   "length": 4.26,
+   "length": 3.86,
    "speech": [
-    0,
-    4.04
+    0.05,
+    3.7
    ],
-   "rate": 3.46,
+   "rate": 3.84,
    "words": [
     {
      "w": "And",
-     "at": 0,
-     "end": 0.2
+     "at": 0.05,
+     "end": 0.16
     },
     {
      "w": "it",
-     "at": 0.2,
-     "end": 0.36
+     "at": 0.16,
+     "end": 0.3
     },
     {
      "w": "ends",
-     "at": 0.36,
-     "end": 0.58
+     "at": 0.3,
+     "end": 0.52
     },
     {
      "w": "with",
-     "at": 0.58,
-     "end": 0.8
+     "at": 0.52,
+     "end": 0.66
     },
     {
      "w": "five",
-     "at": 0.8,
-     "end": 1.14
+     "at": 0.66,
+     "end": 0.86
     },
     {
      "w": "suggestions,",
-     "at": 1.14,
-     "end": 1.76
+     "at": 0.86,
+     "end": 1.44
     },
     {
      "w": "each",
-     "at": 1.76,
-     "end": 2.12
+     "at": 1.44,
+     "end": 2.1
     },
     {
      "w": "one",
-     "at": 2.12,
-     "end": 2.32
+     "at": 2.1,
+     "end": 2.26
     },
     {
      "w": "explained",
-     "at": 2.32,
-     "end": 2.68
+     "at": 2.26,
+     "end": 2.64
     },
     {
      "w": "with",
-     "at": 2.68,
-     "end": 2.94
+     "at": 2.64,
+     "end": 2.84
     },
     {
      "w": "your",
+     "at": 2.84,
+     "end": 2.94
+    },
+    {
+     "w": "own",
      "at": 2.94,
      "end": 3.16
     },
     {
-     "w": "own",
-     "at": 3.16,
-     "end": 3.42
-    },
-    {
      "w": "check-ins.",
-     "at": 3.42,
-     "end": 3.96
+     "at": 3.16,
+     "end": 3.66
     }
    ]
   },
   {
    "id": "guide.13",
    "n": 34,
-   "caption": "For instance, it lightens Wednesday's hard workout, because that's probably around day 27, when you've logged low energy and headaches.",
+   "caption": "For instance, it lightens Wednesday's hard workout, because that's probably around day 27, when you logged low energy and headaches.",
    "file": "voice/lines/guide.13.wav",
-   "length": 6.99,
+   "length": 6.71,
    "speech": [
-    0,
-    6.77
+    0.05,
+    6.62
    ],
-   "rate": 3.1,
+   "rate": 3.2,
    "words": [
     {
      "w": "For",
-     "at": 0,
-     "end": 0.22
+     "at": 0.05,
+     "end": 0.16
     },
     {
      "w": "instance,",
-     "at": 0.22,
-     "end": 0.5
+     "at": 0.16,
+     "end": 0.64
     },
     {
      "w": "it",
-     "at": 0.5,
-     "end": 0.86
+     "at": 0.64,
+     "end": 1.02
     },
     {
      "w": "lightens",
-     "at": 0.86,
-     "end": 1.2
+     "at": 1.02,
+     "end": 1.34
     },
     {
      "w": "Wednesday's",
-     "at": 1.2,
-     "end": 1.78
+     "at": 1.34,
+     "end": 1.84
     },
     {
      "w": "hard",
-     "at": 1.78,
-     "end": 1.98
+     "at": 1.84,
+     "end": 1.96
     },
     {
      "w": "workout,",
-     "at": 1.98,
-     "end": 2.36
+     "at": 1.96,
+     "end": 2.34
     },
     {
      "w": "because",
-     "at": 2.36,
-     "end": 2.94
+     "at": 2.34,
+     "end": 2.9
     },
     {
      "w": "that's",
-     "at": 2.94,
-     "end": 3.22
+     "at": 2.9,
+     "end": 3.14
     },
     {
      "w": "probably",
-     "at": 3.22,
-     "end": 3.5
+     "at": 3.14,
+     "end": 3.42
     },
     {
      "w": "around",
-     "at": 3.5,
-     "end": 3.88
+     "at": 3.42,
+     "end": 3.74
     },
     {
      "w": "day",
-     "at": 3.88,
-     "end": 4.06
+     "at": 3.74,
+     "end": 3.88
     },
     {
      "w": "27,",
-     "at": 4.06,
-     "end": 4.68
+     "at": 3.88,
+     "end": 4.46
     },
     {
      "w": "when",
-     "at": 4.68,
-     "end": 4.94
+     "at": 4.46,
+     "end": 4.82
     },
     {
-     "w": "you've",
-     "at": 4.94,
-     "end": 5.16
+     "w": "you",
+     "at": 4.82,
+     "end": 5
     },
     {
      "w": "logged",
-     "at": 5.16,
-     "end": 5.36
+     "at": 5,
+     "end": 5.28
     },
     {
      "w": "low",
-     "at": 5.36,
-     "end": 5.68
+     "at": 5.28,
+     "end": 5.6
     },
     {
      "w": "energy",
-     "at": 5.68,
-     "end": 6.02
+     "at": 5.6,
+     "end": 5.98
     },
     {
      "w": "and",
-     "at": 6.02,
-     "end": 6.24
+     "at": 5.98,
+     "end": 6.16
     },
     {
      "w": "headaches.",
-     "at": 6.24,
-     "end": 6.66
+     "at": 6.16,
+     "end": 6.6
     }
    ]
   },
@@ -2567,42 +2562,42 @@
    "n": 35,
    "caption": "Step 4 is where you decide.",
    "file": "voice/lines/decide.1.wav",
-   "length": 2.15,
+   "length": 1.84,
    "speech": [
-    0,
-    1.93
+    0.05,
+    1.68
    ],
-   "rate": 3.11,
+   "rate": 3.68,
    "words": [
     {
      "w": "Step",
-     "at": 0,
-     "end": 0.34
+     "at": 0.05,
+     "end": 0.58
     },
     {
      "w": "4",
-     "at": 0.34,
-     "end": 0.68
+     "at": 0.58,
+     "end": 0.82
     },
     {
      "w": "is",
-     "at": 0.68,
-     "end": 0.92
+     "at": 0.82,
+     "end": 0.98
     },
     {
      "w": "where",
-     "at": 0.92,
+     "at": 0.98,
      "end": 1.14
     },
     {
      "w": "you",
      "at": 1.14,
-     "end": 1.3
+     "end": 1.26
     },
     {
      "w": "decide.",
-     "at": 1.3,
-     "end": 1.84
+     "at": 1.26,
+     "end": 1.68
     }
    ]
   },
@@ -2611,47 +2606,47 @@
    "n": 36,
    "caption": "Each suggestion shows what changes and why.",
    "file": "voice/lines/decide.2.wav",
-   "length": 2.72,
+   "length": 2.83,
    "speech": [
-    0.04,
-    2.5
+    0.05,
+    2.58
    ],
-   "rate": 2.85,
+   "rate": 2.77,
    "words": [
     {
      "w": "Each",
-     "at": 0.04,
-     "end": 0.24
+     "at": 0.05,
+     "end": 0.44
     },
     {
      "w": "suggestion",
-     "at": 0.24,
-     "end": 0.76
+     "at": 0.44,
+     "end": 0.94
     },
     {
      "w": "shows",
-     "at": 0.76,
-     "end": 1.08
+     "at": 0.94,
+     "end": 1.3
     },
     {
      "w": "what",
-     "at": 1.08,
-     "end": 1.4
+     "at": 1.3,
+     "end": 1.54
     },
     {
      "w": "changes",
-     "at": 1.4,
-     "end": 1.78
+     "at": 1.54,
+     "end": 1.96
     },
     {
      "w": "and",
-     "at": 1.78,
-     "end": 2.04
+     "at": 1.96,
+     "end": 2.24
     },
     {
      "w": "why.",
-     "at": 2.04,
-     "end": 2.44
+     "at": 2.24,
+     "end": 2.56
     }
    ]
   },
@@ -2660,72 +2655,72 @@
    "n": 37,
    "caption": "We approve two, decline one, and then undo one of the approvals.",
    "file": "voice/lines/decide.3.wav",
-   "length": 4,
+   "length": 4.11,
    "speech": [
-    0.04,
-    3.78
+    0.05,
+    3.86
    ],
-   "rate": 3.21,
+   "rate": 3.15,
    "words": [
     {
      "w": "We",
-     "at": 0.04,
-     "end": 0.17
+     "at": 0.05,
+     "end": 0.18
     },
     {
      "w": "approve",
-     "at": 0.17,
-     "end": 0.53
+     "at": 0.18,
+     "end": 0.48
     },
     {
      "w": "two,",
-     "at": 0.53,
-     "end": 0.91
+     "at": 0.48,
+     "end": 0.92
     },
     {
      "w": "decline",
-     "at": 0.91,
-     "end": 1.45
+     "at": 0.92,
+     "end": 1.48
     },
     {
      "w": "one,",
-     "at": 1.45,
-     "end": 1.85
+     "at": 1.48,
+     "end": 1.86
     },
     {
      "w": "and",
-     "at": 1.85,
-     "end": 2.15
+     "at": 1.86,
+     "end": 2.24
     },
     {
      "w": "then",
-     "at": 2.15,
-     "end": 2.27
+     "at": 2.24,
+     "end": 2.34
     },
     {
      "w": "undo",
-     "at": 2.27,
-     "end": 2.69
+     "at": 2.34,
+     "end": 2.8
     },
     {
      "w": "one",
-     "at": 2.69,
-     "end": 2.95
+     "at": 2.8,
+     "end": 3.04
     },
     {
      "w": "of",
-     "at": 2.95,
-     "end": 3.09
+     "at": 3.04,
+     "end": 3.18
     },
     {
      "w": "the",
-     "at": 3.09,
-     "end": 3.21
+     "at": 3.18,
+     "end": 3.3
     },
     {
      "w": "approvals.",
-     "at": 3.21,
-     "end": 3.59
+     "at": 3.3,
+     "end": 3.76
     }
    ]
   },
@@ -2734,72 +2729,72 @@
    "n": 38,
    "caption": "On the Plan, anything still waiting shows up as a dashed block.",
    "file": "voice/lines/decide.4.wav",
-   "length": 3.76,
+   "length": 4.21,
    "speech": [
-    0,
-    3.76
+    0.05,
+    4.03
    ],
-   "rate": 3.19,
+   "rate": 3.02,
    "words": [
     {
      "w": "On",
-     "at": 0,
-     "end": 0.24
+     "at": 0.05,
+     "end": 0.19
     },
     {
      "w": "the",
-     "at": 0.24,
-     "end": 0.42
+     "at": 0.19,
+     "end": 0.39
     },
     {
      "w": "Plan,",
-     "at": 0.42,
-     "end": 0.66
+     "at": 0.39,
+     "end": 0.71
     },
     {
      "w": "anything",
-     "at": 0.66,
-     "end": 1.12
+     "at": 0.71,
+     "end": 1.47
     },
     {
      "w": "still",
-     "at": 1.12,
-     "end": 1.46
+     "at": 1.47,
+     "end": 1.87
     },
     {
      "w": "waiting",
-     "at": 1.46,
-     "end": 1.78
+     "at": 1.87,
+     "end": 2.29
     },
     {
      "w": "shows",
-     "at": 1.78,
-     "end": 2.08
+     "at": 2.29,
+     "end": 2.75
     },
     {
      "w": "up",
-     "at": 2.08,
-     "end": 2.28
+     "at": 2.75,
+     "end": 3.03
     },
     {
      "w": "as",
-     "at": 2.28,
-     "end": 2.46
+     "at": 3.03,
+     "end": 3.17
     },
     {
      "w": "a",
-     "at": 2.46,
-     "end": 2.66
+     "at": 3.17,
+     "end": 3.39
     },
     {
      "w": "dashed",
-     "at": 2.66,
-     "end": 2.86
+     "at": 3.39,
+     "end": 3.71
     },
     {
      "w": "block.",
-     "at": 2.86,
-     "end": 3.26
+     "at": 3.71,
+     "end": 4.19
     }
    ]
   },
@@ -2808,72 +2803,72 @@
    "n": 39,
    "caption": "Classes, exams, and shifts are locked, so the Guide can't move them.",
    "file": "voice/lines/decide.5.wav",
-   "length": 3.94,
+   "length": 4.43,
    "speech": [
-    0,
-    3.72
+    0.05,
+    4.33
    ],
-   "rate": 3.23,
+   "rate": 2.8,
    "words": [
     {
      "w": "Classes,",
-     "at": 0,
-     "end": 0.5
+     "at": 0.05,
+     "end": 0.79
     },
     {
      "w": "exams,",
-     "at": 0.5,
-     "end": 0.94
+     "at": 0.79,
+     "end": 1.39
     },
     {
      "w": "and",
-     "at": 0.94,
-     "end": 1.3
+     "at": 1.39,
+     "end": 1.87
     },
     {
      "w": "shifts",
-     "at": 1.3,
-     "end": 1.48
+     "at": 1.87,
+     "end": 2.13
     },
     {
      "w": "are",
-     "at": 1.48,
-     "end": 1.68
+     "at": 2.13,
+     "end": 2.39
     },
     {
      "w": "locked,",
-     "at": 1.68,
-     "end": 2.02
+     "at": 2.39,
+     "end": 2.73
     },
     {
      "w": "so",
-     "at": 2.02,
-     "end": 2.56
+     "at": 2.73,
+     "end": 2.97
     },
     {
      "w": "the",
-     "at": 2.56,
-     "end": 2.74
+     "at": 2.97,
+     "end": 3.15
     },
     {
      "w": "Guide",
-     "at": 2.74,
-     "end": 2.9
+     "at": 3.15,
+     "end": 3.31
     },
     {
      "w": "can't",
-     "at": 2.9,
-     "end": 3.24
+     "at": 3.31,
+     "end": 3.67
     },
     {
      "w": "move",
-     "at": 3.24,
-     "end": 3.44
+     "at": 3.67,
+     "end": 3.85
     },
     {
      "w": "them.",
-     "at": 3.44,
-     "end": 3.66
+     "at": 3.85,
+     "end": 4.15
     }
    ]
   },
@@ -2882,97 +2877,97 @@
    "n": 40,
    "caption": "And the AI can't change your calendar on its own, so nothing changes until you approve it.",
    "file": "voice/lines/decide.6.wav",
-   "length": 5.16,
+   "length": 4.97,
    "speech": [
-    0.04,
-    5.16
+    0.05,
+    4.86
    ],
-   "rate": 3.32,
+   "rate": 3.53,
    "words": [
     {
      "w": "And",
-     "at": 0.04,
-     "end": 0.2
+     "at": 0.05,
+     "end": 0.36
     },
     {
      "w": "the",
-     "at": 0.2,
-     "end": 0.38
+     "at": 0.36,
+     "end": 0.52
     },
     {
      "w": "AI",
-     "at": 0.38,
-     "end": 0.62
+     "at": 0.52,
+     "end": 0.7
     },
     {
      "w": "can't",
-     "at": 0.62,
-     "end": 1.08
+     "at": 0.7,
+     "end": 1.12
     },
     {
      "w": "change",
-     "at": 1.08,
+     "at": 1.12,
      "end": 1.34
     },
     {
      "w": "your",
      "at": 1.34,
-     "end": 1.54
+     "end": 1.5
     },
     {
      "w": "calendar",
-     "at": 1.54,
-     "end": 1.84
+     "at": 1.5,
+     "end": 1.76
     },
     {
      "w": "on",
-     "at": 1.84,
-     "end": 2.1
+     "at": 1.76,
+     "end": 2.02
     },
     {
      "w": "its",
-     "at": 2.1,
-     "end": 2.26
+     "at": 2.02,
+     "end": 2.18
     },
     {
      "w": "own,",
-     "at": 2.26,
-     "end": 2.58
+     "at": 2.18,
+     "end": 2.46
     },
     {
      "w": "so",
-     "at": 2.58,
-     "end": 2.84
+     "at": 2.46,
+     "end": 2.74
     },
     {
      "w": "nothing",
-     "at": 2.84,
-     "end": 3.2
+     "at": 2.74,
+     "end": 3.04
     },
     {
      "w": "changes",
-     "at": 3.2,
-     "end": 3.62
+     "at": 3.04,
+     "end": 3.48
     },
     {
      "w": "until",
-     "at": 3.62,
-     "end": 3.98
+     "at": 3.48,
+     "end": 3.88
     },
     {
      "w": "you",
-     "at": 3.98,
-     "end": 4.18
+     "at": 3.88,
+     "end": 4.06
     },
     {
      "w": "approve",
-     "at": 4.18,
-     "end": 4.48
+     "at": 4.06,
+     "end": 4.34
     },
     {
      "w": "it.",
-     "at": 4.48,
-     "end": 4.84
+     "at": 4.34,
+     "end": 4.66
     }
    ]
   },
@@ -2981,42 +2976,42 @@
    "n": 41,
    "caption": "Step 5 is a rough morning.",
    "file": "voice/lines/rough.1.wav",
-   "length": 2.06,
+   "length": 2.13,
    "speech": [
-    0.04,
-    1.84
+    0.05,
+    1.88
    ],
-   "rate": 3.33,
+   "rate": 3.28,
    "words": [
     {
      "w": "Step",
-     "at": 0.04,
-     "end": 0.35
+     "at": 0.05,
+     "end": 0.37
     },
     {
      "w": "5",
-     "at": 0.35,
-     "end": 0.71
+     "at": 0.37,
+     "end": 0.79
     },
     {
      "w": "is",
-     "at": 0.71,
-     "end": 0.95
+     "at": 0.79,
+     "end": 1.09
     },
     {
      "w": "a",
-     "at": 0.95,
-     "end": 1.17
+     "at": 1.09,
+     "end": 1.29
     },
     {
      "w": "rough",
-     "at": 1.17,
-     "end": 1.35
+     "at": 1.29,
+     "end": 1.45
     },
     {
      "w": "morning.",
-     "at": 1.35,
-     "end": 1.81
+     "at": 1.45,
+     "end": 1.85
     }
    ]
   },
@@ -3025,72 +3020,72 @@
    "n": 42,
    "caption": "It's Thursday, day 1 of your period, and your midterm is tonight.",
    "file": "voice/lines/rough.2.wav",
-   "length": 3.92,
+   "length": 4.24,
    "speech": [
-    0,
-    3.92
+    0.05,
+    4.08
    ],
-   "rate": 3.06,
+   "rate": 2.98,
    "words": [
     {
      "w": "It's",
-     "at": 0,
-     "end": 0.38
+     "at": 0.05,
+     "end": 0.87
     },
     {
      "w": "Thursday,",
-     "at": 0.38,
-     "end": 0.76
+     "at": 0.87,
+     "end": 1.25
     },
     {
      "w": "day",
-     "at": 0.76,
-     "end": 1.08
+     "at": 1.25,
+     "end": 1.77
     },
     {
      "w": "1",
-     "at": 1.08,
-     "end": 1.32
+     "at": 1.77,
+     "end": 1.95
     },
     {
      "w": "of",
-     "at": 1.32,
-     "end": 1.46
+     "at": 1.95,
+     "end": 2.07
     },
     {
      "w": "your",
-     "at": 1.46,
-     "end": 1.62
+     "at": 2.07,
+     "end": 2.23
     },
     {
      "w": "period,",
-     "at": 1.62,
-     "end": 1.96
+     "at": 2.23,
+     "end": 2.57
     },
     {
      "w": "and",
-     "at": 1.96,
-     "end": 2.4
+     "at": 2.57,
+     "end": 2.87
     },
     {
      "w": "your",
-     "at": 2.4,
-     "end": 2.6
+     "at": 2.87,
+     "end": 3.05
     },
     {
      "w": "midterm",
-     "at": 2.6,
-     "end": 2.94
+     "at": 3.05,
+     "end": 3.41
     },
     {
      "w": "is",
-     "at": 2.94,
-     "end": 3.16
+     "at": 3.41,
+     "end": 3.77
     },
     {
      "w": "tonight.",
-     "at": 3.16,
-     "end": 3.54
+     "at": 3.77,
+     "end": 4.15
     }
    ]
   },
@@ -3099,67 +3094,67 @@
    "n": 43,
    "caption": "You log it in 10 seconds: low energy, flat mood, cramps.",
    "file": "voice/lines/rough.3.wav",
-   "length": 3.9,
+   "length": 4.4,
    "speech": [
-    0.04,
-    3.68
+    0.05,
+    4.21
    ],
-   "rate": 3.02,
+   "rate": 2.64,
    "words": [
     {
      "w": "You",
-     "at": 0.04,
-     "end": 0.2
+     "at": 0.05,
+     "end": 0.48
     },
     {
      "w": "log",
-     "at": 0.2,
-     "end": 0.46
+     "at": 0.48,
+     "end": 0.68
     },
     {
      "w": "it",
-     "at": 0.46,
-     "end": 0.6
+     "at": 0.68,
+     "end": 0.84
     },
     {
      "w": "in",
-     "at": 0.6,
-     "end": 0.82
+     "at": 0.84,
+     "end": 1.04
     },
     {
      "w": "10",
-     "at": 0.82,
-     "end": 1.12
+     "at": 1.04,
+     "end": 1.2
     },
     {
      "w": "seconds:",
-     "at": 1.12,
-     "end": 1.58
+     "at": 1.2,
+     "end": 1.62
     },
     {
      "w": "low",
-     "at": 1.58,
+     "at": 1.62,
      "end": 1.94
     },
     {
      "w": "energy,",
      "at": 1.94,
-     "end": 2.34
+     "end": 2.32
     },
     {
      "w": "flat",
-     "at": 2.34,
-     "end": 2.76
+     "at": 2.32,
+     "end": 2.92
     },
     {
      "w": "mood,",
-     "at": 2.76,
-     "end": 3.04
+     "at": 2.92,
+     "end": 3.26
     },
     {
      "w": "cramps.",
-     "at": 3.04,
-     "end": 3.6
+     "at": 3.26,
+     "end": 3.94
     }
    ]
   },
@@ -3168,52 +3163,52 @@
    "n": 44,
    "caption": "Then you ask the Guide what to change.",
    "file": "voice/lines/rough.4.wav",
-   "length": 2.47,
+   "length": 2.11,
    "speech": [
-    0,
-    2.25
+    0.05,
+    1.9
    ],
-   "rate": 3.55,
+   "rate": 4.32,
    "words": [
     {
      "w": "Then",
-     "at": 0,
-     "end": 0.36
+     "at": 0.05,
+     "end": 0.26
     },
     {
      "w": "you",
-     "at": 0.36,
-     "end": 0.74
+     "at": 0.26,
+     "end": 0.42
     },
     {
      "w": "ask",
-     "at": 0.74,
-     "end": 0.96
+     "at": 0.42,
+     "end": 0.62
     },
     {
      "w": "the",
-     "at": 0.96,
-     "end": 1.16
+     "at": 0.62,
+     "end": 0.82
     },
     {
      "w": "Guide",
-     "at": 1.16,
-     "end": 1.38
+     "at": 0.82,
+     "end": 1.08
     },
     {
      "w": "what",
-     "at": 1.38,
-     "end": 1.62
+     "at": 1.08,
+     "end": 1.34
     },
     {
      "w": "to",
-     "at": 1.62,
-     "end": 1.8
+     "at": 1.34,
+     "end": 1.5
     },
     {
      "w": "change.",
-     "at": 1.8,
-     "end": 2.18
+     "at": 1.5,
+     "end": 1.82
     }
    ]
   },
@@ -3222,77 +3217,77 @@
    "n": 45,
    "caption": "It only touches today, with three small changes, and the midterm stays put.",
    "file": "voice/lines/rough.5.wav",
-   "length": 4,
+   "length": 4.08,
    "speech": [
-    0,
-    3.9
+    0.05,
+    3.83
    ],
-   "rate": 3.33,
+   "rate": 3.44,
    "words": [
     {
      "w": "It",
-     "at": 0,
-     "end": 0.14
+     "at": 0.05,
+     "end": 0.17
     },
     {
      "w": "only",
-     "at": 0.14,
-     "end": 0.36
+     "at": 0.17,
+     "end": 0.29
     },
     {
      "w": "touches",
-     "at": 0.36,
-     "end": 0.62
+     "at": 0.29,
+     "end": 0.65
     },
     {
      "w": "today,",
-     "at": 0.62,
-     "end": 0.98
+     "at": 0.65,
+     "end": 1.07
     },
     {
      "w": "with",
-     "at": 0.98,
-     "end": 1.24
+     "at": 1.07,
+     "end": 1.35
     },
     {
      "w": "three",
-     "at": 1.24,
-     "end": 1.5
+     "at": 1.35,
+     "end": 1.53
     },
     {
      "w": "small",
-     "at": 1.5,
-     "end": 1.86
+     "at": 1.53,
+     "end": 1.85
     },
     {
      "w": "changes,",
-     "at": 1.86,
-     "end": 2.26
+     "at": 1.85,
+     "end": 2.25
     },
     {
      "w": "and",
-     "at": 2.26,
-     "end": 2.54
+     "at": 2.25,
+     "end": 2.57
     },
     {
      "w": "the",
-     "at": 2.54,
-     "end": 2.7
+     "at": 2.57,
+     "end": 2.71
     },
     {
      "w": "midterm",
-     "at": 2.7,
-     "end": 2.96
+     "at": 2.71,
+     "end": 2.99
     },
     {
      "w": "stays",
-     "at": 2.96,
-     "end": 3.34
+     "at": 2.99,
+     "end": 3.43
     },
     {
      "w": "put.",
-     "at": 3.34,
-     "end": 3.66
+     "at": 3.43,
+     "end": 3.83
     }
    ]
   },
@@ -3301,42 +3296,42 @@
    "n": 46,
    "caption": "Step 6 is knowing its limits.",
    "file": "voice/lines/safety.1.wav",
-   "length": 2.35,
+   "length": 2.41,
    "speech": [
-    0.04,
-    2.13
+    0.05,
+    2.3
    ],
-   "rate": 2.87,
+   "rate": 2.67,
    "words": [
     {
      "w": "Step",
-     "at": 0.04,
-     "end": 0.36
+     "at": 0.05,
+     "end": 0.38
     },
     {
      "w": "6",
-     "at": 0.36,
-     "end": 0.68
+     "at": 0.38,
+     "end": 0.74
     },
     {
      "w": "is",
-     "at": 0.68,
-     "end": 1
+     "at": 0.74,
+     "end": 1.1
     },
     {
      "w": "knowing",
-     "at": 1,
-     "end": 1.3
+     "at": 1.1,
+     "end": 1.38
     },
     {
      "w": "its",
-     "at": 1.3,
-     "end": 1.62
+     "at": 1.38,
+     "end": 1.66
     },
     {
      "w": "limits.",
-     "at": 1.62,
-     "end": 2.04
+     "at": 1.66,
+     "end": 2.1
     }
    ]
   },
@@ -3345,67 +3340,67 @@
    "n": 47,
    "caption": "You tell it your cramps are bad enough to miss class.",
    "file": "voice/lines/safety.2.wav",
-   "length": 3.68,
+   "length": 2.48,
    "speech": [
-    0,
-    3.5
+    0.05,
+    2.43
    ],
-   "rate": 3.14,
+   "rate": 4.62,
    "words": [
     {
      "w": "You",
-     "at": 0,
-     "end": 0.18
+     "at": 0.05,
+     "end": 0.16
     },
     {
      "w": "tell",
-     "at": 0.18,
-     "end": 0.46
+     "at": 0.16,
+     "end": 0.38
     },
     {
      "w": "it",
-     "at": 0.46,
-     "end": 0.78
+     "at": 0.38,
+     "end": 0.5
     },
     {
      "w": "your",
-     "at": 0.78,
-     "end": 1.28
+     "at": 0.5,
+     "end": 0.66
     },
     {
      "w": "cramps",
-     "at": 1.28,
-     "end": 1.68
+     "at": 0.66,
+     "end": 0.9
     },
     {
      "w": "are",
-     "at": 1.68,
-     "end": 1.94
+     "at": 0.9,
+     "end": 1.12
     },
     {
      "w": "bad",
-     "at": 1.94,
-     "end": 2.1
+     "at": 1.12,
+     "end": 1.3
     },
     {
      "w": "enough",
-     "at": 2.1,
-     "end": 2.4
+     "at": 1.3,
+     "end": 1.54
     },
     {
      "w": "to",
-     "at": 2.4,
-     "end": 2.66
+     "at": 1.54,
+     "end": 1.74
     },
     {
      "w": "miss",
-     "at": 2.66,
-     "end": 2.82
+     "at": 1.74,
+     "end": 1.9
     },
     {
      "w": "class.",
-     "at": 2.82,
-     "end": 3.16
+     "at": 1.9,
+     "end": 2.36
     }
    ]
   },
@@ -3414,52 +3409,52 @@
    "n": 48,
    "caption": "It doesn't diagnose, because it's not a doctor.",
    "file": "voice/lines/safety.3.wav",
-   "length": 2.65,
+   "length": 2.49,
    "speech": [
-    0,
-    2.43
+    0.04,
+    2.38
    ],
-   "rate": 3.3,
+   "rate": 3.42,
    "words": [
     {
      "w": "It",
-     "at": 0,
-     "end": 0.2
+     "at": 0.04,
+     "end": 0.24
     },
     {
      "w": "doesn't",
-     "at": 0.2,
-     "end": 0.56
+     "at": 0.24,
+     "end": 0.5
     },
     {
      "w": "diagnose,",
-     "at": 0.56,
-     "end": 1.06
+     "at": 0.5,
+     "end": 1.02
     },
     {
      "w": "because",
-     "at": 1.06,
+     "at": 1.02,
      "end": 1.46
     },
     {
      "w": "it's",
      "at": 1.46,
-     "end": 1.7
+     "end": 1.72
     },
     {
      "w": "not",
-     "at": 1.7,
-     "end": 1.86
+     "at": 1.72,
+     "end": 1.84
     },
     {
      "w": "a",
-     "at": 1.86,
-     "end": 2.04
+     "at": 1.84,
+     "end": 2.02
     },
     {
      "w": "doctor.",
-     "at": 2.04,
-     "end": 2.36
+     "at": 2.02,
+     "end": 2.34
     }
    ]
   },
@@ -3468,107 +3463,107 @@
    "n": 49,
    "caption": "It tells you to get this checked by a doctor, and it explains when to go to urgent care.",
    "file": "voice/lines/safety.4.wav",
-   "length": 5.12,
+   "length": 4.29,
    "speech": [
-    0.04,
-    5.12
+    0.05,
+    4.04
    ],
-   "rate": 3.74,
+   "rate": 4.76,
    "words": [
     {
      "w": "It",
-     "at": 0.04,
-     "end": 0.18
+     "at": 0.05,
+     "end": 0.38
     },
     {
      "w": "tells",
-     "at": 0.18,
-     "end": 0.44
+     "at": 0.38,
+     "end": 0.54
     },
     {
      "w": "you",
-     "at": 0.44,
-     "end": 0.6
+     "at": 0.54,
+     "end": 0.66
     },
     {
      "w": "to",
-     "at": 0.6,
-     "end": 0.74
+     "at": 0.66,
+     "end": 0.76
     },
     {
      "w": "get",
-     "at": 0.74,
+     "at": 0.76,
      "end": 0.88
     },
     {
      "w": "this",
      "at": 0.88,
-     "end": 1.12
+     "end": 1.08
     },
     {
      "w": "checked",
-     "at": 1.12,
-     "end": 1.42
+     "at": 1.08,
+     "end": 1.34
     },
     {
      "w": "by",
-     "at": 1.42,
-     "end": 1.68
+     "at": 1.34,
+     "end": 1.58
     },
     {
      "w": "a",
-     "at": 1.68,
-     "end": 1.86
+     "at": 1.58,
+     "end": 1.74
     },
     {
      "w": "doctor,",
-     "at": 1.86,
-     "end": 2.16
+     "at": 1.74,
+     "end": 2.02
     },
     {
      "w": "and",
-     "at": 2.16,
-     "end": 2.48
+     "at": 2.02,
+     "end": 2.24
     },
     {
      "w": "it",
-     "at": 2.48,
-     "end": 2.66
+     "at": 2.24,
+     "end": 2.34
     },
     {
      "w": "explains",
-     "at": 2.66,
-     "end": 3.12
+     "at": 2.34,
+     "end": 2.78
     },
     {
      "w": "when",
-     "at": 3.12,
+     "at": 2.78,
+     "end": 3.06
+    },
+    {
+     "w": "to",
+     "at": 3.06,
+     "end": 3.22
+    },
+    {
+     "w": "go",
+     "at": 3.22,
      "end": 3.38
     },
     {
      "w": "to",
      "at": 3.38,
-     "end": 3.5
-    },
-    {
-     "w": "go",
-     "at": 3.5,
-     "end": 3.64
-    },
-    {
-     "w": "to",
-     "at": 3.64,
-     "end": 3.8
+     "end": 3.54
     },
     {
      "w": "urgent",
-     "at": 3.8,
-     "end": 4.04
+     "at": 3.54,
+     "end": 3.74
     },
     {
      "w": "care.",
-     "at": 4.04,
-     "end": 4.36
+     "at": 3.74,
+     "end": 4.04
     }
    ]
   },
@@ -3577,87 +3572,87 @@
    "n": 50,
    "caption": "Then it offers to turn your check-ins into notes for the appointment, and it does.",
    "file": "voice/lines/safety.5.wav",
-   "length": 4.48,
+   "length": 4.29,
    "speech": [
-    0,
-    4.48
+    0.05,
+    4.17
    ],
-   "rate": 3.57,
+   "rate": 3.88,
    "words": [
     {
      "w": "Then",
-     "at": 0,
-     "end": 0.34
+     "at": 0.05,
+     "end": 0.3
     },
     {
      "w": "it",
-     "at": 0.34,
-     "end": 0.52
+     "at": 0.3,
+     "end": 0.62
     },
     {
      "w": "offers",
-     "at": 0.52,
-     "end": 0.84
+     "at": 0.62,
+     "end": 0.96
     },
     {
      "w": "to",
-     "at": 0.84,
-     "end": 1.14
+     "at": 0.96,
+     "end": 1.24
     },
     {
      "w": "turn",
-     "at": 1.14,
-     "end": 1.34
+     "at": 1.24,
+     "end": 1.42
     },
     {
      "w": "your",
-     "at": 1.34,
-     "end": 1.56
+     "at": 1.42,
+     "end": 1.6
     },
     {
      "w": "check-ins",
-     "at": 1.56,
-     "end": 1.94
+     "at": 1.6,
+     "end": 2.04
     },
     {
      "w": "into",
-     "at": 1.94,
-     "end": 2.22
+     "at": 2.04,
+     "end": 2.32
     },
     {
      "w": "notes",
-     "at": 2.22,
-     "end": 2.46
+     "at": 2.32,
+     "end": 2.54
     },
     {
      "w": "for",
-     "at": 2.46,
-     "end": 2.68
+     "at": 2.54,
+     "end": 2.76
     },
     {
      "w": "the",
-     "at": 2.68,
-     "end": 2.8
+     "at": 2.76,
+     "end": 2.88
     },
     {
      "w": "appointment,",
-     "at": 2.8,
+     "at": 2.88,
      "end": 3.26
     },
     {
      "w": "and",
      "at": 3.26,
-     "end": 3.56
+     "end": 3.68
     },
     {
      "w": "it",
-     "at": 3.56,
-     "end": 3.74
+     "at": 3.68,
+     "end": 3.82
     },
     {
      "w": "does.",
-     "at": 3.74,
-     "end": 4.08
+     "at": 3.82,
+     "end": 4.12
     }
    ]
   },
@@ -3666,37 +3661,37 @@
    "n": 51,
    "caption": "Step 7 is seeing inside.",
    "file": "voice/lines/inside.1.wav",
-   "length": 2.02,
+   "length": 2.54,
    "speech": [
-    0.04,
-    1.82
+    0.05,
+    2.37
    ],
-   "rate": 2.81,
+   "rate": 2.16,
    "words": [
     {
      "w": "Step",
-     "at": 0.04,
-     "end": 0.34
+     "at": 0.05,
+     "end": 0.64
     },
     {
      "w": "7",
-     "at": 0.34,
-     "end": 0.7
+     "at": 0.64,
+     "end": 0.98
     },
     {
      "w": "is",
-     "at": 0.7,
-     "end": 0.92
+     "at": 0.98,
+     "end": 1.26
     },
     {
      "w": "seeing",
-     "at": 0.92,
-     "end": 1.16
+     "at": 1.26,
+     "end": 1.52
     },
     {
      "w": "inside.",
-     "at": 1.16,
-     "end": 1.72
+     "at": 1.52,
+     "end": 2.06
     }
    ]
   },
@@ -3705,87 +3700,87 @@
    "n": 52,
    "caption": "Our Learn page labels every claim as well supported, mixed, or weak, with its source.",
    "file": "voice/lines/inside.2.wav",
-   "length": 5.02,
+   "length": 5.53,
    "speech": [
-    0,
-    4.8
+    0.05,
+    5.29
    ],
-   "rate": 3.13,
+   "rate": 2.86,
    "words": [
     {
      "w": "Our",
-     "at": 0,
-     "end": 0.32
+     "at": 0.05,
+     "end": 0.29
     },
     {
      "w": "Learn",
-     "at": 0.32,
-     "end": 0.54
+     "at": 0.29,
+     "end": 0.55
     },
     {
      "w": "page",
-     "at": 0.54,
-     "end": 0.78
+     "at": 0.55,
+     "end": 0.95
     },
     {
      "w": "labels",
-     "at": 0.78,
-     "end": 1.14
+     "at": 0.95,
+     "end": 1.29
     },
     {
      "w": "every",
-     "at": 1.14,
-     "end": 1.46
+     "at": 1.29,
+     "end": 1.63
     },
     {
      "w": "claim",
-     "at": 1.46,
-     "end": 1.8
+     "at": 1.63,
+     "end": 2.01
     },
     {
      "w": "as",
-     "at": 1.8,
-     "end": 2.12
+     "at": 2.01,
+     "end": 2.25
     },
     {
      "w": "well",
-     "at": 2.12,
-     "end": 2.3
+     "at": 2.25,
+     "end": 2.43
     },
     {
      "w": "supported,",
-     "at": 2.3,
-     "end": 2.82
+     "at": 2.43,
+     "end": 2.91
     },
     {
      "w": "mixed,",
-     "at": 2.82,
-     "end": 3.22
+     "at": 2.91,
+     "end": 3.47
     },
     {
      "w": "or",
-     "at": 3.22,
-     "end": 3.56
+     "at": 3.47,
+     "end": 3.83
     },
     {
      "w": "weak,",
-     "at": 3.56,
-     "end": 3.74
+     "at": 3.83,
+     "end": 4.05
     },
     {
      "w": "with",
-     "at": 3.74,
-     "end": 4.08
+     "at": 4.05,
+     "end": 4.49
     },
     {
      "w": "its",
-     "at": 4.08,
-     "end": 4.3
+     "at": 4.49,
+     "end": 4.65
     },
     {
      "w": "source.",
-     "at": 4.3,
-     "end": 4.6
+     "at": 4.65,
+     "end": 4.99
     }
    ]
   },
@@ -3794,67 +3789,67 @@
    "n": 53,
    "caption": "And Settings shows the instructions the AI follows, word for word.",
    "file": "voice/lines/inside.3.wav",
-   "length": 3.68,
+   "length": 4.36,
    "speech": [
-    0,
-    3.46
+    0.05,
+    4.11
    ],
-   "rate": 3.18,
+   "rate": 2.71,
    "words": [
     {
      "w": "And",
-     "at": 0,
-     "end": 0.36
+     "at": 0.05,
+     "end": 0.26
     },
     {
      "w": "Settings",
-     "at": 0.36,
-     "end": 0.6
+     "at": 0.26,
+     "end": 0.64
     },
     {
      "w": "shows",
-     "at": 0.6,
-     "end": 0.92
+     "at": 0.64,
+     "end": 1.22
     },
     {
      "w": "the",
-     "at": 0.92,
-     "end": 1.14
+     "at": 1.22,
+     "end": 1.42
     },
     {
      "w": "instructions",
-     "at": 1.14,
-     "end": 1.64
+     "at": 1.42,
+     "end": 2.06
     },
     {
      "w": "the",
-     "at": 1.64,
-     "end": 1.94
+     "at": 2.06,
+     "end": 2.34
     },
     {
      "w": "AI",
-     "at": 1.94,
-     "end": 2.14
+     "at": 2.34,
+     "end": 2.54
     },
     {
      "w": "follows,",
-     "at": 2.14,
-     "end": 2.64
+     "at": 2.54,
+     "end": 3.08
     },
     {
      "w": "word",
-     "at": 2.64,
-     "end": 2.92
+     "at": 3.08,
+     "end": 3.54
     },
     {
      "w": "for",
-     "at": 2.92,
-     "end": 3.12
+     "at": 3.54,
+     "end": 3.78
     },
     {
      "w": "word.",
-     "at": 3.12,
-     "end": 3.38
+     "at": 3.78,
+     "end": 4.14
     }
    ]
   },
@@ -3863,42 +3858,42 @@
    "n": 54,
    "caption": "So there's three things to remember.",
    "file": "voice/lines/end.1.wav",
-   "length": 2.02,
+   "length": 1.75,
    "speech": [
-    0.04,
-    1.8
+    0.05,
+    1.5
    ],
-   "rate": 3.4,
+   "rate": 4.14,
    "words": [
     {
      "w": "So",
-     "at": 0.04,
-     "end": 0.22
+     "at": 0.05,
+     "end": 0.17
     },
     {
      "w": "there's",
-     "at": 0.22,
-     "end": 0.54
+     "at": 0.17,
+     "end": 0.41
     },
     {
      "w": "three",
-     "at": 0.54,
-     "end": 0.74
+     "at": 0.41,
+     "end": 0.57
     },
     {
      "w": "things",
-     "at": 0.74,
-     "end": 1.08
+     "at": 0.57,
+     "end": 0.83
     },
     {
      "w": "to",
-     "at": 1.08,
-     "end": 1.3
+     "at": 0.83,
+     "end": 1.01
     },
     {
      "w": "remember.",
-     "at": 1.3,
-     "end": 1.72
+     "at": 1.01,
+     "end": 1.47
     }
    ]
   },
@@ -3907,62 +3902,62 @@
    "n": 55,
    "caption": "Cadence plans around how you feel, instead of your phase.",
    "file": "voice/lines/end.2.wav",
-   "length": 3.26,
+   "length": 3.03,
    "speech": [
-    0,
-    3.04
+    0.05,
+    2.86
    ],
-   "rate": 3.29,
+   "rate": 3.56,
    "words": [
     {
      "w": "Cadence",
-     "at": 0,
-     "end": 0.44
+     "at": 0.05,
+     "end": 0.35
     },
     {
      "w": "plans",
-     "at": 0.44,
-     "end": 0.78
+     "at": 0.35,
+     "end": 0.67
     },
     {
      "w": "around",
-     "at": 0.78,
-     "end": 1.08
+     "at": 0.67,
+     "end": 0.91
     },
     {
      "w": "how",
-     "at": 1.08,
-     "end": 1.34
+     "at": 0.91,
+     "end": 1.13
     },
     {
      "w": "you",
-     "at": 1.34,
-     "end": 1.52
+     "at": 1.13,
+     "end": 1.31
     },
     {
      "w": "feel,",
-     "at": 1.52,
-     "end": 1.86
+     "at": 1.31,
+     "end": 1.69
     },
     {
      "w": "instead",
-     "at": 1.86,
-     "end": 2.22
+     "at": 1.69,
+     "end": 2.21
     },
     {
      "w": "of",
-     "at": 2.22,
-     "end": 2.4
+     "at": 2.21,
+     "end": 2.39
     },
     {
      "w": "your",
-     "at": 2.4,
-     "end": 2.54
+     "at": 2.39,
+     "end": 2.51
     },
     {
      "w": "phase.",
-     "at": 2.54,
-     "end": 2.96
+     "at": 2.51,
+     "end": 2.81
     }
    ]
   },
@@ -3971,42 +3966,42 @@
    "n": 56,
    "caption": "The AI suggests, and you decide.",
    "file": "voice/lines/end.3.wav",
-   "length": 2.14,
+   "length": 2.41,
    "speech": [
-    0,
-    1.92
+    0.05,
+    2.32
    ],
-   "rate": 3.12,
+   "rate": 2.64,
    "words": [
     {
      "w": "The",
-     "at": 0,
-     "end": 0.2
+     "at": 0.05,
+     "end": 0.18
     },
     {
      "w": "AI",
-     "at": 0.2,
-     "end": 0.42
+     "at": 0.18,
+     "end": 0.4
     },
     {
      "w": "suggests,",
-     "at": 0.42,
+     "at": 0.4,
      "end": 0.98
     },
     {
      "w": "and",
      "at": 0.98,
-     "end": 1.28
+     "end": 1.34
     },
     {
      "w": "you",
-     "at": 1.28,
-     "end": 1.46
+     "at": 1.34,
+     "end": 1.54
     },
     {
      "w": "decide.",
-     "at": 1.46,
-     "end": 1.84
+     "at": 1.54,
+     "end": 2.06
     }
    ]
   },
@@ -4015,131 +4010,136 @@
    "n": 57,
    "caption": "And it knows when to send you to a real clinician.",
    "file": "voice/lines/end.4.wav",
-   "length": 3.04,
+   "length": 3.3,
    "speech": [
-    0,
-    3.04
+    0.05,
+    3.12
    ],
-   "rate": 3.62,
+   "rate": 3.58,
    "words": [
     {
      "w": "And",
-     "at": 0,
+     "at": 0.05,
      "end": 0.16
     },
     {
      "w": "it",
      "at": 0.16,
-     "end": 0.32
+     "end": 0.26
     },
     {
      "w": "knows",
-     "at": 0.32,
-     "end": 0.6
+     "at": 0.26,
+     "end": 0.52
     },
     {
      "w": "when",
-     "at": 0.6,
-     "end": 0.88
+     "at": 0.52,
+     "end": 0.78
     },
     {
      "w": "to",
-     "at": 0.88,
-     "end": 1.08
+     "at": 0.78,
+     "end": 0.98
     },
     {
      "w": "send",
-     "at": 1.08,
-     "end": 1.28
+     "at": 0.98,
+     "end": 1.3
     },
     {
      "w": "you",
-     "at": 1.28,
-     "end": 1.42
+     "at": 1.3,
+     "end": 1.46
     },
     {
      "w": "to",
-     "at": 1.42,
-     "end": 1.58
+     "at": 1.46,
+     "end": 1.66
     },
     {
      "w": "a",
-     "at": 1.58,
-     "end": 1.82
+     "at": 1.66,
+     "end": 1.84
     },
     {
      "w": "real",
-     "at": 1.82,
-     "end": 2.02
+     "at": 1.84,
+     "end": 2.06
     },
     {
      "w": "clinician.",
-     "at": 2.02,
-     "end": 2.62
+     "at": 2.06,
+     "end": 2.86
     }
    ]
   },
   {
    "id": "end.5",
    "n": 58,
-   "caption": "Our code is on GitHub, at the link on screen.",
+   "caption": "Our code is on GitHub, at the link on the screen.",
    "file": "voice/lines/end.5.wav",
-   "length": 3.52,
+   "length": 3.75,
    "speech": [
-    0.04,
-    3.33
+    0.05,
+    3.62
    ],
-   "rate": 3.04,
+   "rate": 3.08,
    "words": [
     {
      "w": "Our",
-     "at": 0.04,
-     "end": 0.24
+     "at": 0.05,
+     "end": 0.83
     },
     {
      "w": "code",
-     "at": 0.24,
-     "end": 0.54
+     "at": 0.83,
+     "end": 1.13
     },
     {
      "w": "is",
-     "at": 0.54,
-     "end": 0.72
+     "at": 1.13,
+     "end": 1.31
     },
     {
      "w": "on",
-     "at": 0.72,
-     "end": 1.08
+     "at": 1.31,
+     "end": 1.49
     },
     {
      "w": "GitHub,",
-     "at": 1.08,
-     "end": 1.38
+     "at": 1.49,
+     "end": 1.75
     },
     {
      "w": "at",
-     "at": 1.38,
-     "end": 2.04
+     "at": 1.75,
+     "end": 2.43
     },
     {
      "w": "the",
-     "at": 2.04,
-     "end": 2.2
+     "at": 2.43,
+     "end": 2.57
     },
     {
      "w": "link",
-     "at": 2.2,
-     "end": 2.44
+     "at": 2.57,
+     "end": 2.75
     },
     {
      "w": "on",
-     "at": 2.44,
-     "end": 2.82
+     "at": 2.75,
+     "end": 2.93
+    },
+    {
+     "w": "the",
+     "at": 2.93,
+     "end": 3.05
     },
     {
      "w": "screen.",
-     "at": 2.82,
-     "end": 3.26
+     "at": 3.05,
+     "end": 3.35
     }
    ]
   },
@@ -4148,52 +4148,52 @@
    "n": 59,
    "caption": "Next, we'll get into the ethics behind it.",
    "file": "voice/lines/end.6.wav",
-   "length": 2.4,
+   "length": 3.05,
    "speech": [
-    0,
-    2.4
+    0.05,
+    2.8
    ],
-   "rate": 3.33,
+   "rate": 2.91,
    "words": [
     {
      "w": "Next,",
-     "at": 0,
-     "end": 0.34
+     "at": 0.05,
+     "end": 0.47
     },
     {
      "w": "we'll",
-     "at": 0.34,
-     "end": 0.62
+     "at": 0.47,
+     "end": 0.77
     },
     {
      "w": "get",
-     "at": 0.62,
-     "end": 0.74
+     "at": 0.77,
+     "end": 0.91
     },
     {
      "w": "into",
-     "at": 0.74,
-     "end": 1.02
+     "at": 0.91,
+     "end": 1.09
     },
     {
      "w": "the",
-     "at": 1.02,
-     "end": 1.22
+     "at": 1.09,
+     "end": 1.27
     },
     {
      "w": "ethics",
-     "at": 1.22,
-     "end": 1.46
+     "at": 1.27,
+     "end": 1.53
     },
     {
      "w": "behind",
-     "at": 1.46,
-     "end": 1.86
+     "at": 1.53,
+     "end": 1.89
     },
     {
      "w": "it.",
-     "at": 1.86,
-     "end": 2.06
+     "at": 1.89,
+     "end": 2.17
     }
    ]
   }

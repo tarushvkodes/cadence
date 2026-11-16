@@ -4,6 +4,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { FPS, TIMELINE } from '../src/timeline.ts';
+import voice from '../src/data/voice.json';
 import { SCRIPT } from '../voice/script.ts';
 import { diff, normalize, transcribe } from '../voice/verify.ts';
 
@@ -35,12 +36,13 @@ for (const l of SCRIPT) {
   const piece = pieces.find((p) => p.id === l.id);
   if (!piece) throw new Error(`${l.id} is not on the timeline`);
   const text = heard.get(piece.out)?.text ?? '';
-  const want = normalize(l.say);
+  const say = voice.voice === 'recorded' ? (l.read?.say ?? l.say) : l.say;
+  const want = normalize(say);
   const edits = diff(want, normalize(text));
   words += want.length;
   missed += edits.filter((e) => !e.startsWith('added')).length;
   if (edits.length) failed++;
-  console.log(`${String(l.n).padStart(2)} ${edits.length ? 'MISS' : 'ok  '} ${l.say}${edits.length ? `  [heard: ${text.trim()}] ${edits.join(', ')}` : ''}`);
+  console.log(`${String(l.n).padStart(2)} ${edits.length ? 'MISS' : 'ok  '} ${say}${edits.length ? `  [heard: ${text.trim()}] ${edits.join(', ')}` : ''}`);
 }
 console.log(`\n${SCRIPT.length - failed} of ${SCRIPT.length} lines heard word for word; ${words - missed} of ${words} words in ${file}`);
 if (failed) process.exitCode = 1;

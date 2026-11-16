@@ -30,8 +30,8 @@ const readThrough = TIMELINE.chapters.map((c) => `**${heading(c.id)}**\n\n${c.li
 
 const md = `# Cadence demo film: narration
 
-The voice in \`out/cadence-demo.mp4\` is an AI clone of a team member's voice, made with his consent, speaking the
-settled script line for line (\`voice/script.ts\`). Each time below is when that line's words start in the film. If you
+The voice in \`out/cadence-demo.mp4\` is a recorded reading of the script (\`voice/script.ts\`), cut into its lines by
+\`npm run voice:recorded\`. Each time below is when that line's words start in the film. If you
 narrate live over \`out/cadence-demo-music.mp4\` or \`out/cadence-demo-silent.mp4\`, start each line at its timecode.
 The # column is the line's number in the script.
 

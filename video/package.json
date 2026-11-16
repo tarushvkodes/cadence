@@ -6,6 +6,7 @@
   "scripts": {
     "capture": "tsx capture/capture.ts",
     "voice": "tsx voice/build.ts",
+    "voice:recorded": "tsx voice/recorded.ts",
     "narration": "tsx scripts/narration.ts",
     "sound": "tsx audio/build.ts",
     "studio": "remotion studio src/index.ts",
