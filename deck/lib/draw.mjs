@@ -23,7 +23,7 @@ export function kit(pres) {
 	const serif = (s, content, o = {}) => text(s, content, { fontFace: FONT.serif, lineSpacingMultiple: 0.95, ...o });
 
 	const eyebrow = (s, label, hue, o = {}) =>
-		text(s, label.toUpperCase(), { fontSize: 11, bold: true, charSpacing: 1.6, color: hue ? HUES[hue].ink : C.ink3, h: 0.3, ...o });
+		text(s, label, { bold: true, color: hue ? HUES[hue].ink : C.ink3, h: 0.3, ...o, fontSize: Math.max(o.fontSize ?? 13, 12) });
 
 	const card = (s, { x, y, w, h, fill = C.card, line = C.line, lineWidth = 0.75, radius = 0.16, shadow = true, name }) =>
 		s.addShape(SH.ROUNDED_RECTANGLE, {

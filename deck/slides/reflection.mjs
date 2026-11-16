@@ -73,8 +73,7 @@ const harder = {
 			const x = MX + i * (w + 0.3);
 			k.card(s, { x, y, w, h });
 			k.serif(s, String(i + 1).padStart(2, '0'), { x: x + 0.45, y: y + 0.35, w: 1, h: 0.6, fontSize: 36, color: sage.solid });
-			k.eyebrow(s, eyebrow, 'sage', { x: x + 0.45, y: y + 1.1, w: w - 0.9 });
-			k.serif(s, big, { x: x + 0.45, y: y + 1.5, w: w - 0.9, h: 1.2, fontSize: 36 });
+			k.serif(s, big, { x: x + 0.45, y: y + 1.15, w: w - 0.9, h: 1.2, fontSize: 36 });
 			k.text(s, body, { x: x + 0.45, y: y + 2.85, w: w - 0.9, h: 1.1, fontSize: 15, color: C.ink2 });
 		});
 	},
@@ -118,7 +117,6 @@ const TAKEAWAYS = [
 
 const takeaways = {
 	layout: 'content',
-	eyebrow: 'If you remember three things',
 	title: 'Three takeaways',
 	speaker: 'Ingrid',
 	notes: `If you remember three things, make it these. One, your phase doesn't change what you're capable of, so plan around how you feel. Two, an agent is a model that uses tools in a loop. That's what lets it work on your real week. Three, good AI suggests, and you decide. That matters most with something as personal as your health.`,
@@ -140,7 +138,6 @@ const thanks = {
 	speaker: 'Ingrid',
 	notes: `Thanks for watching. The code is on GitHub at the link on screen. We're happy to take any questions.`,
 	draw(s, k) {
-		k.eyebrow(s, 'Cadence  ·  Your week, in step with your cycle', null, { x: MX, y: 1.55, w: 6.8 });
 		k.serif(s, 'Questions?', { x: MX, y: 3.95, w: 6.6, h: 0.65, fontSize: 32, italic: true, color: C.ink2 });
 		k.text(s, [{ text: REPO.replace('https://', ''), options: { hyperlink: { url: REPO }, color: HUES.plum.ink, bold: true } }], { x: MX, y: 4.85, w: 6.6, h: 0.4, fontSize: 18 });
 		k.text(s, TEAM, { x: MX, y: 6.35, w: 7.6, h: 0.3, fontSize: 12, color: C.ink3 });
@@ -150,7 +147,6 @@ const thanks = {
 
 const sources = {
 	layout: 'content',
-	eyebrow: 'Appendix',
 	title: 'Sources',
 	speaker: 'Ingrid',
 	notes: `No narration needed. Leave this slide up during questions. The full list is in docs/REFERENCES.md.`,

@@ -96,8 +96,7 @@ const decide = {
 		QUESTIONS.forEach((item, i) => {
 			const x = MX + i * (w + gap);
 			k.card(s, { x, y, w, h });
-			k.eyebrow(s, `Question ${i + 1}`, null, { x: x + 0.3, y: y + 0.3, w: w - 0.6, fontSize: 10 });
-			k.text(s, item.q, { x: x + 0.3, y: y + 0.65, w: w - 0.6, h: 1.15, fontSize: 17, bold: true });
+			k.text(s, item.q, { x: x + 0.3, y: y + 0.32, w: w - 0.6, h: 1.15, fontSize: 17, bold: true });
 			k.line(s, { x1: x + 0.3, y1: y + 2.12, x2: x + w - 0.3, y2: y + 2.12, color: C.line });
 			k.eyebrow(s, i < 2 ? 'Rules out' : 'Off the shelf', 'garnet', { x: x + 0.3, y: y + 2.25, w: w - 0.6, fontSize: 10 });
 			k.text(s, item.out, { x: x + 0.3, y: y + 2.55, w: w - 0.6, h: 0.75, fontSize: 14, color: C.ink2 });

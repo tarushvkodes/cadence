@@ -9,7 +9,6 @@ const cover = {
 	title: 'Cadence',
 	notes: `Hi everyone. We're Ingrid, Paetyn, Tarushv, Vincent, and Zykira, and this is Cadence. It's a week planner with an AI agent inside. It helps you plan your week around how you actually feel across your menstrual cycle. The agent suggests changes to your calendar, but it never makes them by itself. You decide.`,
 	draw(s, k) {
-		k.eyebrow(s, 'Purdue CS 110  ·  AI Solutions Showcase', null, { x: MX, y: 1.55, w: 6.5 });
 		k.serif(s, 'Your week, in step with your cycle.', { x: MX, y: 3.95, w: 6.6, h: 0.65, fontSize: 32, italic: true, color: C.ink2 });
 		k.text(s, 'A week planner with a Claude agent inside. It suggests changes. You decide.', { x: MX, y: 4.85, w: 5.9, h: 0.75, fontSize: 17, color: C.ink2 });
 		k.text(s, TEAM, { x: MX, y: 6.35, w: 7.6, h: 0.3, fontSize: 12, color: C.ink3 });
@@ -19,7 +18,6 @@ const cover = {
 
 const agenda = {
 	layout: 'content',
-	eyebrow: 'The plan',
 	title: 'Six parts, about 18 minutes',
 	notes: `Here's the plan. Six parts, one speaker each, and the demo includes a short film.`,
 	draw(s, k, { sections }) {
@@ -158,8 +156,7 @@ const audience = {
 	notes: `So who is it for? Women aged 17 to 25, mostly students with busy weeks. They've used chatbots, but most don't know how AI systems work. They need six things. A plan built on how they actually feel. Help with their actual schedule. Privacy. Honesty about the science. A way to see what the AI did. And low cost and effort. Paetyn will use those six needs to compare our options.`,
 	draw(s, k) {
 		k.card(s, { x: MX, y: 2.0, w: 4.25, h: 4.3 });
-		k.eyebrow(s, 'The audience', 'garnet', { x: MX + 0.4, y: 2.38, w: 3.4 });
-		k.serif(s, 'Women, 17 to 25', { x: MX + 0.4, y: 2.75, w: 3.5, h: 0.7, fontSize: 38 });
+		k.serif(s, 'Women, 17 to 25', { x: MX + 0.4, y: 2.4, w: 3.5, h: 0.7, fontSize: 38 });
 		const facts = ['Mostly students with weeks full of classes, shifts, and exams', 'Comfortable with chatbots and basic prompting', 'New to how AI systems work under the hood'];
 		facts.forEach((f, i) => {
 			const y = 3.75 + i * 0.8;
@@ -168,11 +165,10 @@ const audience = {
 		});
 		const gx = MX + 4.25 + 0.45;
 		const gw = MX + CW - gx;
-		k.eyebrow(s, 'What they need', null, { x: gx, y: 2.0, w: gw });
 		const tw = (gw - 0.3) / 2;
 		NEEDS.forEach(([title, body], i) => {
 			const x = gx + (i % 2) * (tw + 0.3);
-			const y = 2.4 + Math.floor(i / 2) * 1.32;
+			const y = 2.0 + Math.floor(i / 2) * 1.575;
 			k.card(s, { x, y, w: tw, h: 1.15, shadow: 0.6 });
 			k.numDot(s, i + 1, { cx: x + 0.38, cy: y + 0.4, d: 0.36, fill: C.ink, fontSize: 11 });
 			k.text(s, title, { x: x + 0.7, y: y + 0.24, w: tw - 0.85, h: 0.32, fontSize: 14, bold: true });

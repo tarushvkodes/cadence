@@ -41,8 +41,7 @@ const film = {
 function step(n, title, { notes, shots, list, foot }) {
 	return {
 		layout: 'content',
-		eyebrow: `Step ${n} of 7`,
-		title,
+		title: `Step ${n}. ${title}`,
 		notes,
 		draw(s, k) {
 			if (shots.length === 2) {
@@ -116,13 +115,11 @@ const steps = [
 
 const run = {
 	layout: 'content',
-	eyebrow: 'Step 7 of 7',
-	title: 'Run it yourself',
+	title: 'Step 7. Run it yourself',
 	notes: `Step seven. To run it yourself, you need Node and a Claude Code login. Clone the repo, run npm install, then npm run dev. To just watch our recorded demo, add the demo setting on screen to the address. Next, Zykira covers the ethics.`,
 	draw(s, k) {
 		const w = 7.3;
-		k.card(s, { x: MX, y: 2.0, w, h: 2.75, fill: C.ink, line: null });
-		k.eyebrow(s, 'In a terminal', null, { x: MX + 0.4, y: 2.3, w: w - 0.8, color: C.ink3Dark, fontSize: 10 });
+		k.card(s, { x: MX, y: 2.0, w, h: 2.35, fill: C.ink, line: null });
 		const lines = [`git clone ${REPO}`, 'cd cadence', 'npm install', 'npm run dev'];
 		k.text(
 			s,
@@ -130,10 +127,10 @@ const run = {
 				{ text: '$ ', options: { color: C.ink3Dark } },
 				{ text: l, options: { color: C.paper, breakLine: i < lines.length - 1 } },
 			]),
-			{ x: MX + 0.4, y: 2.7, w: w - 0.8, h: 1.8, fontSize: 15, fontFace: FONT.mono, lineSpacingMultiple: 1.45 },
+			{ x: MX + 0.4, y: 2.35, w: w - 0.8, h: 1.8, fontSize: 15, fontFace: FONT.mono, lineSpacingMultiple: 1.45 },
 		);
-		k.text(s, [{ text: 'Then open ' }, { text: 'localhost:5173', options: { fontFace: FONT.mono, bold: true } }, { text: ' in your browser.' }], { x: MX, y: 5.0, w, h: 0.35, fontSize: 16 });
-		k.text(s, [{ text: REPO.replace('https://', ''), options: { hyperlink: { url: REPO }, color: plum.ink, bold: true } }], { x: MX, y: 5.5, w, h: 0.35, fontSize: 16 });
+		k.text(s, [{ text: 'Then open ' }, { text: 'localhost:5173', options: { fontFace: FONT.mono, bold: true } }, { text: ' in your browser.' }], { x: MX, y: 4.7, w, h: 0.35, fontSize: 16 });
+		k.text(s, [{ text: REPO.replace('https://', ''), options: { hyperlink: { url: REPO }, color: plum.ink, bold: true } }], { x: MX, y: 5.2, w, h: 0.35, fontSize: 16 });
 
 		const rx = MX + w + 0.55;
 		const rw = MX + CW - rx;

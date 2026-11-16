@@ -161,8 +161,7 @@ const leftOut = {
 		const rx = MX + gw + 0.45;
 		const rw = MX + CW - rx;
 		k.card(s, { x: rx, y: 2.0, w: rw, h: 4.1, fill: C.ink, line: null });
-		k.eyebrow(s, 'And', null, { x: rx + 0.4, y: 2.35, w: rw - 0.8, color: C.ink3Dark });
-		k.serif(s, 'AI can be wrong', { x: rx + 0.4, y: 2.72, w: rw - 0.8, h: 0.65, fontSize: 36, color: C.paper });
+		k.serif(s, 'AI can be wrong', { x: rx + 0.4, y: 2.38, w: rw - 0.8, h: 0.65, fontSize: 36, color: C.paper });
 		k.text(s, 'It can sound sure and still be mistaken. It can misread a pattern from a few weeks of logs.', { x: rx + 0.4, y: 3.55, w: rw - 0.8, h: 1.2, fontSize: 15, color: C.lineStrong });
 		k.text(s, 'Read every suggestion before you approve it.', { x: rx + 0.4, y: 4.95, w: rw - 0.8, h: 0.7, fontSize: 15, bold: true, color: C.paper });
 	},
@@ -184,8 +183,7 @@ const control = {
 		cols.forEach(([eyebrow, title, body], i) => {
 			const x = MX + i * (w + 0.3);
 			k.card(s, { x, y, w, h });
-			k.eyebrow(s, eyebrow, 'garnet', { x: x + 0.35, y: y + 0.32, w: w - 0.7, fontSize: 10 });
-			k.text(s, title, { x: x + 0.35, y: y + 0.65, w: w - 0.7, h: 0.38, fontSize: 18, bold: true });
+			k.text(s, title, { x: x + 0.35, y: y + 0.32, w: w - 0.7, h: 0.38, fontSize: 18, bold: true });
 			k.text(s, body, { x: x + 0.35, y: y + 3.3, w: w - 0.7, h: 0.75, fontSize: 13.5, color: C.ink2 });
 		});
 		const x0 = MX + 0.35;

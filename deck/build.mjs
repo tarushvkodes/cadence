@@ -34,7 +34,6 @@ const MASTER = { cover: 'COVER', section: 'SECTION', content: 'CONTENT' };
 const pad = (n) => String(n).padStart(2, '0');
 
 function drawDivider(s, section) {
-	k.eyebrow(s, `Part ${section.n} of ${SECTIONS.length}`, section.hue, { x: MX, y: 2.55, w: 5 });
 	s.addText(section.name, { placeholder: 'title' });
 	k.text(s, section.question, { x: MX, y: 4.2, w: 6.2, h: 0.9, fontSize: 20, color: C.ink2 });
 	k.text(s, `${section.agendaSpeaker ?? section.speaker}  ·  about ${section.target}`, { x: MX, y: 5.35, w: 6, h: 0.3, fontSize: 12, bold: true, color: C.ink3 });
@@ -53,7 +52,6 @@ for (const section of SECTIONS) {
 		if (slide.divider) {
 			drawDivider(s, section);
 		} else {
-			if (slide.layout === 'content') k.eyebrow(s, slide.eyebrow ?? `${pad(section.n)}  ${section.name}`, section.hue, { x: MX, y: Y.eyebrow, w: CW });
 			if (slide.title && slide.layout !== 'section') s.addText(slide.title, { placeholder: 'title' });
 			slide.draw(s, k, { section, sections: SECTIONS });
 			if (slide.sources) k.sourceLine(s, slide.sources, { prefix: slide.sourcePrefix });

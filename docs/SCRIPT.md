@@ -120,31 +120,31 @@ Tarushv. Target 6:00. This script runs about 5:54.
 
 That's the whole flow. Here are the same steps as slides, so you can try it yourself.
 
-### Slide 20. Set up
+### Slide 20. Step 1. Set up
 
 **Tarushv:** Step one. Enter your cycle basics, read the four promises, and pick the sample week.
 
-### Slide 21. Check in
+### Slide 21. Step 2. Check in
 
 **Tarushv:** Step two. Each day, do the ten-second check-in on Today.
 
-### Slide 22. Ask the Guide
+### Slide 22. Step 3. Ask the Guide
 
 **Tarushv:** Step three. Open the Guide, ask it to plan your week, and watch the tools it calls.
 
-### Slide 23. Approve or decline
+### Slide 23. Step 4. Approve or decline
 
 **Tarushv:** Step four. Approve what you like and decline the rest. Anything still waiting shows as a dashed block on your Plan.
 
-### Slide 24. A rough morning
+### Slide 24. Step 5. A rough morning
 
 **Tarushv:** Step five. On a rough day, log how you feel and ask what to change. It only touches today.
 
-### Slide 25. When to see someone
+### Slide 25. Step 6. When to see someone
 
 **Tarushv:** Step six. Describe a red-flag symptom, and it tells you plainly to see a clinician. It can help you prepare for the appointment.
 
-### Slide 26. Run it yourself
+### Slide 26. Step 7. Run it yourself
 
 **Tarushv:** Step seven. To run it yourself, you need Node and a Claude Code login. Clone the repo, run npm install, then npm run dev. To just watch our recorded demo, add the demo setting on screen to the address. Next, Zykira covers the ethics.
 
