@@ -8,7 +8,7 @@ const film = {
 	layout: 'content',
 	title: 'Watch it work',
 	film: true,
-	notes: `Here's the whole flow on a sample week, with a midterm on Thursday and a lab report due Friday. Watch the tool steps, and watch the approve buttons. Nothing changes until you tap one.\n\n[FILM PLAYS HERE, 4:25. Film narration: see video/NARRATION.md]\n\nThat's the whole flow. Here are the same steps as slides, so you can try it yourself.`,
+	notes: `Here's the whole flow on a sample week, with a midterm on Thursday and a lab report due Friday. Watch the tool steps, and watch the approve buttons. Nothing changes until you tap one.\n\n[FILM PLAYS HERE, 4:24. Film narration: see video/NARRATION.md]\n\nThat's the whole flow. Here are the same steps as slides, so you can try it yourself.`,
 	draw(s, k) {
 		const w = 8.3;
 		const h = (w * 9) / 16;
@@ -19,7 +19,7 @@ const film = {
 		k.disc(s, { cx, cy, d: 0.95, fill: C.ink });
 		s.addShape(k.SH.ISOSCELES_TRIANGLE, { x: cx - 0.17, y: cy - 0.2, w: 0.4, h: 0.36, rotate: 90, fill: { color: C.card }, line: { type: 'none' } });
 		k.serif(s, 'Demo film plays here', { x: MX, y: cy + 0.68, w, h: 0.55, fontSize: 32, align: 'center' });
-		k.text(s, 'Replace this box with video/out/cadence-demo.mp4 (16:9, 4:25).', { x: MX + 0.5, y: cy + 1.3, w: w - 1, h: 0.3, fontSize: 13, color: C.ink2, align: 'center' });
+		k.text(s, 'Replace this box with video/out/cadence-demo.mp4 (16:9, 4:24).', { x: MX + 0.5, y: cy + 1.3, w: w - 1, h: 0.3, fontSize: 13, color: C.ink2, align: 'center' });
 
 		const rx = MX + w + 0.55;
 		const rw = MX + CW - rx;
